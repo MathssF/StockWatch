@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # Serviço do RabbitMQ
+  rabbitmq:
+    image: "rabbitmq:management"
+    ports:
+      - "15672:15672" # Portas de gerenciamento do RabbitMQ
+      - "5672:5672"   # Porta do RabbitMQ para comunicação
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+
+  # Serviço do MySQL
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: stockwatch_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # Serviço do Node.js
+  stockwatch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - rabbitmq
+      - mysql
+    ports:
+      - "3000:3000" # Expor a porta onde seu app vai rodar
+    environment:
+      DATABASE_URL: "mysql://root:rootpassword@mysql:3306/stockwatch_db"
+      RABBITMQ_URL: "amqp://user:password@rabbitmq:5672"
+    volumes:
+      - .:/app
+
+# Volumes para persistência de dados
+volumes:
+  mysql_data:
