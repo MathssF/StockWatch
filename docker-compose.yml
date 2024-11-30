@@ -22,6 +22,18 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
+  # Serviço do MongoDB
+  mongo:
+    image: mongo:5.0
+    container_name: mongo_container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
   # Serviço do Producer
   producer:
     build:
