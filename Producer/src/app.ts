@@ -1,5 +1,4 @@
-const express = require('express');
-const { Request, Response } = require('express');
+import express, { Request, Response } from 'express';
 import { config } from 'dotenv';
 import path from 'path';
 
