@@ -1,4 +1,3 @@
-// import express from 'express';
 const express = require('express');
 const { Request, Response } = require('express');
 import { config } from 'dotenv';

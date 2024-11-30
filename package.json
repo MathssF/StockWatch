@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "producer",
-    "consumer",
-    "shared"
+    "Producer",
+    "Consumer",
+    "Shared"
   ],
   "description": "",
   "scripts": {

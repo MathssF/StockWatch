@@ -13,9 +13,9 @@
       },
     },
     "include": [
-      "producer/**/*.ts",
-      "consumer/**/*.ts",
-      "shared/**/*.ts"
+      "Producer/**/*.ts",
+      "Consumer/**/*.ts",
+      "Shared/**/*.ts"
     ],
     "exclude": [
       "node_modules",
