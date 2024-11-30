@@ -1,5 +1,6 @@
 // import express from 'express';
 const express = require('express');
+const { Request, Response } = require('express');
 import { config } from 'dotenv';
 import path from 'path';
 
@@ -11,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Servidor Express rodando!');
 });
 
