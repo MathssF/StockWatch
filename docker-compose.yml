@@ -1,40 +1,40 @@
 version: '3.8'
 
 services:
-  # Serviço do RabbitMQ
+  # RabbitMQ
   rabbitmq:
     image: "rabbitmq:management"
     ports:
-      - "15672:15672" # Portas de gerenciamento do RabbitMQ
-      - "5672:5672"   # Porta do RabbitMQ para comunicação
+      - "15672:15672" # Portas de gerenciamento
+      - "5672:5672"   # Porta para comunicação
     environment:
-      RABBITMQ_DEFAULT_USER: user
-      RABBITMQ_DEFAULT_PASS: password
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-user}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS:-password}
 
-  # Serviço do MySQL
+  # MySQL
   mysql:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: stockwatch_db
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
     ports:
-      - "3306:3306"
+      - "${MYSQL_PORT}:3306"
     volumes:
       - mysql_data:/var/lib/mysql
 
-  # Serviço do MongoDB
+  # MongoDB
   mongo:
     image: mongo:5.0
     container_name: mongo_container
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-root}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-root}
     ports:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
 
-  # Serviço do Producer
+  # Producer
   producer:
     build:
       context: .
@@ -43,15 +43,15 @@ services:
       - rabbitmq
       - mysql
     ports:
-      - "3000:3000"
+      - "${PRODUCER_PORT}:${PRODUCER_PORT}"
     environment:
-      DATABASE_URL: "mysql://root:rootpassword@mysql:3306/stockwatch_db"
-      RABBITMQ_URL: "amqp://user:password@rabbitmq:5672"
+      DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:${MYSQL_PORT}/${MYSQL_DATABASE}"
+      RABBITMQ_URL: "${RABBITMQ_URI}"
     volumes:
       - .:/app
-    command: npm run start:producer # Comando para rodar o producer
+    command: npm run start:producer
 
-  # Serviço do Consumer
+  # Consumer
   consumer:
     build:
       context: .
@@ -60,14 +60,14 @@ services:
       - rabbitmq
       - mysql
     ports:
-      - "3001:3000"
+      - "${CONSUMER_PORT}:${PRODUCER_PORT}"
     environment:
-      DATABASE_URL: "mysql://root:rootpassword@mysql:3306/stockwatch_db"
-      RABBITMQ_URL: "amqp://user:password@rabbitmq:5672"
+      DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:${MYSQL_PORT}/${MYSQL_DATABASE}"
+      RABBITMQ_URL: "${RABBITMQ_URI}"
     volumes:
       - .:/app
-    command: npm run start:consumer # Comando para rodar o consumer
+    command: npm run start:consumer
 
-# Volumes para persistência de dados
 volumes:
   mysql_data:
+  mongo_data:
