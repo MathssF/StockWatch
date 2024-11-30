@@ -22,8 +22,8 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
-  # Serviço do Node.js
-  stockwatch:
+  # Serviço do Producer
+  producer:
     build:
       context: .
       dockerfile: Dockerfile
@@ -31,12 +31,30 @@ services:
       - rabbitmq
       - mysql
     ports:
-      - "3000:3000" # Expor a porta onde seu app vai rodar
+      - "3000:3000"
     environment:
       DATABASE_URL: "mysql://root:rootpassword@mysql:3306/stockwatch_db"
       RABBITMQ_URL: "amqp://user:password@rabbitmq:5672"
     volumes:
       - .:/app
+    command: npm run start:producer # Comando para rodar o producer
+
+  # Serviço do Consumer
+  consumer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - rabbitmq
+      - mysql
+    ports:
+      - "3001:3000"
+    environment:
+      DATABASE_URL: "mysql://root:rootpassword@mysql:3306/stockwatch_db"
+      RABBITMQ_URL: "amqp://user:password@rabbitmq:5672"
+    volumes:
+      - .:/app
+    command: npm run start:consumer # Comando para rodar o consumer
 
 # Volumes para persistência de dados
 volumes:
