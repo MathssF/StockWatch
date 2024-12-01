@@ -10,21 +10,60 @@ datasource db {
 model Product {
   id          Int      @id @default(autoincrement())
   name        String
-  sku         String   @unique // Identificador único para o produto
+  sku         String   @unique // Identificador único do produto
   description String?
   price       Float
-  quantity    Int      // Quantidade disponível em estoque
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  stock       Stock[]
 }
 
-model StockTransaction {
+model DetailType {
+  id          Int           @id @default(autoincrement())
+  name        String        @unique // Nome do tipo de detalhe (ex.: cor, tamanho)
+  details     Detail[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model Detail {
+  id          Int           @id @default(autoincrement())
+  typeId      Int
+  type        DetailType    @relation(fields: [typeId], references: [id], onDelete: Cascade)
+  value       String        // Valor do detalhe (ex.: "Azul", "P")
+  // products    Product[]     @relation(fields: [id])
+  stockDetails StockDetail[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+//  model StockTransaction {
+//    id          Int      @id @default(autoincrement())
+//    productId   Int
+//    product     Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+//    type        String   // 'IN' (entrada) ou 'OUT' (saída)
+//    quantity    Int
+//    createdAt   DateTime @default(now())
+//  }
+
+model Stock {
   id          Int      @id @default(autoincrement())
   productId   Int
+  quantity    Int      // Quantidade disponível para essa variação específica
   product     Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
-  type        String   // 'IN' (entrada) ou 'OUT' (saída)
-  quantity    Int
   createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  StockDetail StockDetail[]
+}
+
+model StockDetail {
+  id          Int      @id @default(autoincrement())
+  stockId     Int
+  detailId    Int
+  stock       Stock    @relation(fields: [stockId], references: [id], onDelete: Cascade)
+  detail      Detail   @relation(fields: [detailId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 
 model RabbitMQMessage {
