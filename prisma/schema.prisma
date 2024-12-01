@@ -37,15 +37,6 @@ model Detail {
   updatedAt   DateTime      @updatedAt
 }
 
-//  model StockTransaction {
-//    id          Int      @id @default(autoincrement())
-//    productId   Int
-//    product     Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
-//    type        String   // 'IN' (entrada) ou 'OUT' (saída)
-//    quantity    Int
-//    createdAt   DateTime @default(now())
-//  }
-
 model Stock {
   id          Int      @id @default(autoincrement())
   productId   Int
