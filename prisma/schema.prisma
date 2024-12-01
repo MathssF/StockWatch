@@ -31,7 +31,6 @@ model Detail {
   typeId      Int
   type        DetailType    @relation(fields: [typeId], references: [id], onDelete: Cascade)
   value       String        // Valor do detalhe (ex.: "Azul", "P")
-  // products    Product[]     @relation(fields: [id])
   stockDetails StockDetail[]
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt

@@ -2,13 +2,6 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-function generateRandomPrice(): number {
-  const randomPrice = Math.floor(Math.random() * (12)) + 2;
-  const multPrice = randomPrice * 10;
-  const valorPrice = multPrice + 9;
-  return parseFloat(`${valorPrice},99`);
-  return randomPrice;
-}
 
 async function seed() {
   const products = [
@@ -16,6 +9,7 @@ async function seed() {
     'Camisa Longa',
     'Camisa Polo',
     'Camisa Social',
+    'Camisa Estampada',
     'Calça',
     'Calça Social',
     'Bermuda',
@@ -30,12 +24,11 @@ async function seed() {
     'Chapéu',
   ];
 
-  // Ordenando os produtos em ordem alfabética
   const sortedProducts = products.sort();
 
   for (const name of sortedProducts) {
     const sku = `${name.split(' ').join('_').toUpperCase()}`;
-    const price = generateRandomPrice(); 
+    const price = Math.floor(Math.random() * (12)) + 2;
 
     await prisma.product.create({
       data: {
