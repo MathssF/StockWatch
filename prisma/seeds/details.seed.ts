@@ -62,6 +62,10 @@ async function main() {
     { type: 4, id: 404, value: 'Ouro' },
     { type: 4, id: 405, value: 'Plástico' },
     { type: 4, id: 406, value: 'Prata' },
+    { type: 4, id: 407, value: 'Algodão' },
+    { type: 4, id: 408, value: 'Tecido' },
+    { type: 4, id: 409, value: 'Seda' },
+    { type: 4, id: 410, value: 'Poliester' },
 
     { type: 5, id: 501, value: 'Básico' },
     { type: 5, id: 502, value: 'Fofo' },
