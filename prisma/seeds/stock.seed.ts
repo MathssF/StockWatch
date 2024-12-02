@@ -72,16 +72,33 @@ async function main() {
     const y = variables / divisions[2];
     const material = variables / divisions[3];
     const style = variables / divisions[4];
-    const stockMatrix = newStock.map((stock) => {
-        
+    const stockMatrix = newStock.map((id, index) => {
+      //
+      const matrix = [...divisions];
+    //   for (let w = 0; w < 5; w++) {
+    //     const element = divisions.slice(w + 1).reduce((a, b) => a * b, 1);
+    //   }
+      let divValue = 1;
+      for (let xi = 0; xi < 5; xi++) {
+        const divSize = divisions[xi];
+        for (let xj = 0; xj < divSize; xj++) {
+        matrix.push(divValue);
+          }
+        divValue++;
+      }
+      return {id, matrix};
     });
-    for (let k = 0; k < newStock.length; k++) {
-      // aqui que vou começar a usar o stockMatrix
-      // Cada matriz vai receber os 5 números iguais da divisions
-      await prisma.stockDetail.create({
-        data: {}
-      })
-    }
+
+
+
+
+    // for (let k = 0; k < newStock.length; k++) {
+    //   // aqui que vou começar a usar o stockMatrix
+    //   // Cada matriz vai receber os 5 números iguais da divisions
+    //   await prisma.stockDetail.create({
+    //     data: {}
+    //   })
+    // }
 
   }
 }
