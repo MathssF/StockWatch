@@ -15,32 +15,32 @@ async function main() {
     if (details.includes(1)) {
       variables = variables * 5;
       divisions[0] = 5;
-    } else {
-      divisions[0] = 0;
+    // } else {
+    //   divisions[0] = 0;
     };
     if (details.includes(2)) {
       variables = variables * 4;
       divisions[1] = 4;
-    } else {
-      divisions[1] = 0;
+    // } else {
+    //   divisions[1] = 0;
     };
     if (details.includes(3)) {
       variables = variables * 3;
       divisions[2] = 3;
-    } else {
-      divisions[2] = 0;
+    // } else {
+    //   divisions[2] = 0;
     };
     if (details.includes(4)) {
       variables = variables * 2;
       divisions[3] = 2;
-    } else {
-      divisions[3] = 0;
+    // } else {
+    //   divisions[3] = 0;
     };
     if (details.includes(5)) {
       variables = variables * 3;
       divisions[4] = 3;
-    } else {
-      divisions[4] = 0;
+    // } else {
+    //   divisions[4] = 0;
     };
 
     // Model no Prisma para servir de exemplo
@@ -77,20 +77,39 @@ async function main() {
         updatedAt   DateTime @updatedAt
     }
     */
+
+
     const stockMatrix = newStock.map((id) => {
-      const matrix = [...divisions];
-    //   let newMatrix: array[number[]]= [];
-      let divValue = 1;
-      for (let xi = 0; xi < divisions.length; xi++) {
-        if (divisions[xi] = 0) continue;
-        const divSize = divisions[xi];
-        for (let xj = 0; xj < divSize; xj++) {
-        matrix.push(divValue);
-          }
-        divValue++;
+      const results = [];
+      const current = [...divisions];
+
+
+      for (let col = 1; col < divisions.length; col++) {
+        for (let i = 1; i <= divisions[col]; i++) {
+          current[col] = i; // Ajustar o valor atual.
+          results.push(
+            current.map((value) => (value === 1 ? 0 : value)) // Substituir valores 1 por 0
+          ); 
+        }
+        current[col] = 1; // Resetar o valor da coluna após processar.
       }
-      return {id, matrix};
+    
+      return results;
+      // current tem como exemplo [5, 4, 0, 0, 0] ou [0, 4, 0, 2, 3]
+    //   let divValue = 1;
+      // Este divValue vai ter referência com a o item que esta sendo tratado do newStock
+    //   for (let xi = 0; xi < divisions.length; xi++) {
+    //     if (divisions[xi] = 0) continue;
+    //     const divSize = divisions[xi];
+    //     for (let xj = 0; xj < divSize; xj++) {
+    //     current.push(divValue);
+    //       }
+    //     divValue++;
+    //   }
+    //   return {id, current};
     });
+
+
     // for (let w = 0; w < stockMatrix.length; w++) {
     //   //
     //   await prisma.stockDetail.create({
