@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 
 async function main() {
-  for (let i = 0; i > productsTable.length -1; i++) {
+  for (let i = 0; i < productsTable.length -1; i++) {
     const sku = `${productsTable[i].name.split(' ').join('_').toUpperCase()}`;
 
     await prisma.product.create({
