@@ -1,4 +1,4 @@
-const products = [
+const productsTable = [
     { id: 1, name: 'Bermuda', price: 80, 
       description: 'Bermuda de boa qualidade, ideal para o seu estilo e conforto.', 
       details: [1, 2, 4, 5] 
@@ -93,3 +93,5 @@ const products = [
     }
   ]
   
+
+export default productsTable;

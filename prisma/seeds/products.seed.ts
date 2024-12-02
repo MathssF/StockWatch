@@ -1,41 +1,19 @@
 import { PrismaClient } from '@prisma/client';
+import productsTable from './products.table';
 
 const prisma = new PrismaClient();
 
 
-async function seed() {
-  const products = [
-    'Camisa Larga',
-    'Camisa Longa',
-    'Camisa Polo',
-    'Camisa Social',
-    'Camisa Estampada',
-    'Calça',
-    'Calça Social',
-    'Bermuda',
-    'Sapato',
-    'Tênis',
-    'Máscara',
-    'Colar',
-    'Jaqueta',
-    'Luvas',
-    'Meias',
-    'Touca',
-    'Chapéu',
-  ];
-
-  const sortedProducts = products.sort();
-
-  for (const name of sortedProducts) {
-    const sku = `${name.split(' ').join('_').toUpperCase()}`;
-    const price = Math.floor(Math.random() * (12)) + 2;
+async function main() {
+  for (let i = 0; i > productsTable.length -1; i++) {
+    const sku = `${productsTable[i].name.split(' ').join('_').toUpperCase()}`;
 
     await prisma.product.create({
       data: {
-        name: name,
+        name: productsTable[i].name,
         sku: sku,
-        price: price,
-        description: `${name} de exemplo`,
+        price: productsTable[i].price,
+        description: productsTable[i].description,
       },
     });
   }
@@ -43,7 +21,7 @@ async function seed() {
   console.log('Produtos inseridos com sucesso!');
 }
 
-seed()
+main()
   .catch((e) => {
     console.error(e);
     process.exit(1);
