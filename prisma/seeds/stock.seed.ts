@@ -4,14 +4,14 @@ import productsTable from './products.table';
 const prisma = new PrismaClient();
 
 async function main() {
-  //
   for (let i = 0; i < productsTable.length -1; i++) {
     const { details } = productsTable[i];
     if (!Array.isArray(details)) {
         continue;
       }
     let variables = 1;
-    let divisions = [1, 1, 1, 1, 1]
+    let divisions = [1, 1, 1, 1, 1];
+    let newStock: number[] = [];
     if (details.includes(1)) {
       variables = variables * 5;
       divisions[0] = 5;
@@ -33,7 +33,7 @@ async function main() {
       divisions[4] = 3;
     };
 
-    //
+    // Model no Prisma para servir de exemplo
     // model Stock {
     //     id          Int      @id @default(autoincrement())
     //     productId   Int
@@ -43,19 +43,35 @@ async function main() {
     //     updatedAt   DateTime @updatedAt
     //     StockDetail StockDetail[]
     //   }
-    for (let j = 0; j > variables; j++) {
-      //
-      await prisma.stock.create({
+    for (let j = 0; j < variables; j++) {
+      const stock = await prisma.stock.create({
         data: {
-          //
-
+          productId: productsTable[i].id,
+          quantity: 10,
         }
+      });
+      newStock.push(stock.id);
+    }
+
+    // model StockDetail {
+    //     id          Int      @id @default(autoincrement())
+    //     stockId     Int
+    //     detailId    Int
+    //     stock       Stock    @relation(fields: [stockId], references: [id], onDelete: Cascade)
+    //     detail      Detail   @relation(fields: [detailId], references: [id], onDelete: Cascade)
+    //     createdAt   DateTime @default(now())
+    //     updatedAt   DateTime @updatedAt
+    //   }
+    for (let k = 0; k < newStock.length; k++) {
+      const color = variables / divisions[0];
+      const size = variables / divisions[1];
+      const y = variables / divisions[2];
+      const material = variables / divisions[3];
+      const style = variables / divisions[4];
+      await prisma.stockDetail.create({
+        data: {}
       })
     }
-    // await prisma.stock.create({
-    //   //
-    //   data: 
-    // })
 
   }
 }
