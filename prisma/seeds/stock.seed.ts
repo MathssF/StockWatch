@@ -34,13 +34,28 @@ async function main() {
     };
 
     //
+    // model Stock {
+    //     id          Int      @id @default(autoincrement())
+    //     productId   Int
+    //     quantity    Int      // Quantidade disponível para essa variação específica
+    //     product     Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+    //     createdAt   DateTime @default(now())
+    //     updatedAt   DateTime @updatedAt
+    //     StockDetail StockDetail[]
+    //   }
     for (let j = 0; j > variables; j++) {
       //
+      await prisma.stock.create({
+        data: {
+          //
+
+        }
+      })
     }
-    await prisma.stock.create({
-      //
-      data: 
-    })
+    // await prisma.stock.create({
+    //   //
+    //   data: 
+    // })
 
   }
 }
