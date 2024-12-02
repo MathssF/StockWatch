@@ -1,0 +1,30 @@
+Product:
+    Camisa
+
+Stock:
+    Stock 1 Camisa
+    Stock 2 Camisa
+    Stock 3 Camisa
+    Stock 4 Camisa
+
+Stock Detail:
+    Stock 1 é uma Camisa Amarela
+    Stock 1 é uma Camisa M
+    Stock 2 é uma Camisa Amarela
+    Stock 2 é uma Camisa P
+    Stock 3 é uma Camisa Verde
+    Stock 3 é uma Camisa M
+    Stock 4 é uma Camisa Verde
+    Stock 4 é uma Camisa P
+
+Detail
+    Cor Amarela
+    Cor Verde
+    Tamanho P
+    Tamanho M
+
+Detail Type
+    Cor
+    Tamanho
+
+
