@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
+import mapToProcessedMatrix from '../utils/stockA.utils';
 
 const prisma = new PrismaClient();
 
@@ -77,54 +78,11 @@ async function main() {
         updatedAt   DateTime @updatedAt
     }
     */
+    const stockMatrix = mapToProcessedMatrix(newStock, divisions);
+    for(let w = 0; w < stockMatrix.length; w++) {
+      //
 
-
-    const stockMatrix = newStock.map((id) => {
-      const results = [];
-      const current = [...divisions];
-
-
-      for (let col = 1; col < divisions.length; col++) {
-        for (let i = 1; i <= divisions[col]; i++) {
-          current[col] = i; // Ajustar o valor atual.
-          results.push(
-            current.map((value) => (value === 1 ? 0 : value)) // Substituir valores 1 por 0
-          ); 
-        }
-        current[col] = 1; // Resetar o valor da coluna após processar.
-      }
-    
-      return results;
-      // current tem como exemplo [5, 4, 0, 0, 0] ou [0, 4, 0, 2, 3]
-    //   let divValue = 1;
-      // Este divValue vai ter referência com a o item que esta sendo tratado do newStock
-    //   for (let xi = 0; xi < divisions.length; xi++) {
-    //     if (divisions[xi] = 0) continue;
-    //     const divSize = divisions[xi];
-    //     for (let xj = 0; xj < divSize; xj++) {
-    //     current.push(divValue);
-    //       }
-    //     divValue++;
-    //   }
-    //   return {id, current};
-    });
-
-
-    // for (let w = 0; w < stockMatrix.length; w++) {
-    //   //
-    //   await prisma.stockDetail.create({
-    //     data: {}
-    //   })
-    // }
-
-
-
-    
-    // const color = variables / divisions[0];
-    // const size = variables / divisions[1];
-    // const y = variables / divisions[2];
-    // const material = variables / divisions[3];
-    // const style = variables / divisions[4];
+    }
 
   }
 }
