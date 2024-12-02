@@ -15,22 +15,32 @@ async function main() {
     if (details.includes(1)) {
       variables = variables * 5;
       divisions[0] = 5;
+    } else {
+      divisions[0] = 0;
     };
     if (details.includes(2)) {
       variables = variables * 4;
       divisions[1] = 4;
+    } else {
+      divisions[1] = 0;
     };
     if (details.includes(3)) {
       variables = variables * 3;
       divisions[2] = 3;
+    } else {
+      divisions[2] = 0;
     };
     if (details.includes(4)) {
       variables = variables * 2;
       divisions[3] = 2;
+    } else {
+      divisions[3] = 0;
     };
     if (details.includes(5)) {
       variables = variables * 3;
       divisions[4] = 3;
+    } else {
+      divisions[4] = 0;
     };
 
     // Model no Prisma para servir de exemplo
@@ -68,15 +78,12 @@ async function main() {
     }
     */
     const stockMatrix = newStock.map((id) => {
-      let divStock = divisions;
       const matrix = [...divisions];
+    //   let newMatrix: array[number[]]= [];
       let divValue = 1;
-      for (let divX = 0; divX < 5; divX++) {
-        if (divStock[divX] === 1) divStock[divX] = 0;
-      }
-      for (let xi = 0; xi < divStock.length; xi++) {
-        if (divStock[xi] = 0) continue;
-        const divSize = divStock[xi];
+      for (let xi = 0; xi < divisions.length; xi++) {
+        if (divisions[xi] = 0) continue;
+        const divSize = divisions[xi];
         for (let xj = 0; xj < divSize; xj++) {
         matrix.push(divValue);
           }
