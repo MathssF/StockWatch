@@ -68,15 +68,10 @@ async function main() {
     }
     */
     const stockMatrix = newStock.map((id) => {
-      let divStock = divisions;
       const matrix = [...divisions];
       let divValue = 1;
-      for (let divX = 0; divX < 5; divX++) {
-        if (divStock[divX] === 1) divStock[divX] = 0;
-      }
       for (let xi = 0; xi < 5; xi++) {
-        if (divStock[xi] = 0) continue;
-        const divSize = divStock[xi];
+        const divSize = divisions[xi];
         for (let xj = 0; xj < divSize; xj++) {
         matrix.push(divValue);
           }
