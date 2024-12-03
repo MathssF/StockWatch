@@ -78,8 +78,10 @@ model OrderItem {
   id        Int      @id @default(autoincrement())
   orderId   Int
   order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
-  productId Int
-  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  stockId   Int      // Relacionamento com a variação específica do produto
+  stock     Stock    @relation(fields: [stockId], references: [id], onDelete: Cascade)
+  // productId Int
+  // product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
   quantity  Int
   price     Float
 }

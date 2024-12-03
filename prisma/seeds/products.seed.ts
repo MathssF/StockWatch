@@ -1,8 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
 
-// const prisma = new PrismaClient();
-
 
 export default async function mainP(prisma: PrismaClient) {
   for (let i = 0; i < productsTable.length -1; i++) {
@@ -20,12 +18,3 @@ export default async function mainP(prisma: PrismaClient) {
 
   console.log('Produtos inseridos com sucesso!');
 }
-
-// mainP()
-//   .catch((e) => {
-//     console.error(e);
-//     process.exit(1);
-//   })
-//   .finally(async () => {
-//     await prisma.$disconnect();
-//   });

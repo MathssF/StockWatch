@@ -4,8 +4,6 @@ import mapToProcessedMatrix from '../utils/stockA.utils';
 import generateArrayFinal from '../utils/stoclB.utils';
 import { color, size, year, materials, style } from './datails.table';
 
-// const prisma = new PrismaClient();
-
 export default async function mainS(prisma: PrismaClient) {
   let newColor: number[] = [];
   let newYear: number[] = [];
@@ -98,12 +96,3 @@ export default async function mainS(prisma: PrismaClient) {
 
   }
 }
-
-// mainS()
-//   .catch((e) => {
-//     console.error(e);
-//     process.exit(1);
-//   })
-//   .finally(async () => {
-//     await prisma.$disconnect();
-//   });
