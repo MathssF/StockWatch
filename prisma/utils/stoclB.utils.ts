@@ -5,7 +5,7 @@ export default function generateArrayD(
   const arrayD = arrayC.map((item) => {
     const { id, matrix } = item;
     
-    const newMatrix = [];
+    const newMatrix: number[] = [];
     
     matrix.forEach((value, index) => {
       if (value !== 0) {
@@ -37,28 +37,3 @@ export default function generateArrayD(
 
   return arrayD;
 }
-
-// // Exemplo de uso
-// const arrayC = [
-//   { id: 9, matrix: [0, 1, 1, 0, 0] },
-//   { id: 10, matrix: [0, 2, 1, 0, 0] },
-//   { id: 11, matrix: [0, 3, 1, 0, 0] },
-//   { id: 12, matrix: [0, 4, 1, 0, 0] },
-//   { id: 13, matrix: [0, 1, 2, 0, 0] },
-//   { id: 14, matrix: [0, 2, 2, 0, 0] },
-//   { id: 15, matrix: [0, 3, 2, 0, 0] },
-//   { id: 16, matrix: [0, 4, 2, 0, 0] },
-//   { id: 17, matrix: [0, 1, 3, 0, 0] },
-//   { id: 18, matrix: [0, 2, 3, 0, 0] },
-//   { id: 19, matrix: [0, 3, 3, 0, 0] },
-//   { id: 20, matrix: [0, 4, 3, 0, 0] }
-// ];
-
-// const color = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119];
-// const size = [201, 202, 203, 204];
-// const year = [301, 302, 303, 304, 305, 306, 307];
-// const materials = [401, 402, 403, 404];
-// const styles = [501, 502, 503, 504, 505, 506];
-
-// const arrayD = generateArrayD(arrayC, color, size, year, materials, styles);
-// console.log(arrayD);
