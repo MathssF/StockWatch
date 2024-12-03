@@ -8,7 +8,7 @@ const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
 export async function consumeQueue(
     queueName: string,
-    processMessage: (message: string, pId?: string | null) => void) {
+    processMessage: (message: string) => void) {
   //
   try {
     //
@@ -26,7 +26,6 @@ export async function consumeQueue(
         const messageContent = msg.content.toString();
         const consumerId = msg.properties.messageId || new Date().getTime().toString();
         const { id, message } = parseMessage(messageContent);
-        // const { message } = parseMessage(messageContent);
 
         console.log(`A Seguinte mensagem foi recebida:.. ${messageContent}`);
 

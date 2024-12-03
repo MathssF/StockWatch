@@ -67,10 +67,24 @@ model RabbitMQMessage {
   updatedAt   DateTime @updatedAt
 }
 
+model Customer {
+  id        Int        @id @default(autoincrement())
+  name      String
+  lastname  String
+  email     String?    @unique
+  phone     String?    @unique
+  insta     String?    @unique
+  orders    Order[]
+  birthdate Date
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
 model Order {
   id          Int             @id @default(autoincrement())
   orderNumber String          @unique
   customerId  Int
+  customer    Customer        @relation("CustomerOrders", fields: [customerId], references: [id], onDelete: Cascade)
   items       OrderItem[]
   status      String          // 'PENDING', 'SHIPPED', 'DELIVERED', 'CANCELLED'
   createdAt   DateTime        @default(now())
@@ -82,8 +96,6 @@ model OrderItem {
   order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
   stockId   Int      // Relacionamento com a variação específica do produto
   stock     Stock    @relation(fields: [stockId], references: [id], onDelete: Cascade)
-  // productId Int
-  // product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
   quantity  Int
   price     Float
 }
