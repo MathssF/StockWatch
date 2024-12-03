@@ -5,7 +5,9 @@ const prisma = new PrismaClient();
 
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
-export async function consumeQueue(queueName: string, processMessage: (message: string) => void) {
+export async function consumeQueue(
+    queueName: string,
+    processMessage: (pId: string | null, message: string) => void) {
   //
   try {
     //
@@ -21,26 +23,34 @@ export async function consumeQueue(queueName: string, processMessage: (message: 
     channel.consume(queueName, async (msg) => {
       if (msg) {
         const messageContent = msg.content.toString();
+        const consumerId = msg.properties.messageId || new Date().getTime().toString();
+        const { id, message } = parseMessage(messageContent);
+
         console.log(`A Seguinte mensagem foi recebida:.. ${messageContent}`);
 
-        // const dbMessage = await prisma.rabbitMQMessage.create({
-        //   data: {
-        //     messageId,
-        //     queue: queueName,
-        //     status: 'PENDING',
-        //   },
-        // });
+        const dbMessage = await prisma.rabbitMQMessage.create({
+          data: {
+            producerId: id || 'UNKNOWN',
+            consumerId,
+            queue: queueName,
+            status: 'PENDING',
+          },
+        });
 
         // Processamento da mensagem:
         try {
           const result = await processMessage(messageContent);
-        //   await prisma.rabbitMQMessage.update({
-        //     where: { id: dbMessage.id },
-        //     data: { status: 'PROCESSED' },
-        //   });
+          await prisma.rabbitMQMessage.update({
+            where: { id: dbMessage.id },
+            data: { status: 'PROCESSED' },
+          });
           channel.ack(msg)
         } catch(error) {
           console.error('Erro ao processar a mensagem', error);
+          await prisma.rabbitMQMessage.update({
+            where: { id: dbMessage.id },
+            data: { status: 'FAILED' },
+          });
           channel.nack(msg, false, false);
         }
       }
@@ -49,4 +59,8 @@ export async function consumeQueue(queueName: string, processMessage: (message: 
   } catch(error) {
     console.error('Erro ao consumir fila:', error)
   }
+}
+
+function parseMessage(messageContent: string): { id: any; message: any; } {
+    throw new Error('Function not implemented.');
 }

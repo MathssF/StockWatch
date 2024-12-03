@@ -11,12 +11,6 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
       durable: false,
     });
 
-    // const queueNameWithId = id ? `${queueName}_${id}` : queueName;
-    // await channel.assertQueue(queueNameWithId, {
-    //   durable: false,
-    // });
-    // channel.sendToQueue(queueNameWithId, Buffer.from(message));
-
     await channel.assertQueue(queueName, {
       durable: false,
     })

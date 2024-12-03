@@ -59,6 +59,8 @@ model StockDetail {
 model RabbitMQMessage {
   id          Int      @id @default(autoincrement())
   messageId   String   @unique // ID da mensagem no RabbitMQ
+  produceId   String
+  consumerId  String
   queue       String   // Nome da fila onde a mensagem foi processada
   status      String   // 'PENDING', 'PROCESSED', 'FAILED'
   createdAt   DateTime @default(now())
