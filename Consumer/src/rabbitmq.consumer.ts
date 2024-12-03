@@ -1,8 +1,6 @@
 import amqp from 'amqplib';
 import { PrismaClient } from '@prisma/client';
 
-// ERRO: Aqui tenho que escolher entre tirare o id de um lugar ou de outro
-
 
 const prisma = new PrismaClient();
 
@@ -10,7 +8,7 @@ const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
 export async function consumeQueue(
     queueName: string,
-    processMessage: (pId: string | null, message: string) => void) {
+    processMessage: (message: string, pId?: string | null) => void) {
   //
   try {
     //
@@ -28,6 +26,7 @@ export async function consumeQueue(
         const messageContent = msg.content.toString();
         const consumerId = msg.properties.messageId || new Date().getTime().toString();
         const { id, message } = parseMessage(messageContent);
+        // const { message } = parseMessage(messageContent);
 
         console.log(`A Seguinte mensagem foi recebida:.. ${messageContent}`);
 

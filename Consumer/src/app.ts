@@ -18,7 +18,7 @@ app.post('/start-consumer', async (req: Request, res: Response): Promise<any> =>
   }
 
   try {
-    await consumeQueue(queueName, async (id, message) => {
+    await consumeQueue(queueName, async (message) => {
       console.log('Processando a Mengagem da fila ', queueName);
       console.log('Mensagem: ', message)
       // return res(200).send(message);
