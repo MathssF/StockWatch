@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { sendToQueue } from './rabbitmq';
+import { sendToQueue } from './rabbitmq.producer';
 
 const app = express();
 const PORT = process.env.PRODUCER_PORT || 3000;
