@@ -1,10 +1,16 @@
 import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
 import mapToProcessedMatrix from '../utils/stockA.utils';
+import { color, size, year, materials, style } from './datails.table';
 
 const prisma = new PrismaClient();
 
 async function main() {
+  let newColor = [];
+//   let newSize = [];
+  let newYear = [];
+  let newMaterials = [];
+  let newStyles = [];
   for (let i = 0; i < productsTable.length -1; i++) {
     const { details } = productsTable[i];
     if (!Array.isArray(details)) {
@@ -16,6 +22,7 @@ async function main() {
     if (details.includes(1)) {
       variables = variables * 5;
       divisions[0] = 5;
+
     // } else {
     //   divisions[0] = 0;
     };
