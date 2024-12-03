@@ -2,7 +2,7 @@ import amqp from 'amqplib';
 
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
-async function sendToQueue(queueName: string, message: string, id?: string) {
+export async function sendToQueue(queueName: string, message: string, id?: string) {
   //
   try {
     //
