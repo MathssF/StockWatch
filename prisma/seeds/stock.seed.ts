@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
 import mapToProcessedMatrix from '../utils/stockA.utils';
+import generateArrayFinal from '../utils/stoclB.utils';
 import { color, size, year, materials, style } from './datails.table';
 
 const prisma = new PrismaClient();
@@ -22,36 +23,26 @@ async function main() {
       variables = variables * 5;
       divisions[0] = 5;
       newColor = color.sort(() => Math.random() - 0.5).slice(0, 5);
-    // } else {
-    //   divisions[0] = 0;
     };
     if (details.includes(2)) {
       variables = variables * 4;
       divisions[1] = 4;
-    // } else {
-    //   divisions[1] = 0;
     };
     if (details.includes(3)) {
       variables = variables * 3;
       divisions[2] = 3;
-      newYear = color.sort(() => Math.random() - 0.5).slice(0, 3);
-    // } else {
-    //   divisions[2] = 0;
+      newYear = year.sort(() => Math.random() - 0.5).slice(0, 3);
     };
     if (details.includes(4)) {
       variables = variables * 2;
       divisions[3] = 2;
-      newMaterials = color.sort(() => Math.random() - 0.5).slice(0, 2);
-    // } else {
-    //   divisions[3] = 0;
+      newMaterials = materials.sort(() => Math.random() - 0.5).slice(0, 2);
     };
     if (details.includes(5)) {
       variables = variables * 3;
       divisions[4] = 3;
-      newStyles = color.sort(() => Math.random() - 0.5).slice(0, 2);
+      newStyles = style.sort(() => Math.random() - 0.5).slice(0, 2);
       newStyles.push(501)
-    // } else {
-    //   divisions[4] = 0;
     };
 
     // Model no Prisma para servir de exemplo
@@ -89,9 +80,20 @@ async function main() {
     }
     */
     const stockMatrix = mapToProcessedMatrix(newStock, divisions);
-    for(let w = 0; w < stockMatrix.length; w++) {
-      //
-
+    const finalStock = generateArrayFinal(
+      stockMatrix, newColor,
+      size, newYear,
+      newMaterials, newStyles,
+    )
+    for(let m = 0; m < finalStock.length; m++) {
+      for(let n = 0; n < finalStock[m].matrix.length; n++) {
+        await prisma.stockDetail.create({
+          data: {
+            stockId: finalStock[m].id, 
+            detailId: finalStock[m].matrix[n],
+          }
+        })
+      }
     }
 
   }

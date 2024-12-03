@@ -1,8 +1,8 @@
 export default function generateArrayFinal(
-    arrayC: { id: number; matrix: number[] }[],
+    stockMatrix: { id: number; matrix: number[] }[],
     color: number[], size: number[], year: number[], materials: number[], styles: number[]
   ) {
-  const arrayD = arrayC.map((item) => {
+  const finalStock = stockMatrix.map((item) => {
     const { id, matrix } = item;
     
     const newMatrix: number[] = [];
@@ -35,5 +35,5 @@ export default function generateArrayFinal(
     };
   });
 
-  return arrayD;
+  return finalStock;
 }
