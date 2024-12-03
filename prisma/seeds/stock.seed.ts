@@ -6,7 +6,7 @@ import { color, size, year, materials, style } from './datails.table';
 
 const prisma = new PrismaClient();
 
-async function main() {
+export default async function mainS() {
   let newColor: number[] = [];
   let newYear: number[] = [];
   let newMaterials: number[] = [];
@@ -99,7 +99,7 @@ async function main() {
   }
 }
 
-main()
+mainS()
   .catch((e) => {
     console.error(e);
     process.exit(1);

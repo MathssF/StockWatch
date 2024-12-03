@@ -3,7 +3,7 @@ import { detailTypes, details } from './datails.table';
 
 const prisma = new PrismaClient();
 
-async function main() {
+export default async function mainD() {
   const detailTypesCreated = await Promise.all(
     detailTypes.map((detailType) => 
       prisma.detailType.create({
@@ -28,7 +28,7 @@ async function main() {
 
   console.log('Seed completed');
 }
-main()
+mainD()
   .catch((e) => {
     throw e;
   })

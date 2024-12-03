@@ -4,7 +4,7 @@ import productsTable from './products.table';
 const prisma = new PrismaClient();
 
 
-async function main() {
+export default async function mainP() {
   for (let i = 0; i < productsTable.length -1; i++) {
     const sku = `${productsTable[i].name.split(' ').join('_').toUpperCase()}`;
 
@@ -21,7 +21,7 @@ async function main() {
   console.log('Produtos inseridos com sucesso!');
 }
 
-main()
+mainP()
   .catch((e) => {
     console.error(e);
     process.exit(1);
