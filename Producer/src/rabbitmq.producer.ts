@@ -11,13 +11,20 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
       durable: false,
     });
 
-    const queueNameWithId = id ? {queueName, id} : {queueName};
-    await channel.assertQueue(queueNameWithId, {
-      durable: false,
-    });
-    channel.sendToQueue(queueNameWithId, Buffer.from(message));
+    // const queueNameWithId = id ? `${queueName}_${id}` : queueName;
+    // await channel.assertQueue(queueNameWithId, {
+    //   durable: false,
+    // });
+    // channel.sendToQueue(queueNameWithId, Buffer.from(message));
 
-    console.log(`Mensagem enviada para a fila ${queueNameWithId}: ${message}`);
+    await channel.assertQueue(queueName, {
+      durable: false,
+    })
+
+    const messageToSend = id ? JSON.stringify({ id, message }) : message;
+    channel.sendToQueue(queueName, Buffer.from(messageToSend));
+
+    console.log(`Mensagem enviada para a fila ${queueName}: ${message}`);
 
     setTimeout(() => {
       connection.close();
