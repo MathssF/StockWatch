@@ -3,9 +3,7 @@ import amqp from 'amqplib';
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
 export async function sendToQueue(queueName: string, message: string, id?: string) {
-  //
   try {
-    //
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
 
@@ -13,11 +11,8 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
       durable: false,
     });
 
-    if (id) {
-      channel.sendToQueue(id, queueName, Buffer.from(message));
-    } else {
-      channel.sendToQueue(queueName, Buffer.from(message));
-    }
+    const messageToSend = id ? JSON.stringify({ id, message }) : message;
+    channel.sendToQueue(queueName, Buffer.from(messageToSend));
     console.log(`Mensagem enviada para a fila ${queueName}: ${message}`);
 
     setTimeout(() => {
