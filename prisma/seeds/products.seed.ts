@@ -1,10 +1,10 @@
 import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
 
-const prisma = new PrismaClient();
+// const prisma = new PrismaClient();
 
 
-export default async function mainP() {
+export default async function mainP(prisma: PrismaClient) {
   for (let i = 0; i < productsTable.length -1; i++) {
     const sku = `${productsTable[i].name.split(' ').join('_').toUpperCase()}`;
 
@@ -21,11 +21,11 @@ export default async function mainP() {
   console.log('Produtos inseridos com sucesso!');
 }
 
-mainP()
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+// mainP()
+//   .catch((e) => {
+//     console.error(e);
+//     process.exit(1);
+//   })
+//   .finally(async () => {
+//     await prisma.$disconnect();
+//   });
