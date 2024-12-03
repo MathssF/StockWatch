@@ -1,6 +1,9 @@
 import amqp from 'amqplib';
 import { PrismaClient } from '@prisma/client';
 
+// ERRO: Aqui tenho que escolher entre tirare o id de um lugar ou de outro
+
+
 const prisma = new PrismaClient();
 
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
