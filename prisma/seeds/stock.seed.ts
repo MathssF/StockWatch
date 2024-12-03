@@ -6,11 +6,10 @@ import { color, size, year, materials, style } from './datails.table';
 const prisma = new PrismaClient();
 
 async function main() {
-  let newColor = [];
-//   let newSize = [];
-  let newYear = [];
-  let newMaterials = [];
-  let newStyles = [];
+  let newColor: number[] = [];
+  let newYear: number[] = [];
+  let newMaterials: number[] = [];
+  let newStyles: number[] = [];
   for (let i = 0; i < productsTable.length -1; i++) {
     const { details } = productsTable[i];
     if (!Array.isArray(details)) {
@@ -22,7 +21,7 @@ async function main() {
     if (details.includes(1)) {
       variables = variables * 5;
       divisions[0] = 5;
-
+      newColor = color.sort(() => Math.random() - 0.5).slice(0, 5);
     // } else {
     //   divisions[0] = 0;
     };
@@ -35,18 +34,22 @@ async function main() {
     if (details.includes(3)) {
       variables = variables * 3;
       divisions[2] = 3;
+      newYear = color.sort(() => Math.random() - 0.5).slice(0, 3);
     // } else {
     //   divisions[2] = 0;
     };
     if (details.includes(4)) {
       variables = variables * 2;
       divisions[3] = 2;
+      newMaterials = color.sort(() => Math.random() - 0.5).slice(0, 2);
     // } else {
     //   divisions[3] = 0;
     };
     if (details.includes(5)) {
       variables = variables * 3;
       divisions[4] = 3;
+      newStyles = color.sort(() => Math.random() - 0.5).slice(0, 2);
+      newStyles.push(501)
     // } else {
     //   divisions[4] = 0;
     };

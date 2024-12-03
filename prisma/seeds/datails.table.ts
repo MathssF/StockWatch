@@ -60,6 +60,10 @@ const details = [
 ];
 
 const color = [
+  101, 102, 103, 104, 105, 106, 107, 108, 109, 110,
+  111, 112, 113, 114, 115, 116, 117, 118, 119,
+]
+const colorMatrix = [
   { type: 1, id: 101, value: 'Amarelo' },
   { type: 1, id: 102, value: 'Azul' },
   { type: 1, id: 103, value: 'Bege' },
@@ -81,14 +85,16 @@ const color = [
   { type: 1, id: 119, value: 'Vermelho' },
 ]
 
-const size = [
+const size = [ 201, 202, 203, 204]
+const sizeMatrix = [
   { type: 2, id: 201, value: 'P' },
   { type: 2, id: 202, value: 'M' },
   { type: 2, id: 203, value: 'G' },
   { type: 2, id: 204, value: 'GG' },
 ]
 
-const year = [
+const year = [301, 302, 303, 304, 305, 306, 307]
+const yearMatrix = [
   { type: 3, id: 301, value: '2000' },
   { type: 3, id: 302, value: '2010' },
   { type: 3, id: 303, value: '2020' },
@@ -98,7 +104,9 @@ const year = [
   { type: 3, id: 307, value: '2024' },
 ]
 
-const materials = [
+const materials = [401, 402, 403, 404]
+const materialsFull = [401, 402, 403, 404, 411, 412, 413, 414, 415, 416]
+const materialsMatrix = [
   { type: 4, id: 401, value: 'Algodão' },
   { type: 4, id: 402, value: 'Tecido' },
   { type: 4, id: 403, value: 'Seda' },
@@ -111,7 +119,9 @@ const materials = [
   { type: 4, id: 416, value: 'Prata' },
 ]
 
-const style = [
+const style = [502, 503, 504, 505, 506]
+const styleFull = [501, 502, 503, 504, 505, 506]
+const styleMatrix = [
   { type: 5, id: 501, value: 'Básico' },
   { type: 5, id: 502, value: 'Fofo' },
   { type: 5, id: 503, value: 'Nerd' },
@@ -120,6 +130,9 @@ const style = [
   { type: 5, id: 506, value: 'Praia' }
 ]
 
-export { detailTypes, details,
-  color, size, year, materials, style
+export {
+  detailTypes, details,
+  color, size, year, materials, style,
+  colorMatrix, sizeMatrix, yearMatrix, materialsMatrix, styleMatrix,
+  materialsFull, styleFull
 }

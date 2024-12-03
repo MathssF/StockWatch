@@ -26,8 +26,3 @@ Detail
 Detail Type
     Cor
     Tamanho
-
-
-{ id: arrayC[i].id, matrix: [ color[arrayC.matrix[i].matrix[0]], size[arrayC.matrix[i].matrix[1]], year[arrayC.matrix[i].matrix[2]], materials[arrayC.matrix[i].matrix[3]], style[arrayC.matrix[i].matrix[4]] ]};
-
-Com uma observação: Nos lugares que valor do arrayC.matrix[i].matrix[j] for igual a zero, ele 

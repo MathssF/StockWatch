@@ -1,4 +1,4 @@
-export default function generateArrayD(
+export default function generateArrayFinal(
     arrayC: { id: number; matrix: number[] }[],
     color: number[], size: number[], year: number[], materials: number[], styles: number[]
   ) {
