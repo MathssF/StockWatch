@@ -9,9 +9,7 @@ const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 export async function consumeQueue(
     queueName: string,
     processMessage: (message: string) => void) {
-  //
   try {
-    //
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
 
@@ -38,7 +36,6 @@ export async function consumeQueue(
           },
         });
 
-        // Processamento da mensagem:
         try {
           const result = await processMessage(messageContent);
           await prisma.rabbitMQMessage.update({

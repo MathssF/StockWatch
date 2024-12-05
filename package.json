@@ -31,7 +31,7 @@
     "prisma": "^3.0.0",
     "typescript": "^4.5.0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["RabbitMQ", "Express", "MongoDB"],
+  "author": "Matheus Flores",
   "license": "ISC"
 }
