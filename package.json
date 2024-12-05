@@ -13,7 +13,8 @@
     "start:producer": "npm start --workspace=producer",
     "start:consumer": "npm start --workspace=consumer",
     "build": "npm run build --workspaces",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
@@ -22,16 +23,22 @@
     "express": "^4.17.1",
     "mongodb": "^5.0.0",
     "mongoose": "^8.8.3",
-    "mysql2": "^2.3.0"
+    "mysql2": "^2.3.0",
+    "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
     "@types/amqplib": "^0.10.5",
+    "@types/express": "^5.0.0",
     "nodemon": "^2.0.15",
-    "prisma": "^3.0.0",
+    "prisma": "^6.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "^4.5.0"
   },
-  "keywords": ["RabbitMQ", "Express", "MongoDB"],
+  "keywords": [
+    "RabbitMQ",
+    "Express",
+    "MongoDB"
+  ],
   "author": "Matheus Flores",
   "license": "ISC"
 }

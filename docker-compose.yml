@@ -1,9 +1,9 @@
-version: '3.8'
+# version: '3.8'
 
 services:
   # RabbitMQ
   rabbitmq:
-    image: "rabbitmq:management"
+    image: "rabbitmq:3-management"
     ports:
       - "15672:15672" # Portas de gerenciamento
       - "5672:5672"   # Porta para comunicação
@@ -13,7 +13,7 @@ services:
 
   # MySQL
   mysql:
-    image: mysql:8.0
+    image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -24,7 +24,7 @@ services:
 
   # MongoDB
   mongo:
-    image: mongo:5.0
+    image: mongo:latest
     container_name: mongo_container
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-root}
@@ -46,7 +46,7 @@ services:
       - "${PRODUCER_PORT}:${PRODUCER_PORT}"
     environment:
       DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:${MYSQL_PORT}/${MYSQL_DATABASE}"
-      RABBITMQ_URL: "${RABBITMQ_URI}"
+      RABBITMQ_URL: "${RABBITMQ_URL}"
     volumes:
       - .:/app
     command: npm run start:producer
@@ -63,7 +63,7 @@ services:
       - "${CONSUMER_PORT}:${PRODUCER_PORT}"
     environment:
       DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:${MYSQL_PORT}/${MYSQL_DATABASE}"
-      RABBITMQ_URL: "${RABBITMQ_URI}"
+      RABBITMQ_URL: "${RABBITMQ_URL}"
     volumes:
       - .:/app
     command: npm run start:consumer

@@ -44,6 +44,7 @@ model Stock {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   StockDetail StockDetail[]
+  orderItems  OrderItem[] // Relação oposta com OrderItem
 }
 
 model StockDetail {
@@ -74,8 +75,8 @@ model Customer {
   email     String?    @unique
   phone     String?    @unique
   insta     String?    @unique
-  orders    Order[]
-  birthdate Date
+  orders    Order[]    @relation("CustomerOrders")
+  birthdate DateTime
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
 }
