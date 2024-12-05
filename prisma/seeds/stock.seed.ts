@@ -95,4 +95,5 @@ export default async function mainS(prisma: PrismaClient) {
     }
 
   }
+  console.log('Estoque inserido com sucesso!')
 }

@@ -7,6 +7,9 @@
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
+
+      "noImplicitAny": false,
+      
       "baseUrl": "./",  // Define a base URL para resolução de módulos
       "paths": {
         "*": ["node_modules/*", "../node_modules/*"], // Adiciona um caminho extra para o node_modules da raiz

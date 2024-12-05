@@ -17,12 +17,12 @@ export default async function mainD(prisma: PrismaClient) {
       prisma.detail.create({
         data: {
           id: detail.id,
-          detailTypeId: detail.type,
+          typeId: detail.type,
           value: detail.value,
         },
       })
     )
   );
 
-  console.log('Seed completed');
+  console.log('Detalhes inseridos com sucesso!');
 }
