@@ -1,13 +1,11 @@
-const mongoose = require('mongoose');
-const fs = require('fs');
-const Product = require('./models/Product');  // Importando o modelo Product
+import mongoose from 'mongoose';
+import fs from 'fs';
+import { Product } from './models/Product';
 
-mongoose.connect('mongodb://localhost:27017/seu-banco-de-dados', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect('mongodb://localhost:27017/your_database', {})
+  .catch(err => console.error('Erro ao conectar ao banco de dados:', err));
 
-async function generateJson() {
+async function generateJson(): Promise<void> {
   try {
     const products = await Product.find().populate({
       path: 'stock',
@@ -28,25 +26,28 @@ async function generateJson() {
       Products: products.map(product => ({
         name: product.name,
         price: product.price,
-        stocks: product.stock.map(stock => ({
-          id: stock._id,
-          qtd: stock.quantity,
-          details: stock.stockDetails.map(stockDetail => ({
-            typeId: stockDetail.detailId.typeId._id,
+        stocks: product.stock.map((stock: any) => ({
+          id: stock._id.toString(),
+          quantityOpen: stock.quantity,
+          quantityNow: stock.quantity,
+          details: stock.stockDetails.map((stockDetail: any) => ({
+            typeId: stockDetail.detailId.typeId._id.toString(),
             type: stockDetail.detailId.typeId.name,
-            detailId: stockDetail.detailId._id,
+            detailId: stockDetail.detailId._id.toString(),
             detailName: stockDetail.detailId.value
-          }))
+          })),
+          orders: {},
         }))
       }))
     };
 
-    // Salvando o JSON em um arquivo
     fs.writeFileSync('output.json', JSON.stringify(jsonOutput, null, 2));
 
     console.log('Arquivo JSON gerado com sucesso!');
   } catch (err) {
     console.error('Erro ao gerar o JSON:', err);
+  } finally {
+    mongoose.connection.close();
   }
 }
 

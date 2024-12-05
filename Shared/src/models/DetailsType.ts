@@ -1,7 +1,11 @@
-const mongoose = require('mongoose');
+import mongoose, { Schema, Document } from 'mongoose';
 
-const detailTypeSchema = new mongoose.Schema({
-  name: String
+export interface IDetailType extends Document {
+  name: string;
+}
+
+const detailTypeSchema = new Schema<IDetailType>({
+  name: { type: String, required: true }
 });
 
-module.exports = mongoose.model('DetailType', detailTypeSchema);
+export const DetailType = mongoose.model<IDetailType>('DetailType', detailTypeSchema);

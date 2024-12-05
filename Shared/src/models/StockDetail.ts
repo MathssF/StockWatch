@@ -1,8 +1,13 @@
-const mongoose = require('mongoose');
+import mongoose, { Schema, Document } from 'mongoose';
 
-const stockDetailSchema = new mongoose.Schema({
-  stockId: { type: mongoose.Schema.Types.ObjectId, ref: 'Stock' },
-  detailId: { type: mongoose.Schema.Types.ObjectId, ref: 'Detail' }
+export interface IStockDetail extends Document {
+  stockId: mongoose.Types.ObjectId;
+  detailId: mongoose.Types.ObjectId;
+}
+
+const stockDetailSchema = new Schema<IStockDetail>({
+  stockId: { type: Schema.Types.ObjectId, ref: 'Stock', required: true },
+  detailId: { type: Schema.Types.ObjectId, ref: 'Detail', required: true }
 });
 
-module.exports = mongoose.model('StockDetail', stockDetailSchema);
+export const StockDetail = mongoose.model<IStockDetail>('StockDetail', stockDetailSchema);

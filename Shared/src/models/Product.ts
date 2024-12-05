@@ -1,9 +1,15 @@
-const mongoose = require('mongoose');
+import mongoose, { Schema, Document } from 'mongoose';
 
-const productSchema = new mongoose.Schema({
-  name: String,
-  price: Number,
-  stock: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Stock' }]
+export interface IProduct extends Document {
+  name: string;
+  price: number;
+  stock: mongoose.Types.ObjectId[];
+}
+
+const productSchema = new Schema<IProduct>({
+  name: { type: String, required: true },
+  price: { type: Number, required: true },
+  stock: [{ type: Schema.Types.ObjectId, ref: 'Stock' }]
 });
 
-module.exports = mongoose.model('Product', productSchema);
+export const Product = mongoose.model<IProduct>('Product', productSchema);
