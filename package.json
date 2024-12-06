@@ -17,7 +17,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts",
     "dev:basic": "ts-node -r tsconfig-paths/register prisma/seeds/basic-customers.seed.ts",
-    "generate:json": "ts-node ./Core/src/generateJson.ts"
+    "open:stock": "ts-node -r tsconfig-paths/register ./Core/src/generateJson.ts",
+    "close:stock": "ts-node -r tsconfig-paths/register ./Core/src/closeStock.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
