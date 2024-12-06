@@ -100,3 +100,32 @@ model OrderItem {
   quantity  Int
   price     Float
 }
+
+// Future:
+
+/*
+model CustomerPreferences {
+  id          Int      @id @default(autoincrement())
+  customerId  Int
+  detailId    Int
+  customer    Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  detail      Detail   @relation(fields: [detailId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+*/
+
+/*
+model CustomerPromotions {
+  id           Int          @id @default(autoincrement())
+  customerId   Int
+  stockId      Int
+  stockDetailId Int
+  customer     Customer     @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  stock        Stock        @relation(fields: [stockId], references: [id], onDelete: Cascade)
+  stockDetail  StockDetail  @relation(fields: [stockDetailId], references: [id], onDelete: Cascade)
+  promoValue   Int
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}
+*/
