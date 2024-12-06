@@ -3,132 +3,154 @@
   "Day": "06/12/2024",
   "Products": [
     {
+      "productId": 67,
       "name": "Bermuda",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 68,
       "name": "Bota",
       "price": 60,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 69,
       "name": "Calça",
       "price": 30,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 70,
       "name": "Calça Militar",
       "price": 70,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 71,
       "name": "Calça Social",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 72,
       "name": "Camisa Estampada",
       "price": 130,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 73,
       "name": "Camisa Larga",
       "price": 90,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 74,
       "name": "Camisa Longa",
       "price": 100,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 75,
       "name": "Camisa Militar",
       "price": 50,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 76,
       "name": "Camisa Polo",
       "price": 60,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 77,
       "name": "Camisa Social",
       "price": 110,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 78,
       "name": "Colar",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 79,
       "name": "Corrente",
       "price": 120,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 80,
       "name": "Jaqueta",
       "price": 90,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 81,
       "name": "Jaqueta Militar",
       "price": 130,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 82,
       "name": "Jaqueta de Couro",
       "price": 120,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 83,
       "name": "Luvas",
       "price": 30,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 84,
       "name": "Meias",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 85,
       "name": "Moleton",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 86,
       "name": "Máscara",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 87,
       "name": "Sapato",
       "price": 60,
       "promotions": {},
       "stocks": []
     },
     {
+      "productId": 88,
       "name": "Touca",
       "price": 50,
       "promotions": {},
