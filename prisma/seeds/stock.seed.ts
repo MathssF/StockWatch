@@ -16,35 +16,35 @@ export default async function mainS(prisma: PrismaClient) {
       }
     let variables = 1;
     let divisions = [1, 1, 1, 1, 1];
-    let types = [];
+    let types = [false, false, false, false, false];
     let newStock: number[] = [];
     if (details.includes(1)) {
       variables = variables * 5;
       divisions[0] = 5;
-      types.push[1];
+      types[0] = true;
       newColor = color.sort(() => Math.random() - 0.5).slice(0, 5);
     };
     if (details.includes(2)) {
       variables = variables * 4;
       divisions[1] = 4;
-      types.push[2];
+      types[1] = true;
     };
     if (details.includes(3)) {
       variables = variables * 3;
       divisions[2] = 3;
-      types.push[3];
+      types[2] = true;
       newYear = year.sort(() => Math.random() - 0.5).slice(0, 3);
     };
     if (details.includes(4)) {
       variables = variables * 2;
       divisions[3] = 2;
-      types.push[4];
+      types[3] = true;
       newMaterials = materials.sort(() => Math.random() - 0.5).slice(0, 2);
     };
     if (details.includes(5)) {
       variables = variables * 3;
       divisions[4] = 3;
-      types.push[5];
+      types[4] = true;
       newStyles = style.sort(() => Math.random() - 0.5).slice(0, 2);
       newStyles.push(501)
     };
