@@ -38,6 +38,7 @@ async function generateJson(): Promise<void> {
       Op: "ADM",
       Day: new Date().toLocaleDateString(),
       Products: products.map(product => ({
+        productId: product.id,
         name: product.name,
         price: product.price,
         promotions: {},

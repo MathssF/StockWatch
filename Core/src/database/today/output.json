@@ -1,0 +1,138 @@
+{
+  "Op": "ADM",
+  "Day": "06/12/2024",
+  "Products": [
+    {
+      "name": "Bermuda",
+      "price": 80,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Bota",
+      "price": 60,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Calça",
+      "price": 30,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Calça Militar",
+      "price": 70,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Calça Social",
+      "price": 80,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Camisa Estampada",
+      "price": 130,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Camisa Larga",
+      "price": 90,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Camisa Longa",
+      "price": 100,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Camisa Militar",
+      "price": 50,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Camisa Polo",
+      "price": 60,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Camisa Social",
+      "price": 110,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Colar",
+      "price": 80,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Corrente",
+      "price": 120,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Jaqueta",
+      "price": 90,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Jaqueta Militar",
+      "price": 130,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Jaqueta de Couro",
+      "price": 120,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Luvas",
+      "price": 30,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Meias",
+      "price": 80,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Moleton",
+      "price": 80,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Máscara",
+      "price": 80,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Sapato",
+      "price": 60,
+      "promotions": {},
+      "stocks": []
+    },
+    {
+      "name": "Touca",
+      "price": 50,
+      "promotions": {},
+      "stocks": []
+    }
+  ]
+}
