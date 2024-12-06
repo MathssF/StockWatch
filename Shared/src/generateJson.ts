@@ -1,13 +1,16 @@
-import mongoose from 'mongoose';
+import { connectMongo } from './mongoClient';
+// import mongoose from 'mongoose';
 import fs from 'fs';
 import { Product } from './models/Product.mongo';
 import path from 'path';
 
-mongoose.connect('mongodb://localhost:27017/your_database', {})
-  .catch(err => console.error('Erro ao conectar ao banco de dados:', err));
+// mongoose.connect('mongodb://localhost:27017/your_database', {})
+//   .catch(err => console.error('Erro ao conectar ao banco de dados:', err));
 
 async function generateJson(): Promise<void> {
   try {
+    await connectMongo();
+
     const products = await Product.find().populate({
       path: 'stock',
       populate: {
@@ -53,9 +56,9 @@ async function generateJson(): Promise<void> {
     console.log('Arquivo JSON gerado com sucesso!');
   } catch (err) {
     console.error('Erro ao gerar o JSON:', err);
-  } finally {
-    mongoose.connection.close();
-  }
+  } // finally {
+  //   mongoose.connection.close();
+  // }
 }
 
 generateJson();
