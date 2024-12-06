@@ -1,24 +1,43 @@
-import { connectMongo } from './mongoClient';
+// import { connectMongo } from './mongoClient';
+import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
-import { Product } from './models/Product.mongo';
+// import { Product } from './models/Product.mongo';
 import path from 'path';
+
+const prisma = new PrismaClient();
 
 async function generateJson(): Promise<void> {
   try {
-    await connectMongo();
-
-    const products = await Product.find().populate({
-      path: 'stock',
-      populate: {
-        path: 'stockDetails',
-        populate: {
-          path: 'detailId',
-          populate: {
-            path: 'typeId'
-          }
-        }
-      }
+    // await connectMongo();
+    const products = await prisma.product.findMany({
+      include: {
+        stocks: {
+          include: {
+            stockDetails: {
+              include: {
+                detailId: {
+                  include: {
+                    typeId: true,
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
     });
+    // const products = await Product.find().populate({
+    //   path: 'stock',
+    //   populate: {
+    //     path: 'stockDetails',
+    //     populate: {
+    //       path: 'detailId',
+    //       populate: {
+    //         path: 'typeId'
+    //       }
+    //     }
+    //   }
+    // });
 
     const jsonOutput = {
       Op: "ADM",
@@ -42,10 +61,14 @@ async function generateJson(): Promise<void> {
       }))
     };
 
-    const dir = '.Core/src/database/today';
+    const dir = './Core/src/database/today';
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
+
+    // Gerar o nome do arquivo com base no dia
+    // const fileName = `${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}stocks.json`;
+    // Caso precise usar no futuro
 
     fs.writeFileSync(path.join(dir, 'output.json'), JSON.stringify(jsonOutput, null, 2));
 
