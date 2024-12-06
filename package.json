@@ -8,11 +8,7 @@
     "Shared",
     "prisma"
   ],
-  "description": "",
-  "devComents": {
-    "this":"Este é uma parte do código, que o Desenvolvedor reserva, para comentários, antes da fase final de produção",
-    "": ""
-  },
+  "description": "Um projeto que tem como objetivo mostrar minhas habilidades em várias stacks",
   "scripts": {
     "start:producer": "npm start --workspace=producer",
     "start:consumer": "npm start --workspace=consumer",
