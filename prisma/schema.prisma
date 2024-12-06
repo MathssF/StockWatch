@@ -80,7 +80,7 @@ model Customer {
   email     String?    @unique
   phone     String?    @unique
   insta     String?    @unique
-  //pass    String?
+  pass      String?
   orders    Order[]    @relation("CustomerOrders")
   birthdate DateTime
   createdAt DateTime  @default(now())
