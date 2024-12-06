@@ -10,9 +10,8 @@ export default function generateArrayFinal(
     let indexT = 0;
 
     matrix.forEach((value) => {
-      // Para cada valor na matrix, percorre o array types
       for (indexT = 0; indexT < types.length; indexT++) {
-        if (types[indexT] === true) { // Executa a lógica apenas quando for 'true'
+        if (types[indexT] === true) {
           switch (indexT) {
             case 0:
               newMatrix.push(color[value - 1]);
@@ -32,32 +31,10 @@ export default function generateArrayFinal(
             default:
               break;
           }
-          break; // Depois de executar a lógica do 'switch', sai do loop e vai para o próximo índice
+          break;
         }
       }
     });
-    
-    // matrix.forEach((value, index) => {
-    //   if (value !== 0) {
-    //     switch (index) {
-    //       case 0:
-    //         newMatrix.push(color[value - 1]);
-    //         break;
-    //       case 1:
-    //         newMatrix.push(size[value - 1]);
-    //         break;
-    //       case 2:
-    //         newMatrix.push(year[value - 1]);
-    //         break;
-    //       case 3:
-    //         newMatrix.push(materials[value - 1]);
-    //         break;
-    //       case 4:
-    //         newMatrix.push(styles[value - 1]);
-    //         break;
-    //     }
-    //   }
-    // });
 
     return {
       id,
