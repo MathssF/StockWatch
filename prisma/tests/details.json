@@ -3,8 +3,8 @@
     "id": 101,
     "typeId": 1,
     "value": "Amarelo",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -14,8 +14,8 @@
     "id": 102,
     "typeId": 1,
     "value": "Azul",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -25,8 +25,8 @@
     "id": 103,
     "typeId": 1,
     "value": "Bege",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -36,8 +36,8 @@
     "id": 104,
     "typeId": 1,
     "value": "Branco",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -47,8 +47,8 @@
     "id": 105,
     "typeId": 1,
     "value": "Caramelo",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -58,8 +58,8 @@
     "id": 106,
     "typeId": 1,
     "value": "Carmesim",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -69,8 +69,8 @@
     "id": 107,
     "typeId": 1,
     "value": "Carmim",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -80,8 +80,8 @@
     "id": 108,
     "typeId": 1,
     "value": "Castanho",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -91,8 +91,8 @@
     "id": 109,
     "typeId": 1,
     "value": "Cinza",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -102,8 +102,8 @@
     "id": 110,
     "typeId": 1,
     "value": "Dourado",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -113,8 +113,8 @@
     "id": 111,
     "typeId": 1,
     "value": "Esmeralda",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -124,8 +124,8 @@
     "id": 112,
     "typeId": 1,
     "value": "Laranja",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -135,8 +135,8 @@
     "id": 113,
     "typeId": 1,
     "value": "Lilás",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.062Z",
+    "updatedAt": "2024-12-06T22:30:50.062Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -146,8 +146,8 @@
     "id": 114,
     "typeId": 1,
     "value": "Prateado",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.062Z",
+    "updatedAt": "2024-12-06T22:30:50.062Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -157,8 +157,8 @@
     "id": 115,
     "typeId": 1,
     "value": "Preto",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.062Z",
+    "updatedAt": "2024-12-06T22:30:50.062Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -168,8 +168,8 @@
     "id": 116,
     "typeId": 1,
     "value": "Rosa",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.062Z",
+    "updatedAt": "2024-12-06T22:30:50.062Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -179,8 +179,8 @@
     "id": 117,
     "typeId": 1,
     "value": "Roxo",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.062Z",
+    "updatedAt": "2024-12-06T22:30:50.062Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -190,8 +190,8 @@
     "id": 118,
     "typeId": 1,
     "value": "Verde",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -201,8 +201,8 @@
     "id": 119,
     "typeId": 1,
     "value": "Vermelho",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 1,
       "name": "Cor"
@@ -212,8 +212,8 @@
     "id": 201,
     "typeId": 2,
     "value": "P",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 2,
       "name": "Tamanho"
@@ -223,8 +223,8 @@
     "id": 202,
     "typeId": 2,
     "value": "M",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 2,
       "name": "Tamanho"
@@ -234,8 +234,8 @@
     "id": 203,
     "typeId": 2,
     "value": "G",
-    "createdAt": "2024-12-06T22:27:41.396Z",
-    "updatedAt": "2024-12-06T22:27:41.396Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 2,
       "name": "Tamanho"
@@ -245,8 +245,8 @@
     "id": 204,
     "typeId": 2,
     "value": "GG",
-    "createdAt": "2024-12-06T22:27:41.396Z",
-    "updatedAt": "2024-12-06T22:27:41.396Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 2,
       "name": "Tamanho"
@@ -256,8 +256,8 @@
     "id": 301,
     "typeId": 3,
     "value": "2000",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 3,
       "name": "Ano"
@@ -267,8 +267,8 @@
     "id": 302,
     "typeId": 3,
     "value": "2010",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 3,
       "name": "Ano"
@@ -278,8 +278,8 @@
     "id": 303,
     "typeId": 3,
     "value": "2020",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 3,
       "name": "Ano"
@@ -289,8 +289,8 @@
     "id": 304,
     "typeId": 3,
     "value": "2021",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 3,
       "name": "Ano"
@@ -300,8 +300,8 @@
     "id": 305,
     "typeId": 3,
     "value": "2022",
-    "createdAt": "2024-12-06T22:27:41.394Z",
-    "updatedAt": "2024-12-06T22:27:41.394Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 3,
       "name": "Ano"
@@ -311,8 +311,8 @@
     "id": 306,
     "typeId": 3,
     "value": "2023",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 3,
       "name": "Ano"
@@ -322,8 +322,8 @@
     "id": 307,
     "typeId": 3,
     "value": "2024",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 3,
       "name": "Ano"
@@ -333,8 +333,8 @@
     "id": 401,
     "typeId": 4,
     "value": "Algodão",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -344,8 +344,8 @@
     "id": 402,
     "typeId": 4,
     "value": "Tecido",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -355,8 +355,8 @@
     "id": 403,
     "typeId": 4,
     "value": "Seda",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -366,8 +366,8 @@
     "id": 404,
     "typeId": 4,
     "value": "Poliester",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -377,8 +377,8 @@
     "id": 411,
     "typeId": 4,
     "value": "Aço",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -388,8 +388,8 @@
     "id": 412,
     "typeId": 4,
     "value": "Ferro",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.060Z",
+    "updatedAt": "2024-12-06T22:30:50.060Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -399,8 +399,8 @@
     "id": 413,
     "typeId": 4,
     "value": "Madeira",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -410,8 +410,8 @@
     "id": 414,
     "typeId": 4,
     "value": "Ouro",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -421,8 +421,8 @@
     "id": 415,
     "typeId": 4,
     "value": "Plástico",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -432,8 +432,8 @@
     "id": 416,
     "typeId": 4,
     "value": "Prata",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 4,
       "name": "Material"
@@ -443,8 +443,8 @@
     "id": 501,
     "typeId": 5,
     "value": "Básico",
-    "createdAt": "2024-12-06T22:27:41.396Z",
-    "updatedAt": "2024-12-06T22:27:41.396Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 5,
       "name": "Tema"
@@ -454,8 +454,8 @@
     "id": 502,
     "typeId": 5,
     "value": "Fofo",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 5,
       "name": "Tema"
@@ -465,8 +465,8 @@
     "id": 503,
     "typeId": 5,
     "value": "Nerd",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 5,
       "name": "Tema"
@@ -476,8 +476,8 @@
     "id": 504,
     "typeId": 5,
     "value": "Otaku",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 5,
       "name": "Tema"
@@ -487,8 +487,8 @@
     "id": 505,
     "typeId": 5,
     "value": "Rock",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 5,
       "name": "Tema"
@@ -498,8 +498,8 @@
     "id": 506,
     "typeId": 5,
     "value": "Praia",
-    "createdAt": "2024-12-06T22:27:41.395Z",
-    "updatedAt": "2024-12-06T22:27:41.395Z",
+    "createdAt": "2024-12-06T22:30:50.061Z",
+    "updatedAt": "2024-12-06T22:30:50.061Z",
     "type": {
       "id": 5,
       "name": "Tema"
