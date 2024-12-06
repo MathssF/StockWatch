@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
+    "Core",
     "Producer",
     "Consumer",
     "Shared",
@@ -14,15 +15,14 @@
     "start:consumer": "npm start --workspace=consumer",
     "build": "npm run build --workspaces",
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts",
     "dev:basic": "ts-node -r tsconfig-paths/register prisma/seeds/basic-customers.seed.ts",
-
-    "generate:json": "ts-node ./shared/src/generateJson.ts"
+    "generate:json": "ts-node ./Core/src/generateJson.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
     "amqplib": "^0.8.0",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.1",
     "mongodb": "^5.0.0",

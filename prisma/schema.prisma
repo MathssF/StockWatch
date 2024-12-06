@@ -80,6 +80,7 @@ model Customer {
   email     String?    @unique
   phone     String?    @unique
   insta     String?    @unique
+  //pass    String?
   orders    Order[]    @relation("CustomerOrders")
   birthdate DateTime
   createdAt DateTime  @default(now())
@@ -136,6 +137,7 @@ model CustomerPromotions {
   stock         Stock        @relation(fields: [stockId], references: [id], onDelete: Cascade)
   stockDetail   StockDetail  @relation(fields: [stockDetailId], references: [id], onDelete: Cascade)
   promoValue    Int
+  isActive      Boolean      @default(true)
   createdAt     DateTime     @default(now())
   updatedAt     DateTime     @updatedAt
 }
