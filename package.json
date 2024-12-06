@@ -9,12 +9,18 @@
     "prisma"
   ],
   "description": "",
+  "devComents": {
+    "this":"Este é uma parte do código, que o Desenvolvedor reserva, para comentários, antes da fase final de produção",
+    "": ""
+  },
   "scripts": {
     "start:producer": "npm start --workspace=producer",
     "start:consumer": "npm start --workspace=consumer",
     "build": "npm run build --workspaces",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts"
+
+    "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts",
+    "generate:json": "ts-node ./shared/src/generateJson.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
