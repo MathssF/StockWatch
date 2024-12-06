@@ -42,7 +42,7 @@ async function generateJson(): Promise<void> {
       }))
     };
 
-    fs.writeFileSync('output.json', JSON.stringify(jsonOutput, null, 2));
+    fs.writeFileSync('./database/today/output.json', JSON.stringify(jsonOutput, null, 2));
 
     console.log('Arquivo JSON gerado com sucesso!');
   } catch (err) {
