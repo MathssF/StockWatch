@@ -3,7 +3,7 @@ import productsTable from './products.table';
 
 
 export default async function mainP(prisma: PrismaClient) {
-  for (let i = 0; i < productsTable.length -1; i++) {
+  for (let i = 0; i < productsTable.length -1; i++) { // depois tirar o -1 aqui
     const sku = `${productsTable[i].name.split(' ').join('_').toUpperCase()}`;
 
     await prisma.product.create({
