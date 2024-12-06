@@ -32,8 +32,7 @@ model Detail {
   type        DetailType    @relation(fields: [typeId], references: [id], onDelete: Cascade)
   value       String        // Valor do detalhe (ex.: "Azul", "P")
   stockDetails StockDetail[]
-  // Futuro relacionamento com CustomerPreferences
-  // customerPreferences CustomerPreferences[]
+  customerPreferences CustomerPreferences[]
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
 }
@@ -47,9 +46,7 @@ model Stock {
   updatedAt   DateTime @updatedAt
   StockDetail StockDetail[]
   orderItems  OrderItem[] // Relação oposta com OrderItem
-
-  // Futuro relacionamento com CustomerPromotions
-  // customerPromotions CustomerPromotions[]
+  customerPromotions CustomerPromotions[]
 }
 
 model StockDetail {
@@ -83,14 +80,10 @@ model Customer {
   pass      String?
   orders    Order[]    @relation("CustomerOrders")
   birthdate DateTime
+  preferences CustomerPreferences[]
+  promotions CustomerPromotions[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
-
-  // Futuro relacionamento com CustomerPreferences
-  // preferences CustomerPreferences[]
-
-  // Futuro relacionamento com CustomerPromotions
-  // promotions CustomerPromotions[]
 }
 
 model Order {
@@ -113,9 +106,6 @@ model OrderItem {
   price     Float
 }
 
-// Future:
-
-/*
 model CustomerPreferences {
   id          Int      @id @default(autoincrement())
   customerId  Int
@@ -125,9 +115,7 @@ model CustomerPreferences {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
-*/
 
-/*
 model CustomerPromotions {
   id            Int          @id @default(autoincrement())
   customerId    Int
@@ -141,4 +129,3 @@ model CustomerPromotions {
   createdAt     DateTime     @default(now())
   updatedAt     DateTime     @updatedAt
 }
-*/

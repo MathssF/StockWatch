@@ -46,7 +46,7 @@ async function generateJson(): Promise<void> {
         name: product.name,
         price: product.price,
         promotions: {},
-        stocks: product.stock.map((stock: any) => ({
+        stocks: product.stock.map(stock => ({
           id: stock._id.toString(),
           quantityOpen: stock.quantity,
           quantityNow: stock.quantity,
