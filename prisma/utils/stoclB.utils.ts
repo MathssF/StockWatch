@@ -6,12 +6,13 @@ export default function generateArrayFinal(
   const finalStock = stockMatrix.map((item) => {
     const { id, matrix } = item;
     
-    let indexT = 0;
     const newMatrix: number[] = [];
+    let indexT = 0;
 
     matrix.forEach((value) => {
-      for(indexT = 0; indexT < types.length; indexT++) {
-        if (types[indexT] === true) {
+      // Para cada valor na matrix, percorre o array types
+      for (indexT = 0; indexT < types.length; indexT++) {
+        if (types[indexT] === true) { // Executa a lógica apenas quando for 'true'
           switch (indexT) {
             case 0:
               newMatrix.push(color[value - 1]);
@@ -28,11 +29,13 @@ export default function generateArrayFinal(
             case 4:
               newMatrix.push(styles[value - 1]);
               break;
+            default:
+              break;
           }
+          break; // Depois de executar a lógica do 'switch', sai do loop e vai para o próximo índice
         }
       }
-      indexT = 0;
-    })
+    });
     
     // matrix.forEach((value, index) => {
     //   if (value !== 0) {
