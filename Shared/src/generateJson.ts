@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import fs from 'fs';
-import { Product } from './models/Product';
+import { Product } from './models/Product.mongo';
 import path from 'path';
 
 mongoose.connect('mongodb://localhost:27017/your_database', {})
