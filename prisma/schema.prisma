@@ -32,6 +32,8 @@ model Detail {
   type        DetailType    @relation(fields: [typeId], references: [id], onDelete: Cascade)
   value       String        // Valor do detalhe (ex.: "Azul", "P")
   stockDetails StockDetail[]
+  // Futuro relacionamento com CustomerPreferences
+  // customerPreferences CustomerPreferences[]
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
 }
@@ -45,6 +47,9 @@ model Stock {
   updatedAt   DateTime @updatedAt
   StockDetail StockDetail[]
   orderItems  OrderItem[] // Relação oposta com OrderItem
+
+  // Futuro relacionamento com CustomerPromotions
+  // customerPromotions CustomerPromotions[]
 }
 
 model StockDetail {
@@ -79,6 +84,12 @@ model Customer {
   birthdate DateTime
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+
+  // Futuro relacionamento com CustomerPreferences
+  // preferences CustomerPreferences[]
+
+  // Futuro relacionamento com CustomerPromotions
+  // promotions CustomerPromotions[]
 }
 
 model Order {
@@ -117,15 +128,15 @@ model CustomerPreferences {
 
 /*
 model CustomerPromotions {
-  id           Int          @id @default(autoincrement())
-  customerId   Int
-  stockId      Int
+  id            Int          @id @default(autoincrement())
+  customerId    Int
+  stockId       Int
   stockDetailId Int
-  customer     Customer     @relation(fields: [customerId], references: [id], onDelete: Cascade)
-  stock        Stock        @relation(fields: [stockId], references: [id], onDelete: Cascade)
-  stockDetail  StockDetail  @relation(fields: [stockDetailId], references: [id], onDelete: Cascade)
-  promoValue   Int
-  createdAt    DateTime     @default(now())
-  updatedAt    DateTime     @updatedAt
+  customer      Customer     @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  stock         Stock        @relation(fields: [stockId], references: [id], onDelete: Cascade)
+  stockDetail   StockDetail  @relation(fields: [stockDetailId], references: [id], onDelete: Cascade)
+  promoValue    Int
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
 }
 */
