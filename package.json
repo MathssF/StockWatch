@@ -19,7 +19,9 @@
     "dev:basic": "ts-node -r tsconfig-paths/register prisma/seeds/basic-customers.seed.ts",
     "open:stock": "ts-node -r tsconfig-paths/register ./Core/src/generateJson.ts",
     "close:stock": "ts-node -r tsconfig-paths/register ./Core/src/closeStock.ts",
-    "clear-db": "ts-node ./prisma/delete/clearDatabase.ts"
+    "clear-db": "ts-node ./prisma/delete/clearDatabase.ts",
+    "reset-db": "ts-node ./prisma/delete/resetAutoIncrement.ts",
+    "test-db": "ts-node ./prisma/utils/testAllTables.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",

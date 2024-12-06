@@ -3,154 +3,154 @@
   "Day": "06/12/2024",
   "Products": [
     {
-      "productId": 67,
+      "productId": 89,
       "name": "Bermuda",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 68,
+      "productId": 90,
       "name": "Bota",
       "price": 60,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 69,
+      "productId": 91,
       "name": "Calça",
       "price": 30,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 70,
+      "productId": 92,
       "name": "Calça Militar",
       "price": 70,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 71,
+      "productId": 93,
       "name": "Calça Social",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 72,
+      "productId": 94,
       "name": "Camisa Estampada",
       "price": 130,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 73,
+      "productId": 95,
       "name": "Camisa Larga",
       "price": 90,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 74,
+      "productId": 96,
       "name": "Camisa Longa",
       "price": 100,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 75,
+      "productId": 97,
       "name": "Camisa Militar",
       "price": 50,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 76,
+      "productId": 98,
       "name": "Camisa Polo",
       "price": 60,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 77,
+      "productId": 99,
       "name": "Camisa Social",
       "price": 110,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 78,
+      "productId": 100,
       "name": "Colar",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 79,
+      "productId": 101,
       "name": "Corrente",
       "price": 120,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 80,
+      "productId": 102,
       "name": "Jaqueta",
       "price": 90,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 81,
+      "productId": 103,
       "name": "Jaqueta Militar",
       "price": 130,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 82,
+      "productId": 104,
       "name": "Jaqueta de Couro",
       "price": 120,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 83,
+      "productId": 105,
       "name": "Luvas",
       "price": 30,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 84,
+      "productId": 106,
       "name": "Meias",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 85,
+      "productId": 107,
       "name": "Moleton",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 86,
+      "productId": 108,
       "name": "Máscara",
       "price": 80,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 87,
+      "productId": 109,
       "name": "Sapato",
       "price": 60,
       "promotions": {},
       "stocks": []
     },
     {
-      "productId": 88,
+      "productId": 110,
       "name": "Touca",
       "price": 50,
       "promotions": {},
