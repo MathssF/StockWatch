@@ -1,23 +1,30 @@
-// import { connectMongo } from './mongoClient';
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
-// import { Product } from './models/Product.mongo';
 import path from 'path';
+import { Stock } from './models/Stock.mongo';
+import { StockDetail } from './models/StockDetail.mongo';
+import { Detail } from './models/Details.mongo';
+import { DetailType } from './models/DetailsType.mongo';
+import { Product } from './models/Product.mongo';
 
 const prisma = new PrismaClient();
 
 async function generateJson(): Promise<void> {
   try {
-    // await connectMongo();
     const products = await prisma.product.findMany({
       include: {
-        stocks: {
+        stock: {
           include: {
-            stockDetails: {
+            StockDetail: {
               include: {
-                detailId: {
+                detail: {
                   include: {
-                    typeId: true,
+                    type: {
+                      select: {
+                        id: true,
+                        name: true,
+                      }
+                    }
                   },
                 },
               },
@@ -26,18 +33,6 @@ async function generateJson(): Promise<void> {
         },
       },
     });
-    // const products = await Product.find().populate({
-    //   path: 'stock',
-    //   populate: {
-    //     path: 'stockDetails',
-    //     populate: {
-    //       path: 'detailId',
-    //       populate: {
-    //         path: 'typeId'
-    //       }
-    //     }
-    //   }
-    // });
 
     const jsonOutput = {
       Op: "ADM",
@@ -47,10 +42,10 @@ async function generateJson(): Promise<void> {
         price: product.price,
         promotions: {},
         stocks: product.stock.map(stock => ({
-          id: stock._id.toString(),
+          id: stock.id.toString(),
           quantityOpen: stock.quantity,
           quantityNow: stock.quantity,
-          details: stock.stockDetails.map((stockDetail: any) => ({
+          details: stock.StockDetail.map((stockDetail: any) => ({
             typeId: stockDetail.detailId.typeId._id.toString(),
             type: stockDetail.detailId.typeId.name,
             detailId: stockDetail.detailId._id.toString(),
