@@ -1,6 +1,7 @@
 export default function generateArrayFinal(
     stockMatrix: { id: number; matrix: number[] }[],
-    color: number[], size: number[], year: number[], materials: number[], styles: number[]
+    color: number[], size: number[], year: number[], materials: number[], styles: number[],
+    types: number[],
   ) {
   const finalStock = stockMatrix.map((item) => {
     const { id, matrix } = item;

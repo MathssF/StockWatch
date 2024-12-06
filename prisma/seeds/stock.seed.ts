@@ -16,29 +16,35 @@ export default async function mainS(prisma: PrismaClient) {
       }
     let variables = 1;
     let divisions = [1, 1, 1, 1, 1];
+    let types = [];
     let newStock: number[] = [];
     if (details.includes(1)) {
       variables = variables * 5;
       divisions[0] = 5;
+      types.push[1];
       newColor = color.sort(() => Math.random() - 0.5).slice(0, 5);
     };
     if (details.includes(2)) {
       variables = variables * 4;
       divisions[1] = 4;
+      types.push[2];
     };
     if (details.includes(3)) {
       variables = variables * 3;
       divisions[2] = 3;
+      types.push[3];
       newYear = year.sort(() => Math.random() - 0.5).slice(0, 3);
     };
     if (details.includes(4)) {
       variables = variables * 2;
       divisions[3] = 2;
+      types.push[4];
       newMaterials = materials.sort(() => Math.random() - 0.5).slice(0, 2);
     };
     if (details.includes(5)) {
       variables = variables * 3;
       divisions[4] = 3;
+      types.push[5];
       newStyles = style.sort(() => Math.random() - 0.5).slice(0, 2);
       newStyles.push(501)
     };
@@ -53,6 +59,8 @@ export default async function mainS(prisma: PrismaClient) {
         createdAt   DateTime @default(now())
         updatedAt   DateTime @updatedAt
         StockDetail StockDetail[]
+        orderItems  OrderItem[] // Relação oposta com OrderItem
+        customerPromotions CustomerPromotions[]
     }
     */
     for (let j = 0; j < variables; j++) {
@@ -82,6 +90,7 @@ export default async function mainS(prisma: PrismaClient) {
       stockMatrix, newColor,
       size, newYear,
       newMaterials, newStyles,
+      types,
     )
     for(let m = 0; m < finalStock.length; m++) {
       for(let n = 0; n < finalStock[m].matrix.length; n++) {
