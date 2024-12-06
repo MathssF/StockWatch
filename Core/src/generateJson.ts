@@ -42,7 +42,7 @@ async function generateJson(): Promise<void> {
       }))
     };
 
-    const dir = './database/today';
+    const dir = '.Core/src/database/today';
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
