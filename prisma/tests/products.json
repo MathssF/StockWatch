@@ -1,200 +1,200 @@
 [
   {
-    "id": 89,
+    "id": 111,
     "name": "Bermuda",
     "sku": "BERMUDA",
     "description": "Bermuda de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-06T22:17:08.789Z",
-    "updatedAt": "2024-12-06T22:17:08.789Z"
+    "createdAt": "2024-12-06T22:27:41.808Z",
+    "updatedAt": "2024-12-06T22:27:41.808Z"
   },
   {
-    "id": 90,
+    "id": 112,
     "name": "Bota",
     "sku": "BOTA",
     "description": "Bota de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 60,
-    "createdAt": "2024-12-06T22:17:08.793Z",
-    "updatedAt": "2024-12-06T22:17:08.793Z"
+    "createdAt": "2024-12-06T22:27:41.840Z",
+    "updatedAt": "2024-12-06T22:27:41.840Z"
   },
   {
-    "id": 91,
+    "id": 113,
     "name": "Calça",
     "sku": "CALÇA",
     "description": "Calça de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 30,
-    "createdAt": "2024-12-06T22:17:08.796Z",
-    "updatedAt": "2024-12-06T22:17:08.796Z"
+    "createdAt": "2024-12-06T22:27:41.877Z",
+    "updatedAt": "2024-12-06T22:27:41.877Z"
   },
   {
-    "id": 92,
+    "id": 114,
     "name": "Calça Militar",
     "sku": "CALÇA_MILITAR",
     "description": "Calça Militar de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 70,
-    "createdAt": "2024-12-06T22:17:08.800Z",
-    "updatedAt": "2024-12-06T22:17:08.800Z"
+    "createdAt": "2024-12-06T22:27:41.884Z",
+    "updatedAt": "2024-12-06T22:27:41.884Z"
   },
   {
-    "id": 93,
+    "id": 115,
     "name": "Calça Social",
     "sku": "CALÇA_SOCIAL",
     "description": "Calça Social de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-06T22:17:08.804Z",
-    "updatedAt": "2024-12-06T22:17:08.804Z"
+    "createdAt": "2024-12-06T22:27:41.891Z",
+    "updatedAt": "2024-12-06T22:27:41.891Z"
   },
   {
-    "id": 94,
+    "id": 116,
     "name": "Camisa Estampada",
     "sku": "CAMISA_ESTAMPADA",
     "description": "Camisa Estampada de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 130,
-    "createdAt": "2024-12-06T22:17:08.808Z",
-    "updatedAt": "2024-12-06T22:17:08.808Z"
+    "createdAt": "2024-12-06T22:27:41.928Z",
+    "updatedAt": "2024-12-06T22:27:41.928Z"
   },
   {
-    "id": 95,
+    "id": 117,
     "name": "Camisa Larga",
     "sku": "CAMISA_LARGA",
     "description": "Camisa Larga de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 90,
-    "createdAt": "2024-12-06T22:17:08.812Z",
-    "updatedAt": "2024-12-06T22:17:08.812Z"
+    "createdAt": "2024-12-06T22:27:41.936Z",
+    "updatedAt": "2024-12-06T22:27:41.936Z"
   },
   {
-    "id": 96,
+    "id": 118,
     "name": "Camisa Longa",
     "sku": "CAMISA_LONGA",
     "description": "Camisa Longa de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 100,
-    "createdAt": "2024-12-06T22:17:08.815Z",
-    "updatedAt": "2024-12-06T22:17:08.815Z"
+    "createdAt": "2024-12-06T22:27:41.943Z",
+    "updatedAt": "2024-12-06T22:27:41.943Z"
   },
   {
-    "id": 97,
+    "id": 119,
     "name": "Camisa Militar",
     "sku": "CAMISA_MILITAR",
     "description": "Camisa Militar de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 50,
-    "createdAt": "2024-12-06T22:17:08.820Z",
-    "updatedAt": "2024-12-06T22:17:08.820Z"
+    "createdAt": "2024-12-06T22:27:41.951Z",
+    "updatedAt": "2024-12-06T22:27:41.951Z"
   },
   {
-    "id": 98,
+    "id": 120,
     "name": "Camisa Polo",
     "sku": "CAMISA_POLO",
     "description": "Camisa Polo de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 60,
-    "createdAt": "2024-12-06T22:17:08.824Z",
-    "updatedAt": "2024-12-06T22:17:08.824Z"
+    "createdAt": "2024-12-06T22:27:41.986Z",
+    "updatedAt": "2024-12-06T22:27:41.986Z"
   },
   {
-    "id": 99,
+    "id": 121,
     "name": "Camisa Social",
     "sku": "CAMISA_SOCIAL",
     "description": "Camisa Social de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 110,
-    "createdAt": "2024-12-06T22:17:08.828Z",
-    "updatedAt": "2024-12-06T22:17:08.828Z"
+    "createdAt": "2024-12-06T22:27:41.993Z",
+    "updatedAt": "2024-12-06T22:27:41.993Z"
   },
   {
-    "id": 100,
+    "id": 122,
     "name": "Colar",
     "sku": "COLAR",
     "description": "Colar de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-06T22:17:08.832Z",
-    "updatedAt": "2024-12-06T22:17:08.832Z"
+    "createdAt": "2024-12-06T22:27:42.000Z",
+    "updatedAt": "2024-12-06T22:27:42.000Z"
   },
   {
-    "id": 101,
+    "id": 123,
     "name": "Corrente",
     "sku": "CORRENTE",
     "description": "Corrente de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 120,
-    "createdAt": "2024-12-06T22:17:08.836Z",
-    "updatedAt": "2024-12-06T22:17:08.836Z"
+    "createdAt": "2024-12-06T22:27:42.036Z",
+    "updatedAt": "2024-12-06T22:27:42.036Z"
   },
   {
-    "id": 102,
+    "id": 124,
     "name": "Jaqueta",
     "sku": "JAQUETA",
     "description": "Jaqueta de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 90,
-    "createdAt": "2024-12-06T22:17:08.840Z",
-    "updatedAt": "2024-12-06T22:17:08.840Z"
+    "createdAt": "2024-12-06T22:27:42.043Z",
+    "updatedAt": "2024-12-06T22:27:42.043Z"
   },
   {
-    "id": 103,
+    "id": 125,
     "name": "Jaqueta Militar",
     "sku": "JAQUETA_MILITAR",
     "description": "Jaqueta Militar de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 130,
-    "createdAt": "2024-12-06T22:17:08.843Z",
-    "updatedAt": "2024-12-06T22:17:08.843Z"
+    "createdAt": "2024-12-06T22:27:42.050Z",
+    "updatedAt": "2024-12-06T22:27:42.050Z"
   },
   {
-    "id": 104,
+    "id": 126,
     "name": "Jaqueta de Couro",
     "sku": "JAQUETA_DE_COURO",
     "description": "Jaqueta de Couro de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 120,
-    "createdAt": "2024-12-06T22:17:08.847Z",
-    "updatedAt": "2024-12-06T22:17:08.847Z"
+    "createdAt": "2024-12-06T22:27:42.087Z",
+    "updatedAt": "2024-12-06T22:27:42.087Z"
   },
   {
-    "id": 105,
+    "id": 127,
     "name": "Luvas",
     "sku": "LUVAS",
     "description": "Luvas de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 30,
-    "createdAt": "2024-12-06T22:17:08.851Z",
-    "updatedAt": "2024-12-06T22:17:08.851Z"
+    "createdAt": "2024-12-06T22:27:42.094Z",
+    "updatedAt": "2024-12-06T22:27:42.094Z"
   },
   {
-    "id": 106,
+    "id": 128,
     "name": "Meias",
     "sku": "MEIAS",
     "description": "Meias de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-06T22:17:08.855Z",
-    "updatedAt": "2024-12-06T22:17:08.855Z"
+    "createdAt": "2024-12-06T22:27:42.102Z",
+    "updatedAt": "2024-12-06T22:27:42.102Z"
   },
   {
-    "id": 107,
+    "id": 129,
     "name": "Moleton",
     "sku": "MOLETON",
     "description": "Moleton de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-06T22:17:08.858Z",
-    "updatedAt": "2024-12-06T22:17:08.858Z"
+    "createdAt": "2024-12-06T22:27:42.135Z",
+    "updatedAt": "2024-12-06T22:27:42.135Z"
   },
   {
-    "id": 108,
+    "id": 130,
     "name": "Máscara",
     "sku": "MÁSCARA",
     "description": "Máscara de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-06T22:17:08.862Z",
-    "updatedAt": "2024-12-06T22:17:08.862Z"
+    "createdAt": "2024-12-06T22:27:42.143Z",
+    "updatedAt": "2024-12-06T22:27:42.143Z"
   },
   {
-    "id": 109,
+    "id": 131,
     "name": "Sapato",
     "sku": "SAPATO",
     "description": "Sapato de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 60,
-    "createdAt": "2024-12-06T22:17:08.866Z",
-    "updatedAt": "2024-12-06T22:17:08.866Z"
+    "createdAt": "2024-12-06T22:27:42.150Z",
+    "updatedAt": "2024-12-06T22:27:42.150Z"
   },
   {
-    "id": 110,
+    "id": 132,
     "name": "Touca",
     "sku": "TOUCA",
     "description": "Touca de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 50,
-    "createdAt": "2024-12-06T22:17:08.870Z",
-    "updatedAt": "2024-12-06T22:17:08.870Z"
+    "createdAt": "2024-12-06T22:27:42.184Z",
+    "updatedAt": "2024-12-06T22:27:42.184Z"
   }
 ]
