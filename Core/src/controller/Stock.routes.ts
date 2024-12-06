@@ -1,9 +1,9 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import { FindProducts, FindStocks, UpdateStock } from './Stock.controller';
 
 const router = express.Router();
 
-router.get('/products', async (req, res) => {
+router.get('/products', async (req: Request, res: Response) => {
   try {
     const data = await FindProducts();
     res.status(200).json(data);
@@ -13,8 +13,9 @@ router.get('/products', async (req, res) => {
   }
 });
 
-router.get('/stocks', async (req, res) => {
+router.get('/stocks', async (req: Request, res: Response) => {
   try {
+    // const a = req.body;
     const data = await FindStocks();
     res.status(200).json(data);
   } catch (error) {
@@ -23,7 +24,7 @@ router.get('/stocks', async (req, res) => {
   }
 });
 
-router.put('/stocks/:id', async (req, res) => {
+router.put('/stocks/:id', async (req: Request, res: Response) => {
   const { id } = req.params;
   const { quantityNow } = req.body;
 
