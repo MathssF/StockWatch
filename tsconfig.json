@@ -19,7 +19,7 @@
     "include": [
       "Producer/**/*.ts",
       "Consumer/**/*.ts",
-      "Shared/**/*.ts"
+      "Core/**/*.ts"
     ],
     "exclude": [
       "node_modules",

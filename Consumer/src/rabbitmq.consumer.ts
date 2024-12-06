@@ -29,8 +29,9 @@ export async function consumeQueue(
 
         const dbMessage = await prisma.rabbitMQMessage.create({
           data: {
-            producerId: id || 'UNKNOWN',
+            produceId: id || "UNKNOW",
             consumerId,
+            messageId: consumerId,
             queue: queueName,
             status: 'PENDING',
           },

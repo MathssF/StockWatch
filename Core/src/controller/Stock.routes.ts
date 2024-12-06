@@ -1,9 +1,9 @@
 import express, { Request, Response } from 'express';
 import { FindProducts, FindStocks, UpdateStock } from './Stock.controller';
 
-const router = express.Router();
+const stockRouter = express.Router();
 
-router.get('/products', async (req: Request, res: Response) => {
+stockRouter.get('/products', async (req: Request, res: Response) => {
   try {
     const data = await FindProducts();
     res.status(200).json(data);
@@ -13,9 +13,8 @@ router.get('/products', async (req: Request, res: Response) => {
   }
 });
 
-router.get('/stocks', async (req: Request, res: Response) => {
+stockRouter.get('/stocks', async (req: Request, res: Response) => {
   try {
-    // const a = req.body;
     const data = await FindStocks();
     res.status(200).json(data);
   } catch (error) {
@@ -24,12 +23,13 @@ router.get('/stocks', async (req: Request, res: Response) => {
   }
 });
 
-router.put('/stocks/:id', async (req: Request, res: Response) => {
+stockRouter.put('/stocks/:id', async (req: Request, res: Response) => {
   const { id } = req.params;
   const { quantityNow } = req.body;
+  
 
   if (!id || typeof quantityNow !== 'number') {
-    return res.status(400).json({ message: 'Dados inválidos' });
+    res.status(400).json({ message: 'Dados inválidos' });
   }
 
   try {
@@ -41,4 +41,4 @@ router.put('/stocks/:id', async (req: Request, res: Response) => {
   }
 });
 
-export default router;
+export default stockRouter;
