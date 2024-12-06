@@ -45,12 +45,12 @@ async function generateJson(): Promise<void> {
           id: stock.id.toString(),
           quantityOpen: stock.quantity,
           quantityNow: stock.quantity,
-          details: stock.StockDetail.map((stockDetail: any) => ({
-            typeId: stockDetail.detailId.typeId._id.toString(),
-            type: stockDetail.detailId.typeId.name,
-            detailId: stockDetail.detailId._id.toString(),
-            detailName: stockDetail.detailId.value
-          })),
+          details: stock.StockDetail?.map((stockDetail: any) => ({
+            typeId: stockDetail.detail?.type?.id?.toString(),
+            type: stockDetail.detail?.type?.name,
+            detailId: stockDetail.detail?.id?.toString(),
+            detailName: stockDetail.detail?.value
+          })) || [],
           orders: {},
         }))
       }))
