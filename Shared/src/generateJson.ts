@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import fs from 'fs';
 import { Product } from './models/Product';
+import path from 'path';
 
 mongoose.connect('mongodb://localhost:27017/your_database', {})
   .catch(err => console.error('Erro ao conectar ao banco de dados:', err));
@@ -42,7 +43,12 @@ async function generateJson(): Promise<void> {
       }))
     };
 
-    fs.writeFileSync('./database/today/output.json', JSON.stringify(jsonOutput, null, 2));
+    const dir = './database/today';
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+
+    fs.writeFileSync(path.join(dir, 'output.json'), JSON.stringify(jsonOutput, null, 2));
 
     console.log('Arquivo JSON gerado com sucesso!');
   } catch (err) {
