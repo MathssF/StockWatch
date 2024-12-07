@@ -66,14 +66,18 @@ export default async function mainS(prisma: PrismaClient) {
     for (let j = 0; j < variables; j++) {
       console.log('Tentando criar o produto: ', productsTable[i].id);
       console.log(' Na variavel: ', j)
-      const stock = await prisma.stock.create({
-        data: {
-          productId: productsTable[i].id,
-          quantity: 10,
-        }
-      });
-      console.log('Stock criado com sucesso! No produto: ', productsTable[i].id, ' E na variavel ', j);
-      newStock.push(stock.id);
+      try {
+        const stock = await prisma.stock.create({
+          data: {
+            productId: productsTable[i].id,
+           quantity: 10,
+         }
+        });
+        console.log('Stock criado com sucesso! No produto: ', productsTable[i].id, ' E na variavel ', j);
+        newStock.push(stock.id);
+      } catch (error) {
+        console.error('Erro: ', error);
+      }
     }
 
     // Model no prisma para a relação de stock com detalhes
