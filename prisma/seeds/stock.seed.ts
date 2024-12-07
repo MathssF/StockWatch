@@ -9,6 +9,7 @@ export default async function mainS(prisma: PrismaClient) {
   let newYear: number[] = [];
   let newMaterials: number[] = [];
   let newStyles: number[] = [];
+  let allStocks: number[][] = [];
   for (let i = 0; i < productsTable.length -1; i++) {
     const { details } = productsTable[i];
     if (!Array.isArray(details)) {
@@ -63,22 +64,26 @@ export default async function mainS(prisma: PrismaClient) {
         customerPromotions CustomerPromotions[]
     }
     */
-    for (let j = 0; j < variables; j++) {
-      console.log('Tentando criar o produto: ', productsTable[i].id);
-      console.log(' Na variavel: ', j)
-      try {
-        const stock = await prisma.stock.create({
-          data: {
-            productId: productsTable[i].id,
-           quantity: 10,
-         }
-        });
-        console.log('Stock criado com sucesso! No produto: ', productsTable[i].id, ' E na variavel ', j);
-        newStock.push(stock.id);
-      } catch (error) {
-        console.error('Erro: ', error);
+    for (let i =0; i < productsTable.length; i++) {
+      for (let j = 0; j < variables; j++) {
+        console.log('Tentando criar o produto: ', productsTable[i].id);
+        console.log(' Na variavel: ', j)
+        try {
+          const stock = await prisma.stock.create({
+            data: {
+              productId: productsTable[i].id,
+             quantity: 10,
+           }
+          });
+          console.log('Stock criado com sucesso! No produto: ', productsTable[i].id, ' E na variavel ', j);
+          newStock.push(stock.id);
+        } catch (error) {
+          console.error('Erro: ', error);
+        }
       }
-    }
+      allStocks.push(newStock);
+      newStock = [];
+    } 
 
     // Model no prisma para a relação de stock com detalhes
     /*
@@ -92,24 +97,26 @@ export default async function mainS(prisma: PrismaClient) {
         updatedAt   DateTime @updatedAt
     }
     */
-    const stockMatrix = mapToProcessedMatrix(newStock, divisions);
-    const finalStock = generateArrayFinal(
-      stockMatrix, newColor,
-      size, newYear,
-      newMaterials, newStyles,
-      types,
-    )
-    for(let m = 0; m < finalStock.length; m++) {
-      for(let n = 0; n < finalStock[m].matrix.length; n++) {
-        await prisma.stockDetail.create({
-          data: {
-            stockId: finalStock[m].id, 
-            detailId: finalStock[m].matrix[n],
-          }
-        })
+    for (let w = 0; w < allStocks.length; w++) {
+      const stockMatrix = mapToProcessedMatrix(allStocks[w], divisions);
+      console.log('Valor: ', w, ' e Divs: ', divisions);
+      const finalStock = generateArrayFinal(
+        stockMatrix, newColor,
+        size, newYear,
+        newMaterials, newStyles,
+        types,
+      )
+      for(let m = 0; m < finalStock.length; m++) {
+        for(let n = 0; n < finalStock[m].matrix.length; n++) {
+          await prisma.stockDetail.create({
+            data: {
+              stockId: finalStock[m].id, 
+              detailId: finalStock[m].matrix[n],
+            }
+          })
+        }
       }
     }
-
   }
   console.log('Estoque inserido com sucesso!')
 }
