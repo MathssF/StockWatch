@@ -64,7 +64,7 @@ export default async function mainS(prisma: PrismaClient) {
         customerPromotions CustomerPromotions[]
     }
     */
-    for (let i =0; i < productsTable.length; i++) {
+    // for (let i =0; i < productsTable.length; i++) {
       for (let j = 0; j < variables; j++) {
         console.log('Tentando criar o produto: ', productsTable[i].id);
         console.log(' Na variavel: ', j)
@@ -81,9 +81,9 @@ export default async function mainS(prisma: PrismaClient) {
           console.error('Erro: ', error);
         }
       }
-      allStocks.push(newStock);
-      newStock = [];
-    } 
+    //   allStocks.push(newStock);
+    //   newStock = [];
+    // } 
 
     // Model no prisma para a relação de stock com detalhes
     /*
