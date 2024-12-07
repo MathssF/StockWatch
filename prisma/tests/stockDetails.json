@@ -1,1 +1,8402 @@
-[]
+[
+  {
+    "id": 1,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.068Z",
+    "updatedAt": "2024-12-07T07:09:09.068Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 2,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:09.074Z",
+    "updatedAt": "2024-12-07T07:09:09.074Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 3,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:09.080Z",
+    "updatedAt": "2024-12-07T07:09:09.080Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 4,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:09.085Z",
+    "updatedAt": "2024-12-07T07:09:09.085Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 5,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.115Z",
+    "updatedAt": "2024-12-07T07:09:09.115Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 6,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:09.125Z",
+    "updatedAt": "2024-12-07T07:09:09.125Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 7,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:09.135Z",
+    "updatedAt": "2024-12-07T07:09:09.135Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 8,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:09.171Z",
+    "updatedAt": "2024-12-07T07:09:09.171Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 9,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.181Z",
+    "updatedAt": "2024-12-07T07:09:09.181Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 10,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:09.191Z",
+    "updatedAt": "2024-12-07T07:09:09.191Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 11,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:09.229Z",
+    "updatedAt": "2024-12-07T07:09:09.229Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 12,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:09.239Z",
+    "updatedAt": "2024-12-07T07:09:09.239Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 13,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.250Z",
+    "updatedAt": "2024-12-07T07:09:09.250Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 14,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:09.286Z",
+    "updatedAt": "2024-12-07T07:09:09.286Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 15,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:09.298Z",
+    "updatedAt": "2024-12-07T07:09:09.298Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 16,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:09.308Z",
+    "updatedAt": "2024-12-07T07:09:09.308Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 17,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.346Z",
+    "updatedAt": "2024-12-07T07:09:09.346Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 18,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:09.356Z",
+    "updatedAt": "2024-12-07T07:09:09.356Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 19,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:09.366Z",
+    "updatedAt": "2024-12-07T07:09:09.366Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 20,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:09.404Z",
+    "updatedAt": "2024-12-07T07:09:09.404Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 21,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.414Z",
+    "updatedAt": "2024-12-07T07:09:09.414Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 22,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:09.424Z",
+    "updatedAt": "2024-12-07T07:09:09.424Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 23,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:09.434Z",
+    "updatedAt": "2024-12-07T07:09:09.434Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 24,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:09.469Z",
+    "updatedAt": "2024-12-07T07:09:09.469Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 25,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.479Z",
+    "updatedAt": "2024-12-07T07:09:09.479Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 26,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:09.543Z",
+    "updatedAt": "2024-12-07T07:09:09.543Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 27,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:09.553Z",
+    "updatedAt": "2024-12-07T07:09:09.553Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 28,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:09.562Z",
+    "updatedAt": "2024-12-07T07:09:09.562Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 29,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.572Z",
+    "updatedAt": "2024-12-07T07:09:09.572Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 30,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:09.604Z",
+    "updatedAt": "2024-12-07T07:09:09.604Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 31,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:09.615Z",
+    "updatedAt": "2024-12-07T07:09:09.615Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 32,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:09.652Z",
+    "updatedAt": "2024-12-07T07:09:09.652Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 33,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.661Z",
+    "updatedAt": "2024-12-07T07:09:09.661Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 34,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:09.671Z",
+    "updatedAt": "2024-12-07T07:09:09.671Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 35,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:09.682Z",
+    "updatedAt": "2024-12-07T07:09:09.682Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 36,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:09.718Z",
+    "updatedAt": "2024-12-07T07:09:09.718Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 37,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.728Z",
+    "updatedAt": "2024-12-07T07:09:09.728Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 38,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:09.738Z",
+    "updatedAt": "2024-12-07T07:09:09.738Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 39,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:09.775Z",
+    "updatedAt": "2024-12-07T07:09:09.775Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 40,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:09.785Z",
+    "updatedAt": "2024-12-07T07:09:09.785Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 41,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.795Z",
+    "updatedAt": "2024-12-07T07:09:09.795Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 42,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:09.834Z",
+    "updatedAt": "2024-12-07T07:09:09.834Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 43,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:09.846Z",
+    "updatedAt": "2024-12-07T07:09:09.846Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 44,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:09.858Z",
+    "updatedAt": "2024-12-07T07:09:09.858Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 45,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.896Z",
+    "updatedAt": "2024-12-07T07:09:09.896Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 46,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:09.908Z",
+    "updatedAt": "2024-12-07T07:09:09.908Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 47,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:09.920Z",
+    "updatedAt": "2024-12-07T07:09:09.920Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 48,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:09.956Z",
+    "updatedAt": "2024-12-07T07:09:09.956Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 49,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:09.968Z",
+    "updatedAt": "2024-12-07T07:09:09.968Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 50,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:09.979Z",
+    "updatedAt": "2024-12-07T07:09:09.979Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 51,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:10.018Z",
+    "updatedAt": "2024-12-07T07:09:10.018Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 52,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:10.032Z",
+    "updatedAt": "2024-12-07T07:09:10.032Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 53,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.043Z",
+    "updatedAt": "2024-12-07T07:09:10.043Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 54,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:10.082Z",
+    "updatedAt": "2024-12-07T07:09:10.082Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 55,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:10.089Z",
+    "updatedAt": "2024-12-07T07:09:10.089Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 56,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:10.123Z",
+    "updatedAt": "2024-12-07T07:09:10.123Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 57,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.131Z",
+    "updatedAt": "2024-12-07T07:09:10.131Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 58,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:10.138Z",
+    "updatedAt": "2024-12-07T07:09:10.138Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 59,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:10.174Z",
+    "updatedAt": "2024-12-07T07:09:10.174Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 60,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:10.188Z",
+    "updatedAt": "2024-12-07T07:09:10.188Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 61,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.200Z",
+    "updatedAt": "2024-12-07T07:09:10.200Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 62,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:10.211Z",
+    "updatedAt": "2024-12-07T07:09:10.211Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 63,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:10.244Z",
+    "updatedAt": "2024-12-07T07:09:10.244Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 64,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:10.256Z",
+    "updatedAt": "2024-12-07T07:09:10.256Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 65,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.267Z",
+    "updatedAt": "2024-12-07T07:09:10.267Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 66,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:10.298Z",
+    "updatedAt": "2024-12-07T07:09:10.298Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 67,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:10.309Z",
+    "updatedAt": "2024-12-07T07:09:10.309Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 68,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:10.322Z",
+    "updatedAt": "2024-12-07T07:09:10.322Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 69,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.352Z",
+    "updatedAt": "2024-12-07T07:09:10.352Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 70,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:10.365Z",
+    "updatedAt": "2024-12-07T07:09:10.365Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 71,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:10.377Z",
+    "updatedAt": "2024-12-07T07:09:10.377Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 72,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:10.431Z",
+    "updatedAt": "2024-12-07T07:09:10.431Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 73,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.443Z",
+    "updatedAt": "2024-12-07T07:09:10.443Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 74,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:10.454Z",
+    "updatedAt": "2024-12-07T07:09:10.454Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 75,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:10.607Z",
+    "updatedAt": "2024-12-07T07:09:10.607Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 76,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:10.720Z",
+    "updatedAt": "2024-12-07T07:09:10.720Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 77,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.732Z",
+    "updatedAt": "2024-12-07T07:09:10.732Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 78,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:10.793Z",
+    "updatedAt": "2024-12-07T07:09:10.793Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 79,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:10.805Z",
+    "updatedAt": "2024-12-07T07:09:10.805Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 80,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:10.818Z",
+    "updatedAt": "2024-12-07T07:09:10.818Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 81,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.881Z",
+    "updatedAt": "2024-12-07T07:09:10.881Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 82,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:10.893Z",
+    "updatedAt": "2024-12-07T07:09:10.893Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 83,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:10.905Z",
+    "updatedAt": "2024-12-07T07:09:10.905Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 84,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:10.955Z",
+    "updatedAt": "2024-12-07T07:09:10.955Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 85,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:10.967Z",
+    "updatedAt": "2024-12-07T07:09:10.967Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 86,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:10.978Z",
+    "updatedAt": "2024-12-07T07:09:10.978Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 87,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:11.033Z",
+    "updatedAt": "2024-12-07T07:09:11.033Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 88,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:11.044Z",
+    "updatedAt": "2024-12-07T07:09:11.044Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 89,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:11.055Z",
+    "updatedAt": "2024-12-07T07:09:11.055Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 90,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:11.114Z",
+    "updatedAt": "2024-12-07T07:09:11.114Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 91,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:11.125Z",
+    "updatedAt": "2024-12-07T07:09:11.125Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 92,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:11.137Z",
+    "updatedAt": "2024-12-07T07:09:11.137Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 93,
+    "stockId": 1,
+    "detailId": 102,
+    "createdAt": "2024-12-07T07:09:11.198Z",
+    "updatedAt": "2024-12-07T07:09:11.198Z",
+    "detail": {
+      "id": 102,
+      "typeId": 1,
+      "value": "Azul",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 94,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:11.209Z",
+    "updatedAt": "2024-12-07T07:09:11.209Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 95,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:11.220Z",
+    "updatedAt": "2024-12-07T07:09:11.220Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 96,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:11.280Z",
+    "updatedAt": "2024-12-07T07:09:11.280Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 97,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:11.292Z",
+    "updatedAt": "2024-12-07T07:09:11.292Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 98,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:11.303Z",
+    "updatedAt": "2024-12-07T07:09:11.303Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 99,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:11.363Z",
+    "updatedAt": "2024-12-07T07:09:11.363Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 100,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:11.375Z",
+    "updatedAt": "2024-12-07T07:09:11.375Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 101,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:11.386Z",
+    "updatedAt": "2024-12-07T07:09:11.386Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 102,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:11.448Z",
+    "updatedAt": "2024-12-07T07:09:11.448Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 103,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:11.458Z",
+    "updatedAt": "2024-12-07T07:09:11.458Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 104,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:11.470Z",
+    "updatedAt": "2024-12-07T07:09:11.470Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 105,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:11.627Z",
+    "updatedAt": "2024-12-07T07:09:11.627Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 106,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:11.730Z",
+    "updatedAt": "2024-12-07T07:09:11.730Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 107,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:11.741Z",
+    "updatedAt": "2024-12-07T07:09:11.741Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 108,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:11.752Z",
+    "updatedAt": "2024-12-07T07:09:11.752Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 109,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:11.766Z",
+    "updatedAt": "2024-12-07T07:09:11.766Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 110,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:11.819Z",
+    "updatedAt": "2024-12-07T07:09:11.819Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 111,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:11.830Z",
+    "updatedAt": "2024-12-07T07:09:11.830Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 112,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:11.842Z",
+    "updatedAt": "2024-12-07T07:09:11.842Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 113,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:11.903Z",
+    "updatedAt": "2024-12-07T07:09:11.903Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 114,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:11.915Z",
+    "updatedAt": "2024-12-07T07:09:11.915Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 115,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:11.926Z",
+    "updatedAt": "2024-12-07T07:09:11.926Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 116,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:11.986Z",
+    "updatedAt": "2024-12-07T07:09:11.986Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 117,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:11.998Z",
+    "updatedAt": "2024-12-07T07:09:11.998Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 118,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:12.013Z",
+    "updatedAt": "2024-12-07T07:09:12.013Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 119,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:12.074Z",
+    "updatedAt": "2024-12-07T07:09:12.074Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 120,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:12.085Z",
+    "updatedAt": "2024-12-07T07:09:12.085Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 121,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.144Z",
+    "updatedAt": "2024-12-07T07:09:12.144Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 122,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:12.158Z",
+    "updatedAt": "2024-12-07T07:09:12.158Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 123,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:12.186Z",
+    "updatedAt": "2024-12-07T07:09:12.186Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 124,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:12.251Z",
+    "updatedAt": "2024-12-07T07:09:12.251Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 125,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.263Z",
+    "updatedAt": "2024-12-07T07:09:12.263Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 126,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:12.274Z",
+    "updatedAt": "2024-12-07T07:09:12.274Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 127,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:12.286Z",
+    "updatedAt": "2024-12-07T07:09:12.286Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 128,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:12.336Z",
+    "updatedAt": "2024-12-07T07:09:12.336Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 129,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.347Z",
+    "updatedAt": "2024-12-07T07:09:12.347Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 130,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:12.362Z",
+    "updatedAt": "2024-12-07T07:09:12.362Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 131,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:12.423Z",
+    "updatedAt": "2024-12-07T07:09:12.423Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 132,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:12.435Z",
+    "updatedAt": "2024-12-07T07:09:12.435Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 133,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.446Z",
+    "updatedAt": "2024-12-07T07:09:12.446Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 134,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:12.599Z",
+    "updatedAt": "2024-12-07T07:09:12.599Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 135,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:12.654Z",
+    "updatedAt": "2024-12-07T07:09:12.654Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 136,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:12.666Z",
+    "updatedAt": "2024-12-07T07:09:12.666Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 137,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.678Z",
+    "updatedAt": "2024-12-07T07:09:12.678Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 138,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:12.707Z",
+    "updatedAt": "2024-12-07T07:09:12.707Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 139,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:12.720Z",
+    "updatedAt": "2024-12-07T07:09:12.720Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 140,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:12.732Z",
+    "updatedAt": "2024-12-07T07:09:12.732Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 141,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.772Z",
+    "updatedAt": "2024-12-07T07:09:12.772Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 142,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:12.783Z",
+    "updatedAt": "2024-12-07T07:09:12.783Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 143,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:12.795Z",
+    "updatedAt": "2024-12-07T07:09:12.795Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 144,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:12.834Z",
+    "updatedAt": "2024-12-07T07:09:12.834Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 145,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.846Z",
+    "updatedAt": "2024-12-07T07:09:12.846Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 146,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:12.858Z",
+    "updatedAt": "2024-12-07T07:09:12.858Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 147,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:12.897Z",
+    "updatedAt": "2024-12-07T07:09:12.897Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 148,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:12.908Z",
+    "updatedAt": "2024-12-07T07:09:12.908Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 149,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.920Z",
+    "updatedAt": "2024-12-07T07:09:12.920Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 150,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:12.931Z",
+    "updatedAt": "2024-12-07T07:09:12.931Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 151,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:12.962Z",
+    "updatedAt": "2024-12-07T07:09:12.962Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 152,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:12.975Z",
+    "updatedAt": "2024-12-07T07:09:12.975Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 153,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:12.989Z",
+    "updatedAt": "2024-12-07T07:09:12.989Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 154,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:13.027Z",
+    "updatedAt": "2024-12-07T07:09:13.027Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 155,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:13.040Z",
+    "updatedAt": "2024-12-07T07:09:13.040Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 156,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:13.053Z",
+    "updatedAt": "2024-12-07T07:09:13.053Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 157,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.093Z",
+    "updatedAt": "2024-12-07T07:09:13.093Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 158,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:13.107Z",
+    "updatedAt": "2024-12-07T07:09:13.107Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 159,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:13.118Z",
+    "updatedAt": "2024-12-07T07:09:13.118Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 160,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:13.154Z",
+    "updatedAt": "2024-12-07T07:09:13.154Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 161,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.167Z",
+    "updatedAt": "2024-12-07T07:09:13.167Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 162,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:13.181Z",
+    "updatedAt": "2024-12-07T07:09:13.181Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 163,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:13.212Z",
+    "updatedAt": "2024-12-07T07:09:13.212Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 164,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:13.224Z",
+    "updatedAt": "2024-12-07T07:09:13.224Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 165,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.237Z",
+    "updatedAt": "2024-12-07T07:09:13.237Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 166,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:13.275Z",
+    "updatedAt": "2024-12-07T07:09:13.275Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 167,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:13.290Z",
+    "updatedAt": "2024-12-07T07:09:13.290Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 168,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:13.301Z",
+    "updatedAt": "2024-12-07T07:09:13.301Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 169,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.341Z",
+    "updatedAt": "2024-12-07T07:09:13.341Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 170,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:13.353Z",
+    "updatedAt": "2024-12-07T07:09:13.353Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 171,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:13.364Z",
+    "updatedAt": "2024-12-07T07:09:13.364Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 172,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:13.405Z",
+    "updatedAt": "2024-12-07T07:09:13.405Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 173,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.417Z",
+    "updatedAt": "2024-12-07T07:09:13.417Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 174,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:13.428Z",
+    "updatedAt": "2024-12-07T07:09:13.428Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 175,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:13.468Z",
+    "updatedAt": "2024-12-07T07:09:13.468Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 176,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:13.480Z",
+    "updatedAt": "2024-12-07T07:09:13.480Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 177,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.596Z",
+    "updatedAt": "2024-12-07T07:09:13.596Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 178,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:13.607Z",
+    "updatedAt": "2024-12-07T07:09:13.607Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 179,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:13.645Z",
+    "updatedAt": "2024-12-07T07:09:13.645Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 180,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:13.659Z",
+    "updatedAt": "2024-12-07T07:09:13.659Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 181,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.673Z",
+    "updatedAt": "2024-12-07T07:09:13.673Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 182,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:13.709Z",
+    "updatedAt": "2024-12-07T07:09:13.709Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 183,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:13.722Z",
+    "updatedAt": "2024-12-07T07:09:13.722Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 184,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:13.736Z",
+    "updatedAt": "2024-12-07T07:09:13.736Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 185,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.771Z",
+    "updatedAt": "2024-12-07T07:09:13.771Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 186,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:13.784Z",
+    "updatedAt": "2024-12-07T07:09:13.784Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 187,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:13.795Z",
+    "updatedAt": "2024-12-07T07:09:13.795Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 188,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:13.836Z",
+    "updatedAt": "2024-12-07T07:09:13.836Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 189,
+    "stockId": 1,
+    "detailId": 103,
+    "createdAt": "2024-12-07T07:09:13.849Z",
+    "updatedAt": "2024-12-07T07:09:13.849Z",
+    "detail": {
+      "id": 103,
+      "typeId": 1,
+      "value": "Bege",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 190,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:13.862Z",
+    "updatedAt": "2024-12-07T07:09:13.862Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 191,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:13.901Z",
+    "updatedAt": "2024-12-07T07:09:13.901Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 192,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:13.913Z",
+    "updatedAt": "2024-12-07T07:09:13.913Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 193,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:13.924Z",
+    "updatedAt": "2024-12-07T07:09:13.924Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 194,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:13.963Z",
+    "updatedAt": "2024-12-07T07:09:13.963Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 195,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:13.974Z",
+    "updatedAt": "2024-12-07T07:09:13.974Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 196,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:13.986Z",
+    "updatedAt": "2024-12-07T07:09:13.986Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 197,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.022Z",
+    "updatedAt": "2024-12-07T07:09:14.022Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 198,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:14.035Z",
+    "updatedAt": "2024-12-07T07:09:14.035Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 199,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:14.047Z",
+    "updatedAt": "2024-12-07T07:09:14.047Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 200,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:14.086Z",
+    "updatedAt": "2024-12-07T07:09:14.086Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 201,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.098Z",
+    "updatedAt": "2024-12-07T07:09:14.098Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 202,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:14.111Z",
+    "updatedAt": "2024-12-07T07:09:14.111Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 203,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:14.148Z",
+    "updatedAt": "2024-12-07T07:09:14.148Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 204,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:14.160Z",
+    "updatedAt": "2024-12-07T07:09:14.160Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 205,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.172Z",
+    "updatedAt": "2024-12-07T07:09:14.172Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 206,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:14.211Z",
+    "updatedAt": "2024-12-07T07:09:14.211Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 207,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:14.222Z",
+    "updatedAt": "2024-12-07T07:09:14.222Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 208,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:14.234Z",
+    "updatedAt": "2024-12-07T07:09:14.234Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 209,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.274Z",
+    "updatedAt": "2024-12-07T07:09:14.274Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 210,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:14.285Z",
+    "updatedAt": "2024-12-07T07:09:14.285Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 211,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:14.297Z",
+    "updatedAt": "2024-12-07T07:09:14.297Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 212,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:14.309Z",
+    "updatedAt": "2024-12-07T07:09:14.309Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 213,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.348Z",
+    "updatedAt": "2024-12-07T07:09:14.348Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 214,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:14.360Z",
+    "updatedAt": "2024-12-07T07:09:14.360Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 215,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:14.372Z",
+    "updatedAt": "2024-12-07T07:09:14.372Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 216,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:14.412Z",
+    "updatedAt": "2024-12-07T07:09:14.412Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 217,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.423Z",
+    "updatedAt": "2024-12-07T07:09:14.423Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 218,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:14.434Z",
+    "updatedAt": "2024-12-07T07:09:14.434Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 219,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:14.477Z",
+    "updatedAt": "2024-12-07T07:09:14.477Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 220,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:14.599Z",
+    "updatedAt": "2024-12-07T07:09:14.599Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 221,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.610Z",
+    "updatedAt": "2024-12-07T07:09:14.610Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 222,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:14.650Z",
+    "updatedAt": "2024-12-07T07:09:14.650Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 223,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:14.662Z",
+    "updatedAt": "2024-12-07T07:09:14.662Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 224,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:14.675Z",
+    "updatedAt": "2024-12-07T07:09:14.675Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 225,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.687Z",
+    "updatedAt": "2024-12-07T07:09:14.687Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 226,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:14.719Z",
+    "updatedAt": "2024-12-07T07:09:14.719Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 227,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:14.730Z",
+    "updatedAt": "2024-12-07T07:09:14.730Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 228,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:14.742Z",
+    "updatedAt": "2024-12-07T07:09:14.742Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 229,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.782Z",
+    "updatedAt": "2024-12-07T07:09:14.782Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 230,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:14.794Z",
+    "updatedAt": "2024-12-07T07:09:14.794Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 231,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:14.806Z",
+    "updatedAt": "2024-12-07T07:09:14.806Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 232,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:14.848Z",
+    "updatedAt": "2024-12-07T07:09:14.848Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 233,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.861Z",
+    "updatedAt": "2024-12-07T07:09:14.861Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 234,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:14.877Z",
+    "updatedAt": "2024-12-07T07:09:14.877Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 235,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:14.915Z",
+    "updatedAt": "2024-12-07T07:09:14.915Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 236,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:14.927Z",
+    "updatedAt": "2024-12-07T07:09:14.927Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 237,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:14.939Z",
+    "updatedAt": "2024-12-07T07:09:14.939Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 238,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:14.977Z",
+    "updatedAt": "2024-12-07T07:09:14.977Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 239,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:14.989Z",
+    "updatedAt": "2024-12-07T07:09:14.989Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 240,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:15.003Z",
+    "updatedAt": "2024-12-07T07:09:15.003Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 241,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.040Z",
+    "updatedAt": "2024-12-07T07:09:15.040Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 242,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:15.054Z",
+    "updatedAt": "2024-12-07T07:09:15.054Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 243,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:15.067Z",
+    "updatedAt": "2024-12-07T07:09:15.067Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 244,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:15.106Z",
+    "updatedAt": "2024-12-07T07:09:15.106Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 245,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.117Z",
+    "updatedAt": "2024-12-07T07:09:15.117Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 246,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:15.128Z",
+    "updatedAt": "2024-12-07T07:09:15.128Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 247,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:15.167Z",
+    "updatedAt": "2024-12-07T07:09:15.167Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 248,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:15.179Z",
+    "updatedAt": "2024-12-07T07:09:15.179Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 249,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.192Z",
+    "updatedAt": "2024-12-07T07:09:15.192Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 250,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:15.231Z",
+    "updatedAt": "2024-12-07T07:09:15.231Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 251,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:15.243Z",
+    "updatedAt": "2024-12-07T07:09:15.243Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 252,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:15.255Z",
+    "updatedAt": "2024-12-07T07:09:15.255Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 253,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.267Z",
+    "updatedAt": "2024-12-07T07:09:15.267Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 254,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:15.297Z",
+    "updatedAt": "2024-12-07T07:09:15.297Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 255,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:15.308Z",
+    "updatedAt": "2024-12-07T07:09:15.308Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 256,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:15.321Z",
+    "updatedAt": "2024-12-07T07:09:15.321Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 257,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.361Z",
+    "updatedAt": "2024-12-07T07:09:15.361Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 258,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:15.374Z",
+    "updatedAt": "2024-12-07T07:09:15.374Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 259,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:15.387Z",
+    "updatedAt": "2024-12-07T07:09:15.387Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 260,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:15.420Z",
+    "updatedAt": "2024-12-07T07:09:15.420Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 261,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.433Z",
+    "updatedAt": "2024-12-07T07:09:15.433Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 262,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:15.444Z",
+    "updatedAt": "2024-12-07T07:09:15.444Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 263,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:15.479Z",
+    "updatedAt": "2024-12-07T07:09:15.479Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 264,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:15.597Z",
+    "updatedAt": "2024-12-07T07:09:15.597Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 265,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.609Z",
+    "updatedAt": "2024-12-07T07:09:15.609Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 266,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:15.620Z",
+    "updatedAt": "2024-12-07T07:09:15.620Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 267,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:15.660Z",
+    "updatedAt": "2024-12-07T07:09:15.660Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 268,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:15.672Z",
+    "updatedAt": "2024-12-07T07:09:15.672Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 269,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.684Z",
+    "updatedAt": "2024-12-07T07:09:15.684Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 270,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:15.696Z",
+    "updatedAt": "2024-12-07T07:09:15.696Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 271,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:15.728Z",
+    "updatedAt": "2024-12-07T07:09:15.728Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 272,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:15.740Z",
+    "updatedAt": "2024-12-07T07:09:15.740Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 273,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.753Z",
+    "updatedAt": "2024-12-07T07:09:15.753Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 274,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:15.790Z",
+    "updatedAt": "2024-12-07T07:09:15.790Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 275,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:15.801Z",
+    "updatedAt": "2024-12-07T07:09:15.801Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 276,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:15.813Z",
+    "updatedAt": "2024-12-07T07:09:15.813Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 277,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.849Z",
+    "updatedAt": "2024-12-07T07:09:15.849Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 278,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:15.861Z",
+    "updatedAt": "2024-12-07T07:09:15.861Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 279,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:15.873Z",
+    "updatedAt": "2024-12-07T07:09:15.873Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 280,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:15.905Z",
+    "updatedAt": "2024-12-07T07:09:15.905Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 281,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.917Z",
+    "updatedAt": "2024-12-07T07:09:15.917Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 282,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:15.928Z",
+    "updatedAt": "2024-12-07T07:09:15.928Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 283,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:15.966Z",
+    "updatedAt": "2024-12-07T07:09:15.966Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 284,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:15.979Z",
+    "updatedAt": "2024-12-07T07:09:15.979Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 285,
+    "stockId": 1,
+    "detailId": 104,
+    "createdAt": "2024-12-07T07:09:15.990Z",
+    "updatedAt": "2024-12-07T07:09:15.990Z",
+    "detail": {
+      "id": 104,
+      "typeId": 1,
+      "value": "Branco",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 286,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:16.029Z",
+    "updatedAt": "2024-12-07T07:09:16.029Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 287,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:16.041Z",
+    "updatedAt": "2024-12-07T07:09:16.041Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 288,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:16.053Z",
+    "updatedAt": "2024-12-07T07:09:16.053Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 289,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.092Z",
+    "updatedAt": "2024-12-07T07:09:16.092Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 290,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:16.104Z",
+    "updatedAt": "2024-12-07T07:09:16.104Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 291,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:16.115Z",
+    "updatedAt": "2024-12-07T07:09:16.115Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 292,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:16.126Z",
+    "updatedAt": "2024-12-07T07:09:16.126Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 293,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.156Z",
+    "updatedAt": "2024-12-07T07:09:16.156Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 294,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:16.168Z",
+    "updatedAt": "2024-12-07T07:09:16.168Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 295,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:16.179Z",
+    "updatedAt": "2024-12-07T07:09:16.179Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 296,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:16.219Z",
+    "updatedAt": "2024-12-07T07:09:16.219Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 297,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.230Z",
+    "updatedAt": "2024-12-07T07:09:16.230Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 298,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:16.243Z",
+    "updatedAt": "2024-12-07T07:09:16.243Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 299,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:16.280Z",
+    "updatedAt": "2024-12-07T07:09:16.280Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 300,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:16.292Z",
+    "updatedAt": "2024-12-07T07:09:16.292Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 301,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.304Z",
+    "updatedAt": "2024-12-07T07:09:16.304Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 302,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:16.333Z",
+    "updatedAt": "2024-12-07T07:09:16.333Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 303,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:16.345Z",
+    "updatedAt": "2024-12-07T07:09:16.345Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 304,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:16.358Z",
+    "updatedAt": "2024-12-07T07:09:16.358Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 305,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.400Z",
+    "updatedAt": "2024-12-07T07:09:16.400Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 306,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:16.411Z",
+    "updatedAt": "2024-12-07T07:09:16.411Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 307,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:16.423Z",
+    "updatedAt": "2024-12-07T07:09:16.423Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 308,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:16.462Z",
+    "updatedAt": "2024-12-07T07:09:16.462Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 309,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.473Z",
+    "updatedAt": "2024-12-07T07:09:16.473Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 310,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:16.485Z",
+    "updatedAt": "2024-12-07T07:09:16.485Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 311,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:16.598Z",
+    "updatedAt": "2024-12-07T07:09:16.598Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 312,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:16.611Z",
+    "updatedAt": "2024-12-07T07:09:16.611Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 313,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.649Z",
+    "updatedAt": "2024-12-07T07:09:16.649Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 314,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:16.662Z",
+    "updatedAt": "2024-12-07T07:09:16.662Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 315,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:16.674Z",
+    "updatedAt": "2024-12-07T07:09:16.674Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 316,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:16.713Z",
+    "updatedAt": "2024-12-07T07:09:16.713Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 317,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.728Z",
+    "updatedAt": "2024-12-07T07:09:16.728Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 318,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:16.741Z",
+    "updatedAt": "2024-12-07T07:09:16.741Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 319,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:16.781Z",
+    "updatedAt": "2024-12-07T07:09:16.781Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 320,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:16.793Z",
+    "updatedAt": "2024-12-07T07:09:16.793Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 321,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.808Z",
+    "updatedAt": "2024-12-07T07:09:16.808Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 322,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:16.847Z",
+    "updatedAt": "2024-12-07T07:09:16.847Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 323,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:16.859Z",
+    "updatedAt": "2024-12-07T07:09:16.859Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 324,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:16.871Z",
+    "updatedAt": "2024-12-07T07:09:16.871Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 325,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.911Z",
+    "updatedAt": "2024-12-07T07:09:16.911Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 326,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:16.922Z",
+    "updatedAt": "2024-12-07T07:09:16.922Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 327,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:16.934Z",
+    "updatedAt": "2024-12-07T07:09:16.934Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 328,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:16.946Z",
+    "updatedAt": "2024-12-07T07:09:16.946Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 329,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:16.985Z",
+    "updatedAt": "2024-12-07T07:09:16.985Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 330,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:16.996Z",
+    "updatedAt": "2024-12-07T07:09:16.996Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 331,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:17.009Z",
+    "updatedAt": "2024-12-07T07:09:17.009Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 332,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:17.047Z",
+    "updatedAt": "2024-12-07T07:09:17.047Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 333,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.059Z",
+    "updatedAt": "2024-12-07T07:09:17.059Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 334,
+    "stockId": 1,
+    "detailId": 202,
+    "createdAt": "2024-12-07T07:09:17.071Z",
+    "updatedAt": "2024-12-07T07:09:17.071Z",
+    "detail": {
+      "id": 202,
+      "typeId": 2,
+      "value": "M",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 335,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:17.108Z",
+    "updatedAt": "2024-12-07T07:09:17.108Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 336,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:17.119Z",
+    "updatedAt": "2024-12-07T07:09:17.119Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 337,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.131Z",
+    "updatedAt": "2024-12-07T07:09:17.131Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 338,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:17.169Z",
+    "updatedAt": "2024-12-07T07:09:17.169Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 339,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:17.182Z",
+    "updatedAt": "2024-12-07T07:09:17.182Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 340,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:17.194Z",
+    "updatedAt": "2024-12-07T07:09:17.194Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 341,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.223Z",
+    "updatedAt": "2024-12-07T07:09:17.223Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 342,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:17.234Z",
+    "updatedAt": "2024-12-07T07:09:17.234Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 343,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:17.246Z",
+    "updatedAt": "2024-12-07T07:09:17.246Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 344,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:17.288Z",
+    "updatedAt": "2024-12-07T07:09:17.288Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 345,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.327Z",
+    "updatedAt": "2024-12-07T07:09:17.327Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 346,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:17.338Z",
+    "updatedAt": "2024-12-07T07:09:17.338Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 347,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:17.353Z",
+    "updatedAt": "2024-12-07T07:09:17.353Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 348,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:17.365Z",
+    "updatedAt": "2024-12-07T07:09:17.365Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 349,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.394Z",
+    "updatedAt": "2024-12-07T07:09:17.394Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 350,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:17.405Z",
+    "updatedAt": "2024-12-07T07:09:17.405Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 351,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:17.418Z",
+    "updatedAt": "2024-12-07T07:09:17.418Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 352,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:17.458Z",
+    "updatedAt": "2024-12-07T07:09:17.458Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 353,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.470Z",
+    "updatedAt": "2024-12-07T07:09:17.470Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 354,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:17.482Z",
+    "updatedAt": "2024-12-07T07:09:17.482Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 355,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:17.569Z",
+    "updatedAt": "2024-12-07T07:09:17.569Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 356,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:17.580Z",
+    "updatedAt": "2024-12-07T07:09:17.580Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 357,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.621Z",
+    "updatedAt": "2024-12-07T07:09:17.621Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 358,
+    "stockId": 1,
+    "detailId": 203,
+    "createdAt": "2024-12-07T07:09:17.633Z",
+    "updatedAt": "2024-12-07T07:09:17.633Z",
+    "detail": {
+      "id": 203,
+      "typeId": 2,
+      "value": "G",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 359,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:17.645Z",
+    "updatedAt": "2024-12-07T07:09:17.645Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 360,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:17.682Z",
+    "updatedAt": "2024-12-07T07:09:17.682Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 361,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.693Z",
+    "updatedAt": "2024-12-07T07:09:17.693Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 362,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:17.707Z",
+    "updatedAt": "2024-12-07T07:09:17.707Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 363,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:17.744Z",
+    "updatedAt": "2024-12-07T07:09:17.744Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 364,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:17.757Z",
+    "updatedAt": "2024-12-07T07:09:17.757Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 365,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.770Z",
+    "updatedAt": "2024-12-07T07:09:17.770Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 366,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:17.809Z",
+    "updatedAt": "2024-12-07T07:09:17.809Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 367,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:17.821Z",
+    "updatedAt": "2024-12-07T07:09:17.821Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 368,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:17.832Z",
+    "updatedAt": "2024-12-07T07:09:17.832Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 369,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.871Z",
+    "updatedAt": "2024-12-07T07:09:17.871Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 370,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:17.882Z",
+    "updatedAt": "2024-12-07T07:09:17.882Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 371,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:17.894Z",
+    "updatedAt": "2024-12-07T07:09:17.894Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 372,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:17.906Z",
+    "updatedAt": "2024-12-07T07:09:17.906Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 373,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:17.936Z",
+    "updatedAt": "2024-12-07T07:09:17.936Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 374,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:17.948Z",
+    "updatedAt": "2024-12-07T07:09:17.948Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 375,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:17.960Z",
+    "updatedAt": "2024-12-07T07:09:17.960Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 376,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:18.002Z",
+    "updatedAt": "2024-12-07T07:09:18.002Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 377,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:18.016Z",
+    "updatedAt": "2024-12-07T07:09:18.016Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 378,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:18.056Z",
+    "updatedAt": "2024-12-07T07:09:18.056Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 379,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:18.068Z",
+    "updatedAt": "2024-12-07T07:09:18.068Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 380,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:18.079Z",
+    "updatedAt": "2024-12-07T07:09:18.079Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 381,
+    "stockId": 1,
+    "detailId": 101,
+    "createdAt": "2024-12-07T07:09:18.091Z",
+    "updatedAt": "2024-12-07T07:09:18.091Z",
+    "detail": {
+      "id": 101,
+      "typeId": 1,
+      "value": "Amarelo",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 382,
+    "stockId": 1,
+    "detailId": 204,
+    "createdAt": "2024-12-07T07:09:18.120Z",
+    "updatedAt": "2024-12-07T07:09:18.120Z",
+    "detail": {
+      "id": 204,
+      "typeId": 2,
+      "value": "GG",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 383,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:18.131Z",
+    "updatedAt": "2024-12-07T07:09:18.131Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 384,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:18.143Z",
+    "updatedAt": "2024-12-07T07:09:18.143Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 385,
+    "stockId": 1,
+    "detailId": 105,
+    "createdAt": "2024-12-07T07:09:18.184Z",
+    "updatedAt": "2024-12-07T07:09:18.184Z",
+    "detail": {
+      "id": 105,
+      "typeId": 1,
+      "value": "Caramelo",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 386,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:18.196Z",
+    "updatedAt": "2024-12-07T07:09:18.196Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 387,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:18.207Z",
+    "updatedAt": "2024-12-07T07:09:18.207Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 388,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:18.245Z",
+    "updatedAt": "2024-12-07T07:09:18.245Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 389,
+    "stockId": 1,
+    "detailId": 105,
+    "createdAt": "2024-12-07T07:09:18.258Z",
+    "updatedAt": "2024-12-07T07:09:18.258Z",
+    "detail": {
+      "id": 105,
+      "typeId": 1,
+      "value": "Caramelo",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 390,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:18.271Z",
+    "updatedAt": "2024-12-07T07:09:18.271Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 391,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:18.308Z",
+    "updatedAt": "2024-12-07T07:09:18.308Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 392,
+    "stockId": 1,
+    "detailId": 504,
+    "createdAt": "2024-12-07T07:09:18.320Z",
+    "updatedAt": "2024-12-07T07:09:18.320Z",
+    "detail": {
+      "id": 504,
+      "typeId": 5,
+      "value": "Otaku",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 393,
+    "stockId": 1,
+    "detailId": 105,
+    "createdAt": "2024-12-07T07:09:18.332Z",
+    "updatedAt": "2024-12-07T07:09:18.332Z",
+    "detail": {
+      "id": 105,
+      "typeId": 1,
+      "value": "Caramelo",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 394,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:18.371Z",
+    "updatedAt": "2024-12-07T07:09:18.371Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 395,
+    "stockId": 1,
+    "detailId": 401,
+    "createdAt": "2024-12-07T07:09:18.385Z",
+    "updatedAt": "2024-12-07T07:09:18.385Z",
+    "detail": {
+      "id": 401,
+      "typeId": 4,
+      "value": "Algodão",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 396,
+    "stockId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-07T07:09:18.398Z",
+    "updatedAt": "2024-12-07T07:09:18.398Z",
+    "detail": {
+      "id": 501,
+      "typeId": 5,
+      "value": "Básico",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 397,
+    "stockId": 1,
+    "detailId": 105,
+    "createdAt": "2024-12-07T07:09:18.438Z",
+    "updatedAt": "2024-12-07T07:09:18.438Z",
+    "detail": {
+      "id": 105,
+      "typeId": 1,
+      "value": "Caramelo",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 1,
+        "name": "Cor"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 398,
+    "stockId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-07T07:09:18.451Z",
+    "updatedAt": "2024-12-07T07:09:18.451Z",
+    "detail": {
+      "id": 201,
+      "typeId": 2,
+      "value": "P",
+      "createdAt": "2024-12-07T07:09:06.540Z",
+      "updatedAt": "2024-12-07T07:09:06.540Z",
+      "type": {
+        "id": 2,
+        "name": "Tamanho"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 399,
+    "stockId": 1,
+    "detailId": 404,
+    "createdAt": "2024-12-07T07:09:18.463Z",
+    "updatedAt": "2024-12-07T07:09:18.463Z",
+    "detail": {
+      "id": 404,
+      "typeId": 4,
+      "value": "Poliester",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 4,
+        "name": "Material"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  },
+  {
+    "id": 400,
+    "stockId": 1,
+    "detailId": 505,
+    "createdAt": "2024-12-07T07:09:18.475Z",
+    "updatedAt": "2024-12-07T07:09:18.475Z",
+    "detail": {
+      "id": 505,
+      "typeId": 5,
+      "value": "Rock",
+      "createdAt": "2024-12-07T07:09:06.541Z",
+      "updatedAt": "2024-12-07T07:09:06.541Z",
+      "type": {
+        "id": 5,
+        "name": "Tema"
+      }
+    },
+    "stock": {
+      "id": 1
+    }
+  }
+]
