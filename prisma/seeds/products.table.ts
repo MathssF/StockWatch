@@ -5,7 +5,7 @@ const productsTable = [
       // details: [1, 2, 4, 5],
       arrays: [
         [101, 102],
-        [201, 202, 203, 204],
+        [201, 202],
         [401, 402],
         [501, 502]
       ]
@@ -16,7 +16,7 @@ const productsTable = [
       // details: [1, 2, 3, 4, 5],
       arrays: [
         [101, 102],
-        [201, 202, 203, 204],
+        [201, 202],
         [301, 302],
         [401, 402],
         [501, 502]
@@ -28,7 +28,7 @@ const productsTable = [
       // details: [1, 2, 4],
       arrays: [
         [101, 102],
-        [201, 202, 203, 204],
+        [201, 202],
         [401, 402],
       ]
     },
@@ -37,7 +37,7 @@ const productsTable = [
       details: [false, true, true, false, false],
       // details: [2, 3],
       arrays: [
-        [201, 202, 203, 204],
+        [201, 202],
         [301, 302]
       ]
     },
@@ -46,7 +46,7 @@ const productsTable = [
       details: [false, true, false, true, false],
       // details: [2, 4],
       arrays: [
-        [201, 202, 203, 204],
+        [201, 202],
         [401, 402]
       ]
     },
