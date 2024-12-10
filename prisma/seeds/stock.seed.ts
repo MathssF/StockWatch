@@ -54,7 +54,7 @@ export default async function mainS(prisma: PrismaClient) {
         await prisma.stockDetail.create({
           data: {
             stockId: stock.id,
-            color: colorValue,
+            color: colorValue, // Ta na cara
             size: sizeValue,
             year: yearValue,
             material: materialValue,
