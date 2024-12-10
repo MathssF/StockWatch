@@ -5,8 +5,8 @@
     "sku": "BERMUDA",
     "description": "Bermuda de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-07T07:11:32.572Z",
-    "updatedAt": "2024-12-07T07:11:32.572Z"
+    "createdAt": "2024-12-10T21:36:57.806Z",
+    "updatedAt": "2024-12-10T21:36:57.806Z"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "sku": "BOTA",
     "description": "Bota de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 60,
-    "createdAt": "2024-12-07T07:11:32.607Z",
-    "updatedAt": "2024-12-07T07:11:32.607Z"
+    "createdAt": "2024-12-10T21:36:57.821Z",
+    "updatedAt": "2024-12-10T21:36:57.821Z"
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "sku": "CALÇA",
     "description": "Calça de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 30,
-    "createdAt": "2024-12-07T07:11:32.615Z",
-    "updatedAt": "2024-12-07T07:11:32.615Z"
+    "createdAt": "2024-12-10T21:36:57.853Z",
+    "updatedAt": "2024-12-10T21:36:57.853Z"
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "sku": "CALÇA_MILITAR",
     "description": "Calça Militar de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 70,
-    "createdAt": "2024-12-07T07:11:32.621Z",
-    "updatedAt": "2024-12-07T07:11:32.621Z"
+    "createdAt": "2024-12-10T21:36:57.860Z",
+    "updatedAt": "2024-12-10T21:36:57.860Z"
   },
   {
     "id": 5,
@@ -41,7 +41,7 @@
     "sku": "CALÇA_SOCIAL",
     "description": "Calça Social de boa qualidade, ideal para o seu estilo e conforto.",
     "price": 80,
-    "createdAt": "2024-12-07T07:11:32.653Z",
-    "updatedAt": "2024-12-07T07:11:32.653Z"
+    "createdAt": "2024-12-10T21:36:57.867Z",
+    "updatedAt": "2024-12-10T21:36:57.867Z"
   }
 ]
