@@ -1,23 +1,49 @@
 const productsTable = [
     { id: 1, name: 'Bermuda', price: 80, 
       description: 'Bermuda de boa qualidade, ideal para o seu estilo e conforto.', 
-      details: [1, 2, 4, 5] 
+      details: [1, 2, 4, 5],
+      arrays: [
+        [101, 102],
+        [201, 202, 203, 204],
+        [401, 402],
+        [501, 502]
+      ]
     },
     { id: 2, name: 'Bota', price: 60, 
       description: 'Bota de boa qualidade, ideal para o seu estilo e conforto.', 
-      details: [1, 2, 3, 4, 5] 
+      details: [1, 2, 3, 4, 5],
+      arrays: [
+        [101, 102],
+        [201, 202, 203, 204],
+        [301, 302],
+        [401, 402],
+        [501, 502]
+      ]
     },
     { id: 3, name: 'Calça', price: 30, 
       description: 'Calça de boa qualidade, ideal para o seu estilo e conforto.', 
-      details: [1, 2, 4] 
+      details: [1, 2, 4],
+      arrays: [
+        [101, 102],
+        [201, 202, 203, 204],
+        [401, 402],
+      ]
     },
     { id: 4, name: 'Calça Militar', price: 70, 
       description: 'Calça Militar de boa qualidade, ideal para o seu estilo e conforto.', 
-      details: [2, 3] 
+      details: [2, 3],
+      arrays: [
+        [201, 202, 203, 204],
+        [301, 302]
+      ]
     },
     { id: 5, name: 'Calça Social', price: 80, 
       description: 'Calça Social de boa qualidade, ideal para o seu estilo e conforto.', 
-      details: [2, 4] 
+      details: [2, 4],
+      arrays: [
+        [201, 202, 203, 204],
+        [401, 402]
+      ]
     },
 ]
 // Dev: Função apenas para teste

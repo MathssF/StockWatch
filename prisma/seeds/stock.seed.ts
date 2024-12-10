@@ -102,8 +102,8 @@ export default async function mainS(prisma: PrismaClient) {
         // }
       }
       
-      allStocks.push(newStock);
-      newStock = [];
+      // allStocks.push(newStock);
+      // newStock = [];
     // } 
 
     // Model no prisma para a relação de stock com detalhes
@@ -118,29 +118,29 @@ export default async function mainS(prisma: PrismaClient) {
         updatedAt   DateTime @updatedAt
     }
     */
-    for (let w = 0; w < allStocks.length; w++) {
-      const stockMatrix = mapToProcessedMatrix(allStocks[w], divisions);
-      // const stockMatrix = mapToProcessedMatrix(newStock, divisions);
-      console.log('Valor: ', w, ' e Divs: ', divisions);
-      const finalStock = generateArrayFinal(
-        stockMatrix, newColor,
-        size, newYear,
-        newMaterials, newStyles,
-        types,
-      )
-      for(let m = 0; m < finalStock.length; m++) {
-        for(let n = 0; n < finalStock[m].matrix.length; n++) {
-          console.log('dentro do details, id: ', finalStock[m].id, ' e detail: ', finalStock[m].matrix[n]);
-          await prisma.stockDetail.create({
-            data: {
-              stockId: finalStock[m].id, 
-              detailId: finalStock[m].matrix[n],
-            }
-          })
-        }
-      }
-    }
-    allStocks = [];
+    // for (let w = 0; w < allStocks.length; w++) {
+    //   const stockMatrix = mapToProcessedMatrix(allStocks[w], divisions);
+    //   // const stockMatrix = mapToProcessedMatrix(newStock, divisions);
+    //   console.log('Valor: ', w, ' e Divs: ', divisions);
+    //   const finalStock = generateArrayFinal(
+    //     stockMatrix, newColor,
+    //     size, newYear,
+    //     newMaterials, newStyles,
+    //     types,
+    //   )
+    //   for(let m = 0; m < finalStock.length; m++) {
+    //     for(let n = 0; n < finalStock[m].matrix.length; n++) {
+    //       console.log('dentro do details, id: ', finalStock[m].id, ' e detail: ', finalStock[m].matrix[n]);
+    //       await prisma.stockDetail.create({
+    //         data: {
+    //           stockId: finalStock[m].id, 
+    //           detailId: finalStock[m].matrix[n],
+    //         }
+    //       })
+    //     }
+    //   }
+    // }
+    // allStocks = [];
   }
   console.log('Estoque inserido com sucesso!')
 }
