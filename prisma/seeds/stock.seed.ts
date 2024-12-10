@@ -1,54 +1,54 @@
 import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
-import mapToProcessedMatrix from '../utils/stockA.utils';
-import generateArrayFinal from '../utils/stoclB.utils';
-import { color, size, year, materials, style } from './datails.table';
+// import mapToProcessedMatrix from '../utils/stockA.utils';
+// import generateArrayFinal from '../utils/stoclB.utils';
+// import { color, size, year, materials, style } from './datails.table';
 
 export default async function mainS(prisma: PrismaClient) {
-  let newColor: number[] = [];
-  let newYear: number[] = [];
-  let newMaterials: number[] = [];
-  let newStyles: number[] = [];
-  let allStocks: number[][] = [];
-  for (let i = 0; i < productsTable.length -1; i++) {
-    const { details } = productsTable[i];
-    if (!Array.isArray(details)) {
-        continue;
-      }
-    let variables = 1;
-    let divisions = [1, 1, 1, 1, 1];
-    let types = [false, false, false, false, false];
-    let newStock: number[] = [];
-    if (details.includes(1)) {
-      variables = variables * 5;
-      divisions[0] = 5;
-      types[0] = true;
-      newColor = color.sort(() => Math.random() - 0.5).slice(0, 5);
-    };
-    if (details.includes(2)) {
-      variables = variables * 4;
-      divisions[1] = 4;
-      types[1] = true;
-    };
-    if (details.includes(3)) {
-      variables = variables * 3;
-      divisions[2] = 3;
-      types[2] = true;
-      newYear = year.sort(() => Math.random() - 0.5).slice(0, 3);
-    };
-    if (details.includes(4)) {
-      variables = variables * 2;
-      divisions[3] = 2;
-      types[3] = true;
-      newMaterials = materials.sort(() => Math.random() - 0.5).slice(0, 2);
-    };
-    if (details.includes(5)) {
-      variables = variables * 3;
-      divisions[4] = 3;
-      types[4] = true;
-      newStyles = style.sort(() => Math.random() - 0.5).slice(0, 2);
-      newStyles.push(501)
-    };
+  // let newColor: number[] = [];
+  // let newYear: number[] = [];
+  // let newMaterials: number[] = [];
+  // let newStyles: number[] = [];
+  // let allStocks: number[][] = [];
+  // for (let i = 0; i < productsTable.length -1; i++) {
+  //   const { details } = productsTable[i];
+  //   if (!Array.isArray(details)) {
+  //       continue;
+  //     }
+  //   let variables = 1;
+  //   let divisions = [1, 1, 1, 1, 1];
+  //   let types = [false, false, false, false, false];
+  //   let newStock: number[] = [];
+  //   if (details.includes(1)) {
+  //     variables = variables * 5;
+  //     divisions[0] = 5;
+  //     types[0] = true;
+  //     newColor = color.sort(() => Math.random() - 0.5).slice(0, 5);
+  //   };
+  //   if (details.includes(2)) {
+  //     variables = variables * 4;
+  //     divisions[1] = 4;
+  //     types[1] = true;
+  //   };
+  //   if (details.includes(3)) {
+  //     variables = variables * 3;
+  //     divisions[2] = 3;
+  //     types[2] = true;
+  //     newYear = year.sort(() => Math.random() - 0.5).slice(0, 3);
+  //   };
+  //   if (details.includes(4)) {
+  //     variables = variables * 2;
+  //     divisions[3] = 2;
+  //     types[3] = true;
+  //     newMaterials = materials.sort(() => Math.random() - 0.5).slice(0, 2);
+  //   };
+  //   if (details.includes(5)) {
+  //     variables = variables * 3;
+  //     divisions[4] = 3;
+  //     types[4] = true;
+  //     newStyles = style.sort(() => Math.random() - 0.5).slice(0, 2);
+  //     newStyles.push(501)
+  //   };
 
     // Model no Prisma para servir de exemplo
     /*
@@ -65,7 +65,8 @@ export default async function mainS(prisma: PrismaClient) {
     }
     */
     // for (let i =0; i < productsTable.length; i++) {
-      for (let j = 0; j < variables; j++) {
+      // for (let j = 0; j < variables; j++) {
+      for (let j =0; j < productsTable.length; j++) {
         console.log('Tentando criar o produto: ', productsTable[i].id);
         console.log(' Na variavel: ', j)
         try {
@@ -76,7 +77,7 @@ export default async function mainS(prisma: PrismaClient) {
            }
           });
           console.log('Stock criado com sucesso! No produto: ', productsTable[i].id, ' E na variavel ', j);
-          newStock.push(stock.id);
+          // newStock.push(stock.id);
         } catch (error) {
           console.error('Erro: ', error);
         }
