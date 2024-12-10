@@ -2,6 +2,8 @@ import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
 import { details, color, size, year, materials, style } from './datails.table';
 
+// Aqui vou mudar tudo
+
 export default async function mainS(prisma: PrismaClient) {
   let variants = 1;
   let Xcolor = [];
