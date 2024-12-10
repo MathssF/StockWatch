@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import productsTable from './products.table';
-import { details, color, size, year, materials, style } from './datails.table';
+import { color, size, year, materials, style } from './datails.table';
 
 function getRandomElements<T>(array: T[], count: number): T[] {
   const shuffled = [...array].sort(() => 0.5 - Math.random());
@@ -30,18 +30,22 @@ function generateCombinations(arrays: any[][]): any[][] {
 export default async function mainS(prisma: PrismaClient) {
   for (const product of productsTable) {
     const { id, details: productDetails } = product;
-    const Xcolor = productDetails[0] ? getRandomElements(color, 2) : [null];
-    const Xsize = productDetails[1] ? getRandomElements(size, 2) : [null];
-    const Xyear = productDetails[2] ? getRandomElements(year, 2) : [null];
-    const Xmaterials = productDetails[3] ? getRandomElements(materials, 2) : [null];
-    const Xstyle = productDetails[4] ? getRandomElements(style, 2) : [null];
 
-    const attributeCombinations = generateCombinations([Xcolor, Xsize, Xyear, Xmaterials, Xstyle]);
+    // Sorteando elementos aleatórios para cada atributo
+    const Xcolor = productDetails[0] ? getRandomElements(color, 2) : [];
+    const Xsize = productDetails[1] ? getRandomElements(size, 2) : [];
+    const Xyear = productDetails[2] ? getRandomElements(year, 2) : [];
+    const Xmaterials = productDetails[3] ? getRandomElements(materials, 2) : [];
+    const Xstyle = productDetails[4] ? getRandomElements(style, 2) : [];
+
+    // Gerar todas as combinações possíveis
+    const attributeCombinations = generateCombinations([Xcolor, Xsize, Xyear, Xmaterials, Xstyle].filter(attr => attr.length > 0));
 
     console.log(`Tentando criar o produto: ${id}`);
+
     for (const combination of attributeCombinations) {
-      const [colorValue, sizeValue, yearValue, materialValue, styleValue] = combination;
       try {
+        // Criando o Stock
         const stock = await prisma.stock.create({
           data: {
             productId: id,
@@ -49,25 +53,26 @@ export default async function mainS(prisma: PrismaClient) {
           },
         });
 
-        console.log(`Primeira parte feita para o produto ${id} com atributos:`, combination);
+        console.log(`Stock criado com sucesso! Produto: ${id}, Atributos:`, combination);
 
-        await prisma.stockDetail.create({
-          data: {
-            stockId: stock.id,
-            color: colorValue, // Ta na cara
-            size: sizeValue,
-            year: yearValue,
-            material: materialValue,
-            style: styleValue,
-          },
-        });
+        // Criando StockDetails para cada atributo da combinação
+        for (const detailId of combination) {
+          if (detailId !== null) {
+            await prisma.stockDetail.create({
+              data: {
+                stockId: stock.id,
+                detailId: detailId,
+              },
+            });
+          }
+        }
 
-        console.log(`StockDetail criado com sucesso! Produto: ${id}, Atributos: ${combination}`);
+        console.log(`StockDetail criado com sucesso para o Stock ID: ${stock.id}`);
       } catch (error) {
-        console.error(`Erro ao criar estoque para o produto ${id} com atributos ${combination}:`, error);
+        console.error(`Erro ao criar Stock ou StockDetail para o produto ${id}:`, error);
       }
     }
   }
 
-  console.log('Estoque inserido com sucesso!');
+  console.log('Processo de inserção de estoque finalizado!');
 }
