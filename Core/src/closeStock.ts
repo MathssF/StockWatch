@@ -7,8 +7,8 @@ const prisma = new PrismaClient();
 
 async function closeStock(): Promise<void> {
   try {
-    const dirToday = './core/src/database/today';
-    const dirOld = './core/src/database/olders';
+    const dirToday = './Core/src/database/today';
+    const dirOld = './Core/src/database/olders';
 
     // Verifique se o diretório 'today' existe e o arquivo 'output.json' está presente
     const filePath = path.join(dirToday, 'output.json');
