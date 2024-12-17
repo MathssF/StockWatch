@@ -1,5 +1,5 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
       "target": "ESNext",
       "module": "commonjs",
       "moduleResolution": "node",
@@ -11,14 +11,14 @@
       "paths": {
         "*": ["node_modules/*", "../node_modules/*"]
       },
-    },
-    "include": [
+  },
+  "include": [
       "**/*.ts",
       "../shared/**/*.ts"
-    ],
-    "exclude": [
+  ],
+  "exclude": [
       "node_modules",
       "dist"
-    ]
-  }
+  ]
+}
   

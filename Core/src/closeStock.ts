@@ -42,7 +42,7 @@ async function closeStock(): Promise<void> {
 
     // Gerar um novo nome para o arquivo de fechamento
     const timestamp = new Date().toISOString().replace(/[-T:.Z]/g, '').slice(0, 14);
-    const newFileName = `${timestamp}stocks.ts`;
+    const newFileName = `${timestamp}stocks.json`;
 
     // Mover o arquivo para a pasta 'olders' com o novo nome
     const newFilePath = path.join(dirOld, newFileName);
