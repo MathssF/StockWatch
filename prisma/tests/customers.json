@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "lastname": "Smith",
+    "email": "alice@example.com",
+    "phone": "1234567890",
+    "insta": "@alice_smith_test",
+    "pass": "$2b$10$kEY9URM/G2DajR1lIU12XuOry8HcYLLU1zEQAB.KBZOrRTQmvB/FO",
+    "birthdate": "1990-01-15T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:12.317Z",
+    "updatedAt": "2024-12-17T12:35:12.317Z",
+    "preferences": [
+      {
+        "id": 1,
+        "customerId": 1,
+        "detailId": 501,
+        "createdAt": "2024-12-17T12:35:12.317Z",
+        "updatedAt": "2024-12-17T12:35:12.317Z",
+        "detail": {
+          "id": 501
+        }
+      },
+      {
+        "id": 2,
+        "customerId": 1,
+        "detailId": 201,
+        "createdAt": "2024-12-17T12:35:12.317Z",
+        "updatedAt": "2024-12-17T12:35:12.317Z",
+        "detail": {
+          "id": 201
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "lastname": "Johnson",
+    "email": "bob@example.com",
+    "phone": "2345678901",
+    "insta": "@bob_johnson_test",
+    "pass": "$2b$10$6Q8LNfVZhluAlD.VB9XL6e2JMrJfUEXNi3Ljb933rpB7xHKFhn2O.",
+    "birthdate": "1985-05-20T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:12.460Z",
+    "updatedAt": "2024-12-17T12:35:12.460Z",
+    "preferences": [
+      {
+        "id": 3,
+        "customerId": 2,
+        "detailId": 502,
+        "createdAt": "2024-12-17T12:35:12.460Z",
+        "updatedAt": "2024-12-17T12:35:12.460Z",
+        "detail": {
+          "id": 502
+        }
+      },
+      {
+        "id": 4,
+        "customerId": 2,
+        "detailId": 202,
+        "createdAt": "2024-12-17T12:35:12.460Z",
+        "updatedAt": "2024-12-17T12:35:12.460Z",
+        "detail": {
+          "id": 202
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "lastname": "Brown",
+    "email": "charlie@example.com",
+    "phone": "3456789012",
+    "insta": "@charlie_brown_test",
+    "pass": "$2b$10$mL4SQw4JkImJu01i9sjZcuRVa264SHXZ/TVjW4cqh47Sxx32z6Y9G",
+    "birthdate": "1992-11-10T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:12.554Z",
+    "updatedAt": "2024-12-17T12:35:12.554Z",
+    "preferences": [
+      {
+        "id": 5,
+        "customerId": 3,
+        "detailId": 503,
+        "createdAt": "2024-12-17T12:35:12.554Z",
+        "updatedAt": "2024-12-17T12:35:12.554Z",
+        "detail": {
+          "id": 503
+        }
+      },
+      {
+        "id": 6,
+        "customerId": 3,
+        "detailId": 203,
+        "createdAt": "2024-12-17T12:35:12.554Z",
+        "updatedAt": "2024-12-17T12:35:12.554Z",
+        "detail": {
+          "id": 203
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Diana",
+    "lastname": "Prince",
+    "email": "diana@example.com",
+    "phone": "4567890123",
+    "insta": "@diana_prince_test",
+    "pass": "$2b$10$2iFGmqs5ckOt3mBEitJO4utDdqDgOv0j2mIxHGPHO0fz.2wxuX1RO",
+    "birthdate": "1988-03-25T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:12.672Z",
+    "updatedAt": "2024-12-17T12:35:12.672Z",
+    "preferences": [
+      {
+        "id": 7,
+        "customerId": 4,
+        "detailId": 504,
+        "createdAt": "2024-12-17T12:35:12.672Z",
+        "updatedAt": "2024-12-17T12:35:12.672Z",
+        "detail": {
+          "id": 504
+        }
+      },
+      {
+        "id": 8,
+        "customerId": 4,
+        "detailId": 204,
+        "createdAt": "2024-12-17T12:35:12.672Z",
+        "updatedAt": "2024-12-17T12:35:12.672Z",
+        "detail": {
+          "id": 204
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Eve",
+    "lastname": "Taylor",
+    "email": "eve@example.com",
+    "phone": "5678901234",
+    "insta": "@eve_taylor_test",
+    "pass": "$2b$10$/jBvy2JlPYunu4aC9Lgp5ODOX7v1S80QIAiJwLlJT7khh78Xfk1E6",
+    "birthdate": "1995-07-08T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:12.767Z",
+    "updatedAt": "2024-12-17T12:35:12.767Z",
+    "preferences": [
+      {
+        "id": 9,
+        "customerId": 5,
+        "detailId": 505,
+        "createdAt": "2024-12-17T12:35:12.767Z",
+        "updatedAt": "2024-12-17T12:35:12.767Z",
+        "detail": {
+          "id": 505
+        }
+      },
+      {
+        "id": 10,
+        "customerId": 5,
+        "detailId": 201,
+        "createdAt": "2024-12-17T12:35:12.767Z",
+        "updatedAt": "2024-12-17T12:35:12.767Z",
+        "detail": {
+          "id": 201
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Frank",
+    "lastname": "Anderson",
+    "email": "frank@example.com",
+    "phone": "6789012345",
+    "insta": "@frank_anderson_test",
+    "pass": "$2b$10$WDYxKnsYiobbgPrwSe.U0un4xDfzNngmfJZ7geV/NqTEPZMTheHHS",
+    "birthdate": "1993-09-12T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:12.855Z",
+    "updatedAt": "2024-12-17T12:35:12.855Z",
+    "preferences": [
+      {
+        "id": 11,
+        "customerId": 6,
+        "detailId": 506,
+        "createdAt": "2024-12-17T12:35:12.855Z",
+        "updatedAt": "2024-12-17T12:35:12.855Z",
+        "detail": {
+          "id": 506
+        }
+      },
+      {
+        "id": 12,
+        "customerId": 6,
+        "detailId": 202,
+        "createdAt": "2024-12-17T12:35:12.855Z",
+        "updatedAt": "2024-12-17T12:35:12.855Z",
+        "detail": {
+          "id": 202
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Grace",
+    "lastname": "White",
+    "email": "grace@example.com",
+    "phone": "7890123456",
+    "insta": "@grace_white_test",
+    "pass": "$2b$10$sgjihn9dtASVX3E7K9JUeuWNtXIf0NHQDCl8e8WEHWWrJCkcghk0G",
+    "birthdate": "1994-12-01T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:12.986Z",
+    "updatedAt": "2024-12-17T12:35:12.986Z",
+    "preferences": [
+      {
+        "id": 13,
+        "customerId": 7,
+        "detailId": 501,
+        "createdAt": "2024-12-17T12:35:12.986Z",
+        "updatedAt": "2024-12-17T12:35:12.986Z",
+        "detail": {
+          "id": 501
+        }
+      },
+      {
+        "id": 14,
+        "customerId": 7,
+        "detailId": 203,
+        "createdAt": "2024-12-17T12:35:12.986Z",
+        "updatedAt": "2024-12-17T12:35:12.986Z",
+        "detail": {
+          "id": 203
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Henry",
+    "lastname": "Clark",
+    "email": "henry@example.com",
+    "phone": "8901234567",
+    "insta": "@henry_clark_test",
+    "pass": "$2b$10$olqr1OOZMayqugZNh3Rd8e4RBw16Y2TBpW1axxP7QpNhrYfZtCeAi",
+    "birthdate": "1991-06-17T00:00:00.000Z",
+    "createdAt": "2024-12-17T12:35:13.105Z",
+    "updatedAt": "2024-12-17T12:35:13.105Z",
+    "preferences": [
+      {
+        "id": 15,
+        "customerId": 8,
+        "detailId": 502,
+        "createdAt": "2024-12-17T12:35:13.105Z",
+        "updatedAt": "2024-12-17T12:35:13.105Z",
+        "detail": {
+          "id": 502
+        }
+      },
+      {
+        "id": 16,
+        "customerId": 8,
+        "detailId": 204,
+        "createdAt": "2024-12-17T12:35:13.105Z",
+        "updatedAt": "2024-12-17T12:35:13.105Z",
+        "detail": {
+          "id": 204
+        }
+      }
+    ]
+  }
+]

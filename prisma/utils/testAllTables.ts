@@ -62,6 +62,44 @@ async function generateSeparateJson(): Promise<void> {
     });
     saveJsonFile('stockDetails.json', stockDetails);
 
+
+    // Clientes
+    const customers = await prisma.customer.findMany({
+      include: {
+        preferences: {
+          include: {
+            detail: {
+              select: {
+                id: true,
+                // name: true,
+              },
+            },
+          },
+        },
+      },
+    });
+    saveJsonFile('customers.json', customers);
+
+    // Preferências dos Clientes
+    const customerPreferences = await prisma.customerPreferences.findMany({
+      include: {
+        customer: {
+          select: {
+            id: true,
+            name: true,
+            lastname: true,
+          },
+        },
+        detail: {
+          select: {
+            id: true,
+            // name: true,
+          },
+        },
+      },
+    });
+    saveJsonFile('customerPreferences.json', customerPreferences);
+
     console.log('Arquivos JSON gerados com sucesso!');
   } catch (err) {
     console.error('Erro ao gerar os JSONs:', err);

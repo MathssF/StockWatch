@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "customerId": 1,
+    "detailId": 501,
+    "createdAt": "2024-12-17T12:35:12.317Z",
+    "updatedAt": "2024-12-17T12:35:12.317Z",
+    "customer": {
+      "id": 1,
+      "name": "Alice",
+      "lastname": "Smith"
+    },
+    "detail": {
+      "id": 501
+    }
+  },
+  {
+    "id": 2,
+    "customerId": 1,
+    "detailId": 201,
+    "createdAt": "2024-12-17T12:35:12.317Z",
+    "updatedAt": "2024-12-17T12:35:12.317Z",
+    "customer": {
+      "id": 1,
+      "name": "Alice",
+      "lastname": "Smith"
+    },
+    "detail": {
+      "id": 201
+    }
+  },
+  {
+    "id": 3,
+    "customerId": 2,
+    "detailId": 502,
+    "createdAt": "2024-12-17T12:35:12.460Z",
+    "updatedAt": "2024-12-17T12:35:12.460Z",
+    "customer": {
+      "id": 2,
+      "name": "Bob",
+      "lastname": "Johnson"
+    },
+    "detail": {
+      "id": 502
+    }
+  },
+  {
+    "id": 4,
+    "customerId": 2,
+    "detailId": 202,
+    "createdAt": "2024-12-17T12:35:12.460Z",
+    "updatedAt": "2024-12-17T12:35:12.460Z",
+    "customer": {
+      "id": 2,
+      "name": "Bob",
+      "lastname": "Johnson"
+    },
+    "detail": {
+      "id": 202
+    }
+  },
+  {
+    "id": 5,
+    "customerId": 3,
+    "detailId": 503,
+    "createdAt": "2024-12-17T12:35:12.554Z",
+    "updatedAt": "2024-12-17T12:35:12.554Z",
+    "customer": {
+      "id": 3,
+      "name": "Charlie",
+      "lastname": "Brown"
+    },
+    "detail": {
+      "id": 503
+    }
+  },
+  {
+    "id": 6,
+    "customerId": 3,
+    "detailId": 203,
+    "createdAt": "2024-12-17T12:35:12.554Z",
+    "updatedAt": "2024-12-17T12:35:12.554Z",
+    "customer": {
+      "id": 3,
+      "name": "Charlie",
+      "lastname": "Brown"
+    },
+    "detail": {
+      "id": 203
+    }
+  },
+  {
+    "id": 7,
+    "customerId": 4,
+    "detailId": 504,
+    "createdAt": "2024-12-17T12:35:12.672Z",
+    "updatedAt": "2024-12-17T12:35:12.672Z",
+    "customer": {
+      "id": 4,
+      "name": "Diana",
+      "lastname": "Prince"
+    },
+    "detail": {
+      "id": 504
+    }
+  },
+  {
+    "id": 8,
+    "customerId": 4,
+    "detailId": 204,
+    "createdAt": "2024-12-17T12:35:12.672Z",
+    "updatedAt": "2024-12-17T12:35:12.672Z",
+    "customer": {
+      "id": 4,
+      "name": "Diana",
+      "lastname": "Prince"
+    },
+    "detail": {
+      "id": 204
+    }
+  },
+  {
+    "id": 9,
+    "customerId": 5,
+    "detailId": 505,
+    "createdAt": "2024-12-17T12:35:12.767Z",
+    "updatedAt": "2024-12-17T12:35:12.767Z",
+    "customer": {
+      "id": 5,
+      "name": "Eve",
+      "lastname": "Taylor"
+    },
+    "detail": {
+      "id": 505
+    }
+  },
+  {
+    "id": 10,
+    "customerId": 5,
+    "detailId": 201,
+    "createdAt": "2024-12-17T12:35:12.767Z",
+    "updatedAt": "2024-12-17T12:35:12.767Z",
+    "customer": {
+      "id": 5,
+      "name": "Eve",
+      "lastname": "Taylor"
+    },
+    "detail": {
+      "id": 201
+    }
+  },
+  {
+    "id": 11,
+    "customerId": 6,
+    "detailId": 506,
+    "createdAt": "2024-12-17T12:35:12.855Z",
+    "updatedAt": "2024-12-17T12:35:12.855Z",
+    "customer": {
+      "id": 6,
+      "name": "Frank",
+      "lastname": "Anderson"
+    },
+    "detail": {
+      "id": 506
+    }
+  },
+  {
+    "id": 12,
+    "customerId": 6,
+    "detailId": 202,
+    "createdAt": "2024-12-17T12:35:12.855Z",
+    "updatedAt": "2024-12-17T12:35:12.855Z",
+    "customer": {
+      "id": 6,
+      "name": "Frank",
+      "lastname": "Anderson"
+    },
+    "detail": {
+      "id": 202
+    }
+  },
+  {
+    "id": 13,
+    "customerId": 7,
+    "detailId": 501,
+    "createdAt": "2024-12-17T12:35:12.986Z",
+    "updatedAt": "2024-12-17T12:35:12.986Z",
+    "customer": {
+      "id": 7,
+      "name": "Grace",
+      "lastname": "White"
+    },
+    "detail": {
+      "id": 501
+    }
+  },
+  {
+    "id": 14,
+    "customerId": 7,
+    "detailId": 203,
+    "createdAt": "2024-12-17T12:35:12.986Z",
+    "updatedAt": "2024-12-17T12:35:12.986Z",
+    "customer": {
+      "id": 7,
+      "name": "Grace",
+      "lastname": "White"
+    },
+    "detail": {
+      "id": 203
+    }
+  },
+  {
+    "id": 15,
+    "customerId": 8,
+    "detailId": 502,
+    "createdAt": "2024-12-17T12:35:13.105Z",
+    "updatedAt": "2024-12-17T12:35:13.105Z",
+    "customer": {
+      "id": 8,
+      "name": "Henry",
+      "lastname": "Clark"
+    },
+    "detail": {
+      "id": 502
+    }
+  },
+  {
+    "id": 16,
+    "customerId": 8,
+    "detailId": 204,
+    "createdAt": "2024-12-17T12:35:13.105Z",
+    "updatedAt": "2024-12-17T12:35:13.105Z",
+    "customer": {
+      "id": 8,
+      "name": "Henry",
+      "lastname": "Clark"
+    },
+    "detail": {
+      "id": 204
+    }
+  }
+]
