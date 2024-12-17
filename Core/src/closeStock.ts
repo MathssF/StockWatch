@@ -33,7 +33,7 @@ async function closeStock(): Promise<void> {
           console.log(`Alterando estoque para o produto: ${product.name}, Stock ID: ${stockId}`);
           // Atualize a quantidade no Prisma
           await prisma.stock.update({
-            where: { id: stockId },
+            where: { id: parseInt(stockId, 10) },
             data: { quantity: quantityNow },
           });
         }
