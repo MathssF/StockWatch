@@ -7,17 +7,11 @@ async function randomizeStockQuantities() {
   try {
     const data = await fs.readFile(filePath, 'utf-8');
     const parsedData = JSON.parse(data);
-    // const stocks = JSON.parse(data);
 
     // Verifica se o JSON possui a propriedade Products
     if (!parsedData.Products || !Array.isArray(parsedData.Products)) {
         throw new Error('Invalid JSON format: Missing "Products" array.');
-      }
-
-    // const updatedStocks = stocks.map((stock: { stockId: string }) => ({
-    //   ...stock,
-    //   quantity: Math.floor(Math.random() * (25 - 5 + 1)) + 5, // Gera número entre 5 e 25
-    // }));
+    }
 
     const updatedProducts = parsedData.Products.map((product: any) => {
         if (Array.isArray(product.stocks)) {
@@ -29,7 +23,6 @@ async function randomizeStockQuantities() {
         return product;
       });
 
-    // await fs.writeFile(filePath, JSON.stringify(updatedStocks, null, 2));
     await fs.writeFile(filePath, JSON.stringify(parsedData, null, 2));
     console.log('Stock quantities have been randomized successfully!');
   } catch (error) {
