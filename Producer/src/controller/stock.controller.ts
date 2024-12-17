@@ -1,4 +1,7 @@
 import { PrismaClient } from '@prisma/client';
+import { sendToQueue } from '../rabbitmq.producer';
+import { v4 as uuidv4 } from 'uuid'; // Para gerar um id único
+
 import fs from 'fs';
 import path from 'path';
 
@@ -69,8 +72,31 @@ export class StockController {
       // Exibe os produtos com baixo estoque
       console.log('Produtos com baixo estoque:', lowStocks);
 
-      // Ação que será chamada
-      // Exemplo: this.triggerLowStockAction(lowStocks);
+      if (lowStocks.length > 0) {
+        const queueName = 'low-stock-queue';
+
+        // Gerando um ID com referência ao dia
+        const currentDate = new Date();
+        const formattedDate = currentDate.toISOString().slice(0, 10); // yyyy-mm-dd
+        const randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
+
+        // Mensagem para envio
+        const message = {
+            notification: "Os seguintes produtos precisam reestabelecer o estoque",
+            products: lowStocks.map((item) => ({
+              stockId: item.stockId,
+              quantityNow: item.quantityNow,
+              quantityNeeded: item.quantityNeeded,
+            })),
+          };
+  
+          // Enviar para RabbitMQ
+          await sendToQueue(queueName, JSON.stringify(message), randomId);
+  
+          console.log(`Mensagem enviada com sucesso! ID: ${randomId}`);
+        } else {
+          console.log('Nenhum produto com baixo estoque encontrado.');
+        }
 
     } catch (error) {
       console.error('Erro ao verificar estoque:', error);

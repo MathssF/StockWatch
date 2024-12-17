@@ -21,7 +21,8 @@
     "close:stock": "ts-node -r tsconfig-paths/register ./Core/src/closeStock.ts",
     "clear-db": "ts-node ./prisma/delete/clearDatabase.ts",
     "reset-db": "ts-node ./prisma/delete/resetAutoIncrement.ts",
-    "test-db": "ts-node ./prisma/utils/testAllTables.ts"
+    "test-db": "ts-node ./prisma/utils/testAllTables.ts",
+    "random-qtd": "npx ts-node ./Producer/src/controller/randomize.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
@@ -32,7 +33,8 @@
     "mongodb": "^5.0.0",
     "mongoose": "^8.8.3",
     "mysql2": "^2.3.0",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
     "@types/amqplib": "^0.10.5",
