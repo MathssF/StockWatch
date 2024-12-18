@@ -7,6 +7,13 @@ import path from 'path';
 
 const prisma = new PrismaClient();
 
+
+type CustomerPromotion = {
+  customerId: number;
+  promoValue: number;
+};
+
+
 export class StockController {
   private static OUTPUT_PATH = path.join(
     __dirname,
@@ -146,6 +153,7 @@ export class StockController {
                 type: detail.type,
                 value: detail.detailName,
               })),
+              product: product,
             }))
           )
         // : data.flatMap((product: any) =>
@@ -175,6 +183,7 @@ export class StockController {
         },
         select: {
           id: true, // ID do cliente
+          preferences: true, // Adiciona o campo preferences
         },
       });
 
@@ -187,11 +196,10 @@ export class StockController {
         // Calcula o valor da promoção baseado no número de detalhes em comum
         let promoValue = 0;
         if (commonDetails.length === 1) {
-          promoValue = Math.ceil(product.price * 0.9); // 90% do preço
+          promoValue = Math.ceil(promotion.product.price * 0.9); // 90% do preço
         } else if (commonDetails.length === 2) {
-          promoValue = Math.ceil(product.price * 0.75); // 75% do preço
+          promoValue = Math.ceil(promotion.product.price * 0.75); // 75% do preço
         }
-
         // Adiciona o cliente à lista de promoções
         promotion.customers.push({
           customerId: customer.id,
@@ -212,7 +220,7 @@ export class StockController {
         const message = {
           notification: "Promoção para os seguintes clientes",
           stockId: promotion.stockId,
-          customers: promotion.customers.map((item) => ({
+          customers: promotion.customers.map((item: CustomerPromotion) => ({
             customerId: item.customerId,
             promoValue: item.promoValue,
           })),
