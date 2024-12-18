@@ -156,16 +156,6 @@ export class StockController {
               product: product,
             }))
           )
-        // : data.flatMap((product: any) =>
-        //     product.stock.map((stock: any) => ({
-        //       stockId: stock.id,
-        //       details: stock.StockDetail.map((stockDetail: any) => ({
-        //         detailId: stockDetail.detail.id,
-        //         type: stockDetail.detail.type.name,
-        //         value: stockDetail.detail.value,
-        //       })),
-        //     }))
-        //   );
         : [];
 
         // Para cada promoção, verifica os clientes que têm detalhes em comum
