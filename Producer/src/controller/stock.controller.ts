@@ -1,23 +1,21 @@
+import { Request, Response } from 'express';
 import { CheckStock } from './check-stock';
 import { SendPromotions } from './send-promotions';
 
-export class StockController {
-  // Método para chamar CheckStock
-  static async CheckStock(): Promise<void> {
-    await CheckStock.run();
+export const checkStockController = async (req: Request, res: Response): Promise<void> => {
+  try {
+    await CheckStock();
+    res.status(200).send('Estoque verificado com sucesso.');
+  } catch (error) {
+    res.status(500).send('Erro ao verificar estoque.');
   }
+};
 
-  // Método para chamar SendPromotions
-  static async SendPromotions(): Promise<void> {
-    await SendPromotions.run();
+export const sendPromotionsController = async (req: Request, res: Response): Promise<void> => {
+  try {
+    await SendPromotions();
+    res.status(200).send('Promoções enviadas com sucesso.');
+  } catch (error) {
+    res.status(500).send('Erro ao enviar promoções.');
   }
-}
-
-// Exemplo de uso:
-(async () => {
-  console.log('--- Verificando Estoque ---');
-  await StockController.CheckStock();
-
-  console.log('--- Enviando Promoções ---');
-  await StockController.SendPromotions();
-})();
+};
