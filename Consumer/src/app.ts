@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import { consumeQueue } from './rabbitmq.consumer';
+import stockRoutes from './routes/stock.routes';
 
 const app = express();
 const PORT = process.env.CONSUMER_PORT || 3001;
@@ -10,6 +11,10 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Servidor Express rodando!');
 });
 
+// Usando as rotas de estoque (para atualizar estoque e postar promoções)
+app.use('/stock', stockRoutes);  // Mudamos o prefixo de '/check-stock' para '/stock'
+
+// Rota para iniciar o consumer
 app.post('/start-consumer', async (req: Request, res: Response): Promise<any> => {
   const { queueName } = req.body;
 

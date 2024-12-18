@@ -9,7 +9,7 @@ const queueName = 'low-stock-queue';
 const filePath = path.join(__dirname, '../../Core/src/database/today/output.json');
 
 // Função para processar as mensagens da fila
-const processMessage = async (message: string) => {
+export const updateStock = async (message: string) => {
   const content = JSON.parse(message);
   console.log('Mensagem recebida:', content);
 
@@ -86,7 +86,7 @@ const processMessage = async (message: string) => {
 };
 
 // Consumindo a fila com a função adaptada
-consumeQueue(queueName, processMessage)
+consumeQueue(queueName, updateStock)
   .catch((error) => {
     console.error('Erro na inicialização do consumidor:', error);
   });
