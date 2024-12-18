@@ -135,7 +135,7 @@ async function generateSeparateJson(): Promise<void> {
 
 // Função para salvar os arquivos JSON
 function saveJsonFile(fileName: string, data: any): void {
-  const dir = './prisma/tests';
+  const dir = './Tests/DatabaseTests/testlists';
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
