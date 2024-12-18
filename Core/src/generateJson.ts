@@ -1,11 +1,11 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
-import { Stock } from './models/Stock.mongo';
-import { StockDetail } from './models/StockDetail.mongo';
-import { Detail } from './models/Details.mongo';
-import { DetailType } from './models/DetailsType.mongo';
-import { Product } from './models/Product.mongo';
+// import { Stock } from './models/Stock.mongo';
+// import { StockDetail } from './models/StockDetail.mongo';
+// import { Detail } from './models/Details.mongo';
+// import { DetailType } from './models/DetailsType.mongo';
+// import { Product } from './models/Product.mongo';
 
 const prisma = new PrismaClient();
 
@@ -29,9 +29,16 @@ async function generateJson(): Promise<void> {
                 },
               },
             },
+            customerPromotions: { // Busca promoções relacionadas ao estoque
+              where: { isActive: true }, // Apenas promoções ativas
+              select: {
+                customerId: true,
+                promoValue: true,
+              },
+            },
           },
         },
-      },
+      }
     });
 
     const jsonOutput = {
@@ -41,7 +48,13 @@ async function generateJson(): Promise<void> {
         productId: product.id,
         name: product.name,
         price: product.price,
-        promotions: {},
+        promotions: product.stock.flatMap(stock =>
+          stock.customerPromotions?.map(promotion => ({
+            customerId: promotion.customerId.toString(),
+            stockId: stock.id.toString(),
+            promoValue: promotion.promoValue,
+          })) || []
+        ),
         stocks: product.stock.map(stock => ({
           id: stock.id.toString(),
           quantityOpen: stock.quantity,
