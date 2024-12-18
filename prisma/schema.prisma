@@ -124,7 +124,8 @@ model CustomerPromotions {
   stock         Stock        @relation(fields: [stockId], references: [id], onDelete: Cascade)
   promoValue    Int
   isActive      Boolean      @default(true)
-  @@unique([stockId, customerId]) // Define uma chave composta
+  @@id([stockId, customerId])
+  // @@unique([stockId, customerId]) // Define uma chave composta
   createdAt     DateTime     @default(now())
   updatedAt     DateTime     @updatedAt
 }
