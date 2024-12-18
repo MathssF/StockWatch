@@ -55,8 +55,8 @@ async function closeStock(): Promise<void> {
       await prisma.customerPromotions.upsert({
         where: {
           stockId_customerId: {
-            stockId: parseInt(stockId, 10),
-            customerId: parseInt(customerId, 10),
+            stockId: stockId,
+            customerId: customerId,
           },
         },
         update: { promoValue, isActive: true },
