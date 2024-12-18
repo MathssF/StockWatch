@@ -37,8 +37,54 @@ async function closeStock(): Promise<void> {
             data: { quantity: quantityNow },
           });
         }
+
+        // Processar promoções associadas ao estoque
+        const jsonPromotions = stock.promotions || [];
+        // Obter promoções ativas no banco para este estoque
+    const dbPromotions = await prisma.customerPromotions.findMany({
+      where: { stockId: parseInt(stockId, 10), isActive: true },
+    });
+
+    const jsonPromotionIds = new Set(
+      jsonPromotions.map((promo: any) => promo.customerId)
+    );
+
+    // Atualizar promoções no banco de dados
+    for (const promotion of jsonPromotions) {
+      const { customerId, promoValue } = promotion;
+      await prisma.customerPromotions.upsert({
+        where: {
+          stockId_customerId: {
+            stockId: parseInt(stockId, 10),
+            customerId: parseInt(customerId, 10),
+          },
+        },
+        update: { promoValue, isActive: true },
+        create: {
+          stockId: parseInt(stockId, 10),
+          customerId: parseInt(customerId, 10),
+          promoValue,
+          isActive: true,
+        },
+      });
+    }
+
+    // Desativar promoções que não estão no JSON
+    for (const dbPromotion of dbPromotions) {
+      if (!jsonPromotionIds.has(dbPromotion.customerId.toString())) {
+        await prisma.customerPromotions.update({
+          where: { id: dbPromotion.id },
+          data: { isActive: false },
+        });
+        console.log(
+          `Promoção marcada como inativa: Stock ID ${stockId}, Customer ID ${dbPromotion.customerId}`
+        );
       }
     }
+      }
+    }
+
+    
 
     // Gerar um novo nome para o arquivo de fechamento
     const timestamp = new Date().toISOString().replace(/[-T:.Z]/g, '').slice(0, 14);
