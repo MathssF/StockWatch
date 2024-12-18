@@ -1,0 +1,114 @@
+import { PrismaClient } from '@prisma/client';
+import fs from 'fs';
+import path from 'path';
+import { connect } from 'amqplib';
+import { v4 as uuidv4 } from 'uuid';
+
+const prisma = new PrismaClient();
+
+export const UpdateStock = async () => {
+  const queueName = 'low-stock-queue';
+  const filePath = path.join(__dirname, '../../Core/src/database/today/output.json');
+
+  try {
+    console.log('Conectando ao RabbitMQ...');
+    const connection = await connect('amqp://localhost');
+    const channel = await connection.createChannel();
+    await channel.assertQueue(queueName, { durable: true });
+    console.log(`Aguardando mensagens na fila: ${queueName}`);
+
+    // Consumindo mensagens da fila
+    channel.consume(
+      queueName,
+      async (message) => {
+        if (message !== null) {
+          const content = JSON.parse(message.content.toString());
+          console.log('Mensagem recebida:', content);
+
+          let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
+
+          if (fs.existsSync(filePath)) {
+            console.log('Atualizando output.json...');
+            const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+            // Atualizar quantidade no arquivo JSON
+            content.products.forEach((update: any) => {
+              fileData.Products.forEach((product: any) => {
+                product.stocks.forEach((stock: any) => {
+                  if (stock.id === update.stockId) {
+                    const addedQuantity = update.quantityNeeded || 0;
+                    stock.quantityNow += addedQuantity;
+
+                    updatedStocks.push({
+                      stockId: stock.id,
+                      quantityAdded: addedQuantity,
+                      price: stock.price || 0,
+                    });
+                  }
+                });
+              });
+            });
+
+            fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
+            console.log('output.json atualizado com sucesso!');
+          } else {
+            console.log('output.json não encontrado. Atualizando o banco de dados...');
+            for (const update of content.products) {
+              const stock = await prisma.stock.findUnique({
+                where: { id: update.stockId },
+                select: { quantity: true,
+                  product: { select: { price: true } },
+                },
+              });
+
+              if (stock) {
+                const addedQuantity = update.quantityNeeded || 0;
+                await prisma.stock.update({
+                  where: { id: update.stockId },
+                  data: { quantity: stock.quantity + addedQuantity },
+                });
+
+                updatedStocks.push({
+                  stockId: update.stockId,
+                  quantityAdded: addedQuantity,
+                  price: stock.product?.price || 0,
+                });
+              }
+            }
+            console.log('Banco de dados atualizado com sucesso!');
+          }
+
+          // Criar uma ordem
+          if (updatedStocks.length > 0) {
+            const orderNumber = `ORD-${uuidv4().split('-')[0]}`;
+            const order = await prisma.order.create({
+              data: {
+                orderNumber,
+                status: 'PENDING',
+                items: {
+                  create: updatedStocks.map((stock) => ({
+                    stockId: stock.stockId,
+                    quantity: stock.quantityAdded,
+                    price: stock.price,
+                  })),
+                },
+              },
+              include: { items: true },
+            });
+            console.log('Ordem registrada com sucesso:', order);
+          }
+
+          channel.ack(message);
+        }
+      },
+      { noAck: false }
+    );
+  } catch (error) {
+    console.error('Erro ao consumir a fila e atualizar o estoque:', error);
+  }
+};
+
+// Executar a função
+UpdateStock().catch((error) => {
+  console.error('Erro na inicialização:', error);
+});

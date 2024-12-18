@@ -4,7 +4,7 @@ import { checkStockController, sendPromotionsController } from '../controller/st
 const router = Router();
 
 // Rota para verificar o estoque
-router.get('/check-stock', checkStockController);
+router.get('/informe', checkStockController);
 
 // Rota para enviar promoções
 router.get('/send-promotions', sendPromotionsController);

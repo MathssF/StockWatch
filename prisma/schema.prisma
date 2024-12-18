@@ -89,8 +89,8 @@ model Customer {
 model Order {
   id          Int             @id @default(autoincrement())
   orderNumber String          @unique
-  customerId  Int
-  customer    Customer        @relation("CustomerOrders", fields: [customerId], references: [id], onDelete: Cascade)
+  customerId  Int?
+  customer    Customer?       @relation("CustomerOrders", fields: [customerId], references: [id], onDelete: Cascade)
   items       OrderItem[]
   status      String          // 'PENDING', 'SHIPPED', 'DELIVERED', 'CANCELLED'
   createdAt   DateTime        @default(now())
@@ -124,8 +124,8 @@ model CustomerPromotions {
   stock         Stock        @relation(fields: [stockId], references: [id], onDelete: Cascade)
   promoValue    Int
   isActive      Boolean      @default(true)
-  @@id([stockId, customerId])
-  // @@unique([stockId, customerId]) // Define uma chave composta
+  // @@id([stockId, customerId])
+  @@unique([stockId, customerId]) // Define uma chave composta
   createdAt     DateTime     @default(now())
   updatedAt     DateTime     @updatedAt
 }
