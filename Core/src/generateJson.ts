@@ -1,11 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
-// import { Stock } from './models/Stock.mongo';
-// import { StockDetail } from './models/StockDetail.mongo';
-// import { Detail } from './models/Details.mongo';
-// import { DetailType } from './models/DetailsType.mongo';
-// import { Product } from './models/Product.mongo';
 
 const prisma = new PrismaClient();
 
@@ -74,10 +69,6 @@ async function generateJson(): Promise<void> {
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
-
-    // Gerar o nome do arquivo com base no dia
-    // const fileName = `${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}stocks.json`;
-    // Caso precise usar no futuro
 
     fs.writeFileSync(path.join(dir, 'output.json'), JSON.stringify(jsonOutput, null, 2));
 

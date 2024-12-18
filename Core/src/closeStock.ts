@@ -1,7 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
-import { Product } from './models/Product.mongo';
 
 const prisma = new PrismaClient();
 
@@ -53,11 +52,17 @@ async function closeStock(): Promise<void> {
     for (const promotion of jsonPromotions) {
       const { customerId, promoValue } = promotion;
       await prisma.customerPromotions.upsert({
+        // where: {
+        //   stockId_customerId: {
+        //   // unique: {
+        //   // id: {
+        //     stockId: stockId,
+        //     customerId: customerId,
+        //   },
+        // },
         where: {
-          stockId_customerId: {
-            stockId: stockId,
-            customerId: customerId,
-          },
+          stockId: parseInt(stockId, 10),
+          customerId: parseInt(customerId, 10),
         },
         update: { promoValue, isActive: true },
         create: {
