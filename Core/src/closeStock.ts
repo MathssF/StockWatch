@@ -62,7 +62,9 @@ async function closeStock(): Promise<void> {
         },
         // where: {
         //   stockId: parseInt(stockId, 10),
+        //   // stockId: stockId,
         //   customerId: parseInt(customerId, 10),
+        //   // customerId: customerId,
         // },
         update: { promoValue, isActive: true },
         create: {
