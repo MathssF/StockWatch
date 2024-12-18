@@ -52,18 +52,18 @@ async function closeStock(): Promise<void> {
     for (const promotion of jsonPromotions) {
       const { customerId, promoValue } = promotion;
       await prisma.customerPromotions.upsert({
-        // where: {
-        //   stockId_customerId: {
-        //   // unique: {
-        //   // id: {
-        //     stockId: stockId,
-        //     customerId: customerId,
-        //   },
-        // },
         where: {
-          stockId: parseInt(stockId, 10),
-          customerId: parseInt(customerId, 10),
+          stockId_customerId: {
+          // unique: {
+          // id: {
+            stockId: stockId,
+            customerId: customerId,
+          },
         },
+        // where: {
+        //   stockId: parseInt(stockId, 10),
+        //   customerId: parseInt(customerId, 10),
+        // },
         update: { promoValue, isActive: true },
         create: {
           stockId: parseInt(stockId, 10),
