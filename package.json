@@ -7,7 +7,8 @@
     "Producer",
     "Consumer",
     "Shared",
-    "prisma"
+    "prisma",
+    "Tests"
   ],
   "description": "Um projeto que tem como objetivo mostrar minhas habilidades em várias stacks",
   "scripts": {
