@@ -1,9 +1,24 @@
 import amqp from 'amqplib';
+import { PrismaClient } from '@prisma/client';
+import { v4 as uuidv4 } from 'uuid'; // Para gerar um ID único
 
+const prisma = new PrismaClient();
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
 export async function sendToQueue(queueName: string, message: string, id?: string) {
   try {
+    const msgid = uuidv4();
+    await prisma.rabbitMQMessage.create({
+      data: {
+        messageId, 
+        produceId: id || "UNKNOWN",
+        consumerId: "", 
+        queue: queueName, 
+        message: message,
+        status: 'PENDING',
+      },
+    });
+
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
 

@@ -6,6 +6,7 @@ import { postPromotions } from './post-promotions';  // Importando a função pr
 export const updateStockController = async (req: Request, res: Response): Promise<void> => {
   try {
     const messageContent = JSON.stringify(req.body); // Ou o formato de mensagem esperado
+    console.log('stock  controler do Consumer, msg: ', messageContent);
     await updateStock(messageContent);  // Chama a função para atualizar o estoque
     res.status(200).send('Estoque atualizado com sucesso.');
   } catch (error) {

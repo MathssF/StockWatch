@@ -82,6 +82,9 @@ export const CheckStock = async (): Promise<void> => {
         })),
       };
 
+      console.log('... Mensagem: ...');
+      console.log(message);
+
       // Enviar para RabbitMQ
       await sendToQueue(queueName, JSON.stringify(message), randomId);
 

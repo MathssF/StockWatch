@@ -65,6 +65,7 @@ model RabbitMQMessage {
   produceId   String
   consumerId  String
   queue       String   // Nome da fila onde a mensagem foi processada
+  message     String   @db.Text // Coluna para armazenar a mensagem
   status      String   // 'PENDING', 'PROCESSED', 'FAILED'
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt

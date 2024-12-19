@@ -47,8 +47,10 @@ export const updateStock = async (message: string) => {
         select: { quantity: true, product: { select: { price: true } } },
       });
 
+      console.log('dentro do for');
       if (stock) {
         const addedQuantity = update.quantityNeeded || 0;
+        console.log('Stock: ', addedQuantity);
         await prisma.stock.update({
           where: { id: update.stockId },
           data: { quantity: stock.quantity + addedQuantity },

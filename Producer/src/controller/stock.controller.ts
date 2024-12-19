@@ -5,6 +5,7 @@ import { SendPromotions } from './send-promotions';
 export const checkStockController = async (req: Request, res: Response): Promise<void> => {
   try {
     await CheckStock();
+    console.log('Stock controller do producer');
     res.status(200).send('Estoque verificado com sucesso.');
   } catch (error) {
     res.status(500).send('Erro ao verificar estoque.');
