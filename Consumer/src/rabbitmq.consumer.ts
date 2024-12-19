@@ -7,6 +7,10 @@ const prisma = new PrismaClient();
 
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
+interface CustomConsumeMessage extends amqp.ConsumeMessage {
+  msgid?: string;
+}
+
 export async function consumeQueue(
   queueName: string,
   processMessage: (message: string) => void)
@@ -23,7 +27,7 @@ export async function consumeQueue(
 
     console.log(`Aguardando mensagens na fila: ${queueName}`);
 
-    channel.consume(queueName, async (msg) => {
+    channel.consume(queueName, async (msg: CustomConsumeMessage | null) => {
       if (msg) {
         const messageContent = msg.content.toString();
         const consumerId = msg.properties.messageId || new Date().getTime().toString();
@@ -32,7 +36,7 @@ export async function consumeQueue(
         console.log(`A Seguinte mensagem foi recebida:.. ${messageContent}`);
 
         let dbMessage = await prisma.rabbitMQMessage.findUnique({
-          where: { messageId: consumerId },
+          where: { messageId: msgid },
         });
 
         if (!dbMessage) {
@@ -49,7 +53,7 @@ export async function consumeQueue(
         } else {
           // Se já existir, atualiza o consumerId e o status, se necessário
           dbMessage = await prisma.rabbitMQMessage.update({
-            where: { messageId: consumerId },
+            where: { messageId: msgid },
             data: {
               consumerId: dbMessage.consumerId || consumerId, // Adiciona o consumerId se ainda não estiver registrado
               status: dbMessage.status !== 'PROCESSED' ? 'PENDING' : dbMessage.status, // Só altera o status se não estiver 'PROCESSED'
@@ -58,18 +62,34 @@ export async function consumeQueue(
         }
 
         try {
+          // const result = await processMessage(messageContent);
+          // await prisma.rabbitMQMessage.update({
+          //   where: { id: dbMessage.id },
+          //   data: { status: 'PROCESSED' },
+          // });
+          // channel.ack(msg)
           const result = await processMessage(messageContent);
-          await prisma.rabbitMQMessage.update({
-            where: { id: dbMessage.id },
-            data: { status: 'PROCESSED' },
-          });
-          channel.ack(msg)
+          if (dbMessage?.id) {  // Verifique se dbMessage.id é válido
+            await prisma.rabbitMQMessage.update({
+              where: { id: dbMessage.id },
+              data: { status: 'PROCESSED' },
+            });
+          }
+          channel.ack(msg);
         } catch(error) {
+          // console.error('Erro ao processar a mensagem', error);
+          // await prisma.rabbitMQMessage.update({
+          //   where: { id: dbMessage.id },
+          //   data: { status: 'FAILED' },
+          // });
+          // channel.nack(msg, false, false);
           console.error('Erro ao processar a mensagem', error);
-          await prisma.rabbitMQMessage.update({
-            where: { id: dbMessage.id },
-            data: { status: 'FAILED' },
-          });
+          if (dbMessage?.id) {  // Verifique se dbMessage.id é válido
+            await prisma.rabbitMQMessage.update({
+              where: { id: dbMessage.id },
+              data: { status: 'FAILED' },
+            });
+          }
           channel.nack(msg, false, false);
         }
       }
@@ -80,6 +100,6 @@ export async function consumeQueue(
   }
 }
 
-function parseMessage(messageContent: string): { id: any; message: any; } {
+function parseMessage(messageContent: string): { id: any; msgid: string; message: any; } {
     throw new Error('Function not implemented.');
 }
