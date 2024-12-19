@@ -22,7 +22,7 @@
     "clear-db": "ts-node ./prisma/delete/clearDatabase.ts",
     "reset-db": "ts-node ./prisma/delete/resetAutoIncrement.ts",
     "test-db": "ts-node ./Tests/DatabaseTests/testAllTables.ts",
-    "random-qtd": "npx ts-node ./Producer/src/controller/randomize.ts"
+    "random-qtd": "npx ts-node ./Tests/DatabaseTests/randomize.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
