@@ -74,5 +74,5 @@ async function savePromotionsToDatabase(promotions: any[]): Promise<void> {
 }
 
 // Função para consumir a fila RabbitMQ
-const queueName = 'promotion-queue';
-consumeQueue(queueName, postPromotions);
+// const queueName = 'promotion-queue';
+// consumeQueue(queueName, postPromotions);

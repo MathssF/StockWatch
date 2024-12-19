@@ -86,7 +86,7 @@ export const updateStock = async (message: string) => {
 };
 
 // Consumindo a fila com a função adaptada
-consumeQueue(queueName, updateStock)
-  .catch((error) => {
-    console.error('Erro na inicialização do consumidor:', error);
-  });
+// consumeQueue(queueName, updateStock)
+//   .catch((error) => {
+//     console.error('Erro na inicialização do consumidor:', error);
+//   });
