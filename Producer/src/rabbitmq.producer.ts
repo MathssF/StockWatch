@@ -14,7 +14,7 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
         produceId: id || "UNKNOWN",
         consumerId: "", 
         queue: queueName, 
-        // message: message,
+        message: message,
         status: 'PENDING',
       },
     });

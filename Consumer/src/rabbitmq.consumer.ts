@@ -11,7 +11,8 @@ export async function consumeQueue(
   queueName: string,
   processMessage: (message: string) => void)
 {
-  const msgid = uuidv4();
+  // const msgid = processMessage.
+  const msgid2 = uuidv4();
   try {
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
@@ -26,7 +27,7 @@ export async function consumeQueue(
       if (msg) {
         const messageContent = msg.content.toString();
         const consumerId = msg.properties.messageId || new Date().getTime().toString();
-        const { id, message } = parseMessage(messageContent);
+        const { id, msgid, message } = parseMessage(messageContent);
 
         console.log(`A Seguinte mensagem foi recebida:.. ${messageContent}`);
 
@@ -39,8 +40,9 @@ export async function consumeQueue(
             data: {
               produceId: id || "UNKNOW",
               consumerId,
-              messageId: msgid,
+              messageId: msgid2,
               queue: queueName,
+              message: message,
               status: 'PENDING',
             },
           });
