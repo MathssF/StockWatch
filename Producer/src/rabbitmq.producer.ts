@@ -10,11 +10,11 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
     const msgid = uuidv4();
     await prisma.rabbitMQMessage.create({
       data: {
-        messageId, 
+        messageId: msgid, 
         produceId: id || "UNKNOWN",
         consumerId: "", 
         queue: queueName, 
-        message: message,
+        // message: message,
         status: 'PENDING',
       },
     });
@@ -26,11 +26,7 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
       durable: false,
     });
 
-    await channel.assertQueue(queueName, {
-      durable: false,
-    })
-
-    const messageToSend = id ? JSON.stringify({ id, message }) : message;
+    const messageToSend = id ? JSON.stringify({ id, msgid, message }) : JSON.stringify({ msgid, message});
     channel.sendToQueue(queueName, Buffer.from(messageToSend));
 
     console.log(`Mensagem enviada para a fila ${queueName}: ${message}`);

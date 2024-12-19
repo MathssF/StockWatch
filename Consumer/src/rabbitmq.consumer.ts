@@ -1,5 +1,6 @@
 import amqp from 'amqplib';
 import { PrismaClient } from '@prisma/client';
+import { v4 as uuidv4 } from 'uuid'; // Para gerar um ID único
 
 
 const prisma = new PrismaClient();
@@ -7,8 +8,10 @@ const prisma = new PrismaClient();
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
 export async function consumeQueue(
-    queueName: string,
-    processMessage: (message: string) => void) {
+  queueName: string,
+  processMessage: (message: string) => void)
+{
+  const msgid = uuidv4();
   try {
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
@@ -27,15 +30,30 @@ export async function consumeQueue(
 
         console.log(`A Seguinte mensagem foi recebida:.. ${messageContent}`);
 
-        const dbMessage = await prisma.rabbitMQMessage.create({
-          data: {
-            produceId: id || "UNKNOW",
-            consumerId,
-            messageId: consumerId,
-            queue: queueName,
-            status: 'PENDING',
-          },
+        let dbMessage = await prisma.rabbitMQMessage.findUnique({
+          where: { messageId: consumerId },
         });
+
+        if (!dbMessage) {
+          const dbMessage = await prisma.rabbitMQMessage.create({
+            data: {
+              produceId: id || "UNKNOW",
+              consumerId,
+              messageId: msgid,
+              queue: queueName,
+              status: 'PENDING',
+            },
+          });
+        } else {
+          // Se já existir, atualiza o consumerId e o status, se necessário
+          dbMessage = await prisma.rabbitMQMessage.update({
+            where: { messageId: consumerId },
+            data: {
+              consumerId: dbMessage.consumerId || consumerId, // Adiciona o consumerId se ainda não estiver registrado
+              status: dbMessage.status !== 'PROCESSED' ? 'PENDING' : dbMessage.status, // Só altera o status se não estiver 'PROCESSED'
+            },
+          });
+        }
 
         try {
           const result = await processMessage(messageContent);
