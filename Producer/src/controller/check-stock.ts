@@ -73,13 +73,24 @@ export const CheckStock = async (): Promise<void> => {
       const randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
 
       // Mensagem para envio
+      // const message = {
+      //   notification: "Os seguintes produtos precisam reestabelecer o estoque",
+      //   products: lowStocks.map((item) => ({
+      //     stockId: item.stockId,
+      //     quantityNow: item.quantityNow,
+      //     quantityNeeded: 10 - item.quantityNow,
+      //   })),
+      // };
       const message = {
         notification: "Os seguintes produtos precisam reestabelecer o estoque",
-        products: lowStocks.map((item) => ({
-          stockId: item.stockId,
-          quantityNow: item.quantityNow,
-          quantityNeeded: item.quantityNeeded,
-        })),
+        products: lowStocks.map((item) => {
+          const quantityNow = item.quantityNow || 0;
+          return {
+            stockId: item.stockId,
+            quantityNow: quantityNow,
+            quantityNeeded: 10 - quantityNow,
+          };
+        }),
       };
 
       console.log('... Mensagem: ...');
