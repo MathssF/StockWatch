@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'; // Para gerar um ID único
 
 const prisma = new PrismaClient();
 
-const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
+const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://user:password@rabbitmq:5672';
 
 interface CustomConsumeMessage extends amqp.ConsumeMessage {
   msgid?: string;

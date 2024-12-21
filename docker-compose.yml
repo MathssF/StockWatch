@@ -8,8 +8,8 @@ services:
       - "15672:15672" # Portas de gerenciamento
       - "5672:5672"   # Porta para comunicação
     environment:
-      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-user}
-      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS:-password}
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS}
 
   # MySQL
   mysql:

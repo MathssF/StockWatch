@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 import { v4 as uuidv4 } from 'uuid'; // Para gerar um ID único
 
 const prisma = new PrismaClient();
-const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
+const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://user:password@rabbitmq:5672';
 
 export async function sendToQueue(queueName: string, message: string, id?: string) {
   try {

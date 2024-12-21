@@ -8,9 +8,9 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Copiar os workspaces do projeto (producer, consumer, shared)
-COPY producer/package.json producer/
-COPY consumer/package.json consumer/
-COPY shared/package.json shared/
+# COPY Producer/package.json producer/
+# COPY Consumer/package.json consumer/
+# COPY Core/package.json shared/
 
 # Instalar as dependências
 RUN npm install --legacy-peer-deps
