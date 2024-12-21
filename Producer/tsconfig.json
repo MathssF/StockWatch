@@ -9,12 +9,10 @@
       "forceConsistentCasingInFileNames": true,
       "baseUrl": ".",
       "paths": {
-        "*": ["node_modules/*", "../node_modules/*"]
+        "*": ["node_modules/*"]
       },
   },
   "include": [
-      "**/*.ts",
-      "../core/**/*.ts",
       "src/**/*.ts"
   ],
   "exclude": [

@@ -1,5 +1,5 @@
 # Escolher a imagem base do Node.js
-FROM node:16 AS builder
+FROM node:18.18 AS builder
 
 # Diretório de trabalho dentro do container
 WORKDIR /app
@@ -8,8 +8,8 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Copiar os workspaces do projeto (producer, consumer, shared)
-# COPY Producer/package.json producer/
-# COPY Consumer/package.json consumer/
+COPY Producer/package.json producer/
+COPY Consumer/package.json consumer/
 # COPY Core/package.json shared/
 
 # Instalar as dependências
@@ -22,7 +22,7 @@ COPY . .
 RUN npm run build --workspaces
 
 # Agora a imagem final
-FROM node:16
+FROM node:18.18
 
 # Diretório de trabalho dentro do container
 WORKDIR /app
