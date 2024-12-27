@@ -71,16 +71,6 @@ export const CheckStock = async (): Promise<void> => {
       const currentDate = new Date();
       const formattedDate = currentDate.toISOString().slice(0, 10); // yyyy-mm-dd
       const randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
-
-      // Mensagem para envio
-      // const message = {
-      //   notification: "Os seguintes produtos precisam reestabelecer o estoque",
-      //   products: lowStocks.map((item) => ({
-      //     stockId: item.stockId,
-      //     quantityNow: item.quantityNow,
-      //     quantityNeeded: 10 - item.quantityNow,
-      //   })),
-      // };
       const message = {
         notification: "Os seguintes produtos precisam reestabelecer o estoque",
         products: lowStocks.map((item) => {

@@ -1,6 +1,6 @@
 import amqp from 'amqplib';
 import { PrismaClient } from '@prisma/client';
-import { v4 as uuidv4 } from 'uuid'; // Para gerar um ID único
+import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://user:password@rabbitmq:5672';
