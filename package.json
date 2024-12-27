@@ -12,8 +12,8 @@
   ],
   "description": "Um projeto que tem como objetivo mostrar minhas habilidades em várias stacks",
   "scripts": {
-    "start:producer": "npm start --workspace=producer",  
-    "start:consumer": "npm start --workspace=consumer",  
+    "start:producer": "npx ts-node ./Producer/src/index.ts",
+    "start:consumer": "npx ts-node ./Consumer/src/index.ts",
     "build": "npm run build --workspaces",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts",
