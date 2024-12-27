@@ -72,7 +72,3 @@ async function savePromotionsToDatabase(promotions: any[]): Promise<void> {
     console.error('Erro ao salvar promoções no banco de dados:', error);
   }
 }
-
-// Função para consumir a fila RabbitMQ
-// const queueName = 'promotion-queue';
-// consumeQueue(queueName, postPromotions);

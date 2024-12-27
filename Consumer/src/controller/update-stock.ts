@@ -86,9 +86,3 @@ export const updateStock = async (message: string) => {
     console.log('Ordem registrada com sucesso:', order);
   }
 };
-
-// Consumindo a fila com a função adaptada
-// consumeQueue(queueName, updateStock)
-//   .catch((error) => {
-//     console.error('Erro na inicialização do consumidor:', error);
-//   });
