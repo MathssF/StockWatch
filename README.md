@@ -10,13 +10,13 @@ Atualmente o projeto esta assim:
 
 project/  
 │  
-├── prisma/     (back-end para a lógica de migrations e seeds)  
-├── producer/   (back-end para enviar mensagens do RabbitMQ)  
-├── consumer/   (back-end para consumir mensagens do RabbitMQ)  
-├── shared/     (código compartilhado entre os módulos)  
+├── prisma/       (back-end para a lógica de migrations e seeds)  
+├── producer/     (back-end para enviar mensagens do RabbitMQ)  
+├── consumer/     (back-end para consumir mensagens do RabbitMQ)  
+├── core/         (back-end que lida principalmente com interações no banco de dados)  
 │  
 ├── node_modules/ (O projeto usa WorkSpace, então vai ter só um node_modules)  
-└── package.json (arquivo de dependências principal)  
+└── package.json  (arquivo de dependências principal)  
 
 Atualmente os scripts são estes:
 
