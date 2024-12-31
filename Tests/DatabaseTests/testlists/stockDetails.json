@@ -3,14 +3,14 @@
     "id": 1,
     "stockId": 1,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:57.919Z",
-    "updatedAt": "2024-12-10T21:36:57.919Z",
+    "createdAt": "2024-12-31T19:39:24.922Z",
+    "updatedAt": "2024-12-31T19:39:24.922Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -23,15 +23,15 @@
   {
     "id": 2,
     "stockId": 1,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:36:57.955Z",
-    "updatedAt": "2024-12-10T21:36:57.955Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:24.933Z",
+    "updatedAt": "2024-12-31T19:39:24.933Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -44,15 +44,15 @@
   {
     "id": 3,
     "stockId": 1,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:36:57.961Z",
-    "updatedAt": "2024-12-10T21:36:57.961Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:24.951Z",
+    "updatedAt": "2024-12-31T19:39:24.951Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -65,15 +65,15 @@
   {
     "id": 4,
     "stockId": 1,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:36:57.968Z",
-    "updatedAt": "2024-12-10T21:36:57.968Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:24.959Z",
+    "updatedAt": "2024-12-31T19:39:24.959Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -87,14 +87,14 @@
     "id": 5,
     "stockId": 2,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:58.009Z",
-    "updatedAt": "2024-12-10T21:36:58.009Z",
+    "createdAt": "2024-12-31T19:39:24.985Z",
+    "updatedAt": "2024-12-31T19:39:24.985Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -107,15 +107,15 @@
   {
     "id": 6,
     "stockId": 2,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:36:58.044Z",
-    "updatedAt": "2024-12-10T21:36:58.044Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:24.993Z",
+    "updatedAt": "2024-12-31T19:39:24.993Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -128,15 +128,15 @@
   {
     "id": 7,
     "stockId": 2,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:36:58.051Z",
-    "updatedAt": "2024-12-10T21:36:58.051Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:25.000Z",
+    "updatedAt": "2024-12-31T19:39:25.000Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -149,15 +149,15 @@
   {
     "id": 8,
     "stockId": 2,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:36:58.058Z",
-    "updatedAt": "2024-12-10T21:36:58.058Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:25.019Z",
+    "updatedAt": "2024-12-31T19:39:25.019Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -171,14 +171,14 @@
     "id": 9,
     "stockId": 3,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:58.099Z",
-    "updatedAt": "2024-12-10T21:36:58.099Z",
+    "createdAt": "2024-12-31T19:39:25.035Z",
+    "updatedAt": "2024-12-31T19:39:25.035Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -191,15 +191,15 @@
   {
     "id": 10,
     "stockId": 3,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:36:59.374Z",
-    "updatedAt": "2024-12-10T21:36:59.374Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:25.042Z",
+    "updatedAt": "2024-12-31T19:39:25.042Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -212,15 +212,15 @@
   {
     "id": 11,
     "stockId": 3,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:36:59.409Z",
-    "updatedAt": "2024-12-10T21:36:59.409Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.060Z",
+    "updatedAt": "2024-12-31T19:39:25.060Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -233,15 +233,15 @@
   {
     "id": 12,
     "stockId": 3,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:36:59.442Z",
-    "updatedAt": "2024-12-10T21:36:59.442Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:25.068Z",
+    "updatedAt": "2024-12-31T19:39:25.068Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -255,14 +255,14 @@
     "id": 13,
     "stockId": 4,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:59.462Z",
-    "updatedAt": "2024-12-10T21:36:59.462Z",
+    "createdAt": "2024-12-31T19:39:25.090Z",
+    "updatedAt": "2024-12-31T19:39:25.090Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -275,15 +275,15 @@
   {
     "id": 14,
     "stockId": 4,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:36:59.502Z",
-    "updatedAt": "2024-12-10T21:36:59.502Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:25.097Z",
+    "updatedAt": "2024-12-31T19:39:25.097Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -296,15 +296,15 @@
   {
     "id": 15,
     "stockId": 4,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:36:59.514Z",
-    "updatedAt": "2024-12-10T21:36:59.514Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.104Z",
+    "updatedAt": "2024-12-31T19:39:25.104Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -317,15 +317,15 @@
   {
     "id": 16,
     "stockId": 4,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:36:59.554Z",
-    "updatedAt": "2024-12-10T21:36:59.554Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:25.122Z",
+    "updatedAt": "2024-12-31T19:39:25.122Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -339,14 +339,14 @@
     "id": 17,
     "stockId": 5,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:59.601Z",
-    "updatedAt": "2024-12-10T21:36:59.601Z",
+    "createdAt": "2024-12-31T19:39:25.139Z",
+    "updatedAt": "2024-12-31T19:39:25.139Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -359,15 +359,15 @@
   {
     "id": 18,
     "stockId": 5,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:36:59.610Z",
-    "updatedAt": "2024-12-10T21:36:59.610Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.158Z",
+    "updatedAt": "2024-12-31T19:39:25.158Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -380,15 +380,15 @@
   {
     "id": 19,
     "stockId": 5,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:36:59.618Z",
-    "updatedAt": "2024-12-10T21:36:59.618Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:25.165Z",
+    "updatedAt": "2024-12-31T19:39:25.165Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -401,15 +401,15 @@
   {
     "id": 20,
     "stockId": 5,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:36:59.657Z",
-    "updatedAt": "2024-12-10T21:36:59.657Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:25.172Z",
+    "updatedAt": "2024-12-31T19:39:25.172Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -423,14 +423,14 @@
     "id": 21,
     "stockId": 6,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:59.675Z",
-    "updatedAt": "2024-12-10T21:36:59.675Z",
+    "createdAt": "2024-12-31T19:39:25.199Z",
+    "updatedAt": "2024-12-31T19:39:25.199Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -443,15 +443,15 @@
   {
     "id": 22,
     "stockId": 6,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:36:59.713Z",
-    "updatedAt": "2024-12-10T21:36:59.713Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.206Z",
+    "updatedAt": "2024-12-31T19:39:25.206Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -464,15 +464,15 @@
   {
     "id": 23,
     "stockId": 6,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:36:59.752Z",
-    "updatedAt": "2024-12-10T21:36:59.752Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:25.225Z",
+    "updatedAt": "2024-12-31T19:39:25.225Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -485,15 +485,15 @@
   {
     "id": 24,
     "stockId": 6,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:36:59.761Z",
-    "updatedAt": "2024-12-10T21:36:59.761Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:25.232Z",
+    "updatedAt": "2024-12-31T19:39:25.232Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -507,14 +507,14 @@
     "id": 25,
     "stockId": 7,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:59.806Z",
-    "updatedAt": "2024-12-10T21:36:59.806Z",
+    "createdAt": "2024-12-31T19:39:25.247Z",
+    "updatedAt": "2024-12-31T19:39:25.247Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -527,15 +527,15 @@
   {
     "id": 26,
     "stockId": 7,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:36:59.816Z",
-    "updatedAt": "2024-12-10T21:36:59.816Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.264Z",
+    "updatedAt": "2024-12-31T19:39:25.264Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -548,15 +548,15 @@
   {
     "id": 27,
     "stockId": 7,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:36:59.825Z",
-    "updatedAt": "2024-12-10T21:36:59.825Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.271Z",
+    "updatedAt": "2024-12-31T19:39:25.271Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -569,15 +569,15 @@
   {
     "id": 28,
     "stockId": 7,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:36:59.862Z",
-    "updatedAt": "2024-12-10T21:36:59.862Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:25.279Z",
+    "updatedAt": "2024-12-31T19:39:25.279Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -591,14 +591,14 @@
     "id": 29,
     "stockId": 8,
     "detailId": 101,
-    "createdAt": "2024-12-10T21:36:59.882Z",
-    "updatedAt": "2024-12-10T21:36:59.882Z",
+    "createdAt": "2024-12-31T19:39:25.305Z",
+    "updatedAt": "2024-12-31T19:39:25.305Z",
     "detail": {
       "id": 101,
       "typeId": 1,
       "value": "Amarelo",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -611,15 +611,15 @@
   {
     "id": 30,
     "stockId": 8,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:36:59.892Z",
-    "updatedAt": "2024-12-10T21:36:59.892Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.312Z",
+    "updatedAt": "2024-12-31T19:39:25.312Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -632,15 +632,15 @@
   {
     "id": 31,
     "stockId": 8,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:36:59.927Z",
-    "updatedAt": "2024-12-10T21:36:59.927Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.331Z",
+    "updatedAt": "2024-12-31T19:39:25.331Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -653,15 +653,15 @@
   {
     "id": 32,
     "stockId": 8,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:36:59.937Z",
-    "updatedAt": "2024-12-10T21:36:59.937Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:25.339Z",
+    "updatedAt": "2024-12-31T19:39:25.339Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -674,15 +674,15 @@
   {
     "id": 33,
     "stockId": 9,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:36:59.984Z",
-    "updatedAt": "2024-12-10T21:36:59.984Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.368Z",
+    "updatedAt": "2024-12-31T19:39:25.368Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -695,15 +695,15 @@
   {
     "id": 34,
     "stockId": 9,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:36:59.994Z",
-    "updatedAt": "2024-12-10T21:36:59.994Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:25.375Z",
+    "updatedAt": "2024-12-31T19:39:25.375Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -716,15 +716,15 @@
   {
     "id": 35,
     "stockId": 9,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:00.006Z",
-    "updatedAt": "2024-12-10T21:37:00.006Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:25.397Z",
+    "updatedAt": "2024-12-31T19:39:25.397Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -737,15 +737,15 @@
   {
     "id": 36,
     "stockId": 9,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:37:00.016Z",
-    "updatedAt": "2024-12-10T21:37:00.016Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:25.416Z",
+    "updatedAt": "2024-12-31T19:39:25.416Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -758,15 +758,15 @@
   {
     "id": 37,
     "stockId": 10,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.059Z",
-    "updatedAt": "2024-12-10T21:37:00.059Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.431Z",
+    "updatedAt": "2024-12-31T19:39:25.431Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -779,15 +779,15 @@
   {
     "id": 38,
     "stockId": 10,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:37:00.099Z",
-    "updatedAt": "2024-12-10T21:37:00.099Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:25.451Z",
+    "updatedAt": "2024-12-31T19:39:25.451Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -800,15 +800,15 @@
   {
     "id": 39,
     "stockId": 10,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:00.108Z",
-    "updatedAt": "2024-12-10T21:37:00.108Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:25.459Z",
+    "updatedAt": "2024-12-31T19:39:25.459Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -821,15 +821,15 @@
   {
     "id": 40,
     "stockId": 10,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:37:00.118Z",
-    "updatedAt": "2024-12-10T21:37:00.118Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:25.481Z",
+    "updatedAt": "2024-12-31T19:39:25.481Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -842,15 +842,15 @@
   {
     "id": 41,
     "stockId": 11,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.166Z",
-    "updatedAt": "2024-12-10T21:37:00.166Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.508Z",
+    "updatedAt": "2024-12-31T19:39:25.508Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -863,15 +863,15 @@
   {
     "id": 42,
     "stockId": 11,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:37:00.174Z",
-    "updatedAt": "2024-12-10T21:37:00.174Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:25.518Z",
+    "updatedAt": "2024-12-31T19:39:25.518Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -884,15 +884,15 @@
   {
     "id": 43,
     "stockId": 11,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:37:00.182Z",
-    "updatedAt": "2024-12-10T21:37:00.182Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.526Z",
+    "updatedAt": "2024-12-31T19:39:25.526Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -905,15 +905,15 @@
   {
     "id": 44,
     "stockId": 11,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:37:00.216Z",
-    "updatedAt": "2024-12-10T21:37:00.216Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:25.546Z",
+    "updatedAt": "2024-12-31T19:39:25.546Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -926,15 +926,15 @@
   {
     "id": 45,
     "stockId": 12,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.262Z",
-    "updatedAt": "2024-12-10T21:37:00.262Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.575Z",
+    "updatedAt": "2024-12-31T19:39:25.575Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -947,15 +947,15 @@
   {
     "id": 46,
     "stockId": 12,
-    "detailId": 204,
-    "createdAt": "2024-12-10T21:37:00.271Z",
-    "updatedAt": "2024-12-10T21:37:00.271Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:25.582Z",
+    "updatedAt": "2024-12-31T19:39:25.582Z",
     "detail": {
-      "id": 204,
+      "id": 202,
       "typeId": 2,
-      "value": "GG",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -968,15 +968,15 @@
   {
     "id": 47,
     "stockId": 12,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:37:00.279Z",
-    "updatedAt": "2024-12-10T21:37:00.279Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.604Z",
+    "updatedAt": "2024-12-31T19:39:25.604Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -989,15 +989,15 @@
   {
     "id": 48,
     "stockId": 12,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:37:00.313Z",
-    "updatedAt": "2024-12-10T21:37:00.313Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:25.611Z",
+    "updatedAt": "2024-12-31T19:39:25.611Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1010,15 +1010,15 @@
   {
     "id": 49,
     "stockId": 13,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.333Z",
-    "updatedAt": "2024-12-10T21:37:00.333Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.636Z",
+    "updatedAt": "2024-12-31T19:39:25.636Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1031,15 +1031,15 @@
   {
     "id": 50,
     "stockId": 13,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:00.370Z",
-    "updatedAt": "2024-12-10T21:37:00.370Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.644Z",
+    "updatedAt": "2024-12-31T19:39:25.644Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1052,15 +1052,15 @@
   {
     "id": 51,
     "stockId": 13,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:00.380Z",
-    "updatedAt": "2024-12-10T21:37:00.380Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:25.652Z",
+    "updatedAt": "2024-12-31T19:39:25.652Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1073,15 +1073,15 @@
   {
     "id": 52,
     "stockId": 13,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:37:00.389Z",
-    "updatedAt": "2024-12-10T21:37:00.389Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:25.658Z",
+    "updatedAt": "2024-12-31T19:39:25.658Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1094,15 +1094,15 @@
   {
     "id": 53,
     "stockId": 14,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.436Z",
-    "updatedAt": "2024-12-10T21:37:00.436Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.680Z",
+    "updatedAt": "2024-12-31T19:39:25.680Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1115,15 +1115,15 @@
   {
     "id": 54,
     "stockId": 14,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:00.445Z",
-    "updatedAt": "2024-12-10T21:37:00.445Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.873Z",
+    "updatedAt": "2024-12-31T19:39:25.873Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1136,15 +1136,15 @@
   {
     "id": 55,
     "stockId": 14,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:00.481Z",
-    "updatedAt": "2024-12-10T21:37:00.481Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:25.882Z",
+    "updatedAt": "2024-12-31T19:39:25.882Z",
     "detail": {
-      "id": 401,
+      "id": 403,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1157,15 +1157,15 @@
   {
     "id": 56,
     "stockId": 14,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:37:00.486Z",
-    "updatedAt": "2024-12-10T21:37:00.486Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:25.891Z",
+    "updatedAt": "2024-12-31T19:39:25.891Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1178,15 +1178,15 @@
   {
     "id": 57,
     "stockId": 15,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.525Z",
-    "updatedAt": "2024-12-10T21:37:00.525Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.921Z",
+    "updatedAt": "2024-12-31T19:39:25.921Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1199,15 +1199,15 @@
   {
     "id": 58,
     "stockId": 15,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:00.562Z",
-    "updatedAt": "2024-12-10T21:37:00.562Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.930Z",
+    "updatedAt": "2024-12-31T19:39:25.930Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1220,15 +1220,15 @@
   {
     "id": 59,
     "stockId": 15,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:37:00.572Z",
-    "updatedAt": "2024-12-10T21:37:00.572Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.939Z",
+    "updatedAt": "2024-12-31T19:39:25.939Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1241,15 +1241,15 @@
   {
     "id": 60,
     "stockId": 15,
-    "detailId": 502,
-    "createdAt": "2024-12-10T21:37:00.580Z",
-    "updatedAt": "2024-12-10T21:37:00.580Z",
+    "detailId": 504,
+    "createdAt": "2024-12-31T19:39:25.954Z",
+    "updatedAt": "2024-12-31T19:39:25.954Z",
     "detail": {
-      "id": 502,
+      "id": 504,
       "typeId": 5,
-      "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Otaku",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1262,15 +1262,15 @@
   {
     "id": 61,
     "stockId": 16,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.630Z",
-    "updatedAt": "2024-12-10T21:37:00.630Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:25.973Z",
+    "updatedAt": "2024-12-31T19:39:25.973Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1283,15 +1283,15 @@
   {
     "id": 62,
     "stockId": 16,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:00.640Z",
-    "updatedAt": "2024-12-10T21:37:00.640Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:25.986Z",
+    "updatedAt": "2024-12-31T19:39:25.986Z",
     "detail": {
-      "id": 203,
+      "id": 204,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1304,15 +1304,15 @@
   {
     "id": 63,
     "stockId": 16,
-    "detailId": 404,
-    "createdAt": "2024-12-10T21:37:00.650Z",
-    "updatedAt": "2024-12-10T21:37:00.650Z",
+    "detailId": 401,
+    "createdAt": "2024-12-31T19:39:25.994Z",
+    "updatedAt": "2024-12-31T19:39:25.994Z",
     "detail": {
-      "id": 404,
+      "id": 401,
       "typeId": 4,
-      "value": "Poliester",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Algodão",
+      "createdAt": "2024-12-31T19:39:24.759Z",
+      "updatedAt": "2024-12-31T19:39:24.759Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1325,15 +1325,15 @@
   {
     "id": 64,
     "stockId": 16,
-    "detailId": 506,
-    "createdAt": "2024-12-10T21:37:00.684Z",
-    "updatedAt": "2024-12-10T21:37:00.684Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:26.003Z",
+    "updatedAt": "2024-12-31T19:39:26.003Z",
     "detail": {
-      "id": 506,
+      "id": 503,
       "typeId": 5,
-      "value": "Praia",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1347,14 +1347,14 @@
     "id": 65,
     "stockId": 17,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.727Z",
-    "updatedAt": "2024-12-10T21:37:00.727Z",
+    "createdAt": "2024-12-31T19:39:26.032Z",
+    "updatedAt": "2024-12-31T19:39:26.032Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1368,14 +1368,14 @@
     "id": 66,
     "stockId": 17,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:00.736Z",
-    "updatedAt": "2024-12-10T21:37:00.736Z",
+    "createdAt": "2024-12-31T19:39:26.040Z",
+    "updatedAt": "2024-12-31T19:39:26.040Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1388,15 +1388,15 @@
   {
     "id": 67,
     "stockId": 17,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:00.768Z",
-    "updatedAt": "2024-12-10T21:37:00.768Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.060Z",
+    "updatedAt": "2024-12-31T19:39:26.060Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -1409,15 +1409,15 @@
   {
     "id": 68,
     "stockId": 17,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:00.777Z",
-    "updatedAt": "2024-12-10T21:37:00.777Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:26.066Z",
+    "updatedAt": "2024-12-31T19:39:26.066Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1431,14 +1431,14 @@
     "id": 69,
     "stockId": 17,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:00.787Z",
-    "updatedAt": "2024-12-10T21:37:00.787Z",
+    "createdAt": "2024-12-31T19:39:26.072Z",
+    "updatedAt": "2024-12-31T19:39:26.072Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1452,14 +1452,14 @@
     "id": 70,
     "stockId": 18,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.835Z",
-    "updatedAt": "2024-12-10T21:37:00.835Z",
+    "createdAt": "2024-12-31T19:39:26.096Z",
+    "updatedAt": "2024-12-31T19:39:26.096Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1473,14 +1473,14 @@
     "id": 71,
     "stockId": 18,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:00.844Z",
-    "updatedAt": "2024-12-10T21:37:00.844Z",
+    "createdAt": "2024-12-31T19:39:26.101Z",
+    "updatedAt": "2024-12-31T19:39:26.101Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1493,15 +1493,15 @@
   {
     "id": 72,
     "stockId": 18,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:00.879Z",
-    "updatedAt": "2024-12-10T21:37:00.879Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.117Z",
+    "updatedAt": "2024-12-31T19:39:26.117Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -1514,15 +1514,15 @@
   {
     "id": 73,
     "stockId": 18,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:00.888Z",
-    "updatedAt": "2024-12-10T21:37:00.888Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:26.123Z",
+    "updatedAt": "2024-12-31T19:39:26.123Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1535,15 +1535,15 @@
   {
     "id": 74,
     "stockId": 18,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:00.897Z",
-    "updatedAt": "2024-12-10T21:37:00.897Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:26.128Z",
+    "updatedAt": "2024-12-31T19:39:26.128Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1557,14 +1557,14 @@
     "id": 75,
     "stockId": 19,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:00.943Z",
-    "updatedAt": "2024-12-10T21:37:00.943Z",
+    "createdAt": "2024-12-31T19:39:26.150Z",
+    "updatedAt": "2024-12-31T19:39:26.150Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1578,14 +1578,14 @@
     "id": 76,
     "stockId": 19,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:00.953Z",
-    "updatedAt": "2024-12-10T21:37:00.953Z",
+    "createdAt": "2024-12-31T19:39:26.156Z",
+    "updatedAt": "2024-12-31T19:39:26.156Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1598,15 +1598,15 @@
   {
     "id": 77,
     "stockId": 19,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:00.963Z",
-    "updatedAt": "2024-12-10T21:37:00.963Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.173Z",
+    "updatedAt": "2024-12-31T19:39:26.173Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -1619,15 +1619,15 @@
   {
     "id": 78,
     "stockId": 19,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:00.993Z",
-    "updatedAt": "2024-12-10T21:37:00.993Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:26.181Z",
+    "updatedAt": "2024-12-31T19:39:26.181Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1641,14 +1641,14 @@
     "id": 79,
     "stockId": 19,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:01.003Z",
-    "updatedAt": "2024-12-10T21:37:01.003Z",
+    "createdAt": "2024-12-31T19:39:26.189Z",
+    "updatedAt": "2024-12-31T19:39:26.189Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1662,14 +1662,14 @@
     "id": 80,
     "stockId": 20,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.050Z",
-    "updatedAt": "2024-12-10T21:37:01.050Z",
+    "createdAt": "2024-12-31T19:39:26.218Z",
+    "updatedAt": "2024-12-31T19:39:26.218Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1683,14 +1683,14 @@
     "id": 81,
     "stockId": 20,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:01.060Z",
-    "updatedAt": "2024-12-10T21:37:01.060Z",
+    "createdAt": "2024-12-31T19:39:26.226Z",
+    "updatedAt": "2024-12-31T19:39:26.226Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1703,15 +1703,15 @@
   {
     "id": 82,
     "stockId": 20,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:01.069Z",
-    "updatedAt": "2024-12-10T21:37:01.069Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.248Z",
+    "updatedAt": "2024-12-31T19:39:26.248Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -1724,15 +1724,15 @@
   {
     "id": 83,
     "stockId": 20,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:01.109Z",
-    "updatedAt": "2024-12-10T21:37:01.109Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:26.256Z",
+    "updatedAt": "2024-12-31T19:39:26.256Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1745,15 +1745,15 @@
   {
     "id": 84,
     "stockId": 20,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:01.118Z",
-    "updatedAt": "2024-12-10T21:37:01.118Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:26.264Z",
+    "updatedAt": "2024-12-31T19:39:26.264Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1767,14 +1767,14 @@
     "id": 85,
     "stockId": 21,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.139Z",
-    "updatedAt": "2024-12-10T21:37:01.139Z",
+    "createdAt": "2024-12-31T19:39:26.293Z",
+    "updatedAt": "2024-12-31T19:39:26.293Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1788,14 +1788,14 @@
     "id": 86,
     "stockId": 21,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:01.169Z",
-    "updatedAt": "2024-12-10T21:37:01.169Z",
+    "createdAt": "2024-12-31T19:39:26.302Z",
+    "updatedAt": "2024-12-31T19:39:26.302Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1809,14 +1809,14 @@
     "id": 87,
     "stockId": 21,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:01.179Z",
-    "updatedAt": "2024-12-10T21:37:01.179Z",
+    "createdAt": "2024-12-31T19:39:26.321Z",
+    "updatedAt": "2024-12-31T19:39:26.321Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -1829,15 +1829,15 @@
   {
     "id": 88,
     "stockId": 21,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:01.216Z",
-    "updatedAt": "2024-12-10T21:37:01.216Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:26.332Z",
+    "updatedAt": "2024-12-31T19:39:26.332Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1851,14 +1851,14 @@
     "id": 89,
     "stockId": 21,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:01.224Z",
-    "updatedAt": "2024-12-10T21:37:01.224Z",
+    "createdAt": "2024-12-31T19:39:26.340Z",
+    "updatedAt": "2024-12-31T19:39:26.340Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1872,14 +1872,14 @@
     "id": 90,
     "stockId": 22,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.274Z",
-    "updatedAt": "2024-12-10T21:37:01.274Z",
+    "createdAt": "2024-12-31T19:39:26.372Z",
+    "updatedAt": "2024-12-31T19:39:26.372Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1893,14 +1893,14 @@
     "id": 91,
     "stockId": 22,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:01.284Z",
-    "updatedAt": "2024-12-10T21:37:01.284Z",
+    "createdAt": "2024-12-31T19:39:26.384Z",
+    "updatedAt": "2024-12-31T19:39:26.384Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -1914,14 +1914,14 @@
     "id": 92,
     "stockId": 22,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:01.294Z",
-    "updatedAt": "2024-12-10T21:37:01.294Z",
+    "createdAt": "2024-12-31T19:39:26.400Z",
+    "updatedAt": "2024-12-31T19:39:26.400Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -1934,15 +1934,15 @@
   {
     "id": 93,
     "stockId": 22,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:01.334Z",
-    "updatedAt": "2024-12-10T21:37:01.334Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:26.421Z",
+    "updatedAt": "2024-12-31T19:39:26.421Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -1955,15 +1955,15 @@
   {
     "id": 94,
     "stockId": 22,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:01.346Z",
-    "updatedAt": "2024-12-10T21:37:01.346Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:26.433Z",
+    "updatedAt": "2024-12-31T19:39:26.433Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -1977,14 +1977,14 @@
     "id": 95,
     "stockId": 23,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.392Z",
-    "updatedAt": "2024-12-10T21:37:01.392Z",
+    "createdAt": "2024-12-31T19:39:26.467Z",
+    "updatedAt": "2024-12-31T19:39:26.467Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -1998,14 +1998,14 @@
     "id": 96,
     "stockId": 23,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:01.402Z",
-    "updatedAt": "2024-12-10T21:37:01.402Z",
+    "createdAt": "2024-12-31T19:39:26.485Z",
+    "updatedAt": "2024-12-31T19:39:26.485Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2019,14 +2019,14 @@
     "id": 97,
     "stockId": 23,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:01.411Z",
-    "updatedAt": "2024-12-10T21:37:01.411Z",
+    "createdAt": "2024-12-31T19:39:26.494Z",
+    "updatedAt": "2024-12-31T19:39:26.494Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2039,15 +2039,15 @@
   {
     "id": 98,
     "stockId": 23,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:01.446Z",
-    "updatedAt": "2024-12-10T21:37:01.446Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:26.516Z",
+    "updatedAt": "2024-12-31T19:39:26.516Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2061,14 +2061,14 @@
     "id": 99,
     "stockId": 23,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:01.457Z",
-    "updatedAt": "2024-12-10T21:37:01.457Z",
+    "createdAt": "2024-12-31T19:39:26.524Z",
+    "updatedAt": "2024-12-31T19:39:26.524Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2082,14 +2082,14 @@
     "id": 100,
     "stockId": 24,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.502Z",
-    "updatedAt": "2024-12-10T21:37:01.502Z",
+    "createdAt": "2024-12-31T19:39:26.543Z",
+    "updatedAt": "2024-12-31T19:39:26.543Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2103,14 +2103,14 @@
     "id": 101,
     "stockId": 24,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:01.514Z",
-    "updatedAt": "2024-12-10T21:37:01.514Z",
+    "createdAt": "2024-12-31T19:39:26.557Z",
+    "updatedAt": "2024-12-31T19:39:26.557Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2124,14 +2124,14 @@
     "id": 102,
     "stockId": 24,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:01.551Z",
-    "updatedAt": "2024-12-10T21:37:01.551Z",
+    "createdAt": "2024-12-31T19:39:26.568Z",
+    "updatedAt": "2024-12-31T19:39:26.568Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2144,15 +2144,15 @@
   {
     "id": 103,
     "stockId": 24,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:01.590Z",
-    "updatedAt": "2024-12-10T21:37:01.590Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:26.577Z",
+    "updatedAt": "2024-12-31T19:39:26.577Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2165,15 +2165,15 @@
   {
     "id": 104,
     "stockId": 24,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:01.627Z",
-    "updatedAt": "2024-12-10T21:37:01.627Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:26.598Z",
+    "updatedAt": "2024-12-31T19:39:26.598Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2187,14 +2187,14 @@
     "id": 105,
     "stockId": 25,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.649Z",
-    "updatedAt": "2024-12-10T21:37:01.649Z",
+    "createdAt": "2024-12-31T19:39:26.618Z",
+    "updatedAt": "2024-12-31T19:39:26.618Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2208,14 +2208,14 @@
     "id": 106,
     "stockId": 25,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:01.692Z",
-    "updatedAt": "2024-12-10T21:37:01.692Z",
+    "createdAt": "2024-12-31T19:39:26.641Z",
+    "updatedAt": "2024-12-31T19:39:26.641Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2228,15 +2228,15 @@
   {
     "id": 107,
     "stockId": 25,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:01.738Z",
-    "updatedAt": "2024-12-10T21:37:01.738Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.650Z",
+    "updatedAt": "2024-12-31T19:39:26.650Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2249,15 +2249,15 @@
   {
     "id": 108,
     "stockId": 25,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:01.770Z",
-    "updatedAt": "2024-12-10T21:37:01.770Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:26.659Z",
+    "updatedAt": "2024-12-31T19:39:26.659Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2271,14 +2271,14 @@
     "id": 109,
     "stockId": 25,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:01.807Z",
-    "updatedAt": "2024-12-10T21:37:01.807Z",
+    "createdAt": "2024-12-31T19:39:26.682Z",
+    "updatedAt": "2024-12-31T19:39:26.682Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2292,14 +2292,14 @@
     "id": 110,
     "stockId": 26,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.857Z",
-    "updatedAt": "2024-12-10T21:37:01.857Z",
+    "createdAt": "2024-12-31T19:39:26.707Z",
+    "updatedAt": "2024-12-31T19:39:26.707Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2313,14 +2313,14 @@
     "id": 111,
     "stockId": 26,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:01.868Z",
-    "updatedAt": "2024-12-10T21:37:01.868Z",
+    "createdAt": "2024-12-31T19:39:26.728Z",
+    "updatedAt": "2024-12-31T19:39:26.728Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2333,15 +2333,15 @@
   {
     "id": 112,
     "stockId": 26,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:01.879Z",
-    "updatedAt": "2024-12-10T21:37:01.879Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.739Z",
+    "updatedAt": "2024-12-31T19:39:26.739Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2354,15 +2354,15 @@
   {
     "id": 113,
     "stockId": 26,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:01.908Z",
-    "updatedAt": "2024-12-10T21:37:01.908Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:26.751Z",
+    "updatedAt": "2024-12-31T19:39:26.751Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2375,15 +2375,15 @@
   {
     "id": 114,
     "stockId": 26,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:01.920Z",
-    "updatedAt": "2024-12-10T21:37:01.920Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:26.761Z",
+    "updatedAt": "2024-12-31T19:39:26.761Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2397,14 +2397,14 @@
     "id": 115,
     "stockId": 27,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:01.972Z",
-    "updatedAt": "2024-12-10T21:37:01.972Z",
+    "createdAt": "2024-12-31T19:39:26.789Z",
+    "updatedAt": "2024-12-31T19:39:26.789Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2418,14 +2418,14 @@
     "id": 116,
     "stockId": 27,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:01.983Z",
-    "updatedAt": "2024-12-10T21:37:01.983Z",
+    "createdAt": "2024-12-31T19:39:26.799Z",
+    "updatedAt": "2024-12-31T19:39:26.799Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2438,15 +2438,15 @@
   {
     "id": 117,
     "stockId": 27,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:01.995Z",
-    "updatedAt": "2024-12-10T21:37:01.995Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.819Z",
+    "updatedAt": "2024-12-31T19:39:26.819Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2459,15 +2459,15 @@
   {
     "id": 118,
     "stockId": 27,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:02.036Z",
-    "updatedAt": "2024-12-10T21:37:02.036Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:26.828Z",
+    "updatedAt": "2024-12-31T19:39:26.828Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2481,14 +2481,14 @@
     "id": 119,
     "stockId": 27,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:02.047Z",
-    "updatedAt": "2024-12-10T21:37:02.047Z",
+    "createdAt": "2024-12-31T19:39:26.838Z",
+    "updatedAt": "2024-12-31T19:39:26.838Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2502,14 +2502,14 @@
     "id": 120,
     "stockId": 28,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:02.099Z",
-    "updatedAt": "2024-12-10T21:37:02.099Z",
+    "createdAt": "2024-12-31T19:39:26.868Z",
+    "updatedAt": "2024-12-31T19:39:26.868Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2523,14 +2523,14 @@
     "id": 121,
     "stockId": 28,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:02.111Z",
-    "updatedAt": "2024-12-10T21:37:02.111Z",
+    "createdAt": "2024-12-31T19:39:26.877Z",
+    "updatedAt": "2024-12-31T19:39:26.877Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2543,15 +2543,15 @@
   {
     "id": 122,
     "stockId": 28,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:02.123Z",
-    "updatedAt": "2024-12-10T21:37:02.123Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:26.898Z",
+    "updatedAt": "2024-12-31T19:39:26.898Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2564,15 +2564,15 @@
   {
     "id": 123,
     "stockId": 28,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:02.165Z",
-    "updatedAt": "2024-12-10T21:37:02.165Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:26.908Z",
+    "updatedAt": "2024-12-31T19:39:26.908Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2585,15 +2585,15 @@
   {
     "id": 124,
     "stockId": 28,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:02.176Z",
-    "updatedAt": "2024-12-10T21:37:02.176Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:26.918Z",
+    "updatedAt": "2024-12-31T19:39:26.918Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2607,14 +2607,14 @@
     "id": 125,
     "stockId": 29,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:02.228Z",
-    "updatedAt": "2024-12-10T21:37:02.228Z",
+    "createdAt": "2024-12-31T19:39:26.949Z",
+    "updatedAt": "2024-12-31T19:39:26.949Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2628,14 +2628,14 @@
     "id": 126,
     "stockId": 29,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:02.239Z",
-    "updatedAt": "2024-12-10T21:37:02.239Z",
+    "createdAt": "2024-12-31T19:39:26.958Z",
+    "updatedAt": "2024-12-31T19:39:26.958Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2649,14 +2649,14 @@
     "id": 127,
     "stockId": 29,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:02.271Z",
-    "updatedAt": "2024-12-10T21:37:02.271Z",
+    "createdAt": "2024-12-31T19:39:26.981Z",
+    "updatedAt": "2024-12-31T19:39:26.981Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2669,15 +2669,15 @@
   {
     "id": 128,
     "stockId": 29,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:02.281Z",
-    "updatedAt": "2024-12-10T21:37:02.281Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:26.992Z",
+    "updatedAt": "2024-12-31T19:39:26.992Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2691,14 +2691,14 @@
     "id": 129,
     "stockId": 29,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:02.293Z",
-    "updatedAt": "2024-12-10T21:37:02.293Z",
+    "createdAt": "2024-12-31T19:39:27.004Z",
+    "updatedAt": "2024-12-31T19:39:27.004Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2712,14 +2712,14 @@
     "id": 130,
     "stockId": 30,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:02.342Z",
-    "updatedAt": "2024-12-10T21:37:02.342Z",
+    "createdAt": "2024-12-31T19:39:27.037Z",
+    "updatedAt": "2024-12-31T19:39:27.037Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2733,14 +2733,14 @@
     "id": 131,
     "stockId": 30,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:02.353Z",
-    "updatedAt": "2024-12-10T21:37:02.353Z",
+    "createdAt": "2024-12-31T19:39:27.046Z",
+    "updatedAt": "2024-12-31T19:39:27.046Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2754,14 +2754,14 @@
     "id": 132,
     "stockId": 30,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:02.392Z",
-    "updatedAt": "2024-12-10T21:37:02.392Z",
+    "createdAt": "2024-12-31T19:39:27.066Z",
+    "updatedAt": "2024-12-31T19:39:27.066Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2774,15 +2774,15 @@
   {
     "id": 133,
     "stockId": 30,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:02.404Z",
-    "updatedAt": "2024-12-10T21:37:02.404Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:27.075Z",
+    "updatedAt": "2024-12-31T19:39:27.075Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2795,15 +2795,15 @@
   {
     "id": 134,
     "stockId": 30,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:02.415Z",
-    "updatedAt": "2024-12-10T21:37:02.415Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:27.084Z",
+    "updatedAt": "2024-12-31T19:39:27.084Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2817,14 +2817,14 @@
     "id": 135,
     "stockId": 31,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:02.468Z",
-    "updatedAt": "2024-12-10T21:37:02.468Z",
+    "createdAt": "2024-12-31T19:39:27.107Z",
+    "updatedAt": "2024-12-31T19:39:27.107Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2838,14 +2838,14 @@
     "id": 136,
     "stockId": 31,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:02.481Z",
-    "updatedAt": "2024-12-10T21:37:02.481Z",
+    "createdAt": "2024-12-31T19:39:27.117Z",
+    "updatedAt": "2024-12-31T19:39:27.117Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2859,14 +2859,14 @@
     "id": 137,
     "stockId": 31,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:02.516Z",
-    "updatedAt": "2024-12-10T21:37:02.516Z",
+    "createdAt": "2024-12-31T19:39:27.126Z",
+    "updatedAt": "2024-12-31T19:39:27.126Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2879,15 +2879,15 @@
   {
     "id": 138,
     "stockId": 31,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:02.560Z",
-    "updatedAt": "2024-12-10T21:37:02.560Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:27.148Z",
+    "updatedAt": "2024-12-31T19:39:27.148Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -2901,14 +2901,14 @@
     "id": 139,
     "stockId": 31,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:02.584Z",
-    "updatedAt": "2024-12-10T21:37:02.584Z",
+    "createdAt": "2024-12-31T19:39:27.157Z",
+    "updatedAt": "2024-12-31T19:39:27.157Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -2922,14 +2922,14 @@
     "id": 140,
     "stockId": 32,
     "detailId": 102,
-    "createdAt": "2024-12-10T21:37:02.644Z",
-    "updatedAt": "2024-12-10T21:37:02.644Z",
+    "createdAt": "2024-12-31T19:39:27.188Z",
+    "updatedAt": "2024-12-31T19:39:27.188Z",
     "detail": {
       "id": 102,
       "typeId": 1,
       "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -2943,14 +2943,14 @@
     "id": 141,
     "stockId": 32,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:02.656Z",
-    "updatedAt": "2024-12-10T21:37:02.656Z",
+    "createdAt": "2024-12-31T19:39:27.201Z",
+    "updatedAt": "2024-12-31T19:39:27.201Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -2964,14 +2964,14 @@
     "id": 142,
     "stockId": 32,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:02.665Z",
-    "updatedAt": "2024-12-10T21:37:02.665Z",
+    "createdAt": "2024-12-31T19:39:27.211Z",
+    "updatedAt": "2024-12-31T19:39:27.211Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -2984,15 +2984,15 @@
   {
     "id": 143,
     "stockId": 32,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:02.699Z",
-    "updatedAt": "2024-12-10T21:37:02.699Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:27.232Z",
+    "updatedAt": "2024-12-31T19:39:27.232Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3005,15 +3005,15 @@
   {
     "id": 144,
     "stockId": 32,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:02.729Z",
-    "updatedAt": "2024-12-10T21:37:02.729Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:27.252Z",
+    "updatedAt": "2024-12-31T19:39:27.252Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3026,15 +3026,15 @@
   {
     "id": 145,
     "stockId": 33,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:02.741Z",
-    "updatedAt": "2024-12-10T21:37:02.741Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.273Z",
+    "updatedAt": "2024-12-31T19:39:27.273Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3048,14 +3048,14 @@
     "id": 146,
     "stockId": 33,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:02.775Z",
-    "updatedAt": "2024-12-10T21:37:02.775Z",
+    "createdAt": "2024-12-31T19:39:27.291Z",
+    "updatedAt": "2024-12-31T19:39:27.291Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3068,15 +3068,15 @@
   {
     "id": 147,
     "stockId": 33,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:02.785Z",
-    "updatedAt": "2024-12-10T21:37:02.785Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:27.302Z",
+    "updatedAt": "2024-12-31T19:39:27.302Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3089,15 +3089,15 @@
   {
     "id": 148,
     "stockId": 33,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:02.796Z",
-    "updatedAt": "2024-12-10T21:37:02.796Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:27.311Z",
+    "updatedAt": "2024-12-31T19:39:27.311Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3111,14 +3111,14 @@
     "id": 149,
     "stockId": 33,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:02.834Z",
-    "updatedAt": "2024-12-10T21:37:02.834Z",
+    "createdAt": "2024-12-31T19:39:27.333Z",
+    "updatedAt": "2024-12-31T19:39:27.333Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3131,15 +3131,15 @@
   {
     "id": 150,
     "stockId": 34,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:02.856Z",
-    "updatedAt": "2024-12-10T21:37:02.856Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.356Z",
+    "updatedAt": "2024-12-31T19:39:27.356Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3153,14 +3153,14 @@
     "id": 151,
     "stockId": 34,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:02.867Z",
-    "updatedAt": "2024-12-10T21:37:02.867Z",
+    "createdAt": "2024-12-31T19:39:27.381Z",
+    "updatedAt": "2024-12-31T19:39:27.381Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3173,15 +3173,15 @@
   {
     "id": 152,
     "stockId": 34,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:02.898Z",
-    "updatedAt": "2024-12-10T21:37:02.898Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:27.409Z",
+    "updatedAt": "2024-12-31T19:39:27.409Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3194,15 +3194,15 @@
   {
     "id": 153,
     "stockId": 34,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:02.909Z",
-    "updatedAt": "2024-12-10T21:37:02.909Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:27.422Z",
+    "updatedAt": "2024-12-31T19:39:27.422Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3215,15 +3215,15 @@
   {
     "id": 154,
     "stockId": 34,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:02.919Z",
-    "updatedAt": "2024-12-10T21:37:02.919Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:27.443Z",
+    "updatedAt": "2024-12-31T19:39:27.443Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3236,15 +3236,15 @@
   {
     "id": 155,
     "stockId": 35,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:02.965Z",
-    "updatedAt": "2024-12-10T21:37:02.965Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.483Z",
+    "updatedAt": "2024-12-31T19:39:27.483Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3258,14 +3258,14 @@
     "id": 156,
     "stockId": 35,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:02.977Z",
-    "updatedAt": "2024-12-10T21:37:02.977Z",
+    "createdAt": "2024-12-31T19:39:27.495Z",
+    "updatedAt": "2024-12-31T19:39:27.495Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3278,15 +3278,15 @@
   {
     "id": 157,
     "stockId": 35,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:03.015Z",
-    "updatedAt": "2024-12-10T21:37:03.015Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:27.517Z",
+    "updatedAt": "2024-12-31T19:39:27.517Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3299,15 +3299,15 @@
   {
     "id": 158,
     "stockId": 35,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:03.026Z",
-    "updatedAt": "2024-12-10T21:37:03.026Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:27.529Z",
+    "updatedAt": "2024-12-31T19:39:27.529Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3321,14 +3321,14 @@
     "id": 159,
     "stockId": 35,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:03.038Z",
-    "updatedAt": "2024-12-10T21:37:03.038Z",
+    "createdAt": "2024-12-31T19:39:27.541Z",
+    "updatedAt": "2024-12-31T19:39:27.541Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3341,15 +3341,15 @@
   {
     "id": 160,
     "stockId": 36,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.090Z",
-    "updatedAt": "2024-12-10T21:37:03.090Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.578Z",
+    "updatedAt": "2024-12-31T19:39:27.578Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3363,14 +3363,14 @@
     "id": 161,
     "stockId": 36,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:03.101Z",
-    "updatedAt": "2024-12-10T21:37:03.101Z",
+    "createdAt": "2024-12-31T19:39:27.591Z",
+    "updatedAt": "2024-12-31T19:39:27.591Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3383,15 +3383,15 @@
   {
     "id": 162,
     "stockId": 36,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:03.143Z",
-    "updatedAt": "2024-12-10T21:37:03.143Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:27.605Z",
+    "updatedAt": "2024-12-31T19:39:27.605Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3404,15 +3404,15 @@
   {
     "id": 163,
     "stockId": 36,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:03.154Z",
-    "updatedAt": "2024-12-10T21:37:03.154Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:27.617Z",
+    "updatedAt": "2024-12-31T19:39:27.617Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3425,15 +3425,15 @@
   {
     "id": 164,
     "stockId": 36,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:03.165Z",
-    "updatedAt": "2024-12-10T21:37:03.165Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:27.628Z",
+    "updatedAt": "2024-12-31T19:39:27.628Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3446,15 +3446,15 @@
   {
     "id": 165,
     "stockId": 37,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.214Z",
-    "updatedAt": "2024-12-10T21:37:03.214Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.664Z",
+    "updatedAt": "2024-12-31T19:39:27.664Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3468,14 +3468,14 @@
     "id": 166,
     "stockId": 37,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:03.226Z",
-    "updatedAt": "2024-12-10T21:37:03.226Z",
+    "createdAt": "2024-12-31T19:39:27.676Z",
+    "updatedAt": "2024-12-31T19:39:27.676Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3489,14 +3489,14 @@
     "id": 167,
     "stockId": 37,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:03.265Z",
-    "updatedAt": "2024-12-10T21:37:03.265Z",
+    "createdAt": "2024-12-31T19:39:27.698Z",
+    "updatedAt": "2024-12-31T19:39:27.698Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3509,15 +3509,15 @@
   {
     "id": 168,
     "stockId": 37,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:03.277Z",
-    "updatedAt": "2024-12-10T21:37:03.277Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:27.721Z",
+    "updatedAt": "2024-12-31T19:39:27.721Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3531,14 +3531,14 @@
     "id": 169,
     "stockId": 37,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:03.289Z",
-    "updatedAt": "2024-12-10T21:37:03.289Z",
+    "createdAt": "2024-12-31T19:39:27.732Z",
+    "updatedAt": "2024-12-31T19:39:27.732Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3551,15 +3551,15 @@
   {
     "id": 170,
     "stockId": 38,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.344Z",
-    "updatedAt": "2024-12-10T21:37:03.344Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.767Z",
+    "updatedAt": "2024-12-31T19:39:27.767Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3573,14 +3573,14 @@
     "id": 171,
     "stockId": 38,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:03.357Z",
-    "updatedAt": "2024-12-10T21:37:03.357Z",
+    "createdAt": "2024-12-31T19:39:27.780Z",
+    "updatedAt": "2024-12-31T19:39:27.780Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3594,14 +3594,14 @@
     "id": 172,
     "stockId": 38,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:03.390Z",
-    "updatedAt": "2024-12-10T21:37:03.390Z",
+    "createdAt": "2024-12-31T19:39:27.792Z",
+    "updatedAt": "2024-12-31T19:39:27.792Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3614,15 +3614,15 @@
   {
     "id": 173,
     "stockId": 38,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:03.401Z",
-    "updatedAt": "2024-12-10T21:37:03.401Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:27.815Z",
+    "updatedAt": "2024-12-31T19:39:27.815Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3635,15 +3635,15 @@
   {
     "id": 174,
     "stockId": 38,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:03.412Z",
-    "updatedAt": "2024-12-10T21:37:03.412Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:27.827Z",
+    "updatedAt": "2024-12-31T19:39:27.827Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3656,15 +3656,15 @@
   {
     "id": 175,
     "stockId": 39,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.468Z",
-    "updatedAt": "2024-12-10T21:37:03.468Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.862Z",
+    "updatedAt": "2024-12-31T19:39:27.862Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3678,14 +3678,14 @@
     "id": 176,
     "stockId": 39,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:03.479Z",
-    "updatedAt": "2024-12-10T21:37:03.479Z",
+    "createdAt": "2024-12-31T19:39:27.874Z",
+    "updatedAt": "2024-12-31T19:39:27.874Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3699,14 +3699,14 @@
     "id": 177,
     "stockId": 39,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:03.522Z",
-    "updatedAt": "2024-12-10T21:37:03.522Z",
+    "createdAt": "2024-12-31T19:39:27.887Z",
+    "updatedAt": "2024-12-31T19:39:27.887Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3719,15 +3719,15 @@
   {
     "id": 178,
     "stockId": 39,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:03.562Z",
-    "updatedAt": "2024-12-10T21:37:03.562Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:27.910Z",
+    "updatedAt": "2024-12-31T19:39:27.910Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3741,14 +3741,14 @@
     "id": 179,
     "stockId": 39,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:03.573Z",
-    "updatedAt": "2024-12-10T21:37:03.573Z",
+    "createdAt": "2024-12-31T19:39:27.922Z",
+    "updatedAt": "2024-12-31T19:39:27.922Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3761,15 +3761,15 @@
   {
     "id": 180,
     "stockId": 40,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.620Z",
-    "updatedAt": "2024-12-10T21:37:03.620Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:27.955Z",
+    "updatedAt": "2024-12-31T19:39:27.955Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3783,14 +3783,14 @@
     "id": 181,
     "stockId": 40,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:03.632Z",
-    "updatedAt": "2024-12-10T21:37:03.632Z",
+    "createdAt": "2024-12-31T19:39:27.968Z",
+    "updatedAt": "2024-12-31T19:39:27.968Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3804,14 +3804,14 @@
     "id": 182,
     "stockId": 40,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:03.642Z",
-    "updatedAt": "2024-12-10T21:37:03.642Z",
+    "createdAt": "2024-12-31T19:39:27.980Z",
+    "updatedAt": "2024-12-31T19:39:27.980Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3824,15 +3824,15 @@
   {
     "id": 183,
     "stockId": 40,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:03.678Z",
-    "updatedAt": "2024-12-10T21:37:03.678Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:27.994Z",
+    "updatedAt": "2024-12-31T19:39:27.994Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3845,15 +3845,15 @@
   {
     "id": 184,
     "stockId": 40,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:03.690Z",
-    "updatedAt": "2024-12-10T21:37:03.690Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:28.006Z",
+    "updatedAt": "2024-12-31T19:39:28.006Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3866,15 +3866,15 @@
   {
     "id": 185,
     "stockId": 41,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.744Z",
-    "updatedAt": "2024-12-10T21:37:03.744Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.041Z",
+    "updatedAt": "2024-12-31T19:39:28.041Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3888,14 +3888,14 @@
     "id": 186,
     "stockId": 41,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:03.777Z",
-    "updatedAt": "2024-12-10T21:37:03.777Z",
+    "createdAt": "2024-12-31T19:39:28.053Z",
+    "updatedAt": "2024-12-31T19:39:28.053Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -3908,15 +3908,15 @@
   {
     "id": 187,
     "stockId": 41,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:03.788Z",
-    "updatedAt": "2024-12-10T21:37:03.788Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:28.064Z",
+    "updatedAt": "2024-12-31T19:39:28.064Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -3929,15 +3929,15 @@
   {
     "id": 188,
     "stockId": 41,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:03.799Z",
-    "updatedAt": "2024-12-10T21:37:03.799Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:28.087Z",
+    "updatedAt": "2024-12-31T19:39:28.087Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -3951,14 +3951,14 @@
     "id": 189,
     "stockId": 41,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:03.834Z",
-    "updatedAt": "2024-12-10T21:37:03.834Z",
+    "createdAt": "2024-12-31T19:39:28.099Z",
+    "updatedAt": "2024-12-31T19:39:28.099Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -3971,15 +3971,15 @@
   {
     "id": 190,
     "stockId": 42,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.857Z",
-    "updatedAt": "2024-12-10T21:37:03.857Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.133Z",
+    "updatedAt": "2024-12-31T19:39:28.133Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -3993,14 +3993,14 @@
     "id": 191,
     "stockId": 42,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:03.900Z",
-    "updatedAt": "2024-12-10T21:37:03.900Z",
+    "createdAt": "2024-12-31T19:39:28.145Z",
+    "updatedAt": "2024-12-31T19:39:28.145Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4013,15 +4013,15 @@
   {
     "id": 192,
     "stockId": 42,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:03.910Z",
-    "updatedAt": "2024-12-10T21:37:03.910Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:28.158Z",
+    "updatedAt": "2024-12-31T19:39:28.158Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -4034,15 +4034,15 @@
   {
     "id": 193,
     "stockId": 42,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:03.921Z",
-    "updatedAt": "2024-12-10T21:37:03.921Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:28.182Z",
+    "updatedAt": "2024-12-31T19:39:28.182Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4055,15 +4055,15 @@
   {
     "id": 194,
     "stockId": 42,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:03.963Z",
-    "updatedAt": "2024-12-10T21:37:03.963Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:28.193Z",
+    "updatedAt": "2024-12-31T19:39:28.193Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -4076,15 +4076,15 @@
   {
     "id": 195,
     "stockId": 43,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:03.985Z",
-    "updatedAt": "2024-12-10T21:37:03.985Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.226Z",
+    "updatedAt": "2024-12-31T19:39:28.226Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4098,14 +4098,14 @@
     "id": 196,
     "stockId": 43,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.028Z",
-    "updatedAt": "2024-12-10T21:37:04.028Z",
+    "createdAt": "2024-12-31T19:39:28.238Z",
+    "updatedAt": "2024-12-31T19:39:28.238Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4118,15 +4118,15 @@
   {
     "id": 197,
     "stockId": 43,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:04.039Z",
-    "updatedAt": "2024-12-10T21:37:04.039Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:28.250Z",
+    "updatedAt": "2024-12-31T19:39:28.250Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -4139,15 +4139,15 @@
   {
     "id": 198,
     "stockId": 43,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:04.050Z",
-    "updatedAt": "2024-12-10T21:37:04.050Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:28.270Z",
+    "updatedAt": "2024-12-31T19:39:28.270Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4161,14 +4161,14 @@
     "id": 199,
     "stockId": 43,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:04.085Z",
-    "updatedAt": "2024-12-10T21:37:04.085Z",
+    "createdAt": "2024-12-31T19:39:28.281Z",
+    "updatedAt": "2024-12-31T19:39:28.281Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -4181,15 +4181,15 @@
   {
     "id": 200,
     "stockId": 44,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:04.108Z",
-    "updatedAt": "2024-12-10T21:37:04.108Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.315Z",
+    "updatedAt": "2024-12-31T19:39:28.315Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4203,14 +4203,14 @@
     "id": 201,
     "stockId": 44,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.149Z",
-    "updatedAt": "2024-12-10T21:37:04.149Z",
+    "createdAt": "2024-12-31T19:39:28.327Z",
+    "updatedAt": "2024-12-31T19:39:28.327Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4223,15 +4223,15 @@
   {
     "id": 202,
     "stockId": 44,
-    "detailId": 303,
-    "createdAt": "2024-12-10T21:37:04.160Z",
-    "updatedAt": "2024-12-10T21:37:04.160Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:28.339Z",
+    "updatedAt": "2024-12-31T19:39:28.339Z",
     "detail": {
-      "id": 303,
+      "id": 301,
       "typeId": 3,
-      "value": "2020",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -4244,15 +4244,15 @@
   {
     "id": 203,
     "stockId": 44,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:04.172Z",
-    "updatedAt": "2024-12-10T21:37:04.172Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:28.362Z",
+    "updatedAt": "2024-12-31T19:39:28.362Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4265,15 +4265,15 @@
   {
     "id": 204,
     "stockId": 44,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:04.212Z",
-    "updatedAt": "2024-12-10T21:37:04.212Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:28.373Z",
+    "updatedAt": "2024-12-31T19:39:28.373Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -4286,15 +4286,15 @@
   {
     "id": 205,
     "stockId": 45,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:04.263Z",
-    "updatedAt": "2024-12-10T21:37:04.263Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.412Z",
+    "updatedAt": "2024-12-31T19:39:28.412Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4308,14 +4308,14 @@
     "id": 206,
     "stockId": 45,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.275Z",
-    "updatedAt": "2024-12-10T21:37:04.275Z",
+    "createdAt": "2024-12-31T19:39:28.426Z",
+    "updatedAt": "2024-12-31T19:39:28.426Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4329,14 +4329,14 @@
     "id": 207,
     "stockId": 45,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:04.288Z",
-    "updatedAt": "2024-12-10T21:37:04.288Z",
+    "createdAt": "2024-12-31T19:39:28.439Z",
+    "updatedAt": "2024-12-31T19:39:28.439Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -4349,15 +4349,15 @@
   {
     "id": 208,
     "stockId": 45,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:04.326Z",
-    "updatedAt": "2024-12-10T21:37:04.326Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:28.450Z",
+    "updatedAt": "2024-12-31T19:39:28.450Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4371,14 +4371,14 @@
     "id": 209,
     "stockId": 45,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:04.337Z",
-    "updatedAt": "2024-12-10T21:37:04.337Z",
+    "createdAt": "2024-12-31T19:39:28.472Z",
+    "updatedAt": "2024-12-31T19:39:28.472Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -4391,15 +4391,15 @@
   {
     "id": 210,
     "stockId": 46,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:04.386Z",
-    "updatedAt": "2024-12-10T21:37:04.386Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.505Z",
+    "updatedAt": "2024-12-31T19:39:28.505Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4413,14 +4413,14 @@
     "id": 211,
     "stockId": 46,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.398Z",
-    "updatedAt": "2024-12-10T21:37:04.398Z",
+    "createdAt": "2024-12-31T19:39:28.516Z",
+    "updatedAt": "2024-12-31T19:39:28.516Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4434,14 +4434,14 @@
     "id": 212,
     "stockId": 46,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:04.409Z",
-    "updatedAt": "2024-12-10T21:37:04.409Z",
+    "createdAt": "2024-12-31T19:39:28.537Z",
+    "updatedAt": "2024-12-31T19:39:28.537Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -4454,15 +4454,15 @@
   {
     "id": 213,
     "stockId": 46,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:04.446Z",
-    "updatedAt": "2024-12-10T21:37:04.446Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:28.548Z",
+    "updatedAt": "2024-12-31T19:39:28.548Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4475,15 +4475,15 @@
   {
     "id": 214,
     "stockId": 46,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:04.457Z",
-    "updatedAt": "2024-12-10T21:37:04.457Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:28.570Z",
+    "updatedAt": "2024-12-31T19:39:28.570Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -4496,15 +4496,15 @@
   {
     "id": 215,
     "stockId": 47,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:04.507Z",
-    "updatedAt": "2024-12-10T21:37:04.507Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.580Z",
+    "updatedAt": "2024-12-31T19:39:28.580Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4518,14 +4518,14 @@
     "id": 216,
     "stockId": 47,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.547Z",
-    "updatedAt": "2024-12-10T21:37:04.547Z",
+    "createdAt": "2024-12-31T19:39:28.585Z",
+    "updatedAt": "2024-12-31T19:39:28.585Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4539,14 +4539,14 @@
     "id": 217,
     "stockId": 47,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:04.558Z",
-    "updatedAt": "2024-12-10T21:37:04.558Z",
+    "createdAt": "2024-12-31T19:39:28.600Z",
+    "updatedAt": "2024-12-31T19:39:28.600Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -4559,15 +4559,15 @@
   {
     "id": 218,
     "stockId": 47,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:04.569Z",
-    "updatedAt": "2024-12-10T21:37:04.569Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:28.604Z",
+    "updatedAt": "2024-12-31T19:39:28.604Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4581,14 +4581,14 @@
     "id": 219,
     "stockId": 47,
     "detailId": 502,
-    "createdAt": "2024-12-10T21:37:04.607Z",
-    "updatedAt": "2024-12-10T21:37:04.607Z",
+    "createdAt": "2024-12-31T19:39:28.609Z",
+    "updatedAt": "2024-12-31T19:39:28.609Z",
     "detail": {
       "id": 502,
       "typeId": 5,
       "value": "Fofo",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -4601,15 +4601,15 @@
   {
     "id": 220,
     "stockId": 48,
-    "detailId": 103,
-    "createdAt": "2024-12-10T21:37:04.631Z",
-    "updatedAt": "2024-12-10T21:37:04.631Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.632Z",
+    "updatedAt": "2024-12-31T19:39:28.632Z",
     "detail": {
-      "id": 103,
+      "id": 104,
       "typeId": 1,
-      "value": "Bege",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4623,14 +4623,14 @@
     "id": 221,
     "stockId": 48,
     "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.667Z",
-    "updatedAt": "2024-12-10T21:37:04.667Z",
+    "createdAt": "2024-12-31T19:39:28.639Z",
+    "updatedAt": "2024-12-31T19:39:28.639Z",
     "detail": {
       "id": 202,
       "typeId": 2,
       "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4644,14 +4644,14 @@
     "id": 222,
     "stockId": 48,
     "detailId": 302,
-    "createdAt": "2024-12-10T21:37:04.678Z",
-    "updatedAt": "2024-12-10T21:37:04.678Z",
+    "createdAt": "2024-12-31T19:39:28.657Z",
+    "updatedAt": "2024-12-31T19:39:28.657Z",
     "detail": {
       "id": 302,
       "typeId": 3,
       "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -4664,15 +4664,15 @@
   {
     "id": 223,
     "stockId": 48,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:04.691Z",
-    "updatedAt": "2024-12-10T21:37:04.691Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:28.668Z",
+    "updatedAt": "2024-12-31T19:39:28.668Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4685,15 +4685,15 @@
   {
     "id": 224,
     "stockId": 48,
-    "detailId": 505,
-    "createdAt": "2024-12-10T21:37:04.721Z",
-    "updatedAt": "2024-12-10T21:37:04.721Z",
+    "detailId": 503,
+    "createdAt": "2024-12-31T19:39:28.679Z",
+    "updatedAt": "2024-12-31T19:39:28.679Z",
     "detail": {
-      "id": 505,
+      "id": 503,
       "typeId": 5,
-      "value": "Rock",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "Nerd",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 5,
         "name": "Tema"
@@ -4706,15 +4706,15 @@
   {
     "id": 225,
     "stockId": 49,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:04.770Z",
-    "updatedAt": "2024-12-10T21:37:04.770Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.719Z",
+    "updatedAt": "2024-12-31T19:39:28.719Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4727,15 +4727,15 @@
   {
     "id": 226,
     "stockId": 49,
-    "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.781Z",
-    "updatedAt": "2024-12-10T21:37:04.781Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:28.731Z",
+    "updatedAt": "2024-12-31T19:39:28.731Z",
     "detail": {
-      "id": 202,
+      "id": 204,
       "typeId": 2,
-      "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4748,15 +4748,15 @@
   {
     "id": 227,
     "stockId": 49,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:04.816Z",
-    "updatedAt": "2024-12-10T21:37:04.816Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:28.742Z",
+    "updatedAt": "2024-12-31T19:39:28.742Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4769,15 +4769,15 @@
   {
     "id": 228,
     "stockId": 50,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:04.838Z",
-    "updatedAt": "2024-12-10T21:37:04.838Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.781Z",
+    "updatedAt": "2024-12-31T19:39:28.781Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4790,15 +4790,15 @@
   {
     "id": 229,
     "stockId": 50,
-    "detailId": 202,
-    "createdAt": "2024-12-10T21:37:04.877Z",
-    "updatedAt": "2024-12-10T21:37:04.877Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:28.803Z",
+    "updatedAt": "2024-12-31T19:39:28.803Z",
     "detail": {
-      "id": 202,
+      "id": 204,
       "typeId": 2,
-      "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4811,15 +4811,15 @@
   {
     "id": 230,
     "stockId": 50,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:04.888Z",
-    "updatedAt": "2024-12-10T21:37:04.888Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:28.816Z",
+    "updatedAt": "2024-12-31T19:39:28.816Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4832,15 +4832,15 @@
   {
     "id": 231,
     "stockId": 51,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:04.942Z",
-    "updatedAt": "2024-12-10T21:37:04.942Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.839Z",
+    "updatedAt": "2024-12-31T19:39:28.839Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4853,15 +4853,15 @@
   {
     "id": 232,
     "stockId": 51,
-    "detailId": 201,
-    "createdAt": "2024-12-10T21:37:04.953Z",
-    "updatedAt": "2024-12-10T21:37:04.953Z",
+    "detailId": 203,
+    "createdAt": "2024-12-31T19:39:28.857Z",
+    "updatedAt": "2024-12-31T19:39:28.857Z",
     "detail": {
-      "id": 201,
+      "id": 203,
       "typeId": 2,
-      "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "G",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4874,15 +4874,15 @@
   {
     "id": 233,
     "stockId": 51,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:04.964Z",
-    "updatedAt": "2024-12-10T21:37:04.964Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:28.871Z",
+    "updatedAt": "2024-12-31T19:39:28.871Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4895,15 +4895,15 @@
   {
     "id": 234,
     "stockId": 52,
-    "detailId": 102,
-    "createdAt": "2024-12-10T21:37:05.012Z",
-    "updatedAt": "2024-12-10T21:37:05.012Z",
+    "detailId": 104,
+    "createdAt": "2024-12-31T19:39:28.906Z",
+    "updatedAt": "2024-12-31T19:39:28.906Z",
     "detail": {
-      "id": 102,
+      "id": 104,
       "typeId": 1,
-      "value": "Azul",
-      "createdAt": "2024-12-10T21:36:57.667Z",
-      "updatedAt": "2024-12-10T21:36:57.667Z",
+      "value": "Branco",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4916,15 +4916,15 @@
   {
     "id": 235,
     "stockId": 52,
-    "detailId": 201,
-    "createdAt": "2024-12-10T21:37:05.025Z",
-    "updatedAt": "2024-12-10T21:37:05.025Z",
+    "detailId": 203,
+    "createdAt": "2024-12-31T19:39:28.917Z",
+    "updatedAt": "2024-12-31T19:39:28.917Z",
     "detail": {
-      "id": 201,
+      "id": 203,
       "typeId": 2,
-      "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "G",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -4937,15 +4937,15 @@
   {
     "id": 236,
     "stockId": 52,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:05.054Z",
-    "updatedAt": "2024-12-10T21:37:05.054Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:28.929Z",
+    "updatedAt": "2024-12-31T19:39:28.929Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -4958,15 +4958,15 @@
   {
     "id": 237,
     "stockId": 53,
-    "detailId": 104,
-    "createdAt": "2024-12-10T21:37:05.077Z",
-    "updatedAt": "2024-12-10T21:37:05.077Z",
+    "detailId": 101,
+    "createdAt": "2024-12-31T19:39:28.974Z",
+    "updatedAt": "2024-12-31T19:39:28.974Z",
     "detail": {
-      "id": 104,
+      "id": 101,
       "typeId": 1,
-      "value": "Branco",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Amarelo",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -4979,15 +4979,15 @@
   {
     "id": 238,
     "stockId": 53,
-    "detailId": 202,
-    "createdAt": "2024-12-10T21:37:05.115Z",
-    "updatedAt": "2024-12-10T21:37:05.115Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:28.985Z",
+    "updatedAt": "2024-12-31T19:39:28.985Z",
     "detail": {
-      "id": 202,
+      "id": 204,
       "typeId": 2,
-      "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5000,15 +5000,15 @@
   {
     "id": 239,
     "stockId": 53,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:05.126Z",
-    "updatedAt": "2024-12-10T21:37:05.126Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:28.996Z",
+    "updatedAt": "2024-12-31T19:39:28.996Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -5021,15 +5021,15 @@
   {
     "id": 240,
     "stockId": 54,
-    "detailId": 104,
-    "createdAt": "2024-12-10T21:37:05.174Z",
-    "updatedAt": "2024-12-10T21:37:05.174Z",
+    "detailId": 101,
+    "createdAt": "2024-12-31T19:39:29.025Z",
+    "updatedAt": "2024-12-31T19:39:29.025Z",
     "detail": {
-      "id": 104,
+      "id": 101,
       "typeId": 1,
-      "value": "Branco",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Amarelo",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -5042,15 +5042,15 @@
   {
     "id": 241,
     "stockId": 54,
-    "detailId": 202,
-    "createdAt": "2024-12-10T21:37:05.199Z",
-    "updatedAt": "2024-12-10T21:37:05.199Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:29.037Z",
+    "updatedAt": "2024-12-31T19:39:29.037Z",
     "detail": {
-      "id": 202,
+      "id": 204,
       "typeId": 2,
-      "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5063,15 +5063,15 @@
   {
     "id": 242,
     "stockId": 54,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:05.212Z",
-    "updatedAt": "2024-12-10T21:37:05.212Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:29.049Z",
+    "updatedAt": "2024-12-31T19:39:29.049Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -5084,15 +5084,15 @@
   {
     "id": 243,
     "stockId": 55,
-    "detailId": 104,
-    "createdAt": "2024-12-10T21:37:05.294Z",
-    "updatedAt": "2024-12-10T21:37:05.294Z",
+    "detailId": 101,
+    "createdAt": "2024-12-31T19:39:29.083Z",
+    "updatedAt": "2024-12-31T19:39:29.083Z",
     "detail": {
-      "id": 104,
+      "id": 101,
       "typeId": 1,
-      "value": "Branco",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Amarelo",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -5105,15 +5105,15 @@
   {
     "id": 244,
     "stockId": 55,
-    "detailId": 201,
-    "createdAt": "2024-12-10T21:37:05.306Z",
-    "updatedAt": "2024-12-10T21:37:05.306Z",
+    "detailId": 203,
+    "createdAt": "2024-12-31T19:39:29.105Z",
+    "updatedAt": "2024-12-31T19:39:29.105Z",
     "detail": {
-      "id": 201,
+      "id": 203,
       "typeId": 2,
-      "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "G",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5126,15 +5126,15 @@
   {
     "id": 245,
     "stockId": 55,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:05.319Z",
-    "updatedAt": "2024-12-10T21:37:05.319Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:29.116Z",
+    "updatedAt": "2024-12-31T19:39:29.116Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -5147,15 +5147,15 @@
   {
     "id": 246,
     "stockId": 56,
-    "detailId": 104,
-    "createdAt": "2024-12-10T21:37:05.368Z",
-    "updatedAt": "2024-12-10T21:37:05.368Z",
+    "detailId": 101,
+    "createdAt": "2024-12-31T19:39:29.152Z",
+    "updatedAt": "2024-12-31T19:39:29.152Z",
     "detail": {
-      "id": 104,
+      "id": 101,
       "typeId": 1,
-      "value": "Branco",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Amarelo",
+      "createdAt": "2024-12-31T19:39:24.755Z",
+      "updatedAt": "2024-12-31T19:39:24.755Z",
       "type": {
         "id": 1,
         "name": "Cor"
@@ -5168,15 +5168,15 @@
   {
     "id": 247,
     "stockId": 56,
-    "detailId": 201,
-    "createdAt": "2024-12-10T21:37:05.379Z",
-    "updatedAt": "2024-12-10T21:37:05.379Z",
+    "detailId": 203,
+    "createdAt": "2024-12-31T19:39:29.163Z",
+    "updatedAt": "2024-12-31T19:39:29.163Z",
     "detail": {
-      "id": 201,
+      "id": 203,
       "typeId": 2,
-      "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "G",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5189,15 +5189,15 @@
   {
     "id": 248,
     "stockId": 56,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:05.391Z",
-    "updatedAt": "2024-12-10T21:37:05.391Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:29.175Z",
+    "updatedAt": "2024-12-31T19:39:29.175Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -5210,15 +5210,15 @@
   {
     "id": 249,
     "stockId": 57,
-    "detailId": 202,
-    "createdAt": "2024-12-10T21:37:05.440Z",
-    "updatedAt": "2024-12-10T21:37:05.440Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:29.214Z",
+    "updatedAt": "2024-12-31T19:39:29.214Z",
     "detail": {
-      "id": 202,
+      "id": 204,
       "typeId": 2,
-      "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5231,15 +5231,15 @@
   {
     "id": 250,
     "stockId": 57,
-    "detailId": 302,
-    "createdAt": "2024-12-10T21:37:05.452Z",
-    "updatedAt": "2024-12-10T21:37:05.452Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:29.226Z",
+    "updatedAt": "2024-12-31T19:39:29.226Z",
     "detail": {
-      "id": 302,
+      "id": 301,
       "typeId": 3,
-      "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -5252,15 +5252,15 @@
   {
     "id": 251,
     "stockId": 58,
-    "detailId": 202,
-    "createdAt": "2024-12-10T21:37:05.493Z",
-    "updatedAt": "2024-12-10T21:37:05.493Z",
+    "detailId": 204,
+    "createdAt": "2024-12-31T19:39:29.260Z",
+    "updatedAt": "2024-12-31T19:39:29.260Z",
     "detail": {
-      "id": 202,
+      "id": 204,
       "typeId": 2,
-      "value": "M",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "GG",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5273,15 +5273,15 @@
   {
     "id": 252,
     "stockId": 58,
-    "detailId": 301,
-    "createdAt": "2024-12-10T21:37:05.504Z",
-    "updatedAt": "2024-12-10T21:37:05.504Z",
+    "detailId": 303,
+    "createdAt": "2024-12-31T19:39:29.285Z",
+    "updatedAt": "2024-12-31T19:39:29.285Z",
     "detail": {
-      "id": 301,
+      "id": 303,
       "typeId": 3,
-      "value": "2000",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2020",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -5294,15 +5294,15 @@
   {
     "id": 253,
     "stockId": 59,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:05.574Z",
-    "updatedAt": "2024-12-10T21:37:05.574Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:29.310Z",
+    "updatedAt": "2024-12-31T19:39:29.310Z",
     "detail": {
-      "id": 203,
+      "id": 202,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5315,15 +5315,15 @@
   {
     "id": 254,
     "stockId": 59,
-    "detailId": 302,
-    "createdAt": "2024-12-10T21:37:05.585Z",
-    "updatedAt": "2024-12-10T21:37:05.585Z",
+    "detailId": 301,
+    "createdAt": "2024-12-31T19:39:29.334Z",
+    "updatedAt": "2024-12-31T19:39:29.334Z",
     "detail": {
-      "id": 302,
+      "id": 301,
       "typeId": 3,
-      "value": "2010",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2000",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -5336,15 +5336,15 @@
   {
     "id": 255,
     "stockId": 60,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:05.640Z",
-    "updatedAt": "2024-12-10T21:37:05.640Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:29.381Z",
+    "updatedAt": "2024-12-31T19:39:29.381Z",
     "detail": {
-      "id": 203,
+      "id": 202,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5357,15 +5357,15 @@
   {
     "id": 256,
     "stockId": 60,
-    "detailId": 301,
-    "createdAt": "2024-12-10T21:37:05.652Z",
-    "updatedAt": "2024-12-10T21:37:05.652Z",
+    "detailId": 303,
+    "createdAt": "2024-12-31T19:39:29.409Z",
+    "updatedAt": "2024-12-31T19:39:29.409Z",
     "detail": {
-      "id": 301,
+      "id": 303,
       "typeId": 3,
-      "value": "2000",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "2020",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 3,
         "name": "Ano"
@@ -5379,14 +5379,14 @@
     "id": 257,
     "stockId": 61,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:05.707Z",
-    "updatedAt": "2024-12-10T21:37:05.707Z",
+    "createdAt": "2024-12-31T19:39:29.436Z",
+    "updatedAt": "2024-12-31T19:39:29.436Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5399,15 +5399,15 @@
   {
     "id": 258,
     "stockId": 61,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:05.748Z",
-    "updatedAt": "2024-12-10T21:37:05.748Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:29.467Z",
+    "updatedAt": "2024-12-31T19:39:29.467Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -5421,14 +5421,14 @@
     "id": 259,
     "stockId": 62,
     "detailId": 201,
-    "createdAt": "2024-12-10T21:37:05.773Z",
-    "updatedAt": "2024-12-10T21:37:05.773Z",
+    "createdAt": "2024-12-31T19:39:29.510Z",
+    "updatedAt": "2024-12-31T19:39:29.510Z",
     "detail": {
       "id": 201,
       "typeId": 2,
       "value": "P",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5441,15 +5441,15 @@
   {
     "id": 260,
     "stockId": 62,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:05.803Z",
-    "updatedAt": "2024-12-10T21:37:05.803Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:29.539Z",
+    "updatedAt": "2024-12-31T19:39:29.539Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -5462,15 +5462,15 @@
   {
     "id": 261,
     "stockId": 63,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:05.827Z",
-    "updatedAt": "2024-12-10T21:37:05.827Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:29.579Z",
+    "updatedAt": "2024-12-31T19:39:29.579Z",
     "detail": {
-      "id": 203,
+      "id": 202,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5483,15 +5483,15 @@
   {
     "id": 262,
     "stockId": 63,
-    "detailId": 401,
-    "createdAt": "2024-12-10T21:37:05.866Z",
-    "updatedAt": "2024-12-10T21:37:05.866Z",
+    "detailId": 404,
+    "createdAt": "2024-12-31T19:39:29.601Z",
+    "updatedAt": "2024-12-31T19:39:29.601Z",
     "detail": {
-      "id": 401,
+      "id": 404,
       "typeId": 4,
-      "value": "Algodão",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Poliester",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
@@ -5504,15 +5504,15 @@
   {
     "id": 263,
     "stockId": 64,
-    "detailId": 203,
-    "createdAt": "2024-12-10T21:37:05.891Z",
-    "updatedAt": "2024-12-10T21:37:05.891Z",
+    "detailId": 202,
+    "createdAt": "2024-12-31T19:39:29.608Z",
+    "updatedAt": "2024-12-31T19:39:29.608Z",
     "detail": {
-      "id": 203,
+      "id": 202,
       "typeId": 2,
-      "value": "G",
-      "createdAt": "2024-12-10T21:36:57.669Z",
-      "updatedAt": "2024-12-10T21:36:57.669Z",
+      "value": "M",
+      "createdAt": "2024-12-31T19:39:24.756Z",
+      "updatedAt": "2024-12-31T19:39:24.756Z",
       "type": {
         "id": 2,
         "name": "Tamanho"
@@ -5525,15 +5525,15 @@
   {
     "id": 264,
     "stockId": 64,
-    "detailId": 402,
-    "createdAt": "2024-12-10T21:37:05.926Z",
-    "updatedAt": "2024-12-10T21:37:05.926Z",
+    "detailId": 403,
+    "createdAt": "2024-12-31T19:39:29.612Z",
+    "updatedAt": "2024-12-31T19:39:29.612Z",
     "detail": {
-      "id": 402,
+      "id": 403,
       "typeId": 4,
-      "value": "Tecido",
-      "createdAt": "2024-12-10T21:36:57.668Z",
-      "updatedAt": "2024-12-10T21:36:57.668Z",
+      "value": "Seda",
+      "createdAt": "2024-12-31T19:39:24.757Z",
+      "updatedAt": "2024-12-31T19:39:24.757Z",
       "type": {
         "id": 4,
         "name": "Material"
