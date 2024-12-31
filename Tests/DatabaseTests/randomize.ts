@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const filePath = path.resolve(__dirname, '../../../Core/src/database/today/output.json');
+const filePath = path.resolve(__dirname, '../../../../Core/src/database/today/output.json');
 
 async function randomizeStockQuantities() {
   try {
