@@ -41,8 +41,6 @@ export default async function mainS(prisma: PrismaClient) {
     // Gerar todas as combinações possíveis
     const attributeCombinations = generateCombinations([Xcolor, Xsize, Xyear, Xmaterials, Xstyle].filter(attr => attr.length > 0));
 
-    console.log(`Tentando criar o produto: ${id}`);
-
     for (const combination of attributeCombinations) {
       try {
         // Criando o Stock
@@ -52,8 +50,6 @@ export default async function mainS(prisma: PrismaClient) {
             quantity: 10,
           },
         });
-
-        console.log(`Stock criado com sucesso! Produto: ${id}, Atributos:`, combination);
 
         // Criando StockDetails para cada atributo da combinação
         for (const detailId of combination) {
@@ -66,8 +62,6 @@ export default async function mainS(prisma: PrismaClient) {
             });
           }
         }
-
-        console.log(`StockDetail criado com sucesso para o Stock ID: ${stock.id}`);
       } catch (error) {
         console.error(`Erro ao criar Stock ou StockDetail para o produto ${id}:`, error);
       }
