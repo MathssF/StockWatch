@@ -10,6 +10,8 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS}
+    networks:
+      - app-network
 
   # MySQL
   mysql:
@@ -71,3 +73,7 @@ services:
 volumes:
   mysql_data:
   mongo_data:
+
+networks:
+  app-network:
+    driver: bridge
