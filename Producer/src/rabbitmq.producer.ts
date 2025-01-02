@@ -31,11 +31,16 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
 
     console.log(`Mensagem enviada para a fila ${queueName}: ${message}`);
 
+    await channel.close();
+    await connection.close();
+
     setTimeout(() => {
       connection.close();
     }, 500);
 
   } catch(error) {
     console.error('Erro ao enviar mensagem para o RabbitMQ:', error);
+  } finally {
+    await prisma.$disconnect();
   }
 }

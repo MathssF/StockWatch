@@ -15,7 +15,6 @@ export async function consumeQueue(
   queueName: string,
   processMessage: (message: string) => void)
 {
-  // const msgid = processMessage.
   const msgid2 = uuidv4();
   try {
     const connection = await amqp.connect(RABBITMQ_URL);
@@ -62,12 +61,6 @@ export async function consumeQueue(
         }
 
         try {
-          // const result = await processMessage(messageContent);
-          // await prisma.rabbitMQMessage.update({
-          //   where: { id: dbMessage.id },
-          //   data: { status: 'PROCESSED' },
-          // });
-          // channel.ack(msg)
           const result = await processMessage(messageContent);
           if (dbMessage?.id) {  // Verifique se dbMessage.id é válido
             await prisma.rabbitMQMessage.update({
@@ -77,12 +70,6 @@ export async function consumeQueue(
           }
           channel.ack(msg);
         } catch(error) {
-          // console.error('Erro ao processar a mensagem', error);
-          // await prisma.rabbitMQMessage.update({
-          //   where: { id: dbMessage.id },
-          //   data: { status: 'FAILED' },
-          // });
-          // channel.nack(msg, false, false);
           console.error('Erro ao processar a mensagem', error);
           if (dbMessage?.id) {  // Verifique se dbMessage.id é válido
             await prisma.rabbitMQMessage.update({
@@ -97,7 +84,10 @@ export async function consumeQueue(
 
   } catch(error) {
     console.error('Erro ao consumir fila:', error)
+  } finally {
+    await prisma.$disconnect();
   }
+
 }
 
 function parseMessage(messageContent: string): { id: any; msgid: string; message: any; } {
