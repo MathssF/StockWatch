@@ -46,12 +46,13 @@ services:
       - mysql
     ports:
       - "${PRODUCER_PORT}:${PRODUCER_PORT}"
+    command: ["./wait-for-it.sh", "rabbitmq:5672", "--", "npm", "run", "start:producer"]
     environment:
       DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:${MYSQL_PORT}/${MYSQL_DATABASE}"
       RABBITMQ_URL: "${RABBITMQ_URL}"
     volumes:
       - .:/app
-    command: npm run start:producer
+    # command: npm run start:producer
 
   # Consumer
   consumer:
