@@ -1,42 +1,38 @@
-# version: '3.8'
+version: '3.8'
 
 services:
-  # RabbitMQ
   rabbitmq:
     image: "rabbitmq:3-management"
     ports:
-      - "15672:15672" # Portas de gerenciamento
-      - "5672:5672"   # Porta para comunicação
+      - "15672:15672" # Porta de gerenciamento
+      - "5672:5672"   # Porta de comunicação
     environment:
-      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
-      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS}
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
     networks:
       - app-network
 
-  # MySQL
   mysql:
     image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: stockwatch_db
     ports:
-      - "${MYSQL_PORT}:3306"
+      - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
 
-  # MongoDB
   mongo:
     image: mongo:latest
     container_name: mongo_container
     environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-root}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-root}
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
     ports:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
 
-  # Producer
   producer:
     build:
       context: .
@@ -45,16 +41,14 @@ services:
       - rabbitmq
       - mysql
     ports:
-      - "${PRODUCER_PORT}:${PRODUCER_PORT}"
+      - "3001:3001"
     command: ["./wait-for-it.sh", "rabbitmq:5672", "--", "npm", "run", "start:producer"]
     environment:
-      DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:${MYSQL_PORT}/${MYSQL_DATABASE}"
-      RABBITMQ_URL: "${RABBITMQ_URL}"
+      DATABASE_URL: "mysql://root:password@mysql:3306/stockwatch_db"
+      RABBITMQ_URL: "amqp://user:password@rabbitmq:5672"
     volumes:
       - .:/app
-    # command: npm run start:producer
 
-  # Consumer
   consumer:
     build:
       context: .
@@ -63,13 +57,13 @@ services:
       - rabbitmq
       - mysql
     ports:
-      - "${CONSUMER_PORT}:${PRODUCER_PORT}"
+      - "3002:3001"
+    command: ["./wait-for-it.sh", "rabbitmq:5672", "--", "npm", "run", "start:consumer"]
     environment:
-      DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:${MYSQL_PORT}/${MYSQL_DATABASE}"
-      RABBITMQ_URL: "${RABBITMQ_URL}"
+      DATABASE_URL: "mysql://root:password@mysql:3306/stockwatch_db"
+      RABBITMQ_URL: "amqp://user:password@rabbitmq:5672"
     volumes:
       - .:/app
-    command: npm run start:consumer
 
 volumes:
   mysql_data:
