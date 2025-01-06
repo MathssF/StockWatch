@@ -42,9 +42,9 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
     await channel.close();
     await connection.close();
 
-    setTimeout(() => {
-      connection.close();
-    }, 500);
+    // setTimeout(() => {
+    //   connection.close();
+    // }, 500);
 
   } catch(error) {
     console.error('Erro ao enviar mensagem para o RabbitMQ:', error);
