@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-const RABBITMQ_URL = process.env.RABBITMQ_LOCAL || 'amqp://user:password@rabbitmq:5672';
+const RABBITMQ_URL = process.env.RABBITMQ_LOCAL || 'amqp://user:password@localhost:5672';
 
 export async function sendToQueue(queueName: string, message: string, id?: string) {
   try {
