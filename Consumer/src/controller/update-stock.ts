@@ -11,6 +11,7 @@ const filePath = path.join(__dirname, '../../Core/src/database/today/output.json
 // Função para processar as mensagens da fila
 export const updateStock = async (message: string) => {
   console.log('Entrou no updateStock');
+  const msgs = await consumeQueue(queueName);
   const content = JSON.parse(message);
   console.log('Mensagem recebida:', content);
 
