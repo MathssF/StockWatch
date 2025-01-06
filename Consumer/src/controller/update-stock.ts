@@ -10,6 +10,7 @@ const filePath = path.join(__dirname, '../../Core/src/database/today/output.json
 
 // Função para processar as mensagens da fila
 export const updateStock = async (message: string) => {
+  console.log('Entrou no updateStock');
   const content = JSON.parse(message);
   console.log('Mensagem recebida:', content);
 
@@ -41,6 +42,7 @@ export const updateStock = async (message: string) => {
     console.log('output.json atualizado com sucesso!');
   } else {
     console.log('output.json não encontrado. Atualizando o banco de dados...');
+    console.log('Content Products: ', content.products);
     for (const update of content.products) {
       const stock = await prisma.stock.findUnique({
         where: { id: update.stockId },

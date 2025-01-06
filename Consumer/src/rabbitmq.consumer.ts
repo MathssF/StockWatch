@@ -17,6 +17,7 @@ export async function consumeQueue(
 {
   const msgid2 = uuidv4();
   try {
+    console.log('1');
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
 
