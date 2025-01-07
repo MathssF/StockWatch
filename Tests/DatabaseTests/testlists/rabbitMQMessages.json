@@ -86,5 +86,49 @@
     "status": "PENDING",
     "createdAt": "2025-01-06T17:54:05.161Z",
     "updatedAt": "2025-01-06T17:54:05.161Z"
+  },
+  {
+    "id": 9,
+    "messageId": "d5d437d1-e624-48d5-8ee3-5c76d8da03cb",
+    "produceId": "fab163bb.2025-01-07",
+    "consumerId": "",
+    "queue": "low-stock-queue",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":7,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":9,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":10,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":19,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":22,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":23,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":27,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":28,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":33,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":35,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":38,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":39,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":44,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":48,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":50,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":51,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":57,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":64,\"quantityNow\":8,\"quantityNeeded\":2}]}",
+    "status": "PENDING",
+    "createdAt": "2025-01-07T18:09:55.280Z",
+    "updatedAt": "2025-01-07T18:09:55.280Z"
+  },
+  {
+    "id": 10,
+    "messageId": "97ef418b-d219-4440-90a0-9eaafd4a015c",
+    "produceId": "db8a7b85.2025-01-07",
+    "consumerId": "",
+    "queue": "low-stock-queue",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":7,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":9,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":10,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":19,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":22,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":23,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":27,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":28,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":33,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":35,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":38,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":39,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":44,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":48,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":50,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":51,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":57,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":64,\"quantityNow\":8,\"quantityNeeded\":2}]}",
+    "status": "PENDING",
+    "createdAt": "2025-01-07T18:10:37.869Z",
+    "updatedAt": "2025-01-07T18:10:37.869Z"
+  },
+  {
+    "id": 11,
+    "messageId": "3f163d63-959f-4eaf-a2e3-983a5aff07b8",
+    "produceId": "6f7e8996.2025-01-07",
+    "consumerId": "",
+    "queue": "low-stock-queue",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":7,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":9,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":10,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":19,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":22,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":23,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":27,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":28,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":33,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":35,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":38,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":39,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":44,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":48,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":50,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":51,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":57,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":64,\"quantityNow\":8,\"quantityNeeded\":2}]}",
+    "status": "PROCESSED",
+    "createdAt": "2025-01-07T18:13:37.263Z",
+    "updatedAt": "2025-01-07T18:13:58.276Z"
+  },
+  {
+    "id": 12,
+    "messageId": "a674139f-22d0-4f60-a0c4-fc7d3514edb4",
+    "produceId": "21bd5aa9.2025-01-07",
+    "consumerId": "",
+    "queue": "low-stock-queue",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":7,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":9,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":10,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":19,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":22,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":23,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":27,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":28,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":33,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":35,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":38,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":39,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":44,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":48,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":50,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":51,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":57,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":64,\"quantityNow\":8,\"quantityNeeded\":2}]}",
+    "status": "PENDING",
+    "createdAt": "2025-01-07T18:30:04.595Z",
+    "updatedAt": "2025-01-07T18:30:04.595Z"
   }
 ]
