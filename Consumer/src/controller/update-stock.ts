@@ -1,7 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
-import { consumeQueue } from '../rabbitmq.consumer';  // Importando a função consumeQueue
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
@@ -11,32 +10,28 @@ const filePath = path.join(__dirname, '../../../Core/src/database/today/output.j
 // Função para processar as mensagens da fila
 export const updateStock = async (message: string) => {
   console.log('Entrou no updateStock');
-  const msgs = await consumeQueue(queueName);
   const content = JSON.parse(message);
   const data = JSON.parse(content.message);
 
   console.log('Mensagem recebida:', content);
-  console.log('Teste '), data;
+  console.log('Teste ', data);
 
   let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
-
-  data.products.forEach(async (product: any) => {
-    const { stockId, quantityNow, quantityNeeded } = product;
-
-    console.log(`Atualizando estoque do produto ${stockId}`);
 
   // Atualizando output.json ou o banco de dados
   if (fs.existsSync(filePath)) {
     console.log('Atualizando output.json...');
     const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
-    // content.products.forEach((update: any) => {
-      let productFound = false;
-      fileData.Products.forEach((product: any) => {
-        product.stocks.forEach((stock: any) => {
-          // if (stock.id === update.stockId) {
+    let productFound = false;
+    for (const product of data.products) {
+      const { stockId, quantityNow, quantityNeeded } = product;
+
+      console.log(`Atualizando estoque do produto ${stockId}`);
+
+      for (const fileProduct of fileData.Products) {
+        for (const stock of fileProduct.stocks) {
           if (stock.id === stockId) {
-            // const addedQuantity = update.quantityNeeded || 0;
             const addedQuantity = quantityNeeded || 0;
             stock.quantityNow += addedQuantity;
 
@@ -45,38 +40,36 @@ export const updateStock = async (message: string) => {
               quantityAdded: addedQuantity,
               price: stock.price || 0,
             });
+
+            productFound = true;
           }
-        });
-      });
-    // });
+        }
+      }
+    }
 
     if (productFound) {
       fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
       console.log('output.json atualizado com sucesso!');
     }
-
-
-    fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
-    console.log('output.json atualizado com sucesso!');
   } else {
     console.log('output.json não encontrado. Atualizando o banco de dados...');
-    for (const update of content.products) {
+    for (const product of data.products) {
+      const { stockId, quantityNeeded } = product;
+
       const stock = await prisma.stock.findUnique({
-        where: { id: update.stockId },
+        where: { id: stockId },
         select: { quantity: true, product: { select: { price: true } } },
       });
 
-      console.log('dentro do for');
       if (stock) {
-        const addedQuantity = update.quantityNeeded || 0;
-        console.log('Stock: ', addedQuantity);
+        const addedQuantity = quantityNeeded || 0;
         await prisma.stock.update({
-          where: { id: update.stockId },
+          where: { id: stockId },
           data: { quantity: stock.quantity + addedQuantity },
         });
 
         updatedStocks.push({
-          stockId: update.stockId,
+          stockId: stockId,
           quantityAdded: addedQuantity,
           price: stock.product?.price || 0,
         });
@@ -84,7 +77,6 @@ export const updateStock = async (message: string) => {
     }
     console.log('Banco de dados atualizado com sucesso!');
   }
-  })
 
   // Criar uma ordem
   if (updatedStocks.length > 0) {
