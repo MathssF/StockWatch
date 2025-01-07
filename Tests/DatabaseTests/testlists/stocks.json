@@ -2,9 +2,9 @@
   {
     "id": 1,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 14,
     "createdAt": "2024-12-31T19:39:24.896Z",
-    "updatedAt": "2024-12-31T19:39:24.896Z",
+    "updatedAt": "2024-12-31T22:27:41.294Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -13,9 +13,9 @@
   {
     "id": 2,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 11,
     "createdAt": "2024-12-31T19:39:24.966Z",
-    "updatedAt": "2024-12-31T19:39:24.966Z",
+    "updatedAt": "2024-12-31T22:27:41.310Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -35,9 +35,9 @@
   {
     "id": 4,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 24,
     "createdAt": "2024-12-31T19:39:25.075Z",
-    "updatedAt": "2024-12-31T19:39:25.075Z",
+    "updatedAt": "2024-12-31T22:27:41.319Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -46,9 +46,9 @@
   {
     "id": 5,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 20,
     "createdAt": "2024-12-31T19:39:25.130Z",
-    "updatedAt": "2024-12-31T19:39:25.130Z",
+    "updatedAt": "2024-12-31T22:27:41.328Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -57,9 +57,9 @@
   {
     "id": 6,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 24,
     "createdAt": "2024-12-31T19:39:25.191Z",
-    "updatedAt": "2024-12-31T19:39:25.191Z",
+    "updatedAt": "2024-12-31T22:27:41.336Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -68,9 +68,9 @@
   {
     "id": 7,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 5,
     "createdAt": "2024-12-31T19:39:25.239Z",
-    "updatedAt": "2024-12-31T19:39:25.239Z",
+    "updatedAt": "2024-12-31T22:27:41.343Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -79,9 +79,9 @@
   {
     "id": 8,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 19,
     "createdAt": "2024-12-31T19:39:25.298Z",
-    "updatedAt": "2024-12-31T19:39:25.298Z",
+    "updatedAt": "2024-12-31T22:27:41.350Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -90,9 +90,9 @@
   {
     "id": 9,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 6,
     "createdAt": "2024-12-31T19:39:25.348Z",
-    "updatedAt": "2024-12-31T19:39:25.348Z",
+    "updatedAt": "2024-12-31T22:27:41.358Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -101,9 +101,9 @@
   {
     "id": 10,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 5,
     "createdAt": "2024-12-31T19:39:25.423Z",
-    "updatedAt": "2024-12-31T19:39:25.423Z",
+    "updatedAt": "2024-12-31T22:27:41.364Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -112,9 +112,9 @@
   {
     "id": 11,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 23,
     "createdAt": "2024-12-31T19:39:25.488Z",
-    "updatedAt": "2024-12-31T19:39:25.488Z",
+    "updatedAt": "2024-12-31T22:27:41.373Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -123,9 +123,9 @@
   {
     "id": 12,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 16,
     "createdAt": "2024-12-31T19:39:25.555Z",
-    "updatedAt": "2024-12-31T19:39:25.555Z",
+    "updatedAt": "2024-12-31T22:27:41.379Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -134,9 +134,9 @@
   {
     "id": 13,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 19,
     "createdAt": "2024-12-31T19:39:25.618Z",
-    "updatedAt": "2024-12-31T19:39:25.618Z",
+    "updatedAt": "2024-12-31T22:27:41.384Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -145,9 +145,9 @@
   {
     "id": 14,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 17,
     "createdAt": "2024-12-31T19:39:25.671Z",
-    "updatedAt": "2024-12-31T19:39:25.671Z",
+    "updatedAt": "2024-12-31T22:27:41.392Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -156,9 +156,9 @@
   {
     "id": 15,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 22,
     "createdAt": "2024-12-31T19:39:25.912Z",
-    "updatedAt": "2024-12-31T19:39:25.912Z",
+    "updatedAt": "2024-12-31T22:27:41.398Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -167,9 +167,9 @@
   {
     "id": 16,
     "productId": 1,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:25.964Z",
-    "updatedAt": "2024-12-31T19:39:25.964Z",
+    "updatedAt": "2024-12-31T22:27:41.405Z",
     "product": {
       "id": 1,
       "name": "Bermuda"
@@ -178,9 +178,9 @@
   {
     "id": 17,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 21,
     "createdAt": "2024-12-31T19:39:26.024Z",
-    "updatedAt": "2024-12-31T19:39:26.024Z",
+    "updatedAt": "2024-12-31T22:27:41.411Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -189,9 +189,9 @@
   {
     "id": 18,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 23,
     "createdAt": "2024-12-31T19:39:26.090Z",
-    "updatedAt": "2024-12-31T19:39:26.090Z",
+    "updatedAt": "2024-12-31T22:27:41.416Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -200,9 +200,9 @@
   {
     "id": 19,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 6,
     "createdAt": "2024-12-31T19:39:26.144Z",
-    "updatedAt": "2024-12-31T19:39:26.144Z",
+    "updatedAt": "2024-12-31T22:27:41.423Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -211,9 +211,9 @@
   {
     "id": 20,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 16,
     "createdAt": "2024-12-31T19:39:26.208Z",
-    "updatedAt": "2024-12-31T19:39:26.208Z",
+    "updatedAt": "2024-12-31T22:27:41.429Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -222,9 +222,9 @@
   {
     "id": 21,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 21,
     "createdAt": "2024-12-31T19:39:26.284Z",
-    "updatedAt": "2024-12-31T19:39:26.284Z",
+    "updatedAt": "2024-12-31T22:27:41.435Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -233,9 +233,9 @@
   {
     "id": 22,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 7,
     "createdAt": "2024-12-31T19:39:26.362Z",
-    "updatedAt": "2024-12-31T19:39:26.362Z",
+    "updatedAt": "2024-12-31T22:27:41.441Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -244,9 +244,9 @@
   {
     "id": 23,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 6,
     "createdAt": "2024-12-31T19:39:26.442Z",
-    "updatedAt": "2024-12-31T19:39:26.442Z",
+    "updatedAt": "2024-12-31T22:27:41.446Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -255,9 +255,9 @@
   {
     "id": 24,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 23,
     "createdAt": "2024-12-31T19:39:26.534Z",
-    "updatedAt": "2024-12-31T19:39:26.534Z",
+    "updatedAt": "2024-12-31T22:27:41.455Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -266,9 +266,9 @@
   {
     "id": 25,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 25,
     "createdAt": "2024-12-31T19:39:26.608Z",
-    "updatedAt": "2024-12-31T19:39:26.608Z",
+    "updatedAt": "2024-12-31T22:27:41.461Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -277,9 +277,9 @@
   {
     "id": 26,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 12,
     "createdAt": "2024-12-31T19:39:26.697Z",
-    "updatedAt": "2024-12-31T19:39:26.697Z",
+    "updatedAt": "2024-12-31T22:27:41.467Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -288,9 +288,9 @@
   {
     "id": 27,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 7,
     "createdAt": "2024-12-31T19:39:26.778Z",
-    "updatedAt": "2024-12-31T19:39:26.778Z",
+    "updatedAt": "2024-12-31T22:27:41.473Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -299,9 +299,9 @@
   {
     "id": 28,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 8,
     "createdAt": "2024-12-31T19:39:26.859Z",
-    "updatedAt": "2024-12-31T19:39:26.859Z",
+    "updatedAt": "2024-12-31T22:27:41.478Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -310,9 +310,9 @@
   {
     "id": 29,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:26.939Z",
-    "updatedAt": "2024-12-31T19:39:26.939Z",
+    "updatedAt": "2024-12-31T22:27:41.485Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -321,9 +321,9 @@
   {
     "id": 30,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:27.027Z",
-    "updatedAt": "2024-12-31T19:39:27.027Z",
+    "updatedAt": "2024-12-31T22:27:41.492Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -332,9 +332,9 @@
   {
     "id": 31,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 22,
     "createdAt": "2024-12-31T19:39:27.094Z",
-    "updatedAt": "2024-12-31T19:39:27.094Z",
+    "updatedAt": "2024-12-31T22:27:41.498Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -343,9 +343,9 @@
   {
     "id": 32,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 11,
     "createdAt": "2024-12-31T19:39:27.166Z",
-    "updatedAt": "2024-12-31T19:39:27.166Z",
+    "updatedAt": "2024-12-31T22:27:41.505Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -354,9 +354,9 @@
   {
     "id": 33,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 8,
     "createdAt": "2024-12-31T19:39:27.263Z",
-    "updatedAt": "2024-12-31T19:39:27.263Z",
+    "updatedAt": "2024-12-31T22:27:41.510Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -365,9 +365,9 @@
   {
     "id": 34,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 16,
     "createdAt": "2024-12-31T19:39:27.345Z",
-    "updatedAt": "2024-12-31T19:39:27.345Z",
+    "updatedAt": "2024-12-31T22:27:41.517Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -376,9 +376,9 @@
   {
     "id": 35,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 5,
     "createdAt": "2024-12-31T19:39:27.455Z",
-    "updatedAt": "2024-12-31T19:39:27.455Z",
+    "updatedAt": "2024-12-31T22:27:41.523Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -387,9 +387,9 @@
   {
     "id": 36,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 25,
     "createdAt": "2024-12-31T19:39:27.565Z",
-    "updatedAt": "2024-12-31T19:39:27.565Z",
+    "updatedAt": "2024-12-31T22:27:41.530Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -398,9 +398,9 @@
   {
     "id": 37,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:27.651Z",
-    "updatedAt": "2024-12-31T19:39:27.651Z",
+    "updatedAt": "2024-12-31T22:27:41.536Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -409,9 +409,9 @@
   {
     "id": 38,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 5,
     "createdAt": "2024-12-31T19:39:27.744Z",
-    "updatedAt": "2024-12-31T19:39:27.744Z",
+    "updatedAt": "2024-12-31T22:27:41.541Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -420,9 +420,9 @@
   {
     "id": 39,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 8,
     "createdAt": "2024-12-31T19:39:27.838Z",
-    "updatedAt": "2024-12-31T19:39:27.838Z",
+    "updatedAt": "2024-12-31T22:27:41.549Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -431,9 +431,9 @@
   {
     "id": 40,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 16,
     "createdAt": "2024-12-31T19:39:27.934Z",
-    "updatedAt": "2024-12-31T19:39:27.934Z",
+    "updatedAt": "2024-12-31T22:27:41.555Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -442,9 +442,9 @@
   {
     "id": 41,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 17,
     "createdAt": "2024-12-31T19:39:28.017Z",
-    "updatedAt": "2024-12-31T19:39:28.017Z",
+    "updatedAt": "2024-12-31T22:27:41.561Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -453,9 +453,9 @@
   {
     "id": 42,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:28.110Z",
-    "updatedAt": "2024-12-31T19:39:28.110Z",
+    "updatedAt": "2024-12-31T22:27:41.566Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -464,9 +464,9 @@
   {
     "id": 43,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 14,
     "createdAt": "2024-12-31T19:39:28.205Z",
-    "updatedAt": "2024-12-31T19:39:28.205Z",
+    "updatedAt": "2024-12-31T22:27:41.583Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -475,9 +475,9 @@
   {
     "id": 44,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 9,
     "createdAt": "2024-12-31T19:39:28.293Z",
-    "updatedAt": "2024-12-31T19:39:28.293Z",
+    "updatedAt": "2024-12-31T22:27:41.597Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -486,9 +486,9 @@
   {
     "id": 45,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:28.401Z",
-    "updatedAt": "2024-12-31T19:39:28.401Z",
+    "updatedAt": "2024-12-31T22:27:41.608Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -497,9 +497,9 @@
   {
     "id": 46,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 22,
     "createdAt": "2024-12-31T19:39:28.493Z",
-    "updatedAt": "2024-12-31T19:39:28.493Z",
+    "updatedAt": "2024-12-31T22:27:41.621Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -508,9 +508,9 @@
   {
     "id": 47,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 11,
     "createdAt": "2024-12-31T19:39:28.575Z",
-    "updatedAt": "2024-12-31T19:39:28.575Z",
+    "updatedAt": "2024-12-31T22:27:41.629Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -519,9 +519,9 @@
   {
     "id": 48,
     "productId": 2,
-    "quantity": 10,
+    "quantity": 5,
     "createdAt": "2024-12-31T19:39:28.626Z",
-    "updatedAt": "2024-12-31T19:39:28.626Z",
+    "updatedAt": "2024-12-31T22:27:41.637Z",
     "product": {
       "id": 2,
       "name": "Bota"
@@ -530,9 +530,9 @@
   {
     "id": 49,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 16,
     "createdAt": "2024-12-31T19:39:28.699Z",
-    "updatedAt": "2024-12-31T19:39:28.699Z",
+    "updatedAt": "2024-12-31T22:27:41.643Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -541,9 +541,9 @@
   {
     "id": 50,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 7,
     "createdAt": "2024-12-31T19:39:28.765Z",
-    "updatedAt": "2024-12-31T19:39:28.765Z",
+    "updatedAt": "2024-12-31T22:27:41.652Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -552,9 +552,9 @@
   {
     "id": 51,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 7,
     "createdAt": "2024-12-31T19:39:28.827Z",
-    "updatedAt": "2024-12-31T19:39:28.827Z",
+    "updatedAt": "2024-12-31T22:27:41.657Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -563,9 +563,9 @@
   {
     "id": 52,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 19,
     "createdAt": "2024-12-31T19:39:28.884Z",
-    "updatedAt": "2024-12-31T19:39:28.884Z",
+    "updatedAt": "2024-12-31T22:27:41.663Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -574,9 +574,9 @@
   {
     "id": 53,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 12,
     "createdAt": "2024-12-31T19:39:28.953Z",
-    "updatedAt": "2024-12-31T19:39:28.953Z",
+    "updatedAt": "2024-12-31T22:27:41.670Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -585,9 +585,9 @@
   {
     "id": 54,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:29.011Z",
-    "updatedAt": "2024-12-31T19:39:29.011Z",
+    "updatedAt": "2024-12-31T22:27:41.676Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -596,9 +596,9 @@
   {
     "id": 55,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 11,
     "createdAt": "2024-12-31T19:39:29.071Z",
-    "updatedAt": "2024-12-31T19:39:29.071Z",
+    "updatedAt": "2024-12-31T22:27:41.684Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -607,9 +607,9 @@
   {
     "id": 56,
     "productId": 3,
-    "quantity": 10,
+    "quantity": 12,
     "createdAt": "2024-12-31T19:39:29.127Z",
-    "updatedAt": "2024-12-31T19:39:29.127Z",
+    "updatedAt": "2024-12-31T22:27:41.690Z",
     "product": {
       "id": 3,
       "name": "Calça"
@@ -618,9 +618,9 @@
   {
     "id": 57,
     "productId": 4,
-    "quantity": 10,
+    "quantity": 9,
     "createdAt": "2024-12-31T19:39:29.202Z",
-    "updatedAt": "2024-12-31T19:39:29.202Z",
+    "updatedAt": "2024-12-31T22:27:41.696Z",
     "product": {
       "id": 4,
       "name": "Calça Militar"
@@ -629,9 +629,9 @@
   {
     "id": 58,
     "productId": 4,
-    "quantity": 10,
+    "quantity": 12,
     "createdAt": "2024-12-31T19:39:29.249Z",
-    "updatedAt": "2024-12-31T19:39:29.249Z",
+    "updatedAt": "2024-12-31T22:27:41.705Z",
     "product": {
       "id": 4,
       "name": "Calça Militar"
@@ -640,9 +640,9 @@
   {
     "id": 59,
     "productId": 4,
-    "quantity": 10,
+    "quantity": 15,
     "createdAt": "2024-12-31T19:39:29.298Z",
-    "updatedAt": "2024-12-31T19:39:29.298Z",
+    "updatedAt": "2024-12-31T22:27:41.712Z",
     "product": {
       "id": 4,
       "name": "Calça Militar"
@@ -651,9 +651,9 @@
   {
     "id": 60,
     "productId": 4,
-    "quantity": 10,
+    "quantity": 24,
     "createdAt": "2024-12-31T19:39:29.345Z",
-    "updatedAt": "2024-12-31T19:39:29.345Z",
+    "updatedAt": "2024-12-31T22:27:41.719Z",
     "product": {
       "id": 4,
       "name": "Calça Militar"
@@ -662,9 +662,9 @@
   {
     "id": 61,
     "productId": 5,
-    "quantity": 10,
+    "quantity": 13,
     "createdAt": "2024-12-31T19:39:29.423Z",
-    "updatedAt": "2024-12-31T19:39:29.423Z",
+    "updatedAt": "2024-12-31T22:27:41.725Z",
     "product": {
       "id": 5,
       "name": "Calça Social"
@@ -673,9 +673,9 @@
   {
     "id": 62,
     "productId": 5,
-    "quantity": 10,
+    "quantity": 22,
     "createdAt": "2024-12-31T19:39:29.498Z",
-    "updatedAt": "2024-12-31T19:39:29.498Z",
+    "updatedAt": "2024-12-31T22:27:41.739Z",
     "product": {
       "id": 5,
       "name": "Calça Social"
@@ -684,9 +684,9 @@
   {
     "id": 63,
     "productId": 5,
-    "quantity": 10,
+    "quantity": 15,
     "createdAt": "2024-12-31T19:39:29.566Z",
-    "updatedAt": "2024-12-31T19:39:29.566Z",
+    "updatedAt": "2024-12-31T22:27:41.748Z",
     "product": {
       "id": 5,
       "name": "Calça Social"
@@ -695,9 +695,9 @@
   {
     "id": 64,
     "productId": 5,
-    "quantity": 10,
+    "quantity": 8,
     "createdAt": "2024-12-31T19:39:29.604Z",
-    "updatedAt": "2024-12-31T19:39:29.604Z",
+    "updatedAt": "2024-12-31T22:27:41.755Z",
     "product": {
       "id": 5,
       "name": "Calça Social"
