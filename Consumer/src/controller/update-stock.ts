@@ -50,6 +50,12 @@ export const updateStock = async (message: string) => {
       });
     // });
 
+    if (productFound) {
+      fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
+      console.log('output.json atualizado com sucesso!');
+    }
+
+
     fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
     console.log('output.json atualizado com sucesso!');
   } else {
