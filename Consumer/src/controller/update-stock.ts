@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
 const queueName = 'low-stock-queue';
-const filePath = path.join(__dirname, '../../Core/src/database/today/output.json');
+const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
 
 // Função para processar as mensagens da fila
 export const updateStock = async (message: string) => {
