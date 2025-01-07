@@ -13,20 +13,31 @@ export const updateStock = async (message: string) => {
   console.log('Entrou no updateStock');
   const msgs = await consumeQueue(queueName);
   const content = JSON.parse(message);
+  const data = JSON.parse(content.message);
+
   console.log('Mensagem recebida:', content);
+  console.log('Teste '), data;
 
   let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
+
+  data.products.forEach(async (product: any) => {
+    const { stockId, quantityNow, quantityNeeded } = product;
+
+    console.log(`Atualizando estoque do produto ${stockId}`);
 
   // Atualizando output.json ou o banco de dados
   if (fs.existsSync(filePath)) {
     console.log('Atualizando output.json...');
     const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
-    content.products.forEach((update: any) => {
+    // content.products.forEach((update: any) => {
+      let productFound = false;
       fileData.Products.forEach((product: any) => {
         product.stocks.forEach((stock: any) => {
-          if (stock.id === update.stockId) {
-            const addedQuantity = update.quantityNeeded || 0;
+          // if (stock.id === update.stockId) {
+          if (stock.id === stockId) {
+            // const addedQuantity = update.quantityNeeded || 0;
+            const addedQuantity = quantityNeeded || 0;
             stock.quantityNow += addedQuantity;
 
             updatedStocks.push({
@@ -37,7 +48,7 @@ export const updateStock = async (message: string) => {
           }
         });
       });
-    });
+    // });
 
     fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
     console.log('output.json atualizado com sucesso!');
@@ -67,6 +78,7 @@ export const updateStock = async (message: string) => {
     }
     console.log('Banco de dados atualizado com sucesso!');
   }
+  })
 
   // Criar uma ordem
   if (updatedStocks.length > 0) {
