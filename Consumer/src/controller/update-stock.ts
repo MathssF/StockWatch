@@ -6,6 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 const prisma = new PrismaClient();
 const queueName = 'low-stock-queue';
 const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
+const logDir = path.join(__dirname, '../../../Core/src/database/update-logs');
+
 
 // Função para processar as mensagens da fila
 export const updateStock = async (message: string) => {
@@ -77,6 +79,24 @@ export const updateStock = async (message: string) => {
     }
     console.log('Banco de dados atualizado com sucesso!');
   }
+
+  // Criar um log com as atualizações
+  if (updatedStocks.length > 0) {
+    // Verifica se o diretório existe, caso contrário, cria
+    if (!fs.existsSync(logDir)) {
+      fs.mkdirSync(logDir, { recursive: true });
+    }
+
+    // Nome do arquivo com base na data e hora
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString().replace(/[:.]/g, '-'); // Formatar para um nome de arquivo válido
+    const logFilePath = path.join(logDir, `${formattedDate}.json`);
+
+    // Escrever as atualizações no arquivo de log
+    fs.writeFileSync(logFilePath, JSON.stringify(updatedStocks, null, 2));
+    console.log(`Log de atualização de estoque gerado em: ${logFilePath}`);
+  }
+
 
   // Criar uma ordem
   if (updatedStocks.length > 0) {
