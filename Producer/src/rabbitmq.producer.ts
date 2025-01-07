@@ -23,7 +23,7 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
     const channel = await connection.createChannel();
 
     await channel.assertQueue(queueName, {
-      durable: true,
+      durable: false,
     });
 
     const messageToSend = id ? JSON.stringify({ id, msgid, message }) : JSON.stringify({ msgid, message});
