@@ -23,11 +23,7 @@ app.post('/start-consumer', async (req: Request, res: Response): Promise<any> =>
   }
 
   try {
-    await consumeQueue(queueName, async (message) => {
-      console.log('Processando a Mengagem da fila ', queueName);
-      console.log('Mensagem: ', message)
-      // return res(200).send(message);
-    })
+    await consumeQueue(queueName)
   } catch(error) {
     console.error('Erro ao iniciar o consumer: ', error);
     res.status(500).send('Erro ao iniciar o consumer.');

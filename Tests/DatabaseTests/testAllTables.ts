@@ -125,6 +125,11 @@ async function generateSeparateJson(): Promise<void> {
     });
     saveJsonFile('customerPromotions.json', customerPromotions);
 
+    // Mensagens RabbitMQ
+    const rabbitMQMessages = await prisma.rabbitMQMessage.findMany();
+    saveJsonFile('rabbitMQMessages.json', rabbitMQMessages);
+
+
     console.log('Arquivos JSON gerados com sucesso!');
   } catch (err) {
     console.error('Erro ao gerar os JSONs:', err);
