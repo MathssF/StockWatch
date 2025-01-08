@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 
 const RABBITMQ_URL = process.env.RABBITMQ_LOCAL || 'amqp://user:password@localhost:5672';
 
-// Definição do tipo específico
+// // Definição do tipo específico
 // interface Product {
 //   stockId: number;
 //   quantityNow: number;

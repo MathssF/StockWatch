@@ -1,31 +1,37 @@
 import { Request, Response } from 'express';
-import { updateStock } from './update-stock';  // Importando a função processMessage do update-stock.ts
-import { postPromotions } from './post-promotions';  // Importando a função processMessage do post-promotions.ts
+import { updateStock } from './update-stock';
+import { postPromotions } from './post-promotions';
+import { validateMessage } from '../utils/validations';
 
-// Controlador para atualizar o estoque
 export const updateStockController = async (req: Request, res: Response): Promise<void> => {
   try {
-    const messageContent = JSON.stringify(req.body); // Ou o formato de mensagem esperado
+    const messageContent = JSON.stringify(req.body);
     console.log('stock  controler do Consumer, msg: ', messageContent);
     if (messageContent) {
-      await updateStock(messageContent);  // Chama a função para atualizar o estoque
+      const validatedMessage = validateMessage(messageContent);
+      if (validatedMessage) {
+        await updateStock(messageContent);
+        res.status(200).send('Estoque atualizado com sucesso.');
+      } else {
+        console.error('Formato de mensagem inválido');
+        res.status(400).send('Formato de mensagem inválido.');
+      }
     } else {
-      await updateStock(); // Chama sem nada
+      await updateStock();
+      res.status(200).send('Estoque atualizado com sucesso.');
     }
-    res.status(200).send('Estoque atualizado com sucesso.');
   } catch (error) {
     res.status(500).send('Erro ao atualizar estoque.');
   }
 };
 
-// Controlador para postar promoções
 export const postPromotionsController = async (req: Request, res: Response): Promise<void> => {
   try {
-    const messageContent = JSON.stringify(req.body); // Ou o formato de mensagem esperado
+    const messageContent = JSON.stringify(req.body);
     if (messageContent) {
-    await postPromotions(messageContent);  // Chama a função para postar promoções
+    await postPromotions(messageContent);
   } else {
-    await postPromotions(); // Chama sem nada
+    await postPromotions();
   }
     res.status(200).send('Promoções postadas com sucesso.');
   } catch (error) {

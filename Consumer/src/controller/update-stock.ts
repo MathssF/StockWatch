@@ -13,7 +13,6 @@ const logDir = path.join(__dirname, '../../../Core/src/database/update-logs');
 // Função para processar as mensagens da fila
 export const updateStock = async (message?: string) => {
   console.log('Entrou no updateStock');
-  // const msgs = await consumeQueue(queueName);
   let content;
   if (message) {
     content = JSON.parse(message);

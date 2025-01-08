@@ -96,7 +96,6 @@ export const SendPromotions = async (): Promise<void> => {
       }
 
       if (promotion.customers.length > 0) {
-        // const queueName = 'promotion-queue';
 
         const currentDate = new Date();
         const formattedDate = currentDate.toISOString().slice(0, 10);

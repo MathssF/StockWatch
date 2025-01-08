@@ -71,8 +71,6 @@ export const CheckStock = async (): Promise<void> => {
     console.log('Produtos com baixo estoque:', lowStocks);
 
     if (lowStocks.length > 0) {
-      // const queueName = 'low-stock-queue';
-
       // Gerando um ID com referência ao dia
       const currentDate = new Date();
       const formattedDate = currentDate.toISOString().slice(0, 10); // yyyy-mm-dd
