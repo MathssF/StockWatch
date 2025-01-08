@@ -7,29 +7,32 @@ const prisma = new PrismaClient();
 const RABBITMQ_URL = process.env.RABBITMQ_LOCAL || 'amqp://user:password@localhost:5672';
 
 // Definição do tipo específico
-interface Product {
-  stockId: number;
-  quantityNow: number;
-  quantityNeeded: number;
-}
+// interface Product {
+//   stockId: number;
+//   quantityNow: number;
+//   quantityNeeded: number;
+// }
 
-interface ParsedMessage {
-  notification: string;
-  products: Product[];
-}
+// interface ParsedMessage {
+//   notification: string;
+//   products: Product[];
+// }
 
 interface CustomConsumeMessage extends amqp.ConsumeMessage {
   msgid?: string;
 }
 
 export async function consumeQueue(queueName: string): Promise<
-  { id: string; msgid: string; notification: string; products: Product[] }[]
+  { id: string; msgid: string; message: string;
+    // notification: string; products: Product[]
+  }[]
 > {
   const processedMessages: {
     id: string;
     msgid: string;
-    notification: string;
-    products: Product[];
+    message: string;
+    // notification: string;
+    // products: Product[];
   }[] = [];
 
   try {
@@ -49,18 +52,18 @@ export async function consumeQueue(queueName: string): Promise<
 
           // Parse da mensagem recebida
           let parsedMessage: { id?: string; msgid?: string; message: string };
-          let parsedMsg2: ParsedMessage;
+          // let parsedMsg2: ParsedMessage;
           try {
             parsedMessage = JSON.parse(messageContent);
-            parsedMsg2 = JSON.parse(parsedMessage.message);
+            // parsedMsg2 = JSON.parse(parsedMessage.message);
           } catch (error) {
             console.error('Erro ao parsear a mensagem. Ignorando...', error);
             channel.nack(msg, false, false); // Não confirma a mensagem
             return;
           }
 
-          const { id, msgid } = parsedMessage;
-          const { notification, products } = parsedMsg2;
+          const { id, msgid, message } = parsedMessage;
+          // const { notification, products } = parsedMsg2;
 
           // Verificar se a mensagem já está no banco
           let dbMessage = await prisma.rabbitMQMessage.findUnique({
@@ -75,7 +78,8 @@ export async function consumeQueue(queueName: string): Promise<
                 consumerId: uuidv4(),
                 messageId: msgid || uuidv4(),
                 queue: queueName,
-                message: JSON.stringify(parsedMsg2),
+                // message: JSON.stringify(parsedMsg2),
+                message,
                 status: 'PENDING',
               },
             });
@@ -93,8 +97,9 @@ export async function consumeQueue(queueName: string): Promise<
           processedMessages.push({
             id: id || 'UNKNOWN',
             msgid: msgid || 'UNKNOWN',
-            notification,
-            products,
+            message,
+            // notification,
+            // products,
           });
 
           channel.ack(msg); // Confirma a mensagem

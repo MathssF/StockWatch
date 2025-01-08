@@ -11,16 +11,26 @@ const logDir = path.join(__dirname, '../../../Core/src/database/update-logs');
 
 
 // Função para processar as mensagens da fila
-export const updateStock = async (message: string) => {
+export const updateStock = async (message?: string) => {
   console.log('Entrou no updateStock');
-  const msgs = await consumeQueue(queueName);
-  const content = JSON.parse(message);
+  // const msgs = await consumeQueue(queueName);
+  let content;
+  if (message) {
+    content = JSON.parse(message);
+  } else {
+    content = await consumeQueue(queueName);
+  }
   const data = JSON.parse(content.message);
 
   console.log('Mensagem recebida:', content);
   console.log('Teste ', data);
 
   let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
+
+  // data.products.forEach(async (product: any) => {
+  //   const { stockId, quantityNow, quantityNeeded } = product;
+  //   console.log(`Atualizando estoque do produto ${stockId}`);
+  
 
   // Atualizando output.json ou o banco de dados
   if (fs.existsSync(filePath)) {
@@ -81,6 +91,7 @@ export const updateStock = async (message: string) => {
     }
     console.log('Banco de dados atualizado com sucesso!');
   }
+  // })
 
   // Criar um log com as atualizações
   if (updatedStocks.length > 0) {

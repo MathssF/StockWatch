@@ -5,14 +5,20 @@ import { consumeQueue } from '../rabbitmq.consumer';  // Importa a função de c
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
+const queueName = 'promotion-queue';
 const filePath = path.join(__dirname, '../../Core/src/database/today/output.json');
 
 const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
 
-export const postPromotions = async (messageContent: string): Promise<void> => {
+export const postPromotions = async (messageContent?: string): Promise<void> => {
   try {
-    const { stockId, customers } = JSON.parse(messageContent);
-    const promotions = await preparePromotions(stockId, customers);
+    let promotions;
+    if (messageContent) {
+      const { stockId, customers } = JSON.parse(messageContent);
+      promotions = await preparePromotions(stockId, customers);
+    } else {
+      promotions = await consumeQueue(queueName);
+    }
 
     // Verifica se o arquivo output.json existe
     if (fs.existsSync(filePath)) {
