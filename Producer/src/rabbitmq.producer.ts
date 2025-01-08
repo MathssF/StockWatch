@@ -5,7 +5,11 @@ import { v4 as uuidv4 } from 'uuid';
 const prisma = new PrismaClient();
 const RABBITMQ_URL = process.env.RABBITMQ_LOCAL || 'amqp://user:password@localhost:5672';
 
-export async function sendToQueue(queueName: string, message: string, id?: string) {
+export async function sendToQueue(
+  queueName: string,
+  message: string,
+  id?: string,
+  durableValue?: boolean) {
   try {
     const msgid = uuidv4();
     await prisma.rabbitMQMessage.create({
@@ -23,7 +27,7 @@ export async function sendToQueue(queueName: string, message: string, id?: strin
     const channel = await connection.createChannel();
 
     await channel.assertQueue(queueName, {
-      durable: false,
+      durable: durableValue,
     });
 
     const messageToSend = id ? JSON.stringify({ id, msgid, message }) : JSON.stringify({ msgid, message});

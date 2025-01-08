@@ -5,7 +5,12 @@ import { sendToQueue } from '../rabbitmq.producer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-const booleanValue = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || 'false');
+const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
+const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
+
+// Agora você pode acessar os valores de 'checkStock' ou 'promotions'
+const queueName = queueNames.promotions || 'low-stock-queue'; // 'low-stock-queue'
+const durableValue = durable.promotions || false; // false
 
 export const SendPromotions = async (): Promise<void> => {
   let promotionsOptions: any[] = []; // Variável para salvar as promoções
@@ -91,7 +96,7 @@ export const SendPromotions = async (): Promise<void> => {
       }
 
       if (promotion.customers.length > 0) {
-        const queueName = 'promotion-queue';
+        // const queueName = 'promotion-queue';
 
         const currentDate = new Date();
         const formattedDate = currentDate.toISOString().slice(0, 10);
@@ -106,7 +111,7 @@ export const SendPromotions = async (): Promise<void> => {
           })),
         };
 
-        await sendToQueue(queueName, JSON.stringify(message), randomId);
+        await sendToQueue(queueName, JSON.stringify(message), randomId, durableValue);
 
         console.log(`Promoção enviada com sucesso! ID: ${randomId}`);
       }

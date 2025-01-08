@@ -5,7 +5,12 @@ import { sendToQueue } from '../rabbitmq.producer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-const booleanValue = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || 'false');
+const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
+const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
+
+// Agora você pode acessar os valores de 'checkStock' ou 'promotions'
+const queueName = queueNames.checkStock || 'low-stock-queue'; // 'low-stock-queue'
+const durableValue = durable.checkStock || false; // false
 
 export const CheckStock = async (): Promise<void> => {
   let lowStocks: any[] = []; // Variável para salvar produtos com baixo estoque
@@ -66,7 +71,7 @@ export const CheckStock = async (): Promise<void> => {
     console.log('Produtos com baixo estoque:', lowStocks);
 
     if (lowStocks.length > 0) {
-      const queueName = 'low-stock-queue';
+      // const queueName = 'low-stock-queue';
 
       // Gerando um ID com referência ao dia
       const currentDate = new Date();
