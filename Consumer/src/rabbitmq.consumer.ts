@@ -27,8 +27,10 @@ export async function consumeQueue(queueName: string) {
 
         // Parse da mensagem recebida
         let parsedMessage: { id?: string; msgid?: string; message: string };
+        let parsedMsg2: any;
         try {
           parsedMessage = JSON.parse(messageContent);
+          parsedMsg2 = JSON.parse(parsedMessage.message);
         } catch (error) {
           console.error('Erro ao parsear a mensagem. Ignorando...', error);
           channel.nack(msg, false, false); // Não confirma a mensagem
@@ -36,6 +38,7 @@ export async function consumeQueue(queueName: string) {
         }
 
         const { id, msgid, message } = parsedMessage;
+        const { notification, prodcts } = parsedMsg2
 
         // Verificar se a mensagem já está no banco
         let dbMessage = await prisma.rabbitMQMessage.findUnique({

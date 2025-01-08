@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
+import { consumeQueue } from '../rabbitmq.consumer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
@@ -12,6 +13,7 @@ const logDir = path.join(__dirname, '../../../Core/src/database/update-logs');
 // Função para processar as mensagens da fila
 export const updateStock = async (message: string) => {
   console.log('Entrou no updateStock');
+  const msgs = await consumeQueue(queueName);
   const content = JSON.parse(message);
   const data = JSON.parse(content.message);
 
