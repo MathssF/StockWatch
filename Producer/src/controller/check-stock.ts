@@ -5,6 +5,7 @@ import { sendToQueue } from '../rabbitmq.producer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
+const booleanValue = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || 'false');
 
 export const CheckStock = async (): Promise<void> => {
   let lowStocks: any[] = []; // Variável para salvar produtos com baixo estoque
