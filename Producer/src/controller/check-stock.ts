@@ -13,9 +13,9 @@ export const CheckStock = async (): Promise<void> => {
     // Verifica se o arquivo output.json existe
     let data: any;
 
-    if (fs.existsSync(path.join(__dirname, '../../Core/src/database/today/output.json'))) {
+    if (fs.existsSync(path.join(__dirname, '../../../Core/src/database/today/output.json'))) {
       console.log('Carregando dados do arquivo output.json...');
-      const fileData = fs.readFileSync(path.join(__dirname, '../../Core/src/database/today/output.json'), 'utf-8');
+      const fileData = fs.readFileSync(path.join(__dirname, '../../../Core/src/database/today/output.json'), 'utf-8');
       data = JSON.parse(fileData);
     } else {
       console.log('Arquivo não encontrado. Buscando dados no banco...');
