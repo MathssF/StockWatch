@@ -27,7 +27,7 @@ export async function consumeQueue(queueName: string) {
 
         // Parse da mensagem recebida
         let parsedMessage: { id?: string; msgid?: string; message: string };
-        let parsedMsg2: any;
+        let parsedMsg2: { notification: string, products: any };
         try {
           parsedMessage = JSON.parse(messageContent);
           parsedMsg2 = JSON.parse(parsedMessage.message);
@@ -38,7 +38,7 @@ export async function consumeQueue(queueName: string) {
         }
 
         const { id, msgid, message } = parsedMessage;
-        const { notification, prodcts } = parsedMsg2
+        const { notification, products } = parsedMsg2
 
         // Verificar se a mensagem já está no banco
         let dbMessage = await prisma.rabbitMQMessage.findUnique({
