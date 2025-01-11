@@ -5,10 +5,14 @@ import { validateMessage } from '../utils/validations';
 
 export const updateStockController = async (req: Request, res: Response): Promise<void> => {
   try {
-    const messageContent = JSON.stringify(req.body);
-    console.log('stock  controler do Consumer, msg: ', messageContent);
-    if (messageContent) {
+    console.log(req.body);
+    const messageContent = Object.keys(req.body).length !== 0 ? JSON.stringify(req.body) : null;
+
+    console.log('Stock Controller do Consumer, msg:', messageContent);
+
+    if (messageContent !== null) {
       const validatedMessage = validateMessage(messageContent);
+
       if (validatedMessage) {
         await updateStock(messageContent);
         res.status(200).send('Estoque atualizado com sucesso.');
@@ -17,10 +21,12 @@ export const updateStockController = async (req: Request, res: Response): Promis
         res.status(400).send('Formato de mensagem inválido.');
       }
     } else {
+      // Caso não receba nenhum body
       await updateStock();
       res.status(200).send('Estoque atualizado com sucesso.');
     }
   } catch (error) {
+    console.error('Erro ao atualizar estoque:', error);
     res.status(500).send('Erro ao atualizar estoque.');
   }
 };

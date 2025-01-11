@@ -16,8 +16,12 @@ export const updateStock = async (message?: string) => {
   let content;
   if (message) {
     content = JSON.parse(message);
+    console.log('Com Body');
+    console.log('Content: ', content);
   } else {
     content = await consumeQueue(queueName);
+    console.log('Sem Body');
+    console.log('Content: ', content);
   }
   const data = JSON.parse(content.message);
 

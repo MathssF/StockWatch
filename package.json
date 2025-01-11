@@ -24,6 +24,7 @@
     "dev:basic": "ts-node -r tsconfig-paths/register prisma/seeds/basic-customers.seed.ts",
     "open:stock": "ts-node -r tsconfig-paths/register ./Core/src/generateJson.ts",
     "close:stock": "ts-node -r tsconfig-paths/register ./Core/src/closeStock.ts",
+    "clear-msg": "ts-node ./Tests/RabbitMQTests/clearMsg.ts",
     "clear-db": "ts-node ./prisma/delete/clearDatabase.ts",
     "reset-db": "ts-node ./prisma/delete/resetAutoIncrement.ts",
     "test-db": "ts-node ./Tests/DatabaseTests/testAllTables.ts",
