@@ -8,14 +8,14 @@ Stock:
     Stock 4 Camisa
 
 Stock Detail:
-    Stock 1 é uma Camisa da Cor Amarela
-    Stock 1 é uma Camisa do Tamanho M
-    Stock 2 é uma Camisa da Cor Amarela
-    Stock 2 é uma Camisa do Tamanho P
-    Stock 3 é uma Camisa da Cor Verde
-    Stock 3 é uma Camisa do Tamanho M
-    Stock 4 é uma Camisa da Cor Verde
-    Stock 4 é uma Camisa do Tamanho P
+    Stock 1 é uma Camisa da Cor Amarela    StockDetail 1
+    Stock 1 é uma Camisa do Tamanho M      StoclDetail 2
+    Stock 2 é uma Camisa da Cor Amarela    StockDetail 3
+    Stock 2 é uma Camisa do Tamanho P      StockDetail 4
+    Stock 3 é uma Camisa da Cor Verde      StockDetail 5
+    Stock 3 é uma Camisa do Tamanho M      StockDetail 6
+    Stock 4 é uma Camisa da Cor Verde      StockDetail 7
+    Stock 4 é uma Camisa do Tamanho P      StockDetail 8
 
 Detail
     Cor Amarela
