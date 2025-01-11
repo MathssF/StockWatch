@@ -6,45 +6,33 @@ const prisma = new PrismaClient();
 
 const RABBITMQ_URL = process.env.RABBITMQ_LOCAL || 'amqp://user:password@localhost:5672';
 
-// // Definição do tipo específico
-// interface Product {
-//   stockId: number;
-//   quantityNow: number;
-//   quantityNeeded: number;
-// }
-
-// interface ParsedMessage {
-//   notification: string;
-//   products: Product[];
-// }
-
 interface CustomConsumeMessage extends amqp.ConsumeMessage {
   msgid?: string;
 }
 
-export async function consumeQueue(queueName: string): Promise<
+export async function consumeQueue(queueName: string, durableValue?: boolean): Promise<
   { id: string; msgid: string; message: string;
-    // notification: string; products: Product[]
   }[]
 > {
   const processedMessages: {
     id: string;
     msgid: string;
     message: string;
-    // notification: string;
-    // products: Product[];
   }[] = [];
+
+  let durableBoolean = durableValue || false;
 
   try {
     console.log('Conectando ao RabbitMQ...');
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
 
-    await channel.assertQueue(queueName, { durable: false });
+    await channel.assertQueue(queueName, { durable: durableBoolean });
 
     console.log(`Aguardando mensagens na fila: ${queueName}`);
 
     await new Promise<void>((resolve, reject) => {
+      console.log('Entrou no newPromise');
       channel.consume(queueName, async (msg: CustomConsumeMessage | null) => {
         if (msg) {
           const messageContent = msg.content.toString();
@@ -52,13 +40,13 @@ export async function consumeQueue(queueName: string): Promise<
 
           // Parse da mensagem recebida
           let parsedMessage: { id?: string; msgid?: string; message: string };
-          // let parsedMsg2: ParsedMessage;
+          console.log('Parsed Message');
           try {
             parsedMessage = JSON.parse(messageContent);
-            // parsedMsg2 = JSON.parse(parsedMessage.message);
+            console.log('Parsed 2', parsedMessage);
           } catch (error) {
             console.error('Erro ao parsear a mensagem. Ignorando...', error);
-            channel.nack(msg, false, false); // Não confirma a mensagem
+            channel.nack(msg, false, false);
             return;
           }
 
@@ -78,7 +66,6 @@ export async function consumeQueue(queueName: string): Promise<
                 consumerId: uuidv4(),
                 messageId: msgid || uuidv4(),
                 queue: queueName,
-                // message: JSON.stringify(parsedMsg2),
                 message,
                 status: 'PENDING',
               },
@@ -98,13 +85,11 @@ export async function consumeQueue(queueName: string): Promise<
             id: id || 'UNKNOWN',
             msgid: msgid || 'UNKNOWN',
             message,
-            // notification,
-            // products,
           });
 
-          channel.ack(msg); // Confirma a mensagem
+          channel.ack(msg);
         } else {
-          resolve(); // Finaliza o consumo quando não há mais mensagens
+          resolve();
         }
       });
     });
@@ -114,5 +99,5 @@ export async function consumeQueue(queueName: string): Promise<
     await prisma.$disconnect();
   }
 
-  return processedMessages; // Retorna as mensagens processadas
+  return processedMessages;
 }

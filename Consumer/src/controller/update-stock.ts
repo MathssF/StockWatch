@@ -5,9 +5,16 @@ import { consumeQueue } from '../rabbitmq.consumer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-const queueName = 'low-stock-queue';
+// const queueName = 'low-stock-queue';
 const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
 const logDir = path.join(__dirname, '../../../Core/src/database/update-logs');
+
+const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
+const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
+
+// Agora você pode acessar os valores de 'checkStock' ou 'promotions'
+const queueName = queueNames.checkStock || 'low-stock-queue'; // 'low-stock-queue'
+const durableValue = durable.checkStock || false; // false
 
 
 // Função para processar as mensagens da fila
@@ -19,7 +26,7 @@ export const updateStock = async (message?: string) => {
     console.log('Com Body');
     console.log('Content: ', content);
   } else {
-    content = await consumeQueue(queueName);
+    content = await consumeQueue(queueName, durableValue);
     console.log('Sem Body');
     console.log('Content: ', content);
   }
