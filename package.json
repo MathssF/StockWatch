@@ -15,24 +15,18 @@
     "start:producer": "npx ts-node ./Producer/src/index.ts",
     "start:consumer": "npx ts-node ./Consumer/src/index.ts",
     "start:both": "concurrently \"npm run start:producer\" \"npm run start:consumer\"",
-
     "dev:producer": "nodemon --watch ./Producer/src --ext ts --exec \"ts-node ./Producer/src/index.ts\"",
     "dev:consumer": "nodemon --watch ./Consumer/src --ext ts --exec \"ts-node ./Consumer/src/index.ts\"",
     "dev:both": "concurrently \"npm run dev:producer\" \"npm run dev:consumer\"",
-
     "build": "npm run build --workspaces",
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts",
     "dev:basic": "ts-node -r tsconfig-paths/register prisma/seeds/basic-customers.seed.ts",
-
     "open:stock": "ts-node -r tsconfig-paths/register ./Core/src/generateJson.ts",
     "close:stock": "ts-node -r tsconfig-paths/register ./Core/src/closeStock.ts",
-
     "clear-db": "ts-node ./prisma/delete/clearDatabase.ts",
     "reset-db": "ts-node ./prisma/delete/resetAutoIncrement.ts",
     "test-db": "ts-node ./Tests/DatabaseTests/testAllTables.ts",
-    
     "random-qtd": "npx ts-node ./Tests/DatabaseTests/randomize.ts"
   },
   "dependencies": {
@@ -53,6 +47,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.10.1",
     "concurrently": "^9.1.2",
+    "eslint": "^9.17.0",
     "nodemon": "^2.0.15",
     "prisma": "^6.0.0",
     "ts-node": "^10.9.2",
