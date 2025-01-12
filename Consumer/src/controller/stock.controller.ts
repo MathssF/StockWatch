@@ -15,10 +15,18 @@ export const updateStockController = async (req: Request, res: Response): Promis
 
       if (validatedMessage) {
         await updateStock(messageContent);
-        res.status(200).send('Estoque atualizado com sucesso.');
+        res.status(200).send({
+          message: 'Estoque atualizado com sucesso.',
+          // updatedStocks,
+          // createdOrder,
+        });
       } else {
         console.error('Formato de mensagem inválido');
-        res.status(400).send('Formato de mensagem inválido.');
+        res.status(400).send({
+          message: 'Estoque atualizado com sucesso.',
+          // updatedStocks,
+          // createdOrder,
+        });
       }
     } else {
       // Caso não receba nenhum body

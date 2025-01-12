@@ -10,28 +10,34 @@ interface CustomConsumeMessage extends amqp.ConsumeMessage {
   msgid?: string;
 }
 
-export async function consumeQueue(queueName: string, durableValue?: boolean): Promise<
-  { id: string; msgid: string; message: string;
-  }[]
-> {
-  const processedMessages: {
+export async function consumeQueue(
+  queueName: string,
+  durableValue?: boolean
+): Promise<
+  {
     id: string;
     msgid: string;
     message: string;
-  }[] = [];
+  }[]
+> {
+  // const processedMessages: {
+  //   id: string;
+  //   msgid: string;
+  //   message: string;
+  // }[] = [];
 
-  let durableBoolean = durableValue || false;
+  // let durableBoolean = durableValue || false;
 
   try {
     console.log('Conectando ao RabbitMQ...');
     const connection = await amqp.connect(RABBITMQ_URL);
-    const channel = await connection.createChannel();
 
-    await channel.assertQueue(queueName, { durable: durableBoolean });
+    const channel = await connection.createChannel();
+    await channel.assertQueue(queueName, { durable: durableValue ?? false });
 
     console.log(`Aguardando mensagens na fila: ${queueName}`);
 
-    await new Promise<void>((resolve, reject) => {
+    await new Promise<void>((resolve) => {
       console.log('Entrou no newPromise');
       channel.consume(queueName, async (msg: CustomConsumeMessage | null) => {
         if (msg) {
@@ -49,11 +55,7 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
             channel.nack(msg, false, false);
             return;
           }
-
           const { id, msgid, message } = parsedMessage;
-          // const { notification, products } = parsedMsg2;
-
-          // Verificar se a mensagem já está no banco
           let dbMessage = await prisma.rabbitMQMessage.findUnique({
             where: { messageId: msgid },
           });
@@ -75,21 +77,21 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
             });
           }
 
-          console.log('Mensagem processada com sucesso. Atualizando status no banco de dados.');
+          // console.log('Mensagem processada com sucesso. Atualizando status no banco de dados.');
 
           // Atualiza o status para "PROCESSED"
-          await prisma.rabbitMQMessage.update({
-            where: { id: dbMessage.id },
-            data: { status: 'PROCESSED' },
-          });
-          console.log('Status Atualizado');
+          // await prisma.rabbitMQMessage.update({
+          //   where: { id: dbMessage.id },
+          //   data: { status: 'PROCESSED' },
+          // });
+          // console.log('Status Atualizado');
 
-          // Adiciona ao array de mensagens processadas
-          processedMessages.push({
-            id: id || 'UNKNOWN',
-            msgid: msgid || 'UNKNOWN',
-            message,
-          });
+          // // Adiciona ao array de mensagens processadas
+          // processedMessages.push({
+          //   id: id || 'UNKNOWN',
+          //   msgid: msgid || 'UNKNOWN',
+          //   message,
+          // });
 
           channel.ack(msg);
         } else {
