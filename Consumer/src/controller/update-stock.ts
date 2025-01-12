@@ -16,11 +16,11 @@ const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 const queueName = queueNames.checkStock || 'low-stock-queue'; // 'low-stock-queue'
 const durableValue = durable.checkStock || false; // false
 
-
 // Função para processar as mensagens da fila
 export const updateStock = async (message?: string) => {
   console.log('Entrou no updateStock');
   let content;
+  let mode = 0;
   if (message) {
     content = JSON.parse(message);
     console.log('Com Body');
@@ -30,17 +30,13 @@ export const updateStock = async (message?: string) => {
     console.log('Sem Body');
     console.log('Content: ', content);
   }
+
   const data = JSON.parse(content.message);
 
   console.log('** Mensagem recebida:', content);
   console.log('Teste ', data);
 
   let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
-
-  // data.products.forEach(async (product: any) => {
-  //   const { stockId, quantityNow, quantityNeeded } = product;
-  //   console.log(`Atualizando estoque do produto ${stockId}`);
-  
 
   // Atualizando output.json ou o banco de dados
   if (fs.existsSync(filePath)) {
@@ -74,6 +70,7 @@ export const updateStock = async (message?: string) => {
     if (productFound) {
       fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
       console.log('output.json atualizado com sucesso!');
+      mode = 1;
     }
   } else {
     console.log('output.json não encontrado. Atualizando o banco de dados...');
@@ -100,8 +97,8 @@ export const updateStock = async (message?: string) => {
       }
     }
     console.log('Banco de dados atualizado com sucesso!');
+    mode = 2;
   }
-  // })
 
   // Criar um log com as atualizações
   if (updatedStocks.length > 0) {
@@ -119,7 +116,6 @@ export const updateStock = async (message?: string) => {
     fs.writeFileSync(logFilePath, JSON.stringify(updatedStocks, null, 2));
     console.log(`Log de atualização de estoque gerado em: ${logFilePath}`);
   }
-
 
   // Criar uma ordem
   if (updatedStocks.length > 0) {
@@ -139,5 +135,11 @@ export const updateStock = async (message?: string) => {
       include: { items: true },
     });
     console.log('Ordem registrada com sucesso:', order);
+  }
+
+  return {
+    msg: "Atualizações feita com sucesso",
+    mode,
+    updateStock,
   }
 };
