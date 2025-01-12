@@ -13,11 +13,6 @@ interface CustomConsumeMessage extends amqp.ConsumeMessage {
 export async function consumeQueue(queueName: string, durableValue?: boolean): Promise<
   { id: string; msgid: string; message: string; }
 > {
-  // const processedMessages: {
-  //   id: string;
-  //   msgid: string;
-  //   message: string;
-  // }[] = [];
   let resultId: string = '';
   let resultMsgId: string = '';
   let resultMSG: string = '';
@@ -50,6 +45,10 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
           }
 
           const { id, msgid, message } = parsedMessage;
+          resultId = id || 'ID Null';
+          resultMsgId = msgid || 'MsgID Null';
+          resultMSG = message || 'Message Null';
+
 
           // Verificar se a mensagem já está no banco
           let dbMessage = await prisma.rabbitMQMessage.findUnique({
@@ -82,13 +81,6 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
           });
           console.log('(CONSUMER) - Status Atualizado');
 
-          // Adiciona ao array de mensagens processadas
-          // processedMessages.push({
-          //   id: id || 'UNKNOWN',
-          //   msgid: msgid || 'UNKNOWN',
-          //   message,
-          // });
-
           // Confirma o recebimento da mensagem
           channel.ack(msg);
         } else {
@@ -101,10 +93,8 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
   } finally {
     await prisma.$disconnect();
   }
-  console.log('Mensagem atualizada no final do Consumer')
-  // Retorna todas as mensagens processadas
-  // console.log('Fim do Consumer, processedMessages: ', processedMessages)
-  // return processedMessages;
+  console.log('Mensagem atualizada no final do Consumer');
+  console.log('Dados: ', resultId, resultMsgId, resultMSG);
   return { 
     id: resultId,
     msgid: resultMsgId,
