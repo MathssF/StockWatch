@@ -11,27 +11,29 @@ export const updateStockController = async (req: Request, res: Response): Promis
     console.log('Stock Controller do Consumer, msg:', messageContent);
 
     if (messageContent !== null) {
-      const validatedMessage = validateMessage(messageContent);
 
+      const validatedMessage = validateMessage(messageContent);
       if (validatedMessage) {
-        await updateStock(messageContent);
+        const { updatedStocks, createdOrder, mode } = await updateStock(messageContent);
         res.status(200).send({
           message: 'Estoque atualizado com sucesso.',
-          // updatedStocks,
-          // createdOrder,
+          updatedStocks,
+          createdOrder,
+          mode,
         });
       } else {
         console.error('Formato de mensagem inválido');
-        res.status(400).send({
-          message: 'Estoque atualizado com sucesso.',
-          // updatedStocks,
-          // createdOrder,
-        });
+        res.status(400).send('Formato de Mensagem inválido');
       }
     } else {
-      // Caso não receba nenhum body
-      await updateStock();
-      res.status(200).send('Estoque atualizado com sucesso.');
+
+      const { updatedStocks, createdOrder, mode } = await updateStock();
+      res.status(200).send({
+        message: 'Estoque atualizado com sucesso.',
+        updatedStocks,
+        createdOrder,
+        mode,
+      });
     }
   } catch (error) {
     console.error('Erro ao atualizar estoque:', error);

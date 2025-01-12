@@ -5,38 +5,32 @@ import { consumeQueue } from '../rabbitmq.consumer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-// const queueName = 'low-stock-queue';
 const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
 const logDir = path.join(__dirname, '../../../Core/src/database/update-logs');
 
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 
-// Agora você pode acessar os valores de 'checkStock' ou 'promotions'
-const queueName = queueNames.checkStock || 'low-stock-queue'; // 'low-stock-queue'
-const durableValue = durable.checkStock || false; // false
+const queueName = queueNames.checkStock || 'low-stock-queue';
+const durableValue = durable.checkStock || false;
 
-// Função para processar as mensagens da fila
 export const updateStock = async (message?: string) => {
   console.log('Entrou no updateStock');
   let content;
   let mode = 0;
+  let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
+  let createdOrder = null;
+
   if (message) {
     content = JSON.parse(message);
     console.log('Com Body');
-    console.log('Content: ', content);
   } else {
     content = await consumeQueue(queueName, durableValue);
     console.log('Sem Body');
-    console.log('Content: ', content);
   }
 
   const data = JSON.parse(content.message);
-
-  console.log('** Mensagem recebida:', content);
-  console.log('Teste ', data);
-
-  let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
+  console.log('Mensagem recebida:', content);
 
   // Atualizando output.json ou o banco de dados
   if (fs.existsSync(filePath)) {
@@ -45,10 +39,9 @@ export const updateStock = async (message?: string) => {
 
     let productFound = false;
     for (const product of data.products) {
-      const { stockId, quantityNow, quantityNeeded } = product;
+      const { stockId, quantityNeeded } = product;
 
       console.log(`Atualizando estoque do produto ${stockId}`);
-
       for (const fileProduct of fileData.Products) {
         for (const stock of fileProduct.stocks) {
           if (stock.id === stockId) {
@@ -102,17 +95,13 @@ export const updateStock = async (message?: string) => {
 
   // Criar um log com as atualizações
   if (updatedStocks.length > 0) {
-    // Verifica se o diretório existe, caso contrário, cria
     if (!fs.existsSync(logDir)) {
       fs.mkdirSync(logDir, { recursive: true });
     }
 
-    // Nome do arquivo com base na data e hora
     const currentDate = new Date();
-    const formattedDate = currentDate.toISOString().replace(/[:.]/g, '-'); // Formatar para um nome de arquivo válido
+    const formattedDate = currentDate.toISOString().replace(/[:.]/g, '-');
     const logFilePath = path.join(logDir, `${formattedDate}.json`);
-
-    // Escrever as atualizações no arquivo de log
     fs.writeFileSync(logFilePath, JSON.stringify(updatedStocks, null, 2));
     console.log(`Log de atualização de estoque gerado em: ${logFilePath}`);
   }
@@ -120,7 +109,7 @@ export const updateStock = async (message?: string) => {
   // Criar uma ordem
   if (updatedStocks.length > 0) {
     const orderNumber = `ORD-${uuidv4().split('-')[0]}`;
-    const order = await prisma.order.create({
+    createdOrder = await prisma.order.create({
       data: {
         orderNumber,
         status: 'PENDING',
@@ -134,12 +123,8 @@ export const updateStock = async (message?: string) => {
       },
       include: { items: true },
     });
-    console.log('Ordem registrada com sucesso:', order);
+    console.log('Ordem registrada com sucesso:', createdOrder);
   }
 
-  return {
-    msg: "Atualizações feita com sucesso",
-    mode,
-    updateStock,
-  }
+  return { updatedStocks, createdOrder, mode };
 };
