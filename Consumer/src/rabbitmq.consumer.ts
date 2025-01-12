@@ -80,7 +80,7 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
             where: { id: dbMessage.id },
             data: { status: 'PROCESSED' },
           });
-          console.log('Status Atualizado');
+          console.log('(CONSUMER) - Status Atualizado');
 
           // Adiciona ao array de mensagens processadas
           processedMessages.push({
@@ -101,7 +101,8 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
   } finally {
     await prisma.$disconnect();
   }
-
+  console.log('Mensagem atualizada no final do Consumer')
   // Retorna todas as mensagens processadas
+  console.log('Fim do Consumer, processedMessages: ', processedMessages)
   return processedMessages;
 }

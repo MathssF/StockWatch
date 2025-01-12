@@ -22,11 +22,12 @@ export const updateStock = async (message?: string) => {
   let createdOrder = null;
 
   if (message) {
-    content = JSON.parse(message);
     console.log('Com Body');
+    content = JSON.parse(message);
   } else {
-    content = await consumeQueue(queueName, durableValue);
     console.log('Sem Body');
+    content = await consumeQueue(queueName, durableValue);
+    console.log('Finalizada o Consumer');
   }
 
   const data = JSON.parse(content.message);
