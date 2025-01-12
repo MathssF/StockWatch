@@ -11,22 +11,22 @@ interface CustomConsumeMessage extends amqp.ConsumeMessage {
 }
 
 export async function consumeQueue(queueName: string, durableValue?: boolean): Promise<
-  { id: string; msgid: string; message: string; }[]
+  { id: string; msgid: string; message: string; }
 > {
-  const processedMessages: {
-    id: string;
-    msgid: string;
-    message: string;
-  }[] = [];
-
-  let durableBoolean = durableValue || false;
-
+  // const processedMessages: {
+  //   id: string;
+  //   msgid: string;
+  //   message: string;
+  // }[] = [];
+  let resultId: string = '';
+  let resultMsgId: string = '';
+  let resultMSG: string = '';
   try {
     console.log('Conectando ao RabbitMQ...');
     const connection = await amqp.connect(RABBITMQ_URL);
     const channel = await connection.createChannel();
 
-    await channel.assertQueue(queueName, { durable: durableBoolean });
+    await channel.assertQueue(queueName, { durable: durableValue });
 
     console.log(`Aguardando mensagens na fila: ${queueName}`);
 
@@ -83,11 +83,11 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
           console.log('(CONSUMER) - Status Atualizado');
 
           // Adiciona ao array de mensagens processadas
-          processedMessages.push({
-            id: id || 'UNKNOWN',
-            msgid: msgid || 'UNKNOWN',
-            message,
-          });
+          // processedMessages.push({
+          //   id: id || 'UNKNOWN',
+          //   msgid: msgid || 'UNKNOWN',
+          //   message,
+          // });
 
           // Confirma o recebimento da mensagem
           channel.ack(msg);
@@ -103,6 +103,11 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
   }
   console.log('Mensagem atualizada no final do Consumer')
   // Retorna todas as mensagens processadas
-  console.log('Fim do Consumer, processedMessages: ', processedMessages)
-  return processedMessages;
+  // console.log('Fim do Consumer, processedMessages: ', processedMessages)
+  // return processedMessages;
+  return { 
+    id: resultId,
+    msgid: resultMsgId,
+    message: resultMSG,
+  }
 }
