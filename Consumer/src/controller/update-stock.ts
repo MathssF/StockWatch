@@ -32,7 +32,7 @@ export const updateStock = async (message?: string) => {
   }
   const data = JSON.parse(content.message);
 
-  console.log('Mensagem recebida:', content);
+  console.log('** Mensagem recebida:', content);
   console.log('Teste ', data);
 
   let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];

@@ -36,7 +36,7 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
       channel.consume(queueName, async (msg: CustomConsumeMessage | null) => {
         if (msg) {
           const messageContent = msg.content.toString();
-          console.log(`Mensagem recebida: ${messageContent}`);
+          console.log(`(CONSUMER) Mensagem recebida: ${messageContent}`);
 
           // Parse da mensagem recebida
           let parsedMessage: { id?: string; msgid?: string; message: string };
@@ -58,7 +58,10 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
             where: { messageId: msgid },
           });
 
+          console.log('dbMessage? ', dbMessage);
+
           if (!dbMessage) {
+            console.log('CONSUMER - Não achou a mensagem no banco de dados, esta criando');
             // Se não existir, cria um registro
             dbMessage = await prisma.rabbitMQMessage.create({
               data: {
@@ -79,6 +82,7 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
             where: { id: dbMessage.id },
             data: { status: 'PROCESSED' },
           });
+          console.log('Status Atualizado');
 
           // Adiciona ao array de mensagens processadas
           processedMessages.push({
