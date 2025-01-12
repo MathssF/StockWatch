@@ -1,57 +1,52 @@
 import amqp from 'amqplib';
 import { PrismaClient } from '@prisma/client';
-import { v4 as uuidv4 } from 'uuid'; // Para gerar um ID único
 
 const prisma = new PrismaClient();
-
 const RABBITMQ_URL = process.env.RABBITMQ_LOCAL || 'amqp://user:password@localhost:5672';
 
-interface CustomConsumeMessage extends amqp.ConsumeMessage {
-  msgid?: string;
+interface MessageData {
+  id: string;
+  msgid: string;
+  message: string;
 }
 
 export async function consumeQueue(
   queueName: string,
   durableValue?: boolean
-): Promise<
-  {
-    id: string;
-    msgid: string;
-    message: string;
-  }[]
-> {
-
+): Promise<MessageData[]> {
   try {
     console.log('Conectando ao RabbitMQ...');
     const connection = await amqp.connect(RABBITMQ_URL);
-
     const channel = await connection.createChannel();
-    await channel.assertQueue(queueName, { durable: durableValue ?? false });
 
+    await channel.assertQueue(queueName, { durable: durableValue ?? false });
     console.log(`Aguardando mensagens na fila: ${queueName}`);
 
+    const messages: MessageData[] = [];
+
     await new Promise<void>((resolve) => {
-      console.log('Entrou no newPromise');
       channel.consume(queueName, (msg) => {
         if (msg) {
-          channel.ack(msg);
-          resolve({
-            id: msg.properties.correlationId,
-            msgid: msg.properties.messageId,
+          const messageData: MessageData = {
+            id: msg.properties.correlationId || '',
+            msgid: msg.properties.messageId || '',
             message: msg.content.toString(),
-          });
+          };
+
+          messages.push(messageData);
+          channel.ack(msg); // Confirma que a mensagem foi processada.
         }
+
+        // Finaliza o consumo após processar uma mensagem
+        resolve();
       });
-  
     });
 
-    return message as {
-      id: string;
-      msgid: string;
-      message: string;
-    };
+    console.log('Mensagens consumidas:', messages);
+    return messages; // Retorna todas as mensagens consumidas.
   } catch (error) {
     console.error('Erro ao consumir fila:', error);
+    return []; // Retorna um array vazio em caso de erro.
   } finally {
     await prisma.$disconnect();
   }
