@@ -1,0 +1,97 @@
+[
+  {
+    "stockId": "8",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "10",
+    "quantityAdded": 3,
+    "price": 0
+  },
+  {
+    "stockId": "12",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "14",
+    "quantityAdded": 3,
+    "price": 0
+  },
+  {
+    "stockId": "21",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "22",
+    "quantityAdded": 5,
+    "price": 0
+  },
+  {
+    "stockId": "23",
+    "quantityAdded": 4,
+    "price": 0
+  },
+  {
+    "stockId": "30",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "35",
+    "quantityAdded": 1,
+    "price": 0
+  },
+  {
+    "stockId": "36",
+    "quantityAdded": 3,
+    "price": 0
+  },
+  {
+    "stockId": "37",
+    "quantityAdded": 5,
+    "price": 0
+  },
+  {
+    "stockId": "47",
+    "quantityAdded": 1,
+    "price": 0
+  },
+  {
+    "stockId": "48",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "52",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "53",
+    "quantityAdded": 1,
+    "price": 0
+  },
+  {
+    "stockId": "54",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "57",
+    "quantityAdded": 2,
+    "price": 0
+  },
+  {
+    "stockId": "62",
+    "quantityAdded": 3,
+    "price": 0
+  },
+  {
+    "stockId": "63",
+    "quantityAdded": 1,
+    "price": 0
+  }
+]

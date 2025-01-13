@@ -50,7 +50,7 @@ export const updateStock = async (message?: string) => {
             stock.quantityNow += addedQuantity;
 
             updatedStocks.push({
-              stockId: stock.id,
+              stockId: Number(stock.id),
               quantityAdded: addedQuantity,
               price: stock.price || 0,
             });
