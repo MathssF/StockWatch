@@ -34,6 +34,7 @@ export const updateStock = async (message?: string) => {
   console.log('Mensagem recebida:', content);
 
   // Atualizando output.json ou o banco de dados
+  if (data.products && data.products.length > 0) {
   if (fs.existsSync(filePath)) {
     console.log('Atualizando output.json...');
     const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
@@ -93,6 +94,11 @@ export const updateStock = async (message?: string) => {
     console.log('Banco de dados atualizado com sucesso!');
     mode = 2;
   }
+  } else {
+    console.log('Nenhum produto para atualizar. Mensagem:', data.notification);
+    return { updatedStocks: [], createdOrder: null, mode: 0 };
+  }
+
 
   // Criar um log com as atualizações
   if (updatedStocks.length > 0) {

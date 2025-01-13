@@ -95,6 +95,7 @@ export const CheckStock = async (): Promise<void> => {
 
       console.log(`Mensagem enviada com sucesso! ID: ${randomId}`);
     } else {
+      const message = { Notification: "Nenhum produto com baixo estoque encontrado." }
       console.log('Nenhum produto com baixo estoque encontrado.');
     }
 
