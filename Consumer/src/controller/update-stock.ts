@@ -18,7 +18,7 @@ export const updateStock = async (message?: string) => {
   console.log('Entrou no updateStock');
   let content;
   let mode = 0;
-  let updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
+  const updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
   let createdOrder = null;
 
   if (message) {
@@ -33,74 +33,71 @@ export const updateStock = async (message?: string) => {
   const data = JSON.parse(content.message);
   console.log('Mensagem recebida:', content);
 
-  // Atualizando output.json ou o banco de dados
   if (data.products && data.products.length > 0) {
-  if (fs.existsSync(filePath)) {
-    console.log('Atualizando output.json...');
-    const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    if (fs.existsSync(filePath)) {
+      console.log('Atualizando output.json...');
+      const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
-    let productFound = false;
-    for (const product of data.products) {
-      const { stockId, quantityNeeded } = product;
+      let productFound = false;
+      for (const product of data.products) {
+        const { stockId, quantityNeeded } = product;
 
-      console.log(`Atualizando estoque do produto ${stockId}`);
-      for (const fileProduct of fileData.Products) {
-        for (const stock of fileProduct.stocks) {
-          if (stock.id === stockId) {
-            const addedQuantity = quantityNeeded || 0;
-            stock.quantityNow += addedQuantity;
+        console.log(`Atualizando estoque do produto ${stockId}`);
+        for (const fileProduct of fileData.Products) {
+          for (const stock of fileProduct.stocks) {
+            if (stock.id === stockId) {
+              const addedQuantity = quantityNeeded || 0;
+              stock.quantityNow += addedQuantity;
 
-            updatedStocks.push({
-              stockId: Number(stock.id),
-              quantityAdded: addedQuantity,
-              price: stock.price || 0,
-            });
+              updatedStocks.push({
+                stockId: Number(stock.id),
+                quantityAdded: addedQuantity,
+                price: stock.price || 0,
+              });
 
-            productFound = true;
+              productFound = true;
+            }
           }
         }
       }
-    }
 
-    if (productFound) {
-      fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
-      console.log('output.json atualizado com sucesso!');
-      mode = 1;
-    }
-  } else {
-    console.log('output.json não encontrado. Atualizando o banco de dados...');
-    for (const product of data.products) {
-      const { stockId, quantityNeeded } = product;
-
-      const stock = await prisma.stock.findUnique({
-        where: { id: stockId },
-        select: { quantity: true, product: { select: { price: true } } },
-      });
-
-      if (stock) {
-        const addedQuantity = quantityNeeded || 0;
-        await prisma.stock.update({
-          where: { id: stockId },
-          data: { quantity: stock.quantity + addedQuantity },
-        });
-
-        updatedStocks.push({
-          stockId: stockId,
-          quantityAdded: addedQuantity,
-          price: stock.product?.price || 0,
-        });
+      if (productFound) {
+        fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
+        console.log('output.json atualizado com sucesso!');
+        mode = 1;
       }
+    } else {
+      console.log('output.json não encontrado. Atualizando o banco de dados...');
+      for (const product of data.products) {
+        const { stockId, quantityNeeded } = product;
+
+        const stock = await prisma.stock.findUnique({
+          where: { id: stockId },
+          select: { quantity: true, product: { select: { price: true } } },
+        });
+
+        if (stock) {
+          const addedQuantity = quantityNeeded || 0;
+          await prisma.stock.update({
+            where: { id: stockId },
+            data: { quantity: stock.quantity + addedQuantity },
+          });
+
+          updatedStocks.push({
+            stockId,
+            quantityAdded: addedQuantity,
+            price: stock.product?.price || 0,
+          });
+        }
+      }
+      console.log('Banco de dados atualizado com sucesso!');
+      mode = 2;
     }
-    console.log('Banco de dados atualizado com sucesso!');
-    mode = 2;
-  }
   } else {
     console.log('Nenhum produto para atualizar. Mensagem:', data.notification);
     return { updatedStocks: [], createdOrder: null, mode: 0 };
   }
 
-
-  // Criar um log com as atualizações
   if (updatedStocks.length > 0) {
     if (!fs.existsSync(logDir)) {
       fs.mkdirSync(logDir, { recursive: true });
@@ -113,7 +110,6 @@ export const updateStock = async (message?: string) => {
     console.log(`Log de atualização de estoque gerado em: ${logFilePath}`);
   }
 
-  // Criar uma ordem
   if (updatedStocks.length > 0) {
     const orderNumber = `ORD-${uuidv4().split('-')[0]}`;
     createdOrder = await prisma.order.create({
