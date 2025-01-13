@@ -83,6 +83,9 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
 
           // Confirma o recebimento da mensagem
           channel.ack(msg);
+          console.log('Channel Ack');
+
+          resolve();
         } else {
           resolve();
         }

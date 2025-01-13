@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { updateStock } from './update-stock';
-import { postPromotions } from './post-promotions';
+// import { postPromotions } from './post-promotions';
 import { validateMessage } from '../utils/validations';
 
 export const updateStockController = async (req: Request, res: Response): Promise<void> => {
@@ -41,16 +41,16 @@ export const updateStockController = async (req: Request, res: Response): Promis
   }
 };
 
-export const postPromotionsController = async (req: Request, res: Response): Promise<void> => {
-  try {
-    const messageContent = JSON.stringify(req.body);
-    if (messageContent) {
-    await postPromotions(messageContent);
-  } else {
-    await postPromotions();
-  }
-    res.status(200).send('Promoções postadas com sucesso.');
-  } catch (error) {
-    res.status(500).send('Erro ao postar promoções.');
-  }
-};
+// export const postPromotionsController = async (req: Request, res: Response): Promise<void> => {
+//   try {
+//     const messageContent = JSON.stringify(req.body);
+//     if (messageContent) {
+//     await postPromotions(messageContent);
+//   } else {
+//     await postPromotions();
+//   }
+//     res.status(200).send('Promoções postadas com sucesso.');
+//   } catch (error) {
+//     res.status(500).send('Erro ao postar promoções.');
+//   }
+// };
