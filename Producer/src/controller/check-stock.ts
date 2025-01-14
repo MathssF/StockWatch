@@ -5,8 +5,8 @@ import { sendToQueue } from '../rabbitmq.producer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
-const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
+const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}') || 'low-stock-queue';
+const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}') || true;
 
 // Agora você pode acessar os valores de 'checkStock' ou 'promotions'
 const queueName = queueNames.checkStock || 'low-stock-queue'; // 'low-stock-queue'
