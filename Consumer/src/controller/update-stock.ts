@@ -52,7 +52,7 @@ export const updateStock = async (message?: string) => {
               updatedStocks.push({
                 stockId: Number(stock.id),
                 quantityAdded: addedQuantity,
-                price: stock.price || 0,
+                price: fileProduct.price || 0,
               });
 
               productFound = true;

@@ -119,5 +119,38 @@
     "status": "PROCESSED",
     "createdAt": "2025-01-12T21:52:16.179Z",
     "updatedAt": "2025-01-12T21:52:19.261Z"
+  },
+  {
+    "id": 38,
+    "messageId": "bd002fd3-bbe6-4c0e-9df4-b81dd5571fef",
+    "produceId": "ecfc3f43.2025-01-13",
+    "consumerId": "",
+    "queue": "low-stock-queue-test",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":2,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":3,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":4,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":5,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":11,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":17,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":21,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":26,\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":27,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":29,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":31,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":34,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":38,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":52,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":64,\"quantityNow\":9,\"quantityNeeded\":1}]}",
+    "status": "PROCESSED",
+    "createdAt": "2025-01-13T11:10:39.776Z",
+    "updatedAt": "2025-01-13T11:10:43.854Z"
+  },
+  {
+    "id": 39,
+    "messageId": "6bab97a6-4b43-4d34-8016-f0fed2c8cbf9",
+    "produceId": "3a9c8cce.2025-01-13",
+    "consumerId": "",
+    "queue": "low-stock-queue-test",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":\"8\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"10\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"12\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"14\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"21\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"22\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"23\",\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":\"30\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"35\",\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":\"36\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"37\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"47\",\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":\"48\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"52\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"53\",\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":\"54\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"57\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"62\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"63\",\"quantityNow\":9,\"quantityNeeded\":1}]}",
+    "status": "PROCESSED",
+    "createdAt": "2025-01-13T11:19:15.929Z",
+    "updatedAt": "2025-01-13T11:19:19.583Z"
+  },
+  {
+    "id": 40,
+    "messageId": "dedec437-3817-4832-908a-c2503b8da7d7",
+    "produceId": "5b8d454f.2025-01-14",
+    "consumerId": "",
+    "queue": "low-stock-queue-test",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":\"2\",\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":\"6\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"8\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"15\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"18\",\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":\"27\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"34\",\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":\"37\",\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":\"46\",\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":\"51\",\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":\"56\",\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":\"60\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"63\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"64\",\"quantityNow\":7,\"quantityNeeded\":3}]}",
+    "status": "PROCESSED",
+    "createdAt": "2025-01-14T13:42:59.285Z",
+    "updatedAt": "2025-01-14T13:43:34.095Z"
   }
 ]
