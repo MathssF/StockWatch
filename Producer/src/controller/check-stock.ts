@@ -5,15 +5,17 @@ import { sendToQueue } from '../rabbitmq.producer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}') || 'low-stock-queue';
-const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}') || true;
+const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
+const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 
 // Agora você pode acessar os valores de 'checkStock' ou 'promotions'
 const queueName = queueNames.checkStock || 'low-stock-queue'; // 'low-stock-queue'
 const durableValue = durable.checkStock || false; // false
 
-export const CheckStock = async (): Promise<void> => {
+export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string; message: any | null }> => {
   let lowStocks: any[] = []; // Variável para salvar produtos com baixo estoque
+  let message: any | null = null;
+  let randomId: string = '';
 
   try {
     // Verifica se o arquivo output.json existe
@@ -74,8 +76,8 @@ export const CheckStock = async (): Promise<void> => {
       // Gerando um ID com referência ao dia
       const currentDate = new Date();
       const formattedDate = currentDate.toISOString().slice(0, 10); // yyyy-mm-dd
-      const randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
-      const message = {
+      randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
+      message = {
         notification: "Os seguintes produtos precisam reestabelecer o estoque",
         products: lowStocks.map((item) => {
           const quantityNow = item.quantityNow || 0;
@@ -102,4 +104,5 @@ export const CheckStock = async (): Promise<void> => {
   } catch (error) {
     console.error('Erro ao verificar estoque:', error);
   }
+  return { lowStocks, randomId, message };
 };
