@@ -93,7 +93,7 @@ export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string
       console.log(message);
 
       // Enviar para RabbitMQ
-      await sendToQueue(queueName, JSON.stringify(message), randomId);
+      await sendToQueue(queueName, JSON.stringify(message), randomId, durableValue);
 
       console.log(`Mensagem enviada com sucesso! ID: ${randomId}`);
     } else {
