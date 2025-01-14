@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { updateStock } from './update-stock';
-// import { postPromotions } from './post-promotions';
+import { postPromotions } from './post-promotions';
 import { validateMessage } from '../utils/validations';
 
 export const updateStockController = async (req: Request, res: Response): Promise<void> => {
@@ -54,3 +54,27 @@ export const updateStockController = async (req: Request, res: Response): Promis
 //     res.status(500).send('Erro ao postar promoções.');
 //   }
 // };
+export const postPromotionsController = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const messageContent = Object.keys(req.body).length !== 0 ? JSON.stringify(req.body) : null;
+
+    console.log('Promoções Controller do Consumer, msg:', messageContent);
+
+    if (messageContent !== null) {
+      const validatedMessage = validateMessage(messageContent);
+      if (validatedMessage) {
+        await postPromotions(messageContent);
+        res.status(200).send('Promoções postadas com sucesso.');
+      } else {
+        console.error('Formato de mensagem inválido');
+        res.status(400).send('Formato de Mensagem inválido');
+      }
+    } else {
+      await postPromotions();  // Chama o postPromotions sem parâmetros caso não haja conteúdo
+      res.status(200).send('Promoções postadas com sucesso.');
+    }
+  } catch (error) {
+    console.error('Erro ao postar promoções:', error);
+    res.status(500).send('Erro ao postar promoções.');
+  }
+};

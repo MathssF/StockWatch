@@ -9,11 +9,13 @@ const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 
 // Agora você pode acessar os valores de 'checkStock' ou 'promotions'
-const queueName = queueNames.promotions || 'low-stock-queue'; // 'low-stock-queue'
+const queueName = queueNames.promotions || 'promotions-queue'; // 'promotions-queue'
 const durableValue = durable.promotions || false; // false
 
-export const SendPromotions = async (): Promise<void> => {
-  let promotionsOptions: any[] = []; // Variável para salvar as promoções
+export const SendPromotions = async (): Promise<{ promotions: any[]; randomId: string; message: any | null }> => {
+  let promotions: any[] = []; // Variável para salvar as promoções
+  let message: any | null = null;
+  let randomId: string = '';
 
   try {
     // Verifica se o arquivo output.json existe
@@ -45,7 +47,7 @@ export const SendPromotions = async (): Promise<void> => {
     }
 
     // Monta os dados de promoções
-    promotionsOptions = data.Products
+    const promotionsOptions = data.Products
       ? data.Products.flatMap((product: any) =>
           product.stocks.map((stock: any) => ({
             stockId: stock.id,
@@ -59,8 +61,9 @@ export const SendPromotions = async (): Promise<void> => {
         )
       : [];
 
-    // Para cada promoção, verifica os clientes que têm detalhes em comum
+    // Gerar promoções baseadas no relacionamento N:N
     for (const promotion of promotionsOptions) {
+      // Para cada estoque, identificar os clientes que têm preferências relacionadas a esse estoque
       const customers = await prisma.customer.findMany({
         where: {
           preferences: {
@@ -72,12 +75,13 @@ export const SendPromotions = async (): Promise<void> => {
           },
         },
         select: {
-          id: true, 
+          id: true,
           preferences: true,
         },
       });
 
       for (const customer of customers) {
+        // Verifica as preferências do cliente para o estoque atual
         const commonDetails = promotion.details.filter((promotionDetail: any) =>
           customer.preferences.some((customerDetail: any) => customerDetail.detailId === promotionDetail.detailId)
         );
@@ -89,36 +93,43 @@ export const SendPromotions = async (): Promise<void> => {
           promoValue = Math.ceil(promotion.product.price * 0.75);
         }
 
-        promotion.customers.push({
-          customerId: customer.id,
-          promoValue,
-        });
-      }
-
-      if (promotion.customers.length > 0) {
-
-        const currentDate = new Date();
-        const formattedDate = currentDate.toISOString().slice(0, 10);
-        const randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
-
-        const message = {
-          notification: "Promoção para os seguintes clientes",
-          stockId: promotion.stockId,
-          customers: promotion.customers.map((item: any) => ({
-            customerId: item.customerId,
-            promoValue: item.promoValue,
-          })),
-        };
-
-        await sendToQueue(queueName, JSON.stringify(message), randomId, durableValue);
-
-        console.log(`Promoção enviada com sucesso! ID: ${randomId}`);
+        // Cria uma promoção para essa combinação de cliente e estoque
+        if (promoValue > 0) {
+          promotions.push({
+            id: uuidv4(),  // ID único para cada promoção
+            stockId: promotion.stockId,  // O estoque relacionado
+            customerId: customer.id,  // O cliente relacionado
+            promoValue: promoValue,  // O valor do desconto calculado
+          });
+        }
       }
     }
 
-    console.log('Promoções disponíveis:', promotionsOptions);
+    // Após a geração das promoções, envia as promoções para a fila (RabbitMQ)
+    if (promotions.length > 0) {
+      const currentDate = new Date();
+      const formattedDate = currentDate.toISOString().slice(0, 10);
+      randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
+
+      message = {
+        notification: "Promoções para os seguintes clientes e estoques",
+        promotions: promotions,  // Envia a lista completa de promoções
+      };
+
+      // Enviar para RabbitMQ
+      await sendToQueue(queueName, JSON.stringify(message), randomId, durableValue);
+
+      console.log(`Promoções enviadas com sucesso! ID: ${randomId}`);
+    } else {
+      message = { notification: "Nenhuma promoção disponível." };
+      console.log('Nenhuma promoção disponível.');
+    }
+
+    console.log('Promoções disponíveis:', promotions);
 
   } catch (error) {
     console.error('Erro ao enviar promoções:', error);
   }
+
+  return { promotions, randomId, message };
 };
