@@ -11,7 +11,7 @@
         {
           "id": "1",
           "quantityOpen": 22,
-          "quantityNow": 17,
+          "quantityNow": 5,
           "details": [
             {
               "typeId": "1",
@@ -43,7 +43,7 @@
         {
           "id": "2",
           "quantityOpen": 16,
-          "quantityNow": 10,
+          "quantityNow": 15,
           "details": [
             {
               "typeId": "1",
@@ -75,7 +75,7 @@
         {
           "id": "3",
           "quantityOpen": 15,
-          "quantityNow": 20,
+          "quantityNow": 21,
           "details": [
             {
               "typeId": "1",
@@ -107,7 +107,7 @@
         {
           "id": "4",
           "quantityOpen": 14,
-          "quantityNow": 11,
+          "quantityNow": 12,
           "details": [
             {
               "typeId": "1",
@@ -139,7 +139,7 @@
         {
           "id": "5",
           "quantityOpen": 16,
-          "quantityNow": 18,
+          "quantityNow": 8,
           "details": [
             {
               "typeId": "1",
@@ -171,7 +171,7 @@
         {
           "id": "6",
           "quantityOpen": 17,
-          "quantityNow": 10,
+          "quantityNow": 5,
           "details": [
             {
               "typeId": "1",
@@ -203,7 +203,7 @@
         {
           "id": "7",
           "quantityOpen": 24,
-          "quantityNow": 25,
+          "quantityNow": 16,
           "details": [
             {
               "typeId": "1",
@@ -235,7 +235,7 @@
         {
           "id": "8",
           "quantityOpen": 10,
-          "quantityNow": 10,
+          "quantityNow": 21,
           "details": [
             {
               "typeId": "1",
@@ -267,7 +267,7 @@
         {
           "id": "9",
           "quantityOpen": 20,
-          "quantityNow": 25,
+          "quantityNow": 23,
           "details": [
             {
               "typeId": "1",
@@ -299,7 +299,7 @@
         {
           "id": "10",
           "quantityOpen": 10,
-          "quantityNow": 14,
+          "quantityNow": 10,
           "details": [
             {
               "typeId": "1",
@@ -331,7 +331,7 @@
         {
           "id": "11",
           "quantityOpen": 17,
-          "quantityNow": 24,
+          "quantityNow": 13,
           "details": [
             {
               "typeId": "1",
@@ -363,7 +363,7 @@
         {
           "id": "12",
           "quantityOpen": 10,
-          "quantityNow": 25,
+          "quantityNow": 7,
           "details": [
             {
               "typeId": "1",
@@ -395,7 +395,7 @@
         {
           "id": "13",
           "quantityOpen": 21,
-          "quantityNow": 12,
+          "quantityNow": 18,
           "details": [
             {
               "typeId": "1",
@@ -427,7 +427,7 @@
         {
           "id": "14",
           "quantityOpen": 10,
-          "quantityNow": 23,
+          "quantityNow": 11,
           "details": [
             {
               "typeId": "1",
@@ -459,7 +459,7 @@
         {
           "id": "15",
           "quantityOpen": 20,
-          "quantityNow": 10,
+          "quantityNow": 24,
           "details": [
             {
               "typeId": "1",
@@ -491,7 +491,7 @@
         {
           "id": "16",
           "quantityOpen": 13,
-          "quantityNow": 10,
+          "quantityNow": 17,
           "details": [
             {
               "typeId": "1",
@@ -531,7 +531,7 @@
         {
           "id": "17",
           "quantityOpen": 12,
-          "quantityNow": 17,
+          "quantityNow": 7,
           "details": [
             {
               "typeId": "1",
@@ -569,7 +569,7 @@
         {
           "id": "18",
           "quantityOpen": 25,
-          "quantityNow": 10,
+          "quantityNow": 12,
           "details": [
             {
               "typeId": "1",
@@ -607,7 +607,7 @@
         {
           "id": "19",
           "quantityOpen": 19,
-          "quantityNow": 22,
+          "quantityNow": 10,
           "details": [
             {
               "typeId": "1",
@@ -645,7 +645,7 @@
         {
           "id": "20",
           "quantityOpen": 18,
-          "quantityNow": 10,
+          "quantityNow": 18,
           "details": [
             {
               "typeId": "1",
@@ -683,7 +683,7 @@
         {
           "id": "21",
           "quantityOpen": 10,
-          "quantityNow": 11,
+          "quantityNow": 17,
           "details": [
             {
               "typeId": "1",
@@ -721,7 +721,7 @@
         {
           "id": "22",
           "quantityOpen": 10,
-          "quantityNow": 15,
+          "quantityNow": 20,
           "details": [
             {
               "typeId": "1",
@@ -759,7 +759,7 @@
         {
           "id": "23",
           "quantityOpen": 10,
-          "quantityNow": 11,
+          "quantityNow": 18,
           "details": [
             {
               "typeId": "1",
@@ -797,7 +797,7 @@
         {
           "id": "24",
           "quantityOpen": 25,
-          "quantityNow": 18,
+          "quantityNow": 17,
           "details": [
             {
               "typeId": "1",
@@ -835,7 +835,7 @@
         {
           "id": "25",
           "quantityOpen": 11,
-          "quantityNow": 25,
+          "quantityNow": 12,
           "details": [
             {
               "typeId": "1",
@@ -873,7 +873,7 @@
         {
           "id": "26",
           "quantityOpen": 23,
-          "quantityNow": 20,
+          "quantityNow": 17,
           "details": [
             {
               "typeId": "1",
@@ -911,7 +911,7 @@
         {
           "id": "27",
           "quantityOpen": 24,
-          "quantityNow": 10,
+          "quantityNow": 22,
           "details": [
             {
               "typeId": "1",
@@ -949,7 +949,7 @@
         {
           "id": "28",
           "quantityOpen": 22,
-          "quantityNow": 24,
+          "quantityNow": 25,
           "details": [
             {
               "typeId": "1",
@@ -987,7 +987,7 @@
         {
           "id": "29",
           "quantityOpen": 12,
-          "quantityNow": 13,
+          "quantityNow": 6,
           "details": [
             {
               "typeId": "1",
@@ -1025,7 +1025,7 @@
         {
           "id": "30",
           "quantityOpen": 10,
-          "quantityNow": 20,
+          "quantityNow": 8,
           "details": [
             {
               "typeId": "1",
@@ -1063,7 +1063,7 @@
         {
           "id": "31",
           "quantityOpen": 25,
-          "quantityNow": 19,
+          "quantityNow": 7,
           "details": [
             {
               "typeId": "1",
@@ -1139,7 +1139,7 @@
         {
           "id": "33",
           "quantityOpen": 16,
-          "quantityNow": 13,
+          "quantityNow": 17,
           "details": [
             {
               "typeId": "1",
@@ -1177,7 +1177,7 @@
         {
           "id": "34",
           "quantityOpen": 12,
-          "quantityNow": 10,
+          "quantityNow": 17,
           "details": [
             {
               "typeId": "1",
@@ -1215,7 +1215,7 @@
         {
           "id": "35",
           "quantityOpen": 10,
-          "quantityNow": 14,
+          "quantityNow": 11,
           "details": [
             {
               "typeId": "1",
@@ -1253,7 +1253,7 @@
         {
           "id": "36",
           "quantityOpen": 10,
-          "quantityNow": 19,
+          "quantityNow": 8,
           "details": [
             {
               "typeId": "1",
@@ -1291,7 +1291,7 @@
         {
           "id": "37",
           "quantityOpen": 10,
-          "quantityNow": 10,
+          "quantityNow": 17,
           "details": [
             {
               "typeId": "1",
@@ -1329,7 +1329,7 @@
         {
           "id": "38",
           "quantityOpen": 15,
-          "quantityNow": 20,
+          "quantityNow": 12,
           "details": [
             {
               "typeId": "1",
@@ -1367,7 +1367,7 @@
         {
           "id": "39",
           "quantityOpen": 20,
-          "quantityNow": 17,
+          "quantityNow": 7,
           "details": [
             {
               "typeId": "1",
@@ -1405,7 +1405,7 @@
         {
           "id": "40",
           "quantityOpen": 10,
-          "quantityNow": 13,
+          "quantityNow": 23,
           "details": [
             {
               "typeId": "1",
@@ -1443,7 +1443,7 @@
         {
           "id": "41",
           "quantityOpen": 11,
-          "quantityNow": 25,
+          "quantityNow": 22,
           "details": [
             {
               "typeId": "1",
@@ -1481,7 +1481,7 @@
         {
           "id": "42",
           "quantityOpen": 17,
-          "quantityNow": 15,
+          "quantityNow": 8,
           "details": [
             {
               "typeId": "1",
@@ -1519,7 +1519,7 @@
         {
           "id": "43",
           "quantityOpen": 16,
-          "quantityNow": 22,
+          "quantityNow": 13,
           "details": [
             {
               "typeId": "1",
@@ -1557,7 +1557,7 @@
         {
           "id": "44",
           "quantityOpen": 10,
-          "quantityNow": 20,
+          "quantityNow": 18,
           "details": [
             {
               "typeId": "1",
@@ -1595,7 +1595,7 @@
         {
           "id": "45",
           "quantityOpen": 10,
-          "quantityNow": 24,
+          "quantityNow": 22,
           "details": [
             {
               "typeId": "1",
@@ -1633,7 +1633,7 @@
         {
           "id": "46",
           "quantityOpen": 12,
-          "quantityNow": 10,
+          "quantityNow": 13,
           "details": [
             {
               "typeId": "1",
@@ -1709,7 +1709,7 @@
         {
           "id": "48",
           "quantityOpen": 10,
-          "quantityNow": 22,
+          "quantityNow": 10,
           "details": [
             {
               "typeId": "1",
@@ -1755,7 +1755,7 @@
         {
           "id": "49",
           "quantityOpen": 19,
-          "quantityNow": 14,
+          "quantityNow": 10,
           "details": [
             {
               "typeId": "1",
@@ -1781,7 +1781,7 @@
         {
           "id": "50",
           "quantityOpen": 19,
-          "quantityNow": 10,
+          "quantityNow": 21,
           "details": [
             {
               "typeId": "1",
@@ -1807,7 +1807,7 @@
         {
           "id": "51",
           "quantityOpen": 16,
-          "quantityNow": 10,
+          "quantityNow": 16,
           "details": [
             {
               "typeId": "1",
@@ -1833,7 +1833,7 @@
         {
           "id": "52",
           "quantityOpen": 10,
-          "quantityNow": 22,
+          "quantityNow": 24,
           "details": [
             {
               "typeId": "1",
@@ -1859,7 +1859,7 @@
         {
           "id": "53",
           "quantityOpen": 10,
-          "quantityNow": 11,
+          "quantityNow": 25,
           "details": [
             {
               "typeId": "1",
@@ -1885,7 +1885,7 @@
         {
           "id": "54",
           "quantityOpen": 10,
-          "quantityNow": 18,
+          "quantityNow": 21,
           "details": [
             {
               "typeId": "1",
@@ -1911,7 +1911,7 @@
         {
           "id": "55",
           "quantityOpen": 14,
-          "quantityNow": 12,
+          "quantityNow": 23,
           "details": [
             {
               "typeId": "1",
@@ -1937,7 +1937,7 @@
         {
           "id": "56",
           "quantityOpen": 17,
-          "quantityNow": 10,
+          "quantityNow": 20,
           "details": [
             {
               "typeId": "1",
@@ -1971,7 +1971,7 @@
         {
           "id": "57",
           "quantityOpen": 10,
-          "quantityNow": 13,
+          "quantityNow": 18,
           "details": [
             {
               "typeId": "2",
@@ -1991,7 +1991,7 @@
         {
           "id": "58",
           "quantityOpen": 23,
-          "quantityNow": 18,
+          "quantityNow": 9,
           "details": [
             {
               "typeId": "2",
@@ -2011,7 +2011,7 @@
         {
           "id": "59",
           "quantityOpen": 18,
-          "quantityNow": 20,
+          "quantityNow": 12,
           "details": [
             {
               "typeId": "2",
@@ -2031,7 +2031,7 @@
         {
           "id": "60",
           "quantityOpen": 19,
-          "quantityNow": 10,
+          "quantityNow": 16,
           "details": [
             {
               "typeId": "2",
@@ -2059,7 +2059,7 @@
         {
           "id": "61",
           "quantityOpen": 19,
-          "quantityNow": 15,
+          "quantityNow": 20,
           "details": [
             {
               "typeId": "2",
@@ -2079,7 +2079,7 @@
         {
           "id": "62",
           "quantityOpen": 10,
-          "quantityNow": 19,
+          "quantityNow": 6,
           "details": [
             {
               "typeId": "2",
@@ -2119,7 +2119,7 @@
         {
           "id": "64",
           "quantityOpen": 15,
-          "quantityNow": 10,
+          "quantityNow": 21,
           "details": [
             {
               "typeId": "2",
