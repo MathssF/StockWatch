@@ -152,5 +152,27 @@
     "status": "PROCESSED",
     "createdAt": "2025-01-14T13:42:59.285Z",
     "updatedAt": "2025-01-14T13:43:34.095Z"
+  },
+  {
+    "id": 41,
+    "messageId": "9f1d314c-9668-47d5-9ed2-875e51884943",
+    "produceId": "1e80e811.2025-01-15",
+    "consumerId": "",
+    "queue": "low-stock-queue-test",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":\"1\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"5\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"6\",\"quantityNow\":5,\"quantityNeeded\":5},{\"stockId\":\"12\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"17\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"29\",\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":\"30\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"31\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"36\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"39\",\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":\"42\",\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":\"58\",\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":\"62\",\"quantityNow\":6,\"quantityNeeded\":4}]}",
+    "status": "PROCESSED",
+    "createdAt": "2025-01-15T00:17:28.162Z",
+    "updatedAt": "2025-01-15T00:17:49.163Z"
+  },
+  {
+    "id": 42,
+    "messageId": "2de25a23-3245-4030-a06d-bf291049a549",
+    "produceId": "f8e5f7b0.2025-01-15",
+    "consumerId": "",
+    "queue": "low-stock-queue-test",
+    "message": "{\"notification\":\"Os seguintes produtos precisam reestabelecer o estoque\",\"products\":[{\"stockId\":3,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":5,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":9,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":12,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":22,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":23,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":24,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":25,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":26,\"quantityNow\":8,\"quantityNeeded\":2},{\"stockId\":28,\"quantityNow\":6,\"quantityNeeded\":4},{\"stockId\":29,\"quantityNow\":7,\"quantityNeeded\":3},{\"stockId\":30,\"quantityNow\":9,\"quantityNeeded\":1},{\"stockId\":33,\"quantityNow\":7,\"quantityNeeded\":3}]}",
+    "status": "PROCESSED",
+    "createdAt": "2025-01-15T00:31:28.013Z",
+    "updatedAt": "2025-01-15T00:31:31.808Z"
   }
 ]
