@@ -52,7 +52,7 @@ export const SendPromotions = async (): Promise<{ promotions: any[]; randomId: s
           product.stocks.map((stock: any) => ({
             stockId: stock.id,
             details: stock.details?.map((detail: any) => ({
-              detailId: detail.detailId,
+              detailId: Number(detail.detailId),
               type: detail.type,
               value: detail.detailName,
             })),

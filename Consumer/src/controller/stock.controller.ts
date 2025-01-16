@@ -40,20 +40,6 @@ export const updateStockController = async (req: Request, res: Response): Promis
     res.status(500).send('Erro ao atualizar estoque.');
   }
 };
-
-// export const postPromotionsController = async (req: Request, res: Response): Promise<void> => {
-//   try {
-//     const messageContent = JSON.stringify(req.body);
-//     if (messageContent) {
-//     await postPromotions(messageContent);
-//   } else {
-//     await postPromotions();
-//   }
-//     res.status(200).send('Promoções postadas com sucesso.');
-//   } catch (error) {
-//     res.status(500).send('Erro ao postar promoções.');
-//   }
-// };
 export const postPromotionsController = async (req: Request, res: Response): Promise<void> => {
   try {
     const messageContent = Object.keys(req.body).length !== 0 ? JSON.stringify(req.body) : null;
@@ -63,15 +49,21 @@ export const postPromotionsController = async (req: Request, res: Response): Pro
     if (messageContent !== null) {
       const validatedMessage = validateMessage(messageContent);
       if (validatedMessage) {
-        await postPromotions(messageContent);
-        res.status(200).send('Promoções postadas com sucesso.');
+        const { processedPromotions } = await postPromotions(messageContent);
+        res.status(200).send({
+          message: 'Promoções postadas com sucesso.',
+          processedPromotions, // Retorna as promoções processadas
+        });
       } else {
         console.error('Formato de mensagem inválido');
         res.status(400).send('Formato de Mensagem inválido');
       }
     } else {
-      await postPromotions();  // Chama o postPromotions sem parâmetros caso não haja conteúdo
-      res.status(200).send('Promoções postadas com sucesso.');
+      const { processedPromotions } = await postPromotions();  // Chama o postPromotions sem parâmetros caso não haja conteúdo
+      res.status(200).send({
+          message: 'Promoções postadas com sucesso.',
+          processedPromotions, // Retorna as promoções processadas
+        });
     }
   } catch (error) {
     console.error('Erro ao postar promoções:', error);

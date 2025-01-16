@@ -6,7 +6,6 @@ export const checkStockController = async (req: Request, res: Response): Promise
   try {
     const { lowStocks, randomId, message } = await CheckStock();
     console.log('Stock controller do producer');
-    // res.status(200).send('Estoque verificado com sucesso.');
     res.status(200).json({
       response: 'Estoque verificado com sucesso.',
       lowStocks,
@@ -14,15 +13,30 @@ export const checkStockController = async (req: Request, res: Response): Promise
       notification: message
     });
   } catch (error) {
-    res.status(500).send('Erro ao verificar estoque.');
+    console.error('Erro no checkStockController:', error);
+    res.status(500).json({
+      response: 'Erro ao verificar estoque.',
+      error: error || 'Erro desconhecido',
+    });
   }
 };
 
 export const sendPromotionsController = async (req: Request, res: Response): Promise<void> => {
   try {
-    await SendPromotions();
-    res.status(200).send('Promoções enviadas com sucesso.');
+    const { promotions, randomId, message } = await SendPromotions();
+    console.log('Promoções enviadas com sucesso:', promotions);
+
+    res.status(200).json({
+      response: 'Promoções enviadas com sucesso.',
+      promotions,
+      messageID: randomId,
+      notification: message,
+    });
   } catch (error) {
-    res.status(500).send('Erro ao enviar promoções.');
+    console.error('Erro no sendPromotionsController:', error);
+    res.status(500).json({
+      response: 'Erro ao enviar promoções.',
+      error: error || 'Erro desconhecido',
+    });
   }
 };

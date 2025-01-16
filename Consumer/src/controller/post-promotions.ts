@@ -13,9 +13,10 @@ const queueName = queueNames.promotions || 'promotions-queue';
 const durableValue = durable.promotions || false;
 const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
 
-export const postPromotions = async (messageContent?: string): Promise<void> => {
+export const postPromotions = async (messageContent?: string): Promise<any> => {
   try {
     let promotions: any[] = [];
+    let processedPromotions: any[] = [];
 
     if (messageContent) {
       console.log('Mensagem recebida:', messageContent);
@@ -32,13 +33,16 @@ export const postPromotions = async (messageContent?: string): Promise<void> => 
       if (fs.existsSync(filePath)) {
         console.log('Arquivo output.json encontrado, atualizando...');
         updateOutputFile(promotions);
+        processedPromotions = promotions;
       } else {
         console.log('Arquivo output.json não encontrado, salvando no banco de dados...');
-        await savePromotionsToDatabase(promotions);
+        processedPromotions = await savePromotionsToDatabase(promotions);
       }
     } else {
       console.log('Nenhuma promoção encontrada.');
     }
+
+    return { processedPromotions };
   } catch (error) {
     console.error('Erro ao processar a mensagem:', error);
     throw error;  // Lançar o erro para que o RabbitMQ possa tratá-lo
@@ -46,7 +50,7 @@ export const postPromotions = async (messageContent?: string): Promise<void> => 
 };
 
 // Função para atualizar o arquivo output.json
-function updateOutputFile(promotions: any[]): void {
+function updateOutputFile(promotions: any[]) {
   try {
     const currentData = fs.existsSync(filePath) 
       ? JSON.parse(fs.readFileSync(filePath, 'utf-8')) 
@@ -61,10 +65,11 @@ function updateOutputFile(promotions: any[]): void {
 }
 
 // Função para salvar promoções no banco de dados
-async function savePromotionsToDatabase(promotions: any[]): Promise<void> {
+async function savePromotionsToDatabase(promotions: any[]): Promise<any> {
   try {
+    const savedPromotions: any[] = [];
     for (const promotion of promotions) {
-      await prisma.customerPromotions.create({
+      const savedPromotion = await prisma.customerPromotions.create({
         data: {
           stockId: promotion.stockId,
           customerId: promotion.customerId,
@@ -73,8 +78,10 @@ async function savePromotionsToDatabase(promotions: any[]): Promise<void> {
           updatedAt: new Date(),
         },
       });
+      savedPromotions.push(savedPromotion);
       console.log(`Promoção registrada no banco para o cliente ${promotion.customerId}`);
     }
+    return savedPromotions;
   } catch (error) {
     console.error('Erro ao salvar promoções no banco de dados:', error);
   }
