@@ -5,7 +5,6 @@ import { SendPromotions } from './send-promotions';
 export const checkStockController = async (req: Request, res: Response): Promise<void> => {
   try {
     const { lowStocks, randomId, message } = await CheckStock();
-    console.log('Stock controller do producer');
     res.status(200).json({
       response: 'Estoque verificado com sucesso.',
       lowStocks,
@@ -24,8 +23,6 @@ export const checkStockController = async (req: Request, res: Response): Promise
 export const sendPromotionsController = async (req: Request, res: Response): Promise<void> => {
   try {
     const { promotions, randomId, message } = await SendPromotions();
-    console.log('Promoções enviadas com sucesso:', promotions);
-
     res.status(200).json({
       response: 'Promoções enviadas com sucesso.',
       promotions,

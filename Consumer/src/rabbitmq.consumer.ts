@@ -1,6 +1,6 @@
 import amqp from 'amqplib';
 import { PrismaClient } from '@prisma/client';
-import { v4 as uuidv4 } from 'uuid'; // Para gerar um ID único
+import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
 
@@ -30,14 +30,11 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
       channel.consume(queueName, async (msg: CustomConsumeMessage | null) => {
         if (msg) {
           const messageContent = msg.content.toString();
-          console.log(`(CONSUMER) Mensagem recebida: ${messageContent}`);
 
           // Parse da mensagem recebida
           let parsedMessage: { id?: string; msgid?: string; message: string };
-          console.log('Parsed Message');
           try {
             parsedMessage = JSON.parse(messageContent);
-            console.log('Parsed 2', parsedMessage);
           } catch (error) {
             console.error('Erro ao parsear a mensagem. Ignorando...', error);
             channel.nack(msg, false, false);
@@ -55,10 +52,7 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
             where: { messageId: msgid },
           });
 
-          console.log('dbMessage? ', dbMessage);
-
           if (!dbMessage) {
-            console.log('CONSUMER - Não achou a mensagem no banco de dados, esta criando');
             // Se não existir, cria um registro
             dbMessage = await prisma.rabbitMQMessage.create({
               data: {
@@ -71,7 +65,6 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
               },
             });
           }
-
           console.log('Mensagem processada com sucesso. Atualizando status no banco de dados.');
 
           // Atualiza o status para "PROCESSED"
@@ -83,7 +76,6 @@ export async function consumeQueue(queueName: string, durableValue?: boolean): P
 
           // Confirma o recebimento da mensagem
           channel.ack(msg);
-          console.log('Channel Ack');
 
           resolve();
         } else {

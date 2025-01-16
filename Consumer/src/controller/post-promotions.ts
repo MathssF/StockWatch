@@ -1,14 +1,12 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
-import { consumeQueue } from '../rabbitmq.consumer';  // Importa a função de consumo
-import { v4 as uuidv4 } from 'uuid';
+import { consumeQueue } from '../rabbitmq.consumer';
 
 const prisma = new PrismaClient();
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 
-// Agora você pode acessar os valores de 'checkStock' ou 'promotions'
 const queueName = queueNames.promotions || 'promotions-queue';
 const durableValue = durable.promotions || false;
 const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
@@ -45,7 +43,7 @@ export const postPromotions = async (messageContent?: string): Promise<any> => {
     return { processedPromotions };
   } catch (error) {
     console.error('Erro ao processar a mensagem:', error);
-    throw error;  // Lançar o erro para que o RabbitMQ possa tratá-lo
+    throw error;
   }
 };
 
@@ -79,7 +77,6 @@ async function savePromotionsToDatabase(promotions: any[]): Promise<any> {
         },
       });
       savedPromotions.push(savedPromotion);
-      console.log(`Promoção registrada no banco para o cliente ${promotion.customerId}`);
     }
     return savedPromotions;
   } catch (error) {

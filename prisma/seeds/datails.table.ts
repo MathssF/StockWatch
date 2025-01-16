@@ -12,20 +12,20 @@ const details = [
   { type: 1, id: 103, value: 'Bege' },
   { type: 1, id: 104, value: 'Branco' },
   { type: 1, id: 105, value: 'Caramelo' },
-  // { type: 1, id: 106, value: 'Carmesim' },
-  // { type: 1, id: 107, value: 'Carmim' },
-  // { type: 1, id: 108, value: 'Castanho' },
-  // { type: 1, id: 109, value: 'Cinza' },
-  // { type: 1, id: 110, value: 'Dourado' },
-  // { type: 1, id: 111, value: 'Esmeralda' },
-  // { type: 1, id: 112, value: 'Laranja' },
-  // { type: 1, id: 113, value: 'Lilás' },
-  // { type: 1, id: 114, value: 'Prateado' },
-  // { type: 1, id: 115, value: 'Preto' },
-  // { type: 1, id: 116, value: 'Rosa' },
-  // { type: 1, id: 117, value: 'Roxo' },
-  // { type: 1, id: 118, value: 'Verde' },
-  // { type: 1, id: 119, value: 'Vermelho' },
+  { type: 1, id: 106, value: 'Carmesim' },
+  { type: 1, id: 107, value: 'Carmim' },
+  { type: 1, id: 108, value: 'Castanho' },
+  { type: 1, id: 109, value: 'Cinza' },
+  { type: 1, id: 110, value: 'Dourado' },
+  { type: 1, id: 111, value: 'Esmeralda' },
+  { type: 1, id: 112, value: 'Laranja' },
+  { type: 1, id: 113, value: 'Lilás' },
+  { type: 1, id: 114, value: 'Prateado' },
+  { type: 1, id: 115, value: 'Preto' },
+  { type: 1, id: 116, value: 'Rosa' },
+  { type: 1, id: 117, value: 'Roxo' },
+  { type: 1, id: 118, value: 'Verde' },
+  { type: 1, id: 119, value: 'Vermelho' },
 
   { type: 2, id: 201, value: 'P' },
   { type: 2, id: 202, value: 'M' },
@@ -35,10 +35,10 @@ const details = [
   { type: 3, id: 301, value: '2000' },
   { type: 3, id: 302, value: '2010' },
   { type: 3, id: 303, value: '2020' },
-  // { type: 3, id: 304, value: '2021' },
-  // { type: 3, id: 305, value: '2022' },
-  // { type: 3, id: 306, value: '2023' },
-  // { type: 3, id: 307, value: '2024' },
+  { type: 3, id: 304, value: '2021' },
+  { type: 3, id: 305, value: '2022' },
+  { type: 3, id: 306, value: '2023' },
+  { type: 3, id: 307, value: '2024' },
 
   { type: 4, id: 401, value: 'Algodão' },
   { type: 4, id: 402, value: 'Tecido' },
@@ -61,9 +61,9 @@ const details = [
 
 const color = [
   101, 102, 103, 104, 105,
-  // 106, 107, 108, 109, 110,
-  // 111, 112, 113, 114, 115,
-  // 116, 117, 118, 119,
+  106, 107, 108, 109, 110,
+  111, 112, 113, 114, 115,
+  116, 117, 118, 119,
 ]
 const colorMatrix = [
   { type: 1, id: 101, value: 'Amarelo' },
@@ -71,20 +71,21 @@ const colorMatrix = [
   { type: 1, id: 103, value: 'Bege' },
   { type: 1, id: 104, value: 'Branco' },
   { type: 1, id: 105, value: 'Caramelo' },
-  // { type: 1, id: 106, value: 'Carmesim' },
-  // { type: 1, id: 107, value: 'Carmim' },
-  // { type: 1, id: 108, value: 'Castanho' },
-  // { type: 1, id: 109, value: 'Cinza' },
-  // { type: 1, id: 110, value: 'Dourado' },
-  // { type: 1, id: 111, value: 'Esmeralda' },
-  // { type: 1, id: 112, value: 'Laranja' },
-  // { type: 1, id: 113, value: 'Lilás' },
-  // { type: 1, id: 114, value: 'Prateado' },
-  // { type: 1, id: 115, value: 'Preto' },
-  // { type: 1, id: 116, value: 'Rosa' },
-  // { type: 1, id: 117, value: 'Roxo' },
-  // { type: 1, id: 118, value: 'Verde' },
-  // { type: 1, id: 119, value: 'Vermelho' },
+
+  { type: 1, id: 106, value: 'Carmesim' },
+  { type: 1, id: 107, value: 'Carmim' },
+  { type: 1, id: 108, value: 'Castanho' },
+  { type: 1, id: 109, value: 'Cinza' },
+  { type: 1, id: 110, value: 'Dourado' },
+  { type: 1, id: 111, value: 'Esmeralda' },
+  { type: 1, id: 112, value: 'Laranja' },
+  { type: 1, id: 113, value: 'Lilás' },
+  { type: 1, id: 114, value: 'Prateado' },
+  { type: 1, id: 115, value: 'Preto' },
+  { type: 1, id: 116, value: 'Rosa' },
+  { type: 1, id: 117, value: 'Roxo' },
+  { type: 1, id: 118, value: 'Verde' },
+  { type: 1, id: 119, value: 'Vermelho' },
 ]
 
 const size = [ 201, 202, 203, 204]
@@ -97,7 +98,7 @@ const sizeMatrix = [
 
 const year = [
   301, 302, 303,
-  // 304, 305, 306, 307
+  304, 305, 306, 307
 ]
 const yearMatrix = [
   { type: 3, id: 301, value: '2000' },

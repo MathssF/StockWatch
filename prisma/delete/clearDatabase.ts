@@ -8,10 +8,10 @@ async function clearDatabase() {
     await prisma.$executeRaw`SET foreign_key_checks = 0`;
 
     // Deletar os registros em ordem reversa para evitar problemas com chaves estrangeiras
-    // await prisma.customerPromotions.deleteMany({});
-    // await prisma.customerPreferences.deleteMany({});
+    await prisma.customerPromotions.deleteMany({});
+    await prisma.customerPreferences.deleteMany({});
     await prisma.orderItem.deleteMany({});
-    // await prisma.orders.deleteMany({});
+    await prisma.order.deleteMany({});
     await prisma.customer.deleteMany({});
     await prisma.rabbitMQMessage.deleteMany({});
     await prisma.stockDetail.deleteMany({});
