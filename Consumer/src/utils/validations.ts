@@ -1,4 +1,3 @@
-// Tipos de dados esperados
 interface Product {
   stockId: number;
   quantityNow: number;
@@ -10,7 +9,6 @@ interface ParsedMessage {
   products: Product[];
 }
 
-// Função para validar o formato da mensagem
 export const validateMessage = (message: string): ParsedMessage | null => {
   try {
     const parsedMessage = JSON.parse(message);
