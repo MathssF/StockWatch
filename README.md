@@ -18,7 +18,7 @@ Se você encontrou este repositório navegando pelo meu GitHub, saiba que ele es
 ## Estrutura do Projeto
 
 
-"""
+```
 project/
 │  
 ├── Core/         (Lógica principal de interações com o banco de dados)
@@ -29,7 +29,7 @@ project/
 │  
 ├── node_modules/ (Gerenciado como WorkSpace; único diretório para todas as dependências)
 └── package.json  (Arquivo de configurações principais e dependências)
-"""
+```
 
 ### Descrição das Pastas
 
@@ -63,7 +63,7 @@ Os scripts abaixo ajudam na organização e execução do projeto. Eles seguem u
 
 
 
-"""
+```
 {
   "scripts": {
     "start:producer": "npx ts-node ./Producer/src/index.ts",
@@ -91,7 +91,7 @@ Os scripts abaixo ajudam na organização e execução do projeto. Eles seguem u
     "random-qtd": "npx ts-node ./Tests/DatabaseTests/randomize.ts"
   }
 }
-"""
+```
 
 
 ---
@@ -134,7 +134,7 @@ Baseado nas dependências, o projeto utiliza:
 
 O projeto utiliza WorkSpaces para organização modular, facilitando o desenvolvimento e manutenção.
 
-"""
+```
 "workspaces": [
   "Core",
   "Producer",
@@ -142,7 +142,7 @@ O projeto utiliza WorkSpaces para organização modular, facilitando o desenvolv
   "prisma",
   "Tests"
 ]
-"""
+```
 
 ---
 
