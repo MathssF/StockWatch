@@ -19,10 +19,6 @@ const productsTable = [
       description: 'Calça Social de boa qualidade, ideal para o seu estilo e conforto.', 
       details: [false, true, false, true, false],
     },
-]
-// Dev: Função apenas para teste
-// Caso não precise mais simplificar, descomente as coisas abaixo, e comente só o ']' e o 'const productTable2 = ['
-const productTable2 = [
     { id: 6, name: 'Camisa Estampada', price: 130, 
       description: 'Camisa Estampada de boa qualidade, ideal para o seu estilo e conforto.', 
       details: [true, true, false, true, true],
