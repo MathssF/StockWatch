@@ -43,9 +43,6 @@ export const updateStockController = async (req: Request, res: Response): Promis
 export const postPromotionsController = async (req: Request, res: Response): Promise<void> => {
   try {
     const messageContent = Object.keys(req.body).length !== 0 ? JSON.stringify(req.body) : null;
-
-    console.log('Promoções Controller do Consumer, msg:', messageContent);
-
     if (messageContent !== null) {
       const validatedMessage = validateMessage(messageContent);
       if (validatedMessage) {

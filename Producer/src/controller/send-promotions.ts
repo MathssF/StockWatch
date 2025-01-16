@@ -8,9 +8,8 @@ const prisma = new PrismaClient();
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 
-// Agora você pode acessar os valores de 'checkStock' ou 'promotions'
-const queueName = queueNames.promotions || 'promotions-queue'; // 'promotions-queue'
-const durableValue = durable.promotions || false; // false
+const queueName = queueNames.promotions || 'promotions-queue';
+const durableValue = durable.promotions || false;
 
 export const SendPromotions = async (): Promise<{ promotions: any[]; randomId: string; message: any | null }> => {
   let promotions: any[] = []; // Variável para salvar as promoções
@@ -26,7 +25,7 @@ export const SendPromotions = async (): Promise<{ promotions: any[]; randomId: s
       const fileData = fs.readFileSync(path.join(__dirname, '../../../Core/src/database/today/output.json'), 'utf-8');
       data = JSON.parse(fileData);
     } else {
-      console.log('Arquivo não encontrado. Buscando dados no banco...');
+      console.log('Arquivo output.json não encontrado. Buscando dados no banco...');
       data = await prisma.product.findMany({
         include: {
           stock: {
@@ -124,12 +123,8 @@ export const SendPromotions = async (): Promise<{ promotions: any[]; randomId: s
       message = { notification: "Nenhuma promoção disponível." };
       console.log('Nenhuma promoção disponível.');
     }
-
-    console.log('Promoções disponíveis:', promotions);
-
   } catch (error) {
     console.error('Erro ao enviar promoções:', error);
   }
-
   return { promotions, randomId, message };
 };

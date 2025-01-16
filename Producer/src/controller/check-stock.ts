@@ -8,12 +8,11 @@ const prisma = new PrismaClient();
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 
-// Agora você pode acessar os valores de 'checkStock' ou 'promotions'
-const queueName = queueNames.checkStock || 'low-stock-queue'; // 'low-stock-queue'
-const durableValue = durable.checkStock || false; // false
+const queueName = queueNames.checkStock || 'low-stock-queue';
+const durableValue = durable.checkStock || false;
 
 export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string; message: any | null }> => {
-  let lowStocks: any[] = []; // Variável para salvar produtos com baixo estoque
+  let lowStocks: any[] = [];
   let message: any | null = null;
   let randomId: string = '';
 
@@ -68,10 +67,6 @@ export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string
               quantityNow: stock.quantity,
             }))
         );
-
-    // Exibe os produtos com baixo estoque
-    console.log('Produtos com baixo estoque:', lowStocks);
-
     if (lowStocks.length > 0) {
       // Gerando um ID com referência ao dia
       const currentDate = new Date();
@@ -88,13 +83,8 @@ export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string
           };
         }),
       };
-
-      console.log('... Mensagem: ...');
-      console.log(message);
-
       // Enviar para RabbitMQ
       await sendToQueue(queueName, JSON.stringify(message), randomId, durableValue);
-
       console.log(`Mensagem enviada com sucesso! ID: ${randomId}`);
     } else {
       const message = { Notification: "Nenhum produto com baixo estoque encontrado." }
