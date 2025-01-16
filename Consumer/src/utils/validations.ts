@@ -11,6 +11,7 @@ interface ParsedMessage {
 
 export const validateMessage = (message: string): ParsedMessage | null => {
   try {
+    
     const parsedMessage = JSON.parse(message);
     if (
       parsedMessage &&

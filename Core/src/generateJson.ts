@@ -24,8 +24,8 @@ async function generateJson(): Promise<void> {
                 },
               },
             },
-            customerPromotions: { // Busca promoções relacionadas ao estoque
-              where: { isActive: true }, // Apenas promoções ativas
+            customerPromotions: {
+              where: { isActive: true },
               select: {
                 customerId: true,
                 promoValue: true,
