@@ -12,7 +12,7 @@ const queueName = queueNames.promotions || 'promotions-queue';
 const durableValue = durable.promotions || false;
 
 export const SendPromotions = async (): Promise<{ promotions: any[]; randomId: string; message: any | null }> => {
-  let promotions: any[] = []; // Variável para salvar as promoções
+  let promotions: any[] = [];
   let message: any | null = null;
   let randomId: string = '';
 

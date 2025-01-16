@@ -1,8 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
-import { consumeQueue } from '../rabbitmq.consumer';  // Importa a função de consumo
-import { v4 as uuidv4 } from 'uuid';
+import { consumeQueue } from '../rabbitmq.consumer';
 
 const prisma = new PrismaClient();
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
@@ -44,7 +43,7 @@ export const postPromotions = async (messageContent?: string): Promise<any> => {
     return { processedPromotions };
   } catch (error) {
     console.error('Erro ao processar a mensagem:', error);
-    throw error;  // Lançar o erro para que o RabbitMQ possa tratá-lo
+    throw error;
   }
 };
 

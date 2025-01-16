@@ -2,7 +2,7 @@ import { Router } from 'express';
 import {
   updateStockController,
   postPromotionsController
-} from '../controller/stock.controller';  // Atualize o caminho conforme necessário
+} from '../controller/stock.controller';
 
 const router = Router();
 
