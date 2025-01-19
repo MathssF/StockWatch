@@ -3,7 +3,7 @@ import { sendToQueue } from './rabbitmq.producer';
 import stockRoutes from './routes/stock.routes';
 
 const app = express();
-const PORT = process.env.PRODUCER_PORT || 3000;
+const PORT = process.env.PRODUCER_PORT || 3011;
 
 app.use(express.json());
 
