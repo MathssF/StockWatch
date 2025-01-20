@@ -1,0 +1,244 @@
+[
+  {
+    "id": 101,
+    "typeId": 1,
+    "value": "Amarelo",
+    "createdAt": "2024-12-31T19:39:24.755Z",
+    "updatedAt": "2024-12-31T19:39:24.755Z",
+    "type": {
+      "id": 1,
+      "name": "Cor"
+    }
+  },
+  {
+    "id": 102,
+    "typeId": 1,
+    "value": "Azul",
+    "createdAt": "2024-12-31T19:39:24.755Z",
+    "updatedAt": "2024-12-31T19:39:24.755Z",
+    "type": {
+      "id": 1,
+      "name": "Cor"
+    }
+  },
+  {
+    "id": 103,
+    "typeId": 1,
+    "value": "Bege",
+    "createdAt": "2024-12-31T19:39:24.756Z",
+    "updatedAt": "2024-12-31T19:39:24.756Z",
+    "type": {
+      "id": 1,
+      "name": "Cor"
+    }
+  },
+  {
+    "id": 104,
+    "typeId": 1,
+    "value": "Branco",
+    "createdAt": "2024-12-31T19:39:24.755Z",
+    "updatedAt": "2024-12-31T19:39:24.755Z",
+    "type": {
+      "id": 1,
+      "name": "Cor"
+    }
+  },
+  {
+    "id": 105,
+    "typeId": 1,
+    "value": "Caramelo",
+    "createdAt": "2024-12-31T19:39:24.756Z",
+    "updatedAt": "2024-12-31T19:39:24.756Z",
+    "type": {
+      "id": 1,
+      "name": "Cor"
+    }
+  },
+  {
+    "id": 201,
+    "typeId": 2,
+    "value": "P",
+    "createdAt": "2024-12-31T19:39:24.756Z",
+    "updatedAt": "2024-12-31T19:39:24.756Z",
+    "type": {
+      "id": 2,
+      "name": "Tamanho"
+    }
+  },
+  {
+    "id": 202,
+    "typeId": 2,
+    "value": "M",
+    "createdAt": "2024-12-31T19:39:24.756Z",
+    "updatedAt": "2024-12-31T19:39:24.756Z",
+    "type": {
+      "id": 2,
+      "name": "Tamanho"
+    }
+  },
+  {
+    "id": 203,
+    "typeId": 2,
+    "value": "G",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 2,
+      "name": "Tamanho"
+    }
+  },
+  {
+    "id": 204,
+    "typeId": 2,
+    "value": "GG",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 2,
+      "name": "Tamanho"
+    }
+  },
+  {
+    "id": 301,
+    "typeId": 3,
+    "value": "2000",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 3,
+      "name": "Ano"
+    }
+  },
+  {
+    "id": 302,
+    "typeId": 3,
+    "value": "2010",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 3,
+      "name": "Ano"
+    }
+  },
+  {
+    "id": 303,
+    "typeId": 3,
+    "value": "2020",
+    "createdAt": "2024-12-31T19:39:24.756Z",
+    "updatedAt": "2024-12-31T19:39:24.756Z",
+    "type": {
+      "id": 3,
+      "name": "Ano"
+    }
+  },
+  {
+    "id": 401,
+    "typeId": 4,
+    "value": "Algodão",
+    "createdAt": "2024-12-31T19:39:24.759Z",
+    "updatedAt": "2024-12-31T19:39:24.759Z",
+    "type": {
+      "id": 4,
+      "name": "Material"
+    }
+  },
+  {
+    "id": 402,
+    "typeId": 4,
+    "value": "Tecido",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 4,
+      "name": "Material"
+    }
+  },
+  {
+    "id": 403,
+    "typeId": 4,
+    "value": "Seda",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 4,
+      "name": "Material"
+    }
+  },
+  {
+    "id": 404,
+    "typeId": 4,
+    "value": "Poliester",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 4,
+      "name": "Material"
+    }
+  },
+  {
+    "id": 501,
+    "typeId": 5,
+    "value": "Básico",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 5,
+      "name": "Tema"
+    }
+  },
+  {
+    "id": 502,
+    "typeId": 5,
+    "value": "Fofo",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 5,
+      "name": "Tema"
+    }
+  },
+  {
+    "id": 503,
+    "typeId": 5,
+    "value": "Nerd",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 5,
+      "name": "Tema"
+    }
+  },
+  {
+    "id": 504,
+    "typeId": 5,
+    "value": "Otaku",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 5,
+      "name": "Tema"
+    }
+  },
+  {
+    "id": 505,
+    "typeId": 5,
+    "value": "Rock",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 5,
+      "name": "Tema"
+    }
+  },
+  {
+    "id": 506,
+    "typeId": 5,
+    "value": "Praia",
+    "createdAt": "2024-12-31T19:39:24.757Z",
+    "updatedAt": "2024-12-31T19:39:24.757Z",
+    "type": {
+      "id": 5,
+      "name": "Tema"
+    }
+  }
+]
