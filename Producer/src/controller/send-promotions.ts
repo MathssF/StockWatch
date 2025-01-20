@@ -62,44 +62,47 @@ export const SendPromotions = async (): Promise<{ promotions: any[]; randomId: s
 
     // Gerar promoções baseadas no relacionamento N:N
     for (const promotion of promotionsOptions) {
-      // Para cada estoque, identificar os clientes que têm preferências relacionadas a esse estoque
-      const customers = await prisma.customer.findMany({
-        where: {
-          preferences: {
-            some: {
-              detailId: {
-                in: promotion.details.map((detail: any) => detail.detailId),
+      // Verifica se a quantidade do estoque é superior a 20
+      if (promotion.quantity > 20) {
+        // Para cada estoque, identificar os clientes que têm preferências relacionadas a esse estoque
+        const customers = await prisma.customer.findMany({
+          where: {
+            preferences: {
+              some: {
+                detailId: {
+                  in: promotion.details.map((detail: any) => detail.detailId),
+                },
               },
             },
           },
-        },
-        select: {
-          id: true,
-          preferences: true,
-        },
-      });
+          select: {
+            id: true,
+            preferences: true,
+          },
+        });
+      
+        for (const customer of customers) {
+          // Verifica as preferências do cliente para o estoque atual
+          const commonDetails = promotion.details.filter((promotionDetail: any) =>
+            customer.preferences.some((customerDetail: any) => customerDetail.detailId === promotionDetail.detailId)
+          );
+          
+          let promoValue = 0;
+          if (commonDetails.length === 1) {
+            promoValue = Math.ceil(promotion.product.price * 0.9);
+          } else if (commonDetails.length === 2) {
+            promoValue = Math.ceil(promotion.product.price * 0.75);
+          }
 
-      for (const customer of customers) {
-        // Verifica as preferências do cliente para o estoque atual
-        const commonDetails = promotion.details.filter((promotionDetail: any) =>
-          customer.preferences.some((customerDetail: any) => customerDetail.detailId === promotionDetail.detailId)
-        );
-
-        let promoValue = 0;
-        if (commonDetails.length === 1) {
-          promoValue = Math.ceil(promotion.product.price * 0.9);
-        } else if (commonDetails.length === 2) {
-          promoValue = Math.ceil(promotion.product.price * 0.75);
-        }
-
-        // Cria uma promoção para essa combinação de cliente e estoque
-        if (promoValue > 0) {
-          promotions.push({
-            id: uuidv4(),  // ID único para cada promoção
-            stockId: promotion.stockId,  // O estoque relacionado
-            customerId: customer.id,  // O cliente relacionado
-            promoValue: promoValue,  // O valor do desconto calculado
-          });
+          // Cria uma promoção para essa combinação de cliente e estoque
+          if (promoValue > 0) {
+            promotions.push({
+              id: uuidv4(),  // ID único para cada promoção
+              stockId: promotion.stockId,  // O estoque relacionado
+              customerId: customer.id,  // O cliente relacionado
+              promoValue: promoValue,  // O valor do desconto calculado
+            });
+          }
         }
       }
     }
