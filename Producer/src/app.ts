@@ -14,7 +14,6 @@ app.get('/', (req: Request, res: Response) => {
 // Usando as rotas de estoque
 app.use('/check-stock', stockRoutes);
 
-
 // Legado: Primeiro uso do RabbitMQ
 app.post('/send-message', async (req: Request, res: Response): Promise<any> => {
   const { queueName, message, id } = req.body;
