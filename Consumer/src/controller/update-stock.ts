@@ -19,7 +19,7 @@ export const updateStock = async (message?: string) => {
   let content;
   let mode = 0;
   const updatedStocks: { stockId: number; quantityAdded: number; price: number }[] = [];
-  let createdOrder = null;
+  let createdOrder: any = null;
 
   if (message) {
     console.log('Com Body');
