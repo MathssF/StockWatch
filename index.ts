@@ -14,7 +14,7 @@ app.use('/producer/stock', producerStockRoutes);
 app.use('/consumer/stock', consumerStockRoutes);
 
 // Inicia o servidor principal
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.BASE_PORT) || 3000;
 const HOST = process.env.EXPRESS_HOST || '0.0.0.0';
 
 app.listen(PORT, HOST, () => {
