@@ -21,7 +21,7 @@ export const StockProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     setIsLoading(true);
     setError(null);
     try {
-      const response = await axios.get('/check-stock/informe'); // URL da sua API
+      const response = await axios.get(`http://localhost:${process.env.PRODUCER_PORT}/check-stock/informe`);
       const { lowStocks, notification } = response.data;
       setLowStocks(lowStocks);
       setMessage(notification.notification || 'Estoque verificado com sucesso.');
