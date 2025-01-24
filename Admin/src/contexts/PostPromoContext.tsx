@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -11,41 +11,18 @@ interface Promotion {
 }
 
 interface PromotionsContextType {
-  promotions: Promotion[];
+  postPromotion: (promotionData: Promotion) => Promise<void>;
   isLoading: boolean;
   error: string | null;
-  fetchPromotions: () => Promise<void>;
-  postPromotion: (promotionData: Promotion) => Promise<void>;
 }
 
 const PromotionsContext = createContext<PromotionsContextType | undefined>(undefined);
 
 export const PromotionsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [promotions, setPromotions] = useState<Promotion[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
   const PRODUCER_POST_PROMOTION = process.env.PRODUCER_PROMOTION || '';
-  const CONSUMER_POST_PROMOTION = process.env.CONSUMER_PROMOTION || '';
-
-  const fetchPromotions = async () => {
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      const response = await fetch(CONSUMER_POST_PROMOTION);
-      if (!response.ok) {
-        throw new Error('Erro ao buscar promoções.');
-      }
-
-      const data = await response.json();
-      setPromotions(data.promotions || []);
-    } catch (err: any) {
-      setError(err.message || 'Erro desconhecido.');
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   const postPromotion = async (promotionData: Promotion) => {
     setIsLoading(true);
@@ -61,9 +38,6 @@ export const PromotionsProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       if (!response.ok) {
         throw new Error('Erro ao enviar promoção.');
       }
-
-      // Atualiza promoções após envio
-      await fetchPromotions();
     } catch (err: any) {
       setError(err.message || 'Erro desconhecido.');
     } finally {
@@ -71,21 +45,17 @@ export const PromotionsProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     }
   };
 
-  useEffect(() => {
-    fetchPromotions();
-  }, []);
-
   return (
-    <PromotionsContext.Provider value={{ promotions, isLoading, error, fetchPromotions, postPromotion }}>
+    <PromotionsContext.Provider value={{ postPromotion, isLoading, error }}>
       {children}
     </PromotionsContext.Provider>
   );
 };
 
-export const usePromotions = (): PromotionsContextType => {
+export const usePostPromotion = (): PromotionsContextType => {
   const context = useContext(PromotionsContext);
   if (!context) {
-    throw new Error('usePromotions deve ser usado dentro de PromotionsProvider');
+    throw new Error('usePostPromotion deve ser usado dentro de PromotionsProvider');
   }
   return context;
 };

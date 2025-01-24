@@ -26,7 +26,7 @@ export const PromotionsProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     setError(null);
 
     try {
-      const response = await fetch('/api/promotions');
+      const response = await fetch('/api/promotions'); // Endpoint de busca
       if (!response.ok) {
         throw new Error('Erro ao buscar promoções.');
       }
