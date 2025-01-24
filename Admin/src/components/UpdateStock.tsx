@@ -1,4 +1,3 @@
-// StockChecker.tsx
 import React from 'react';
 import { useStock } from '../contexts/UpdateContext';
 
