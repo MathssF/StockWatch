@@ -1,60 +1,28 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React from 'react';
+import { usePromotions } from '../contexts/SendPromoContext';
 
-interface Promotion {
-  id: string;
-  stockId: number;
-  customerId: number;
-  promoValue: number;
-}
-
-interface PromotionsContextType {
-  promotions: Promotion[];
-  isLoading: boolean;
-  error: string | null;
-  fetchPromotions: () => Promise<void>;
-}
-
-const PromotionsContext = createContext<PromotionsContextType | undefined>(undefined);
-
-export const PromotionsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [promotions, setPromotions] = useState<Promotion[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const fetchPromotions = async () => {
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      const response = await fetch('/api/promotions');
-      if (!response.ok) {
-        throw new Error('Erro ao buscar promoções.');
-      }
-
-      const data = await response.json();
-      setPromotions(data.promotions || []);
-    } catch (err: any) {
-      setError(err.message || 'Erro desconhecido.');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchPromotions();
-  }, []);
+const PromotionsList: React.FC = () => {
+  const { promotions, isLoading, error, fetchPromotions } = usePromotions(); // usePromotions retorna corretamente o tipo esperado
 
   return (
-    <PromotionsContext.Provider value={{ promotions, isLoading, error, fetchPromotions }}>
-      {children}
-    </PromotionsContext.Provider>
+    <div>
+      <h2>Promoções</h2>
+
+      <button onClick={fetchPromotions} disabled={isLoading}>
+        {isLoading ? 'Carregando...' : 'Atualizar Promoções'}
+      </button>
+
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+
+      <ul>
+        {promotions.map((promotion) => (
+          <li key={promotion.id}>
+            Estoque ID: {promotion.stockId}, Cliente ID: {promotion.customerId}, Valor da Promoção: R$ {promotion.promoValue}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
-export const usePromotions = (): PromotionsContextType => {
-  const context = useContext(PromotionsContext);
-  if (!context) {
-    throw new Error('usePromotions deve ser usado dentro de PromotionsProvider');
-  }
-  return context;
-};
+export default PromotionsList;
