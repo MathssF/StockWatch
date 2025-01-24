@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useStock } from '../contexts/StockContext';
+import { useStock } from '../contexts/CheckStockContext';
 
 const StockChecker: React.FC = () => {
   const { checkStock, lowStocks, message, isLoading, error } = useStock();
