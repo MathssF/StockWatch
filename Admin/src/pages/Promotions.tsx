@@ -1,12 +1,14 @@
 import React from 'react';
 import PromotionsList from '../components/SendPromotion';
-import { PromotionsProvider } from '../contexts/SendPromoContext'; // Correção para garantir que está importando como componente
+import { PromotionsProvider as SendProvider } from '../contexts/SendPromoContext';
+import PostPromotion from '../components/PostPromotion';
+import { PromotionsProvider as PostProvider } from '../contexts/PostPromoContext';
 
 const PromotionsPage: React.FC = () => {
   return (
-    <PromotionsProvider> 
+    <SendProvider> 
       <PromotionsList />
-    </PromotionsProvider>
+    </SendProvider>
   );
 };
 
