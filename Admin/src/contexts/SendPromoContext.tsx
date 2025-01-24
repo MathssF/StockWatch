@@ -14,6 +14,8 @@ interface PromotionsContextType {
   fetchPromotions: () => Promise<void>;
 }
 
+const URL = process.env.PRODUCER_PROMOTION || '';
+
 const PromotionsContext = createContext<PromotionsContextType | undefined>(undefined);
 
 export const PromotionsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -26,7 +28,7 @@ export const PromotionsProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     setError(null);
 
     try {
-      const response = await fetch('/api/promotions'); // Endpoint de busca
+      const response = await fetch(URL); // Endpoint de busca
       if (!response.ok) {
         throw new Error('Erro ao buscar promoções.');
       }

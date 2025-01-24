@@ -1,14 +1,12 @@
-// import { Route, Routes } from 'react-router-dom';
-// // import Home from './pages/Home';
-// // import About from './pages/About';
-// // import NotFound from './pages/NotFound';
+import { Route, Routes } from 'react-router-dom';
+import Stock from '../pages/Stock';
+import PromotionsPage from '../pages/Promotions';
 
-// const AppRoutes = () => (
-// //   <Routes>
-// //     <Route path="/" element={<Home />} />
-// //     <Route path="/about" element={<About />} />
-// //     <Route path="*" element={<NotFound />} />
-// //   </Routes>
-// );
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/stock" element={<Stock />} />
+    <Route path="/promotion" element={<PromotionsPage />} />
+  </Routes>
+);
 
-// export default AppRoutes;
+export default AppRoutes;
