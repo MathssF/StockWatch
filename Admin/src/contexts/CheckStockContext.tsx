@@ -9,6 +9,8 @@ interface StockContextProps {
   checkStock: () => Promise<void>;
 }
 
+const URL = process.env.PRODUCER_CHECK || `http://localhost:${process.env.PRODUCER_PORT}/check-stock/informe`;
+
 const StockContext = createContext<StockContextProps | undefined>(undefined);
 
 export const StockProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
@@ -21,7 +23,7 @@ export const StockProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     setIsLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`http://localhost:${process.env.PRODUCER_PORT}/check-stock/informe`);
+      const response = await axios.get(URL);
       const { lowStocks, notification } = response.data;
       setLowStocks(lowStocks);
       setMessage(notification.notification || 'Estoque verificado com sucesso.');
