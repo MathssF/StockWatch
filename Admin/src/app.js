@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 // Carregar variáveis de ambiente
 dotenv.config();
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <BrowserRouter>
       <AppRoutes />
