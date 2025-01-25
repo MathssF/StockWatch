@@ -1,15 +1,13 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import PromotionsPage from './pages/Promotions';
-import Stock from './pages/Stock';
+import ReactDOM from 'react-dom';
+import App from './app';
+import './index.css';  // Se você tiver um arquivo de estilos global
 
-const AppRoutes: React.FC = () => {
-  return (
-    <Routes>
-      <Route path="/promotion" element={<PromotionsPage />} />
-      <Route path="/stock" element={<Stock />} />
-    </Routes>
-  );
-};
+const rootElement = document.getElementById('root') as HTMLElement;
 
-export default AppRoutes;
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
+);
