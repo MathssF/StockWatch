@@ -1,23 +1,22 @@
 {
-    "compilerOptions": {
-      "target": "ES6", // Compilar para o ES6 (padrão moderno)
-      "module": "ESNext", // Usar módulos ES
-      "jsx": "react-jsx", // JSX do React (para React 17+)
-      "strict": true, // Ativar verificações estritas para detectar erros antecipados
-      "moduleResolution": "node", // Resolver módulos como o Node.js
-      "esModuleInterop": true, // Permitir a interoperabilidade com módulos CommonJS
-      "skipLibCheck": true, // Ignorar verificações de tipo em arquivos de declaração de bibliotecas
-      "forceConsistentCasingInFileNames": true, // Garantir a consistência no uso de maiúsculas/minúsculas nos nomes de arquivos
-      "baseUrl": ".", // Caminho base para resolver módulos
-      "paths": {
-        "@/*": ["src/*"] // Definir alias para os caminhos dentro de `src/`
-      }
-    },
-    "include": [
-      "src/**/*" // Incluir todos os arquivos dentro da pasta src
-    ],
-    "exclude": [
-      "node_modules" // Excluir a pasta node_modules da compilação
-    ]
-  }
-  
+  "compilerOptions": {
+    "target": "ES6", // Compilar para o ES6 (padrão moderno)
+    "module": "ESNext", // Usar módulos ES
+    "jsx": "react-jsx", // JSX do React (para React 17+)
+    "strict": true, // Ativar verificações estritas para detectar erros antecipados
+    "moduleResolution": "node", // Resolver módulos como o Node.js
+    "esModuleInterop": true, // Permitir a interoperabilidade com módulos CommonJS
+    "skipLibCheck": true, // Ignorar verificações de tipo em arquivos de declaração de bibliotecas
+    "forceConsistentCasingInFileNames": true, // Garantir a consistência no uso de maiúsculas/minúsculas nos nomes de arquivos
+    "baseUrl": ".", // Caminho base para resolver módulos
+    "paths": {
+      "@/*": ["src/*"] // Definir alias para os caminhos dentro de `src/`
+    }
+  },
+  "include": [
+    "src/**/*" // Incluir todos os arquivos dentro da pasta src
+  ],
+  "exclude": [
+    "node_modules" // Excluir a pasta node_modules da compilação
+  ]
+}
