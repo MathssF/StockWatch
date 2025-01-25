@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { usePromotions } from '../contexts/PostPromoContext';
+import { usePostPromotion } from '../contexts/PostPromoContext';
 
 const PostPromotion: React.FC = () => {
-  const { promotions, isLoading, error, fetchPromotions, postPromotion } = usePromotions();
+  const { isLoading, error, postPromotion } = usePostPromotion();
   const [stockId, setStockId] = useState<number | ''>('');
   const [customerId, setCustomerId] = useState<number | ''>('');
   const [promoValue, setPromoValue] = useState<number | ''>('');
@@ -18,23 +18,8 @@ const PostPromotion: React.FC = () => {
 
   return (
     <div>
-      <h2>Promoções</h2>
-
-      <button onClick={fetchPromotions} disabled={isLoading}>
-        {isLoading ? 'Carregando...' : 'Atualizar Promoções'}
-      </button>
-
+      <h2>Enviar Nova Promoção</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
-
-      <ul>
-        {promotions.map((promotion) => (
-          <li key={promotion.id}>
-            Estoque ID: {promotion.stockId}, Cliente ID: {promotion.customerId}, Valor da Promoção: R$ {promotion.promoValue}
-          </li>
-        ))}
-      </ul>
-
-      <h3>Enviar Nova Promoção</h3>
       <form
         onSubmit={(e) => {
           e.preventDefault();
