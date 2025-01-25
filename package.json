@@ -14,6 +14,7 @@
   ],
   "description": "Um projeto que tem como objetivo mostrar minhas habilidades em várias stacks",
   "scripts": {
+    "start": "npx ts-node ./index.ts",
     "start:producer": "npx ts-node ./Producer/src/index.ts",
     "start:consumer": "npx ts-node ./Consumer/src/index.ts",
     "start:both": "concurrently \"npm run start:producer\" \"npm run start:consumer\"",
