@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import PromotionsPage from '../pages/Promotions';
 import Stock from '../pages/Stock';
 
-const AppRoutes: React.FC = () => {
+const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/promotion" element={<PromotionsPage />} />
