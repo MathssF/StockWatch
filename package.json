@@ -43,9 +43,9 @@
     "mongodb": "^5.0.0",
     "mongoose": "^8.8.3",
     "mysql2": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.2",
     "tsconfig-paths": "^4.2.0",
     "uuid": "^11.0.3",
     "vite": "^6.0.7"
@@ -55,14 +55,15 @@
     "@types/express": "^5.0.0",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.10.1",
-    "@types/react": "^19.0.7",
+    "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "@types/react-router-dom": "^5.3.3",
     "concurrently": "^9.1.2",
     "eslint": "^9.17.0",
     "nodemon": "^2.0.15",
     "prisma": "^6.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^4.5.0"
+    "typescript": "^5.7.3"
   },
   "keywords": [
     "RabbitMQ",

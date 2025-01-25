@@ -6,7 +6,6 @@ import Stock from '../pages/Stock';
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
-    //   <Route path="/" element={index} />
       <Route path="/promotion" element={<PromotionsPage />} />
       <Route path="/stock" element={<Stock />} />
     </Routes>
