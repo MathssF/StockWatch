@@ -47,6 +47,7 @@ async function syncMongoWithPrisma(): Promise<void> {
           price: product.price,
           open: true,
           promotions: product.stock.flatMap(stock =>
+            // ver aqui
             stock.customerPromotions?.map(promotion => ({
               customerId: promotion.customerId.toString(),
               stockId: stock.id.toString(),
