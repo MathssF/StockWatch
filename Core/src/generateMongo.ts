@@ -16,7 +16,10 @@ async function syncMongoWithPrisma(): Promise<void> {
 
     // Obtendo produtos do Prisma
     const prismaProducts = await prisma.product.findMany({
-      include: { stock: { include: { StockDetail: { include: { detail: { include: { type: true } } } } } } }
+      include: { stock: { include: {
+        StockDetail: { include: { detail: { include: { type: true } } } },
+        customerPromotions: true
+      } } }
     });
 
     for (const product of prismaProducts) {
