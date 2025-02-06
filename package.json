@@ -24,7 +24,7 @@
     "dev:seeds": "ts-node -r tsconfig-paths/register prisma/seeds/seeds-order.ts",
     "dev:basic": "ts-node -r tsconfig-paths/register prisma/seeds/basic-customers.seed.ts",
     "open:json": "ts-node -r tsconfig-paths/register ./Core/src/generateJson.ts",
-    "close:json": "ts-node -r tsconfig-paths/register ./Core/src/closeStock.ts",
+    "close:json": "ts-node -r tsconfig-paths/register ./Core/src/closeJson.ts",
     "clear-msg": "ts-node ./Tests/RabbitMQTests/clearMsg.ts",
     "clear-db": "ts-node ./prisma/delete/clearDatabase.ts",
     "reset-db": "ts-node ./prisma/delete/resetAutoIncrement.ts",

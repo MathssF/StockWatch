@@ -1,13 +1,12 @@
-import { MongoClient } from 'mongodb';
+import { MongoClient, ObjectId } from 'mongodb';
 import fs from 'fs';
 import path from 'path';
 import { PrismaClient } from '@prisma/client';
-import { ObjectId } from 'mongodb';
 
 const prisma = new PrismaClient();
-const uri = "mongodb://localhost:27017"; // Substitua pelo URI do seu MongoDB
+const uri = "mongodb://localhost:27017"; // Ajuste conforme necessário
 const client = new MongoClient(uri);
-const dir = './Core/src/database/error';
+const errorDir = './Core/src/database/error';
 
 async function syncMongoWithPrisma(): Promise<void> {
   try {
@@ -23,56 +22,59 @@ async function syncMongoWithPrisma(): Promise<void> {
       await configCollection.insertOne(config);
     }
     
-    // Obtendo produtos do Prisma
     const prismaProducts = await prisma.product.findMany({
-      include: { stock: { include: {
-        StockDetail: { include: { detail: { include: { type: true } } } },
-        customerPromotions: true
-      } } }
-    });
-
-    // Determinar status "open" com base nos estoques
-    const allStocksOpen = prismaProducts.every(product => 
-      product.stock.every(stock => stock.quantity > 0)
-    );
-    const newOpenStatus = allStocksOpen;
-    
-    // Atualizar configuração global se necessário
-    if (config.open !== newOpenStatus) {
-      await configCollection.updateOne(
-        { key: "global" }, 
-        { $set: { open: newOpenStatus } }
-      );
-    }
-    
-    // Processar produtos
-    for (const product of prismaProducts) {
-      const mongoProduct = await collection.findOne({ productId: product.id });
-      
-      if (mongoProduct) {
-        // Verifica diferenças e gera arquivo de erro se houver
-        const prismaData = JSON.stringify(product, null, 2);
-        const mongoData = JSON.stringify(mongoProduct, null, 2);
-        if (prismaData !== mongoData) {
-          if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
-          }
-          const filePath = path.join(dir, 'sync_error.json');
-          fs.writeFileSync(filePath, JSON.stringify({ prisma: product, mongo: mongoProduct }, null, 2));
-          
-          if (!config.open) {
-            // Atualiza open global e sobrescreve todos os dados do MongoDB
-            await configCollection.updateOne({ key: "global" }, { $set: { open: true } });
-            await collection.updateOne(
-              { productId: product.id },
-              { $set: { ...product } }
-            );
+      include: {
+        stock: {
+          include: {
+            StockDetail: {
+              include: { detail: { include: { type: true } } }
+            },
+            customerPromotions: true
           }
         }
-      } else {
-        // Insere produto novo caso não exista no MongoDB
-        await collection.insertOne({ productId: product.id, ...product });
       }
+    });
+    
+    for (const product of prismaProducts) {
+      const mongoProduct = await collection.findOne({ productId: product.id });
+      const productData = {
+        productId: product.id,
+        name: product.name,
+        price: product.price,
+        stock: product.stock.map(stock => ({
+          id: stock.id,
+          quantity: stock.quantity,
+          details: stock.StockDetail?.map(sd => ({
+            typeId: sd.detail?.type?.id,
+            type: sd.detail?.type?.name,
+            detailId: sd.detail?.id,
+            detailName: sd.detail?.value
+          })) || []
+        }))
+      };
+      
+      if (!mongoProduct) {
+        await collection.insertOne(productData);
+        continue;
+      }
+      
+      const prismaDataString = JSON.stringify(productData);
+      const mongoDataString = JSON.stringify(mongoProduct);
+      
+      if (prismaDataString !== mongoDataString) {
+        if (!fs.existsSync(errorDir)) {
+          fs.mkdirSync(errorDir, { recursive: true });
+        }
+        fs.writeFileSync(path.join(errorDir, 'sync_error.json'), JSON.stringify({ prisma: productData, mongo: mongoProduct }, null, 2));
+        
+        if (!config.open) {
+          await collection.updateOne({ productId: product.id }, { $set: productData });
+        }
+      }
+    }
+    
+    if (!config.open) {
+      await configCollection.updateOne({ key: "global" }, { $set: { open: true } });
     }
     
     console.log("Sincronização concluída.");
