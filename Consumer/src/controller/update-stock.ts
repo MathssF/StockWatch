@@ -1,13 +1,9 @@
 import { PrismaClient } from '@prisma/client';
 import { MongoClient } from 'mongodb';
-import fs from 'fs';
-import path from 'path';
 import { consumeQueue } from '../rabbitmq.consumer';
 import { v4 as uuidv4 } from 'uuid';
 
 const prisma = new PrismaClient();
-const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
-const logDir = path.join(__dirname, '../../../Core/src/database/update-logs');
 
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
@@ -85,40 +81,8 @@ export const updateStock = async (message?: string) => {
       await client.close();
       console.log('Banco de dados MongoDB atualizado com sucesso!');
       mode = 3;
-    } else if (fs.existsSync(filePath)) {
-      console.log('Atualizando output.json...');
-      const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-
-      let productFound = false;
-      for (const product of data.products) {
-        const { stockId, quantityNeeded } = product;
-
-        console.log(`Atualizando estoque do produto ${stockId}`);
-        for (const fileProduct of fileData.Products) {
-          for (const stock of fileProduct.stocks) {
-            if (stock.id === stockId) {
-              const addedQuantity = quantityNeeded || 0;
-              stock.quantityNow += addedQuantity;
-
-              updatedStocks.push({
-                stockId: Number(stock.id),
-                quantityAdded: addedQuantity,
-                price: fileProduct.price || 0,
-              });
-
-              productFound = true;
-            }
-          }
-        }
-      }
-
-      if (productFound) {
-        fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
-        console.log('output.json atualizado com sucesso!');
-        mode = 1;
-      }
     } else {
-      console.log('output.json não encontrado. Atualizando o banco de dados via Prisma...');
+      console.log('MongoDB não encontrado ou não autorizado. Atualizando o banco de dados via Prisma...');
       for (const product of data.products) {
         const { stockId, quantityNeeded } = product;
 
@@ -147,18 +111,6 @@ export const updateStock = async (message?: string) => {
   } else {
     console.log('Nenhum produto para atualizar. Mensagem:', data.notification);
     return { updatedStocks: [], createdOrder: null, mode: 0 };
-  }
-
-  if (updatedStocks.length > 0) {
-    if (!fs.existsSync(logDir)) {
-      fs.mkdirSync(logDir, { recursive: true });
-    }
-
-    const currentDate = new Date();
-    const formattedDate = currentDate.toISOString().replace(/[:.]/g, '-');
-    const logFilePath = path.join(logDir, `${formattedDate}.json`);
-    fs.writeFileSync(logFilePath, JSON.stringify(updatedStocks, null, 2));
-    console.log(`Log de atualização de estoque gerado em: ${logFilePath}`);
   }
 
   if (updatedStocks.length > 0) {
