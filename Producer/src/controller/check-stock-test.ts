@@ -1,32 +1,31 @@
 import { PrismaClient } from '@prisma/client';
-import { MongoClient } from 'mongodb';
+import fs from 'fs';
+import path from 'path';
 import { sendToQueue } from '../rabbitmq.producer';
 import { v4 as uuidv4 } from 'uuid';
+import { MongoClient } from 'mongodb';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const prisma = new PrismaClient();
-const mongoUrl = process.env.MONGO_URL || 'mongodb://root:root@localhost:27017/stockwatch?authSource=admin';
-const mongoName = process.env.MONGO_NAME || 'stockwatch';
-
+const mongoClient = new MongoClient(process.env.MONGO_URL || '');
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
-
 const queueName = queueNames.checkStock || 'low-stock-queue';
 const durableValue = durable.checkStock || false;
 
-async function checkMongoDB() {
+const isMongoAvailable = async () => {
   try {
-    const client = new MongoClient(mongoUrl);
-    await client.connect();
-    const db = client.db(mongoName);
-    const settings = await db.collection('settings').findOne({ key: 'databaseStatus' });
-
-    await client.close();
-    return settings?.open === true;
+    await mongoClient.connect();
+    const db = mongoClient.db(process.env.MONGO_NAME);
+    const status = await db.admin().serverStatus();
+    return status.ok === 1;
   } catch (error) {
-    console.error('Erro ao conectar ao MongoDB:', error);
+    console.error('Erro ao verificar MongoDB:', error);
     return false;
   }
-}
+};
 
 export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string; message: any | null }> => {
   let lowStocks: any[] = [];
@@ -35,17 +34,14 @@ export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string
 
   try {
     let data: any;
-    const mongoAvailable = await checkMongoDB();
+    const useMongo = await isMongoAvailable();
 
-    if (mongoAvailable) {
-      console.log('Buscando dados no MongoDB...');
-      const client = new MongoClient(mongoUrl);
-      await client.connect();
-      const db = client.db(mongoName);
+    if (useMongo) {
+      console.log('Carregando dados do MongoDB...');
+      const db = mongoClient.db(process.env.MONGO_NAME);
       data = await db.collection('products').find().toArray();
-      await client.close();
     } else {
-      console.log('MongoDB indisponível. Buscando dados no Prisma...');
+      console.log('MongoDB não disponível. Buscando dados no Prisma...');
       data = await prisma.product.findMany({
         include: {
           stock: {
@@ -77,15 +73,14 @@ export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string
     );
 
     if (lowStocks.length > 0) {
-      const currentDate = new Date();
-      const formattedDate = currentDate.toISOString().slice(0, 10);
-      randomId = `${uuidv4().split('-')[0]}.${formattedDate}`;
+      const currentDate = new Date().toISOString().slice(0, 10);
+      randomId = `${uuidv4().split('-')[0]}.${currentDate}`;
       message = {
         notification: 'Os seguintes produtos precisam reestabelecer o estoque',
         products: lowStocks.map((item) => ({
           stockId: item.stockId,
-          quantityNow: item.quantityNow || 0,
-          quantityNeeded: 10 - (item.quantityNow || 0),
+          quantityNow: item.quantityNow,
+          quantityNeeded: 10 - item.quantityNow,
         })),
       };
       await sendToQueue(queueName, JSON.stringify(message), randomId, durableValue);
@@ -96,6 +91,5 @@ export const CheckStock = async (): Promise<{ lowStocks: any[]; randomId: string
   } catch (error) {
     console.error('Erro ao verificar estoque:', error);
   }
-
   return { lowStocks, randomId, message };
 };
