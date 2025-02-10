@@ -7,6 +7,13 @@ const mName = process.env.MONGO_NAME || "stockwatch";
 const client = new MongoClient(uri);
 const errorDir = './Core/src/database/error';
 
+const logDelay = parseInt(process.env.MONGO_LOG_TIME || "5000", 10); // Lê o tempo de atraso do .env em milissegundos
+
+// Função para criar um atraso
+function delay(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function closeStock(): Promise<void> {
   try {
     await client.connect();
@@ -33,6 +40,7 @@ async function closeStock(): Promise<void> {
           });
 
           // Log da alteração no MongoDB
+          await delay(logDelay);  // Espera o tempo definido no .env
           await logCollection.insertOne({
             timestamp: new Date(),
             productId: product.productId,
@@ -73,6 +81,7 @@ async function closeStock(): Promise<void> {
           });
 
           // Log da atualização de promoção
+          await delay(logDelay);  // Espera o tempo definido no .env
           await logCollection.insertOne({
             timestamp: new Date(),
             productId: product.productId,
@@ -91,6 +100,7 @@ async function closeStock(): Promise<void> {
             });
 
             // Log da desativação de promoção
+            await delay(logDelay);  // Espera o tempo definido no .env
             await logCollection.insertOne({
               timestamp: new Date(),
               productId: product.productId,
