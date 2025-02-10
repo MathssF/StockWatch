@@ -4,14 +4,15 @@ import path from 'path';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
-const uri = "mongodb://localhost:27017"; // Ajuste conforme necessário
+const uri = process.env.MONGO_URL || "mongodb://localhost:27017";
+const mName = process.env.MONGO_NAME || "myDatabase";
 const client = new MongoClient(uri);
 const errorDir = './Core/src/database/error';
 
 async function syncMongoWithPrisma(): Promise<void> {
   try {
     await client.connect();
-    const database = client.db("myDatabase");
+    const database = client.db(mName);
     const collection = database.collection("products");
     const configCollection = database.collection("config");
     
