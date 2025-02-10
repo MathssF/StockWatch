@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client';
+import { MongoClient } from 'mongodb';
 import fs from 'fs';
 import path from 'path';
 import { consumeQueue } from '../rabbitmq.consumer';
@@ -13,6 +14,25 @@ const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
 
 const queueName = queueNames.checkStock || 'low-stock-queue';
 const durableValue = durable.checkStock || false;
+
+const mongoUrl = process.env.MONGO_URL || 'mongodb://root:root@localhost:27017/';
+const mongoName = process.env.MONGO_NAME || 'stockwatch';
+
+async function checkMongoDB() {
+  try {
+    const client = new MongoClient(mongoUrl);
+    await client.connect();
+    const db = client.db(mongoName);
+    const settings = await db.collection('settings').findOne({ key: 'databaseStatus' });
+
+    await client.close();
+    
+    return settings?.open === true;
+  } catch (error) {
+    console.error('Erro ao conectar ao MongoDB:', error);
+    return false;
+  }
+}
 
 export const updateStock = async (message?: string) => {
   console.log('Entrou no updateStock');
@@ -33,8 +53,39 @@ export const updateStock = async (message?: string) => {
   const data = JSON.parse(content.message);
   console.log('Mensagem recebida:', content);
 
+  const mongoAvailable = await checkMongoDB();
+
   if (data.products && data.products.length > 0) {
-    if (fs.existsSync(filePath)) {
+    if (mongoAvailable) {
+      console.log('Atualizando estoque diretamente no MongoDB...');
+      const client = new MongoClient(mongoUrl);
+      await client.connect();
+      const db = client.db(mongoName);
+      const stockCollection = db.collection('stocks');
+
+      for (const product of data.products) {
+        const { stockId, quantityNeeded } = product;
+        const addedQuantity = quantityNeeded || 0;
+
+        const result = await stockCollection.findOneAndUpdate(
+          { _id: stockId },
+          { $inc: { quantityNow: addedQuantity } },
+          { returnDocument: 'after' }
+        );
+
+        if (result.value) {
+          updatedStocks.push({
+            stockId: stockId,
+            quantityAdded: addedQuantity,
+            price: result.value.price || 0,
+          });
+        }
+      }
+
+      await client.close();
+      console.log('Banco de dados MongoDB atualizado com sucesso!');
+      mode = 3;
+    } else if (fs.existsSync(filePath)) {
       console.log('Atualizando output.json...');
       const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
@@ -67,7 +118,7 @@ export const updateStock = async (message?: string) => {
         mode = 1;
       }
     } else {
-      console.log('output.json não encontrado. Atualizando o banco de dados...');
+      console.log('output.json não encontrado. Atualizando o banco de dados via Prisma...');
       for (const product of data.products) {
         const { stockId, quantityNeeded } = product;
 
@@ -90,7 +141,7 @@ export const updateStock = async (message?: string) => {
           });
         }
       }
-      console.log('Banco de dados atualizado com sucesso!');
+      console.log('Banco de dados Prisma atualizado com sucesso!');
       mode = 2;
     }
   } else {
