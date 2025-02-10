@@ -1,21 +1,24 @@
 import { PrismaClient } from '@prisma/client';
-import fs from 'fs';
-import path from 'path';
+import { MongoClient } from 'mongodb';
 import { consumeQueue } from '../rabbitmq.consumer';
 
 const prisma = new PrismaClient();
 const queueNames = JSON.parse(process.env.RABBITMQ_QUEUE_NAMES || '{}');
 const durable = JSON.parse(process.env.RABBIT_QUEUE_DURABLE || '{}');
+const mongoUrl = process.env.MONGODB_URL || ''; // URL do MongoDB
+const mongoOpen = JSON.parse(process.env.MONGODB_OPEN || 'false'); // Flag para determinar se o MongoDB está aberto
 
 const queueName = queueNames.promotions || 'promotions-queue';
 const durableValue = durable.promotions || false;
-const filePath = path.join(__dirname, '../../../Core/src/database/today/output.json');
+
+const mongoClient = new MongoClient(mongoUrl);
 
 export const postPromotions = async (messageContent?: string): Promise<any> => {
   try {
     let promotions: any[] = [];
     let processedPromotions: any[] = [];
 
+    // Consome a mensagem da fila ou usa a mensagem fornecida diretamente
     if (messageContent) {
       console.log('Mensagem recebida:', messageContent);
       const { promotions: promotionsFromQueue } = JSON.parse(messageContent);
@@ -26,14 +29,13 @@ export const postPromotions = async (messageContent?: string): Promise<any> => {
       promotions = promotionsFromQueue || [];
     }
 
+    // Processa as promoções se existirem
     if (promotions.length > 0) {
-      // Verifica se o arquivo output.json existe
-      if (fs.existsSync(filePath)) {
-        console.log('Arquivo output.json encontrado, atualizando...');
-        updateOutputFile(promotions);
-        processedPromotions = promotions;
+      if (mongoOpen && mongoUrl) {
+        console.log('MongoDB configurado e aberto, salvando promoções no MongoDB...');
+        processedPromotions = await savePromotionsToMongoDB(promotions);
       } else {
-        console.log('Arquivo output.json não encontrado, salvando no banco de dados...');
+        console.log('MongoDB não configurado ou Open é false, salvando promoções no banco Prisma...');
         processedPromotions = await savePromotionsToDatabase(promotions);
       }
     } else {
@@ -47,22 +49,23 @@ export const postPromotions = async (messageContent?: string): Promise<any> => {
   }
 };
 
-// Função para atualizar o arquivo output.json
-function updateOutputFile(promotions: any[]) {
+// Função para salvar promoções no MongoDB
+async function savePromotionsToMongoDB(promotions: any[]): Promise<any> {
   try {
-    const currentData = fs.existsSync(filePath) 
-      ? JSON.parse(fs.readFileSync(filePath, 'utf-8')) 
-      : { Promotions: [] };
-    
-    currentData.Promotions.push(...promotions);
-    fs.writeFileSync(filePath, JSON.stringify(currentData, null, 2));
-    console.log('Promoções adicionadas ao arquivo output.json');
+    await mongoClient.connect();
+    const database = mongoClient.db('promotionsDatabase');
+    const collection = database.collection('promotions');
+    const result = await collection.insertMany(promotions);
+    console.log('Promoções salvas no MongoDB:', result.insertedCount);
+    return promotions;
   } catch (error) {
-    console.error('Erro ao atualizar o arquivo output.json:', error);
+    console.error('Erro ao salvar promoções no MongoDB:', error);
+  } finally {
+    await mongoClient.close();
   }
 }
 
-// Função para salvar promoções no banco de dados
+// Função para salvar promoções no banco de dados (Prisma)
 async function savePromotionsToDatabase(promotions: any[]): Promise<any> {
   try {
     const savedPromotions: any[] = [];
@@ -78,8 +81,9 @@ async function savePromotionsToDatabase(promotions: any[]): Promise<any> {
       });
       savedPromotions.push(savedPromotion);
     }
+    console.log('Promoções salvas no banco de dados Prisma');
     return savedPromotions;
   } catch (error) {
-    console.error('Erro ao salvar promoções no banco de dados:', error);
+    console.error('Erro ao salvar promoções no banco de dados Prisma:', error);
   }
 }

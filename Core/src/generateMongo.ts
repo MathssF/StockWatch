@@ -5,7 +5,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 const uri = process.env.MONGO_URL || "mongodb://localhost:27017";
-const mName = process.env.MONGO_NAME || "myDatabase";
+const mName = process.env.MONGO_NAME || "stockwatch";
 const client = new MongoClient(uri);
 const errorDir = './Core/src/database/error';
 
