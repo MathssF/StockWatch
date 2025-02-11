@@ -1,3 +1,8 @@
+/**
+ * @deprecated
+ * This function is deprecated. Use 'newFunction()' instead.
+ */
+
 import fs from 'fs/promises';
 import path from 'path';
 
